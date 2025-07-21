@@ -1,0 +1,15 @@
+---
+layout: base.njk
+---
+<article>
+  <h1>{{ title }}</h1>
+  <p class="meta">{{ date | date | safe }}</p>
+  {{ content | safe }}
+  {% if tags %}
+  <p>Tags:
+    {% for t in tags %}
+      <a href="/tag/{{ t }}/">{{ t }}</a>{% if not loop.last %}, {% endif %}
+    {% endfor %}
+  </p>
+  {% endif %}
+</article>

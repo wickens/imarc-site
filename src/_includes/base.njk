@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-default">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>{% if title %}{{ title }} · {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+{% if excerpt %}<meta name="description" content="{{ excerpt | safe }}"/>{% endif %}
+
+<link rel="stylesheet" href="/static/css/site.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&family=Fira+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+
+<link rel="icon" type="image/png" href="/imarc-icon.png">
+<!-- inside <head> -->
+<link rel="apple-touch-icon" href="/imarc-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/imarc-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/imarc-icon.png">
+
+
+
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a class="site-title" href="/">{{ site.title }}</a>
+    <p class="tagline">{{ site.tagline }}</p>
+
+    <nav class="site-nav">
+      <a href="/">Home</a>
+      <a href="/archive/">Archive</a>
+      <a href="/about/">About</a>
+      <a href="https://riseley.imarc.co.uk/">Riseley&nbsp;History</a>
+      <a href="https://mandiandmarc.wickens.uk/">Wedding</a>
+    </nav>
+  </div>
+</header>
+
+<main class="content inner">
+  {{ content | safe }}
+</main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <p>&copy; {{ site.year }} {{ site.title }} • Crafted with Eleventy</p>
+  </div>
+</footer>
+</body>
+</html>

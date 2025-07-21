@@ -1,0 +1,24 @@
+---
+permalink: feed/index.xml
+eleventyExcludeFromCollections: true
+---
+{% raw %}
+{% set posts = collections.posts | reverse | slice(0, 50) %}
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+<title>{{ metadata.title or "Site" }}</title>
+<link>{{ metadata.url }}</link>
+<description>{{ metadata.description }}</description>
+{% for post in posts %}
+<item>
+  <title>{{ post.data.title | escape }}</title>
+  <link>{{ metadata.url }}{{ post.url }}</link>
+  <pubDate>{{ post.date | rssDate }}</pubDate>
+  <guid>{{ metadata.url }}{{ post.url }}</guid>
+  <description><![CDATA[ {{ post.templateContent | safe }} ]]></description>
+</item>
+{% endfor %}
+</channel>
+</rss>
+{% endraw %}

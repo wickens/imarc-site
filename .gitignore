@@ -128,3 +128,33 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+
+###############################################################################
+# Eleventy / static-site extras
+###############################################################################
+_site/                 # Eleventy’s generated output
+.cache/                # Eleventy 3 incremental cache
+!.cache/.gitkeep       # (optional) keep folder if you need it tracked
+
+# If you don’t want raw WordPress exports or bulk media in the repo
+scripts/wordpress-export.xml
+uploads/               # downloaded wp-content/uploads (serves locally, but big)
+
+# Environment / build secrets
+.env
+.env.*
+
+###############################################################################
+# macOS and editor noise
+###############################################################################
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+.idea/                 # JetBrains IDEs
+.vscode/               # VS Code workspace settings
+*.swp                  # Vim swap files
