@@ -9,18 +9,25 @@ excerpt: ""
 ---
 
 ## The Bull Public House
-
+{% compare "Then", "Now" %}
 ![](/wp-content/uploads/2022/09/the-bull-1900s.jpg)![](/wp-content/uploads/2022/09/the-bull-2022.jpg)
+{% endcompare %}
 
 1900s / 2022
 
-## The Bear Inn
+## The Bear Inn!
 
-![](/wp-content/uploads/2022/09/the-bear-inn1.jpg)![](/wp-content/uploads/2022/09/the-bear-inn2-3.jpg)
+{% compare "Then", "Now" %}
+![](/wp-content/uploads/2022/09/the-bear-inn1.jpg)
+![](/wp-content/uploads/2022/09/the-bear-inn2-3.jpg)
+{% endcompare %}
+
 
 The view looking north towards Reading as the Odiham Road meets the Basingstoke Road. In the far left you can see The Bull, while on the right is the Bear Inn. The year is currently unknown.
 
+{% compare "Then", "Now" %}
 ![](/wp-content/uploads/2022/09/the-bear-inn2-2.jpg)![](/wp-content/uploads/2022/09/the-bear-inn-2022.jpeg)
+{% endcompare %}
 
 In the first photo, The Bear Inn is now M Woods' Coal Merchant. In the second photo from 2022 you can just about make out the Bull on the far left.
 
@@ -28,7 +35,10 @@ In the first photo, The Bear Inn is now M Woods' Coal Merchant. In the second ph
 
 If you look closely at the cottage on the left, you can see the same window (left, middle).
 
+{% compare "Then", "Now" %}
 ![](/wp-content/uploads/2022/09/bull-lane-1900s.jpg)![](/wp-content/uploads/2022/09/bull-lane-2022.jpeg)
+{% endcompare %}
+
 
 1900s / 2022
 
@@ -51,22 +61,26 @@ Here you can more clearly make out The Sun Inn and Wayside Stores
 Which eventually became houses. This photo is from 2001.
 
 ## The Sun Inn
-
+{% compare "Then", "Now" %}
 ![](/wp-content/uploads/2022/09/the-sun-inn-1900s.jpg)![](/wp-content/uploads/2022/09/the-sun-inn-1996.jpg)
+{% endcompare %}
 
 1900s/1996
 
 ## Maythorne Stores
-
+{% compare "Then", "Now" %}
 ![](/wp-content/uploads/2022/09/maythorne-stores-1930s.jpg)![](/wp-content/uploads/2022/09/maythorne-stores-2000.jpg)
-
+{% endcompare %}
 1930s/2000
 
+{% compare "Then", "Now" %}
 ![](/wp-content/uploads/2022/09/maythorne-stores-2000-1.jpg)![](/wp-content/uploads/2022/09/maythorne-stores-2022.jpg)
+{% endcompare %}
 
 2000 / 2022
-
+{% compare "Then", "Now" %}
 ![](/wp-content/uploads/2022/09/maythorne-stores-4-1.jpg)![](/wp-content/uploads/2022/09/maythorne-stores-5-1.jpg)
+{% endcompare %}
 
 In this first photograph from the 1950s, Maythorne Stores can be seen on the left. You can also see Copse House prior to its extension (centre). The second is from 1990.
 
@@ -119,8 +133,10 @@ It would later become "Reading Chair & Desk". This photo was taken after it clos
 Today the site houses a mixture of commercial and residential properties.
 
 ## Bullock Shop (Riseley Stores)
-
+{% compare "Then", "Now" %}
 ![](/wp-content/uploads/2022/09/bullock-shop-1900s.jpg)![](/wp-content/uploads/2022/09/bullock-shop-1990s.jpg)
+{% endcompare %}
+
 
 1900s / 1990s
 

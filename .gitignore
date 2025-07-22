@@ -158,3 +158,15 @@ Icon?
 .idea/                 # JetBrains IDEs
 .vscode/               # VS Code workspace settings
 *.swp                  # Vim swap files
+
+# Eleventy build output
+_site/
+.cache/
+
+# If you ever generate other build dirs
+dist/
+build/
+
+# Optional: big, reproducible assets
+# uploads/
+# scripts/wordpress-export.xml
