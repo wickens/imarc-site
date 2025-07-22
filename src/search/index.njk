@@ -1,0 +1,45 @@
+---
+layout: base.njk
+eleventyExcludeFromCollections: true
+permalink: "search/index.html"
+---
+<h1>Search Results</h1>
+<div id="search-results">
+  <p>Type a query above to search.</p>
+</div>
+
+<script>
+(async () => {
+  const idx = await fetch("/search/index.json").then(r => r.json());
+  // Simple in-memory search
+  const posts = idx;
+  const input = document.getElementById("search-input");
+  const results = document.getElementById("search-results");
+
+  input.addEventListener("input", () => {
+    const q = input.value.trim().toLowerCase();
+    if (!q) {
+      results.innerHTML = "<p>Type a query above to search.</p>";
+      return;
+    }
+    const matches = posts.filter(p =>
+      p.title.toLowerCase().includes(q) ||
+      p.excerpt.toLowerCase().includes(q)
+    );
+    if (!matches.length) {
+      results.innerHTML = "<p>No results found.</p>";
+      return;
+    }
+    results.innerHTML = "<ul>" + matches.map(p => 
+      `<li><a href="${p.url}">${p.title}</a><br><small>${p.excerpt}</small></li>`
+    ).join("") + "</ul>";
+  });
+
+  // If there's a `?q=…` param, prefill and trigger
+  const params = new URLSearchParams(window.location.search);
+  if (params.has("q")) {
+    input.value = params.get("q");
+    input.dispatchEvent(new Event("input"));
+  }
+})();
+</script>

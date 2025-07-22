@@ -24,10 +24,11 @@ permalink: "{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 
 
 {% if pagination.href.next %}
 <nav class="pagination-links">
-  <a href="{{ pagination.href.next }}">Older&nbsp;Posts &rarr;</a>
+  <a href="{{ pagination.href.next }}">Older&nbsp;Posts &rarr;</a> 
 </nav>
 {% else %}
 <nav class="pagination-links">
   <a href="/archive/">View all posts →</a>
 </nav>
 {% endif %}
+

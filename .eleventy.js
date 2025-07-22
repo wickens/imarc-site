@@ -21,6 +21,12 @@ module.exports = function (eleventyConfig) {
     /* ---------------- Plugins ---------------- */
     eleventyConfig.addPlugin(pluginRss);
 
+  // Add a JSON stringify filter for templates
+        eleventyConfig.addFilter("jsonify", function (value) {
+            return JSON.stringify(value);
+        });
+    
+
     /* ---------------- Date filters ---------------- */
     function toDate(d) {
         return (d instanceof Date) ? d : new Date(d);

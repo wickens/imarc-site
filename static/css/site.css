@@ -214,3 +214,24 @@ pre code{display:block;padding:1rem;overflow-x:auto;}
   z-index:2;
 }
 .compare__labels { display: none !important; }
+
+.site-search {
+  margin-left: auto;                /* push it to the right */
+}
+.site-search input {
+  font: inherit;
+  padding: 0.3rem 0.6rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  width: 10rem;
+  transition: width .2s ease;
+}
+.site-search input:focus {
+  width: 14rem;
+  outline: none;
+  border-color: var(--color-accent);
+}
+@media (max-width: 32rem) {
+  .site-search { width: 100%; margin-top: .5rem; }
+  .site-search input { width: 100%; }
+}
