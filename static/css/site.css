@@ -235,3 +235,34 @@ pre code{display:block;padding:1rem;overflow-x:auto;}
   .site-search { width: 100%; margin-top: .5rem; }
   .site-search input { width: 100%; }
 }
+
+/* Force side-by-side unless really narrow */
+.profile__wrap{
+  display:flex;
+  gap:2rem;
+  align-items:flex-start;
+  flex-wrap:nowrap;      /* don’t wrap at desktop widths */
+}
+
+/* let text shrink instead of pushing to a new line */
+.profile__text{
+  flex:1 1 0;            /* grow, shrink, min-width 0 */
+  min-width:0;
+}
+
+/* When the viewport is narrow, stack vertically */
+@media (max-width: 600px){
+  .profile__wrap{
+    flex-direction:column;
+    align-items:center;
+  }
+}
+
+.profile__photo{
+  max-width: 180px;      /* never wider than 180 px */
+  width: 40%;            /* but stay responsive on very small screens */
+  height: auto;          /* keep natural aspect ratio */
+  object-fit: cover;     /* crop if you later set fixed height */
+  border-radius: 50%;
+  border: 2px solid var(--color-border);
+}
