@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-default">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>
+      Fixing Focus Modes on iOS
+        ·
+        iMarc
+      
+    </title>
+    
+
+    <link rel="stylesheet" href="/static/css/site.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&family=Fira+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+
+    <link rel="icon" type="image/png" href="/imarc-icon.png">
+    <link rel="apple-touch-icon" href="/imarc-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/imarc-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/imarc-icon.png">
+    <link rel="alternate" type="application/rss+xml" href="/feed/index.xml" title="iMarc RSS">
+
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="inner">
+        <a class="site-title" href="/">iMarc</a>
+        <p class="tagline">thoughts on tech • by Marc Wickens</p>
+
+        <nav class="site-nav">
+          <a href="/">Home</a>
+          <a href="/Gear/">Gear</a>
+          <a href="/archive/">All Posts</a>
+          <a href="http://marc.wickens.org.uk">About</a>
+          <a href="/riseley">Riseley History</a>
+          <!-- <a href="https://mandiandmarc.wickens.uk/">Wedding</a> -->
+
+          <form class="site-search" action="/search/" method="get">
+            <label for="search-input" class="visually-hidden">Search</label>
+            <input id="search-input" name="q" type="search" placeholder="Search…"/>
+          </form>
+
+        </nav>
+      </div>
+    </header>
+
+    <main class="content inner">
+      <article>
+  <h1>Fixing Focus Modes on iOS</h1>
+  <p class="meta">3 Dec 2023</p>
+  <p>When Apple introduced Focus <em>Modes</em> and Focus <em>Filters</em>, I hoped it might finally mean the ability to cleanly separate work and personal life within iOS. Unfortunately, the system is flawed.</p>
+<p>Let’s briefly recap on how it works. Focus Modes are an extension of “Do Not Disturb” which has been with iOS since version 2011 (if my memory is correct) and allow precise control of notifications for different scenarios. Apple allows users to create various focus modes for different activities. For each focus mode, you can control who and which apps are allowed to send notifications. Apple ships iOS with several default modes such as “Sleep”, “Work”, and “Reading”. For example, I might turn off Slack notifications in the “Personal” Focus Mode, and then schedule that to activate in the evenings.</p>
+<p>Focus filters on the other hand control which data is available inside apps and are linked to a particular Focus Mode. For example, for to-do list app that allow you to create different lists, you could use Focus Filters to hide your shopping list when the “Work” Focus Mode is activated, and then hide your work tasks while your “Personal” Focus Mode is activated.</p>
+<p>The problem with Apple’s implementation is that it always requires a particular Focus Mode to be activated. There is no way to apply Focus Filters or control notifications when no Focus Mode is activated. Additionally, Focus Modes and Focus Filters are literally <em>filters</em>. This means they can only reduce content that is already enabled. In my use case, I want to turn off my work email and calendars by default but have then enabled during work hours. I want to disable Slack Notifications all the time, except during work hours. This is simply not possible with iOS and represents a fundamental flaw in the design. I can of course disable Slack Notifications fully, but then I can’t enable them for a particular Focus Mode. I could also painstakingly configure focus modes to consume contiguous time blocks throughout the day, but this is error prone and there are times when a focus mode gets switched off for some reason and I’m inundated with notifications I don’t want. The Apple Watch is also unaware of Focus Filters and will happily show calendar appointments despite the same appointments being filtered out on my Phone.</p>
+<p>I’m not quite sure how Apple missed the obvious on this one. Perhaps they are stuck dealing with technical debt and the current system is a compromise based on what is technically achievable. Perhaps they genuinely think the current system is adequate. Perhaps I’m the outlier. Either way, I hope they address this issue. Currently, iOS still makes it far too difficult to separate work and personal content.</p>
+
+  
+</article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="inner">
+        <p>&copy; 2000 –
+          2025
+          Marc Wickens
+        </p>
+      </div>
+    </footer>
+
+    <script src="/static/js/compare.js" defer="defer"></script>
+    <script data-goatcounter="https://imarc.goatcounter.com/count" async="async" src="//gc.zgo.at/count.js"></script>
+
+  </body>
+</html>

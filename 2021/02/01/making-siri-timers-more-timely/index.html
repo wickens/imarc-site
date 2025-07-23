@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-default">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>
+      Making Siri Timers More Timely
+        ·
+        iMarc
+      
+    </title>
+    
+
+    <link rel="stylesheet" href="/static/css/site.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&family=Fira+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+
+    <link rel="icon" type="image/png" href="/imarc-icon.png">
+    <link rel="apple-touch-icon" href="/imarc-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/imarc-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/imarc-icon.png">
+    <link rel="alternate" type="application/rss+xml" href="/feed/index.xml" title="iMarc RSS">
+
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="inner">
+        <a class="site-title" href="/">iMarc</a>
+        <p class="tagline">thoughts on tech • by Marc Wickens</p>
+
+        <nav class="site-nav">
+          <a href="/">Home</a>
+          <a href="/Gear/">Gear</a>
+          <a href="/archive/">All Posts</a>
+          <a href="http://marc.wickens.org.uk">About</a>
+          <a href="/riseley">Riseley History</a>
+          <!-- <a href="https://mandiandmarc.wickens.uk/">Wedding</a> -->
+
+          <form class="site-search" action="/search/" method="get">
+            <label for="search-input" class="visually-hidden">Search</label>
+            <input id="search-input" name="q" type="search" placeholder="Search…"/>
+          </form>
+
+        </nav>
+      </div>
+    </header>
+
+    <main class="content inner">
+      <article>
+  <h1>Making Siri Timers More Timely</h1>
+  <p class="meta">1 Feb 2021</p>
+  <p><img src="/wp-content/uploads/2021/02/siri-icon.jpg?w=1024" alt=""></p>
+<p>I can be a perfectionist when it comes to software, and one thing that bugs me when using Siri timers is the fact that the time taken for Siri to understand me is added on to the timer duration.</p>
+<p>Frequently I will start a timer using the &quot;Hey Siri&quot; wake word, either using my Apple Watch or iPhone. Depending on where I am in the house and general WiFi signal, the time it takes for Siri to respond can range from a few seconds to 10 or more.</p>
+<p>From the time between saying &quot;Hey Siri&quot; and completing the sentence &quot;Set a timer for 5 minutes.&quot; the device will upload the audio to a server, which will use a set of speech-to-text machine learning models to predict the words said. It will then use a natural language model to classify this text into an intent, deriving meaning from the sentence.</p>
+<p>In many cases, this results in my 5 minute timer not going off 5 minutes after I decided I wanted to start a timer, but 5 minutes and 7 seconds after.</p>
+<p>It doesn't have to be this way however. The device presumably knows the exact time it successfully detected a &quot;Hey Siri&quot; command (a <a href="https://machinelearning.apple.com/research/hey-siri">complex set of systems in their own right</a>), and so it could simply deduct this from the requested timer duration. If Siri takes 7 seconds to figure out what I meant, then my 5 minute timer becomes a 4 minutes and 53 seconds timer.</p>
+<p>A small request, but if any company could pay attention to small features like this, it's Apple.</p>
+
+  
+</article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="inner">
+        <p>&copy; 2000 –
+          2025
+          Marc Wickens
+        </p>
+      </div>
+    </footer>
+
+    <script src="/static/js/compare.js" defer="defer"></script>
+    <script data-goatcounter="https://imarc.goatcounter.com/count" async="async" src="//gc.zgo.at/count.js"></script>
+
+  </body>
+</html>

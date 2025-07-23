@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-default">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>
+      ‘M1 Mac Users Report Excessive SSD Usage’
+        ·
+        iMarc
+      
+    </title>
+    
+
+    <link rel="stylesheet" href="/static/css/site.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&family=Fira+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+
+    <link rel="icon" type="image/png" href="/imarc-icon.png">
+    <link rel="apple-touch-icon" href="/imarc-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/imarc-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/imarc-icon.png">
+    <link rel="alternate" type="application/rss+xml" href="/feed/index.xml" title="iMarc RSS">
+
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="inner">
+        <a class="site-title" href="/">iMarc</a>
+        <p class="tagline">thoughts on tech • by Marc Wickens</p>
+
+        <nav class="site-nav">
+          <a href="/">Home</a>
+          <a href="/Gear/">Gear</a>
+          <a href="/archive/">All Posts</a>
+          <a href="http://marc.wickens.org.uk">About</a>
+          <a href="/riseley">Riseley History</a>
+          <!-- <a href="https://mandiandmarc.wickens.uk/">Wedding</a> -->
+
+          <form class="site-search" action="/search/" method="get">
+            <label for="search-input" class="visually-hidden">Search</label>
+            <input id="search-input" name="q" type="search" placeholder="Search…"/>
+          </form>
+
+        </nav>
+      </div>
+    </header>
+
+    <main class="content inner">
+      <article>
+  <h1>‘M1 Mac Users Report Excessive SSD Usage’</h1>
+  <p class="meta">24 Feb 2021</p>
+  <p>From <a href="https://9to5mac.com/2021/02/23/m1-mac-users-report-excessive-ssd-usage-potentially-affecting-the-components-lifespan/">9to5 Mac</a>:</p>
+<blockquote>
+<p>Some advanced users have been reporting an overuse of the SSD for writing and reading data on the newly-released Macs with M1, Apple’s first computer chip based on ARM architecture. The issue could eventually affect the lifespan of the internal SSD used in M1 Macs — not to mention the machine itself.</p>
+</blockquote>
+<p>My betting is on this being a bug in the software being used to measure SSD usage (a utility called <strong><a href="https://formulae.brew.sh/formula/smartmontools">smartmontools</a></strong> that can be installed via <a href="http://brew.sh"><strong>Homebrew</strong></a>). SSD usage seems like something that should be pretty easy to automate testing for, and so for this to be a bug would be a major omission from Apple's test suite. <a href="https://www.theguardian.com/technology/2017/nov/29/macos-high-sierra-bug-apple-mac-unlock-blank-password-security-flaw">Not impossible of course</a>.</p>
+
+  
+</article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="inner">
+        <p>&copy; 2000 –
+          2025
+          Marc Wickens
+        </p>
+      </div>
+    </footer>
+
+    <script src="/static/js/compare.js" defer="defer"></script>
+    <script data-goatcounter="https://imarc.goatcounter.com/count" async="async" src="//gc.zgo.at/count.js"></script>
+
+  </body>
+</html>

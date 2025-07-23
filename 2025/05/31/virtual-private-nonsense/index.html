@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-default">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>
+      Virtual Private Nonsense
+        ·
+        iMarc
+      
+    </title>
+    
+
+    <link rel="stylesheet" href="/static/css/site.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&family=Fira+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+
+    <link rel="icon" type="image/png" href="/imarc-icon.png">
+    <link rel="apple-touch-icon" href="/imarc-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/imarc-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/imarc-icon.png">
+    <link rel="alternate" type="application/rss+xml" href="/feed/index.xml" title="iMarc RSS">
+
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="inner">
+        <a class="site-title" href="/">iMarc</a>
+        <p class="tagline">thoughts on tech • by Marc Wickens</p>
+
+        <nav class="site-nav">
+          <a href="/">Home</a>
+          <a href="/Gear/">Gear</a>
+          <a href="/archive/">All Posts</a>
+          <a href="http://marc.wickens.org.uk">About</a>
+          <a href="/riseley">Riseley History</a>
+          <!-- <a href="https://mandiandmarc.wickens.uk/">Wedding</a> -->
+
+          <form class="site-search" action="/search/" method="get">
+            <label for="search-input" class="visually-hidden">Search</label>
+            <input id="search-input" name="q" type="search" placeholder="Search…"/>
+          </form>
+
+        </nav>
+      </div>
+    </header>
+
+    <main class="content inner">
+      <article>
+  <h1>Virtual Private Nonsense</h1>
+  <p class="meta">31 May 2025</p>
+  <p>Adverts for Virtual Private Networks (VPNs) are now a regular feature on many podcasts. A common theme I’ve noticed is the attempt to justify using a VPN by claiming that public WiFi networks are inherently unsafe without one. Take this <a href="https://podcasts.apple.com/gb/podcast/the-scent-of-humane/id918152703?i=1000709986055&amp;r=4716">recent example</a>:</p>
+<blockquote>
+<p>When you connect to an unencrypted network in cafes, hotels, airports, your online data is not secure. Someone on the same network can gain access to your information, passwords, bank logins, credit card information, and other things that you don't want in someone else's hands.</p>
+</blockquote>
+<p>This is <strong><em>absolute nonsense</em></strong>. Yes, it's true that if the WiFi network doesn't require a password to connect to, then your data will be sent in the clear and could theoretically be accessed by anyone, as made famous by the app <a href="https://en.wikipedia.org/wiki/Firesheep">Firesheep</a>. This was in 2010 however. In fifteen years since then, and the twelve years since the Snowden leaks, the vast, vast majority of websites have adopted their own encryption to protect data in transit. Even before then, any reputable site handling sensitive information (such as online banking or payment processing) was already using TLS (Transport Layer Security). In 2025 (and really for the past decade), you do not <strong><em>need</em></strong> a VPN when on public WiFi.</p>
+<p>Regardless of whether the WiFi network is encrypted, there are inherent risks in connecting to a network you can't necessarily trust. Most devices have built in firewalls to mitigate this. As long as that's switched on, you're probably going to be OK.</p>
+<p>So why would anyone use a VPN? As far as I can tell there are only three reasons why anyone would use a VPN:</p>
+<ul>
+<li>To access protected network resources — it's common for companies to require employees to be on a VPN before they can access sensitive resources as an additional security layer.</li>
+<li>To fake your location — Netflix and many other streaming platforms often offer better content in different regions, or perhaps you simply want to access BBC iPlayer while you're abroad.</li>
+<li>To conceal your IP address — for instance, if you're involved in illegal activity or working as a journalist needing anonymity.</li>
+</ul>
+<p>I would not hesitate to use online banking over Starbucks WiFi. In fact, I’d be more worried about someone peering over my shoulder than any threat from the network itself.</p>
+<p>So don’t be taken in by the scaremongering ads. The chances are, you don’t need a VPN.</p>
+<p>But if you’ve got another reason for using one, let me know in the comments below.</p>
+
+  
+</article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="inner">
+        <p>&copy; 2000 –
+          2025
+          Marc Wickens
+        </p>
+      </div>
+    </footer>
+
+    <script src="/static/js/compare.js" defer="defer"></script>
+    <script data-goatcounter="https://imarc.goatcounter.com/count" async="async" src="//gc.zgo.at/count.js"></script>
+
+  </body>
+</html>

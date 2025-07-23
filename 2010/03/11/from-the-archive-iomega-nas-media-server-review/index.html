@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-default">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>
+      Iomega NAS Media Server Review
+        ·
+        iMarc
+      
+    </title>
+    
+
+    <link rel="stylesheet" href="/static/css/site.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&family=Fira+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+
+    <link rel="icon" type="image/png" href="/imarc-icon.png">
+    <link rel="apple-touch-icon" href="/imarc-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/imarc-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/imarc-icon.png">
+    <link rel="alternate" type="application/rss+xml" href="/feed/index.xml" title="iMarc RSS">
+
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="inner">
+        <a class="site-title" href="/">iMarc</a>
+        <p class="tagline">thoughts on tech • by Marc Wickens</p>
+
+        <nav class="site-nav">
+          <a href="/">Home</a>
+          <a href="/Gear/">Gear</a>
+          <a href="/archive/">All Posts</a>
+          <a href="http://marc.wickens.org.uk">About</a>
+          <a href="/riseley">Riseley History</a>
+          <!-- <a href="https://mandiandmarc.wickens.uk/">Wedding</a> -->
+
+          <form class="site-search" action="/search/" method="get">
+            <label for="search-input" class="visually-hidden">Search</label>
+            <input id="search-input" name="q" type="search" placeholder="Search…"/>
+          </form>
+
+        </nav>
+      </div>
+    </header>
+
+    <main class="content inner">
+      <article>
+  <h1>Iomega NAS Media Server Review</h1>
+  <p class="meta">11 Mar 2010</p>
+  <p><img src="/wp-content/uploads/2024/04/iomega-nas.png?w=244" alt=""></p>
+<p>I have a lot of media on my various computers: music, photos, videos, and the like, but I’ve never found a satisfactory way of storing them all. My solution was to put them on my main laptop, which has a large hard disk, and then share the folders to my other laptop and Xbox 360. This is fine, except I tend to reformat my laptop quite often, and I don’t keep it on all the time at a desk. Instead, it’s packed away in its bag when not in use, making playing some music from my Xbox a bit of a hassle. So I decided a NAS box was what I needed. My only consideration really was price; I really don’t care about speed since most of the time I’ll be using 802.11g to access the files, and so the Iomega 1TB drive is what I picked. It cost £120 from PC World, which I thought was good value. I’d read a few reviews, but since those reviews, Iomega has released a new firmware (which came preinstalled on mine), and so a lot of the drawbacks have been addressed.</p>
+<p>I have to say, I am very impressed. The drive is fully accessible via SMB, meaning the software that comes with the drive is not essential (I only needed to install it once to find out what IP address my DHCP server had assigned it). The drive is actually a very small computer (probably running Linux, though I can’t be sure), and so it offers extra functionality. So-called “Live Folders” allow you to create a folder that’s contents get uploaded to Facebook, YouTube, or resized, for example. The NAS box can also act as a BitTorrent client, but unfortunately, it can’t be set to download a large file over FTP/HTTP. The device is also an iTunes server as well as a DLNA server (this is an open standard that the Xbox 360 uses to stream music and video over a LAN). If only TV shows purchased from iTunes didn’t have DRM, I’d buy a few, since being able to download a series of 24 straight to this device and watch it on my Xbox would be amazing. Still, having all your media always available via Media Centre/Xbox/iTunes is great.</p>
+<p>The downsides to this device are that the hard disk appears to be FAT32 (according to another review I read) – this means it’s not journaled and in the event of a power cut, the drive/data could be corrupted. There is only one hard disk, and 1TB of data is a LOT of data to be held at the whim of someone spilling something on it or a cat knocking it over, so I will still be keeping the stuff I value most in two places. Anyone wanting a proper backup solution rather than a media server solution would be wise to get something that has RAID. It’s also quite noisy and doesn’t spin down the hard disk when it’s not in use.</p>
+<p>Overall, I am pleased with this purchase and would recommend this media server to others looking for a good value solution.</p>
+<h2>Update</h2>
+<p>I found the following information in the manual that states the drive actually uses the XFS file system, which was one of the first journaled file systems. Hooray!</p>
+<blockquote>
+<p>The Home Media Drive shares files using the SMB (Server Message Block) protocol and stores its files on XFS (built-in), FAT32 (external), and NTFS (external) hard drives.</p>
+</blockquote>
+<p>I didn’t mention this before, but you can also plug in a USB drive and share it, or you can plug in a USB printer and then share that instead. Shame there’s no SSH access, however. :)</p>
+
+  
+</article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="inner">
+        <p>&copy; 2000 –
+          2025
+          Marc Wickens
+        </p>
+      </div>
+    </footer>
+
+    <script src="/static/js/compare.js" defer="defer"></script>
+    <script data-goatcounter="https://imarc.goatcounter.com/count" async="async" src="//gc.zgo.at/count.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-default">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>
+      iMarc
+      
+    </title>
+    
+
+    <link rel="stylesheet" href="/static/css/site.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&family=Fira+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+
+    <link rel="icon" type="image/png" href="/imarc-icon.png">
+    <link rel="apple-touch-icon" href="/imarc-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/imarc-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/imarc-icon.png">
+    <link rel="alternate" type="application/rss+xml" href="/feed/index.xml" title="iMarc RSS">
+
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="inner">
+        <a class="site-title" href="/">iMarc</a>
+        <p class="tagline">thoughts on tech • by Marc Wickens</p>
+
+        <nav class="site-nav">
+          <a href="/">Home</a>
+          <a href="/Gear/">Gear</a>
+          <a href="/archive/">All Posts</a>
+          <a href="http://marc.wickens.org.uk">About</a>
+          <a href="/riseley">Riseley History</a>
+          <!-- <a href="https://mandiandmarc.wickens.uk/">Wedding</a> -->
+
+          <form class="site-search" action="/search/" method="get">
+            <label for="search-input" class="visually-hidden">Search</label>
+            <input id="search-input" name="q" type="search" placeholder="Search…"/>
+          </form>
+
+        </nav>
+      </div>
+    </header>
+
+    <main class="content inner">
+      
+
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2023/10/13/why-is-my-apple-watch-not-charging-to-100/">Why Is My Apple Watch Not Charging to 100%?</a></h2>
+  <p class="meta">
+    <time datetime="2023-10-13T10:31:27.000+00:00">13 Oct 2023</time>
+  </p>
+
+  <p>Apple have recently introduced a new featured called &quot;Optimized Charge Limit&quot; which aims to lengthen the lifespan of the battery embedded within an Apple Watch:</p>
+<p>From Apple's support pages:</p>
+<blockquote>
+<p>With watchOS 10, this feature is available on Apple Watch SE, Apple Watch Series 6 and later, and Apple Watch Ultra and later. Optimized Charge Limit learns from your daily usage to determine when to charge to an optimized limit and when to allow a full charge. Optimized Charge Limit is on by default when you set up your Apple Watch.</p>
+<p><a href="https://support.apple.com/en-us/HT213338">Apple support documentation</a></p>
+</blockquote>
+<p>The feature builds on the existing optimised charging feature found on the Apple Watch and most <a href="https://imarc.co.uk/2020/06/23/airpods-now-less-disposable/">other Apple devices</a>. Now though, if the watch notices that you typically only use, say 30% of the battery capacity on a daily basis, but still charge it every night, then instead of charging it to 100% it might stop short at say, 70% instead. Lithium iron batteries don't like to be charged above 80% or below 20%. Doing so frequently will shorten the lifespan of batteries, making a <a href="https://imarc.co.uk/2022/10/13/how-a-battery-replacement-left-my-apple-watch-obsolete/">dreaded replacement</a> necessary.</p>
+<p>Hopefully the algorithm employed by Apple is smart enough to work out your routine, and so if it notices you usually go for a long run on a Tuesday morning then it will give you a full charge the night before.</p>
+<p>This is a much needed new feature as the tiny batteries in Apple Watches are more prone to the effects of aging than larger devices. Their small capacity means a slight decrease in capacity will have a notable effect, and also mean users are likely complete a greater number of charge cycles over a shorter time than on say an iPhone or MacBook.</p>
+<p>That said, the feature is it is perhaps not <em>visible</em> enough. Various technical support forms and subreddits have been flooded with people who think their watch is malfunctioning. As is often the case with Apple, you are probably best off simply not looking at the battery meter and just using the watch. If you do notice the battery is not fully charged but think you might need it to be, the support document details how to temporarily disable the feature (note, you need follow the instructions while the watch is connected to power).</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2023/10/11/now-in-the-fediverse/">Now in the Fediverse</a></h2>
+  <p class="meta">
+    <time datetime="2023-10-11T18:34:51.000+00:00">11 Oct 2023</time>
+  </p>
+
+  <p>Wordpress <a href="https://wordpress.com/blog/2023/10/11/activitypub/">have enabled support for ActivtyPub</a>. So you can now follow this blog on platforms such as Mastodon by searching for <strong><em>imarc.co.uk@imarc.co.uk</em></strong> - let me know if it works by replying to this post.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2023/10/09/microsoft-to-discontinue-visual-studio-for-mac/">Microsoft to Discontinue Visual Studio for Mac</a></h2>
+  <p class="meta">
+    <time datetime="2023-10-09T17:02:20.000+00:00">9 Oct 2023</time>
+  </p>
+
+  <p>In a disappointing move, Microsoft have <a href="https://devblogs.microsoft.com/visualstudio/visual-studio-for-mac-retirement-announcement/">discontinued Visual Studio for the Mac</a>. This comes not long after they <a href="https://visualstudiomagazine.com/articles/2022/05/25/vs-2022-for-mac-ga.aspx">rewrote</a> the user interface to be faster and more fluid using native frameworks. Given the depressing state of Windows these days, the lack of a full-featured IDE does not bode well for the long-term future of .NET and other related technologies. For many years, Windows has seemed stuck in limbo. Adding pointless features like Dark Mode, but still with nowhere near the number of productivity features Mac users take for granted. I had considered VS for Mac somewhat if a lifeboat for .NET developers wanting jump ship from Microsoft's <a href="https://www.theguardian.com/technology/blog/2011/feb/09/nokia-burning-platform-memo-elop">burning platform</a>.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2023/10/08/watchos-10-peaks-and-troughs/">watchOS 10: Peaks and Troughs</a></h2>
+  <p class="meta">
+    <time datetime="2023-10-08T06:00:00.000+00:00">8 Oct 2023</time>
+  </p>
+
+  <p><img src="/wp-content/uploads/2023/10/watchos-10.png?w=1024" alt=""></p>
+<p>Another year and <a href="https://imarc.co.uk/2020/09/27/watchos-7-after-five-years-the-apple-watch-is-hitting-its-stride-but-at-what-expense/">another update</a> to the venerable operating system that runs on millions of watches is here. This time though, it’s a mixed bag. It’s easy for us technology enthusiasts become complacent about the fact we get new features released each year for ‘free’. There is though unwritten contract between Apple and its user base that these free updates won’t regress the product that was originally purchased. Unfortunately that’s not the case with watchOS 10. While there are some fantastic new features, the overall quality appears to have dropped significantly.</p>
+<p>Let’s start with the good. The new design is a welcome change. Having dropped the original 42/38mm watches, Apple have been able to stretch their design muscle and rethink many of the core apps. Stalwarts like Activity (which incidentally has not been renamed to Fitness like its iOS sibling - <a href="https://imarc.co.uk/2021/02/18/squashing-services-into-apps/">a plus in my view</a>) now look much more modern, though there is still no way to see a map of a run or cycle on the watch itself - surprising considering the Apple Watch has shipped with a maps app since day one. The Fitness app remains the same, but now asks for confirmation when ending a workout. After eight years of not requiring one and having recorded workouts nearly every day of those eight years, this will definitely take some getting used to. The Weather app looks great, taking inspiration from its iOS counterpart. Overall, Apple have done a fantastic job with the new design.</p>
+<p>My favourite new feature is <em>widgets</em>. It’s now possible to scroll the digital crown or swipe up from the main watch face and see a list of customisable widgets. The nicely solves the problem of watch faces being severely limited with space and the fact that many of the nicest looking watch faces don’t have many complication slots. It’s essentially the Siri watch face available all of the time with a simple gesture. In fact, I’m surprised the Siri face is still available as it seems unnecessary now. The downside is it requires two hands to operate, and so it’s not as convenient as a standard complication would be.</p>
+<p>At long last we have some decent new watch faces. For the past few years the new offerings have been hit and miss. It’s as if Apple sends all its junior designers on day one to the watch face division. Well those junior designers have finally graduated. The new Solar Analogue and Palette faces are beautiful, and sit well along alongside some of the original classics such as Solar and Astronomy.</p>
+<p><img src="/wp-content/uploads/2023/10/cycle-computer.jpeg?w=1024" alt="an iPhone showing running metrics during a cycle workout. "></p>
+<p>Another useful new feature is that when recording a cycling workout, your phone can be used to display metrics from the workout. File this under “totally obvious” because in hindsight, it is. In hindsight, of course. This is Apple at its best. Trying to look at a watch when cycling isn’t easy, and can often be downright unsafe! Now, thanks to the seamless integration between watchOS and iOS, an Apple Watch Series 4 purchased in 2018 can now be a full on cycle computer at no extra cost.</p>
+<p>But I said it wasn’t all good. The biggest problem has been battery life. With watchOS 9 on my Series 8, I would typically end the day at 50% on those days when I did short workout (30mins), but with watchOS 10 it’s been down to 20%. “That’s OK” I hear you say “As long as you get through the day, that’s all that matters right?”. Wrong. It’s not acceptable for an update to regress the original capabilities of the hardware. If it was possible to get two full days from the watch, then it should be with the new update (<a href="https://imarc.co.uk/2022/10/13/how-a-battery-replacement-left-my-apple-watch-obsolete/">battery aging</a> and expected reduction in capacity notwithstanding). When I cycled around the Isle Of Wight earlier this year, I took for granted the watch could deal with a day of cycling. I often run for multiple hours at a time. I want to know the watch can cope with what I paid for it to do in the first place. With watchOS 10, I’m not so confident any more. I’m sure it’s a bug, and it will be fixed in due time, but the fact Apple didn’t spot and fix it before the release is extremely disappointing. I’ve been able to mitigate the issue somewhat by removing features such as the Weather complication and disabling background refresh for all apps. Still, I wonder if the QA department have been focusing too much on Vision Pro lately instead of the watch!</p>
+<p>Playing media now seems unnecessarily complicated. Before it was clear whether you were playing a song or podcast on the watch or from your phone. Now when I navigate to the “Dowloaded” section and choose a podcast, it plays on my phone! I hope it’s a bug and will be fixed. I’m not sure in what world Apple thought someone would want to play audio from their phone via the watch by default. The only way to stop it doing this was to walk out of bluetooth range of my phone and then try to play the podcast again. A common scenario for me is selecting a podcast before a run. Now a task that took a couple of taps is going to take a lot of fiddling with Bluetooth settings. This is another example of poor quality and lack of testing. (If it is indeed a bug, if not then it is an astonishingly poor reading on how customers actually use their devices)</p>
+<p>If Apple could fix the rough parts, I would recommend upgrading to watchOS 10. Right now, I wish I’d held off. I suspect after a couple of months have passed, Apple will iron out the rough bits and fix the bugs. So if you’ve not yet upgraded, I’d recommend waiting. If you have an Apple Watch Ultra but rarely use it for ultra marathons, then you might be OK with the reduced battery life. This time last year, watchOS was still the newest of Apple’s computing platforms. Now though there’s a new kid on the block: visionOS. It will be interesting to see how much attention the Apple Watch gets going forward. I’m not particularly enthused about the prospect of wearing an M1 Mac on my face, and at the current price, I won’t be trying Vision Pro for many years. The Apple Watch is still the computer that is with you all of the time and the only computer that directly senses your body. For me at least, it’s still the most exciting of Apple’s platforms.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2023/05/21/cutting-though-the-ai-hype/">Cutting Though the AI Hype</a></h2>
+  <p class="meta">
+    <time datetime="2023-05-21T08:24:18.000+00:00">21 May 2023</time>
+  </p>
+
+  <p><img src="/wp-content/uploads/2023/05/ai-hype.png?w=819" alt="An imaginary prog-rock album cover whose theme is AI"></p>
+<p>There is so much hyperbole about Large Language Models (LLMs) in the media right now that I'm finding it can be overwhelming, and I am someone who works in the field of AI! From claims that <a href="https://imarc.co.uk/2020/08/05/transparency-in-ai/">AI</a> will put people out of jobs to claims that it will takeover and enslave the human race, it's difficult to know where to start. Some say AI should be regulated now, others are happy to let the &quot;free market&quot;<a href="#notes">1</a> take its course. It's not easy to navigate, especially when many of the people with strong opinions have their own agendas. This post is really an attempt to briefly answer many of the questions I've asked myself over the past few weeks.</p>
+<h2>What’s Changed and Why Now?</h2>
+<p>What's changed is that recent years the neural networks that power many of the previous generation speech to text and language classification models have gotten a lot better. Not because they evolved by themselves, but because engineers and mathematicians made them better. In the case of text generation, this means GPT-3.5 and 4 are uncannily good at predicting the next set of words for a given prompt. Text to image models like Midjourney and Stable Diffusion are now able to predict a set of pixels that can resemble a photo-realistic image from a text prompt. In the case of Open AI and ChatGPT, there has been some genuinely mind-blowing innovation. I'm more sceptical of Microsoft, who after decades of being seen as a laggard behind Google and Apple in every industry they enter, seem a little <em>too keen</em> to plug Open AI into all of their products. Still, there is a big PR push from both companies, and Microsoft is a big investor in Open AI. What's new therefore is a breakthrough in the mathematical models which link training samples to prediction. Given the amount of money invested, it's now time to monetise, secure more investment and/or research funding.</p>
+<h2>Will It Turn Against Humans and Take Over the World?</h2>
+<p>A common refrain among many skeptics of AI is to make the analogy between humans and other animals on Earth. We have used our intelligence to dominate all other species and decimate the planet. Wouldn't a more intelligent being do the same to humans? It's a convincing argument but I'm not sure that the likes of Stable Diffusion and ChatGPT or their successors should worry us. In fact, I think the way in which we see these statistical models today will be akin to how some people in the 1950s saw the &quot;electronic brains&quot; that we now call computers. Mysterious and magical. Frightening. There are two reasons I am not worried. Firstly, I cannot see how the ability to predict the next word in a sentence or the pixels that make a convincing image equate to intelligence in the human sense, or anything beyond human intelligence. Even if we assume that the breakthroughs in language prediction will also be possible in other areas of life (politics, art, engineering) it's still simply providing predictions from a given input. What I can see, and think we've already seen to a certain extent already is how AI might disrupt our society. The way in which the <a href="https://imarc.co.uk/2023/02/04/sorting-by-date-is-also-an-algorithm/">algorithms</a> that run social media have damaged our democracy by convincing vast swathes of the population on both the <a href="https://www.theguardian.com/books/2021/jul/17/social-warming-by-charles-arthur-review-a-coolly-prosecutorial-look-at-social-media">left and the right to believe in nonsense science and conspiracy theories</a> is an obvious example of this. But there is no drive, agency or consciousness behind the AI. The second reason is history and our even current political climate tells us that intelligence is not something we should necessarily fear. Take a few examples of individuals who've caused damage to humankind in in the past. Trump, Putin, Hitler, Pinochet. I could go on. None of them are known for their raw intelligence. Charisma and ruthlessness perhaps. They manage to co-opt other intelligent people on to work their behalf. The most intelligent human beings from Einstein, Galileo and Lovelace to Lennon and McCartney are not the ones we need to worry about. I'm far more concerned about humans who have average intelligence and <a href="https://en.wikipedia.org/wiki/Napoleon_complex">Napoleon complex</a>, and have access to nuclear weapons than I am super intelligent AI.</p>
+<h2>Will We All Be Out of Jobs?</h2>
+<p>Unfortunately I am not as optimistic on this one. I can easily see jobs like copywriting and graphic design being disrupted at the junior level. We've already seen <a href="https://www.theverge.com/2023/5/15/23724102/sarah-j-maas-ai-generated-book-cover-bloomsbury-house-of-earth-and-blood">an NYT Bestseller using AI generating artwork on its cover</a>. We're all told not to judge a book by its cover, but let's face it, we all do. In this case the AI generated image was listed in a stock image library alongside other human generated images, so I doubt the choice was conscious. It was also heavily modified by a human. You have to ask if the author cared so little about the cover of their book that they were happy for a stock image to be used, rather than commission an artist themselves, is there really any loss? They didn't want to pay much for the images in the first place. But somewhere, someone would have been paid something to make that image, and it hasn't happened this time. That junior designer would need to work on small jobs like this in order to get the experience and skills to go on to move up in their profession. How will they do that now? The problem I see is that with AI taking the low-end, basic work away from these professions, how does a human work their way up? On the other hand, the pocket calculator allowed mathematicians, accountants and engineers to focus on bigger problems and have the gruntwork done for them. Anyone gifted at maths can still find a well paid job, despite the fact we've had powerful calculators in our pockets for 50 years. Perhaps the same will be true of writing and graphic artistry. The bottom line is, these large models can only generate was is akin to a statistical average of what is already on the Internet. If it was perceived wisdom that the word was flat, GPT-4 would reliably tell us that the world was flat. GPT-4 has no mechanism to generate anything else and nor will its successors.</p>
+<p>What about other jobs? Programming is often cited as being at risk from GPT, because it can generate code. Yet, I have yet to have it generate anything I couldn't have found by searching on Google and finding the first result on StackOverflow. When I asked it to write an application to covert files from one format to another, it told me it didn't know enough about their implementation, despite them being both public documented on the Internet. Impressive that it &quot;knew&quot; what it didn't &quot;know&quot; (I wish more developers were like that!). The jury is out, but I am not as worried about software developers all loosing their jobs because I know just how difficult software development can be, even for humans with 30+ years of experience. Implementing a variation on a well known algorithm in the abstract is one thing, but integrating it into existing business domains, data structures, user interfaces and architectures is something else entirely.</p>
+<h2>In Summary</h2>
+<p>I find it hard to get excited about the likes of GPT and Midjourney because I find them emblematic of a tech industry that has lost its way. If someone were to have suggested 20 years ago that we should build a mathematical model that can crawled web pages as an input, and then autocomplete text and images as an output, and that it could likely spread misinformation and put journalism and other important professions at risk, we would have collectively responded with a resounding &quot;Nope.&quot; While I am intrigued that we may have stumbled across a deeper mathematical theory of language, if only by chance, I am not <em>yet</em> excited by the potential utility of such models. Beyond that, I am disappointed that in a world where many people still struggle feed themselves, that is heading for a climate disaster, and where many populist leaders are coming to power, technology - something that was always a cause for optimism when I was growing up in the 90s/2000s - looks likely to make it worse, not better.</p>
+<h2>Notes</h2>
+<ol>
+<li>The free market of course, <a href="https://www.penguin.co.uk/books/187172/economics-the-users-guide-by-chang-ha-joon/9780718197032">doesn't exist</a>, and is generally a euphemism for 'what <em><strong>I</strong></em> want the rules to be in order to suit <em><strong>me</strong></em>'.</li>
+</ol>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2023/04/16/in-praise-of-apple-music-yes-the-mac-app/">In Praise of Apple Music (Yes, the Mac App)</a></h2>
+  <p class="meta">
+    <time datetime="2023-04-16T18:11:03.000+00:00">16 Apr 2023</time>
+  </p>
+
+  <p>Apple Music has a poor reputation these days. I’m not talking about the music streaming service here, nor the iOS apps that share the same name. I’m talking about the 22 year old application formally known as iTunes. You see it’s the same application really, only with a new name and a fresh coat of paint. Squint a bit, or rather go to the Songs view and turn on Column Browser, and you will see it for what it really is. iTunes with slightly different icon and all of the video and podcast bloat removed.</p>
+<p>Having been around since <a href="https://youtu.be/_5-BIPybAOI?t=3193">January 2001</a>, in many places it really shows. When compared to more modern applications that come bundled with macOS, such as the nine-year old Photos app, and unlike Apple Music for iOS Apple Music for Mac retains many of it’s power user features and can be used to manage a local music library effectively, if that’s something you still want to do.</p>
+<p><img src="/wp-content/uploads/2023/04/itunes1.png" alt=""><img src="/wp-content/uploads/2023/04/ituneslatest.png" alt=""></p>
+<p>Apple Music retains most of the features from the heyday of iTunes</p>
+<p>Yes, it does have many annoying bugs and could certainly do with some investment in the QA department. But thankfully it still has many ‘power user’ features that I admire, and I’m grateful for this. Apple Music is able to still, believe it on not, rip CDs to MP3 or AAC and will still fetch CD metadata from the venerable Gracenote CDDB service. This may sound arcane, but <a href="https://immersiveaudioalbum.com/the-surround-sound-series-xtc-5-1-surround-sound/">some music is only available on CD</a>. (As a more general point, if you’re limiting your music discovery to what’s available on streaming services, you should definitely expand your horizons. Even the old iTunes Store has a much wider range, and streaming - especially Spotify, <a href="https://jwillgoose.tumblr.com/post/675168562108858368/streaming-payment-rates-there-has-been-a-lot-of">is notoriously bad for artists</a>.) Once ‘ripped’, the songs are uploaded into <a href="https://support.apple.com/en-gb/HT204146">iTunes Match</a> and are available on all of my devices, including my <a href="https://imarc.co.uk/2022/01/16/has-time-been-kind-to-the-apple-watch/">Apple Watch</a>. Apple Music also allows me manually select which albums I want to keep locally, unlike the Photos app. I can also see the status of both uploads and downloads, again unlike Photos. Best of all, I can manually remove local copy of songs stored in the cloud in order to free up space on my Mac. Yet again, such a basic function is not provided by Photos. In addition, I can easily backup my music collection using the Finder, and the data will travel across different filesystems (no special, Mac-only bundle files). Best of all, Apple Music is able to mostly, seamlessly meld my offline library, tracks synchronised via iTunes Match, and songs added from Apple's music subscription service into one seamless library. It even allows me to create a &quot;Smart Playlist&quot; which can catalog songs based on whether they are rented through Apple Music, or fully owned, as well as countless other criteria such as Genre, Artist, Play Count (which incidentally, includes plays from all of my other devices), File Size, File Type, Date Added, Last Played, Composer, Year Released, and even how many times I've skipped a song. Yes, I could create a playlist of my most skipped songs. How's that for a <a href="https://en.wikipedia.org/wiki/Desert_Island_Discs">desert island disc</a>?</p>
+<p>So while it's not perfect, I'm glad Apple haven't released some half-arsed rewrite of Apple Music focused on flogging their subscription. iTunes lives on for now, if not in name, then in spirit.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2023/02/04/sorting-by-date-is-also-an-algorithm/">Sorting by Date Is Also an Algorithm</a></h2>
+  <p class="meta">
+    <time datetime="2023-02-04T13:51:58.000+00:00">4 Feb 2023</time>
+  </p>
+
+  <p><img src="/wp-content/uploads/2023/02/evil-algorithm.png?w=1024" alt=""></p>
+<p>It's a common refrain in tech circles when discussing Twitter to talk about &quot;The Algorithm&quot;. Take this Lifewire article: <em>&quot;<a href="https://web.archive.org/web/20190613224737/https://www.lifewire.com/how-to-use-twitter-timeline-algorithm-4174499">How to Turn off the Twitter Timeline Algorithm</a>&quot;</em>, or this one by TechCrunch: <em>&quot;<a href="https://techcrunch.com/2023/01/11/twitter-makes-algorithmic-timeline-default-on-ios/?guccounter=1&amp;guce_referrer=aHR0cHM6Ly9kdWNrZHVja2dvLmNvbS8&amp;guce_referrer_sig=AQAAADCeaYUdBR1NNtjFLiP1nDMAgJItWZoj9bndqsKR3oXUleBopWE6Otoiap6zWxOEpHlPsT8fLSpym8gNJU7xqwacnEmE8WOTeVMukbNMjJxJ4ETjCKZ1pUEZ-KZtJ-lQbH2ZIgNdjmDeREqLsrdepwIqtp8vBB1dOKPDy2XQePCN">Twitter makes algorithmic timeline default on iOS</a>&quot;</em>.</p>
+<p>In the beginning the Twitter timeline was a simple list of posts by people you follow sorted by date descending. In 2013 Twitter introduced a new timeline that wasn't so transparent. It was seemingly designed to optimise for engagement. All of a sudden, people were seeing posts from people they didn't follow, or that were posted days ago and for some reason had been boosted by the algorithm.</p>
+<p>The point is, both the classic timeline and the &quot;algorithmic&quot; timeline are both in fact <em>algorithmic</em>. In fact, the first algorithm taught in computer science is often the <a href="https://www.bbc.co.uk/bitesize/guides/zjdkw6f/revision/4">Bubble Sort</a> algorithm. It's still an algorithm! In the case of Twitter, or its upcoming rival Mastodon, sorting by date may be a preferable, but there are possibly downsides too. Prioritising something because it happens to have been posted recently is a form of <a href="https://en.wikipedia.org/wiki/Recency_bias">Recency bias</a> after all. The key seems to be <a href="https://imarc.co.uk/2020/08/05/transparency-in-ai/">transparency</a>.</p>
+<p>So enjoy your favourite algorithm, and remember, they're not all bad.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2023/01/22/microsoft-onedrive-causing-sleepless-nights/">Microsoft OneDrive Causing Sleepless Nights (on My Mac)</a></h2>
+  <p class="meta">
+    <time datetime="2023-01-22T17:11:58.000+00:00">22 Jan 2023</time>
+  </p>
+
+  <p><img src="/wp-content/uploads/2023/01/laptop_sleep.jpg?w=1024" alt=""></p>
+<p>My M1 Mac mini has been sleeping dreadfully recently. Perhaps it's the thought of one day having <a href="https://mjtsai.com/blog/2022/12/27/ventura-issues/">macOS Ventura</a> installed on it, or the knowledge that its younger <a href="https://www.apple.com/uk/newsroom/2023/01/apple-introduces-new-mac-mini-with-m2-and-m2-pro-more-powerful-capable-and-versatile-than-ever/">M2 brethren</a> beats it in both <a href="https://www.tomsguide.com/news/mac-mini-m2-pro-first-benchmark-scores-are-in-this-is-big">performance</a> and <a href="https://twitter.com/felix_schwarz/status/1616365408356818945">power efficiency.</a> Or perhaps, it was something else altogether.</p>
+<p>I could tell it wasn't sleeping due to the fact the attached USB storage would endlessly spin up and back down during the day; the Mac min sits under my desk while I work all day on my laptop. One time while it was supposedly asleep and idle, I went to plug a device into it, and could feel the fan blowing out hot air from the back. It wasn't sleeping at all.</p>
+<p>Thanks to an app called <a href="https://ohanaware.com/sleepaid/">Sleep Aid</a>, I was able to verify that my Mac was indeed struggling to get to sleep. Even when I put it to sleep manually, it would quickly wake up and not go back to sleep again. Sleep Aid helpfully lists the processes that were active during time awake. In my case, the most active process was something called &quot;<strong>com.apple.FileProvider.cache-delete.push</strong>&quot;.</p>
+<p>Armed with this information, I did what any self proclaimed nerd would do; I Googled it. To my surprise, there were barely any hits. Some posts relating to Android, <a href="https://developer.apple.com/forums/thread/715229">one</a> on the Apple Developer forum about a bug with the File Provider API, but it didn't seem related. I was stumped. Sam Rowlands, the developer behind Sleep Aid reached out to me on Twitter and offered to check that Sleep Aid itself wasn't misreporting what I was seeing. It was not.</p>
+<p>Eventually I stumbled across a WWDC video on the File Provider API, and decided to watch it. It dawned on me that this is the API Apple makes for services such as Dropbox and Microsoft OneDrive to use. For years, Dropbox and OneDrive have been using various unofficial hacks in order to integrate with the Finder. In 2019, Apple released the File Provider API and <a href="https://help.dropbox.com/installs/macos-faqs">gradually</a> the third party cloud sync providers have been moving to it ever since.</p>
+<p>Apart from Apple's own iCloud Drive, I only had Microsoft OneDrive installed. <strong>I promptly deleted the OneDrive app and since then, my Mac has not had any bouts of insomnia due to com.apple.FileProvider.cache-delete.push</strong>. Problem solved.</p>
+<p>My guess is that because I had OneDrive set <strong>not</strong> to run on system startup, and I had the OneDrive sync directory on an external hard drive, somehow the push notifications that Apple sends to indicate a file has changed were getting stuck. Perhaps OneDrive is supposed to say &quot;I've got the file, you can go back to sleep&quot; but wasn't able to do so.</p>
+<p>My Mac still spends a lot of the time it is supposed to be sleeping awake, but this seems to be common in M1 Macs. Thankfully now it does go to sleep for around 40% of the time instead of 0%, helping avoid needlessly wasting energy.</p>
+<p>So if you've got a Mac that won't sleep, I recommend grabbing a copy of Sleep Aid to help find the culprit.</p>
+<p><em>Title image generated by Stable Diffusion using the prompt &quot;a man sitting at a laptop falling asleep in a dark room at night, Cinematic&quot; (with some edits).</em></p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2023/01/22/my-first-gadget-the-the-oregon-scientific-am-080c-34kb/">My First Gadget: The Oregon Scientific AM-080C 34KB</a></h2>
+  <p class="meta">
+    <time datetime="2023-01-22T17:11:42.000+00:00">22 Jan 2023</time>
+  </p>
+
+  <p>https://www.youtube.com/watch?v=PUN5aKdxC3Q</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2022/12/11/amazons-echo-into-the-void/">Amazon’s Echo Into the Void</a></h2>
+  <p class="meta">
+    <time datetime="2022-12-11T12:35:36.000+00:00">11 Dec 2022</time>
+  </p>
+
+  <p>From <a href="https://www.businessinsider.com/amazon-alexa-job-layoffs-rise-and-fall-2022-11?r=US&amp;IR=T">Business Insider</a>:</p>
+<blockquote>
+<p>The vast majority of Worldwide Digital's losses were tied to Amazon's Alexa and other devices, a person familiar with the division told Insider. The loss was by far the largest among all of Amazon's business units and slightly double the losses from its still nascent physical stores and grocery business.</p>
+</blockquote>
+<p>I recall back in the summer of 2017 meeting with some senior marketing executives who worked for a multinational fashion and beauty company. We were there to talk about AI. Voice was central to the discussion. In a few years, it seemed inevitable to most people in the room that voice would be an important “touch point” for consumers wanting to interact with their brands. I felt slightly more cautious, though was easy to get wrapped up in the hype. I always imagine a simple task of ordering a meal in a restaurant. It’s far easier to peruse a menu with your eyes, than to have the waiter read you a list of what they have available to order while you try and remember and make a decision in a reasonable amount of time. In general I subscribe to the view that AI is an accelerator for human-like skills and interactions. It can speed up and automate tasks that humans do, but if those tasks don’t already make for a great experience, then AI by itself won’t make it better, unless speed and accuracy are the cause of the poor experience.</p>
+<p>Alexa suffers from this “restaurant problem”. While modern Natural Language Understanding capabilities are very good, they haven’t progressed at the rate it seemed they would back in 2017. This makes Alexa great for simple commands like setting timers and playing music, but useless for anything for more substantial. A common misconception with systems such as Alexa and Apple’s Siri is that they generate the answers using AI. They don’t. Generative AI systems do except (See GPT3 and <a href="https://en.wikipedia.org/wiki/ChatGPT">ChatGPT</a>), but they cannot be trusted to provide accurate answers and because they are trained based on crawling the internet, they are unable to generate answers that require knowledge or recent or future events. ChatGPT won’t be able to tell you the weather tomorrow, and it won’t be able to tell you what time your local supermarket opens. Instead, systems like Alexa and Apple Siri use a form of text classification. After the sound waves from your voice are converted into symbols (letters and numbers) and those symbols are then converted into words, they take this sentence you uttered and classify it into one or more intents. The intent that scores the highest probability from the machine learning model is the one Alexa will presume was your actual intent. That’s why when I recently asked Alexa “<em>At what temperature should I hang washing outside?</em>” it thought I was was asking for a weather forecast. Someone at amazon has to have created that intent and fed the ML model with example utterances for it to be able to detect it. These systems cannot understand intents they haven’t been trained on. Once the assistant knows your intent, the next task is to extract any parameters from your utterance. Examples would be the date and location in the phrase “_Will it rain in Newport next wee_k?”. Once your voice assistant knows your intent and any parameters, it will then perform some kind of logic based on that intent. This is where the AI and machine learning typically stops. If the intent was asking the weather, then the next step would be to query a weather API. If it was to send a message to someone, then it would be to to start whichever process it used to send messages on your device. Of course the weather API itself may use AI or machine learning to predict the weather, but that is totally separate and no different to a weather presenter telling you the same forecast on the TV. This approach is extraordinarily useful for many things: most chatbots and voice assistants work like this. For people who can’t see, or find it difficult to use a touchscreen or mouse, they provide invaluable ways to interact with computing devices.</p>
+<p>I use Siri all the time to set reminders, timers and to control my lights. What Alexa and Siri are not so good at is deep and meaningful conversation. This is where it seems Amazon’s hope that Alexa might one day be a shopping destination falls short. When you have a device that is centred around a conversational user experience, it will hit a wall due to current technical limitations and the fact that for many people, speaking is less efficient that using a smartphone when they need to both receive and provide information to complete the task. The fact that Amazon seemingly has no way to monetise Alexa means the experience has been gradually getting worse. Now when I ask it the weather, it responds with the forecast - great - but then immediately starts telling me I can order groceries from it as well. Ads like this are infuriating and a sign of desperation from Amazon.</p>
+<p>So were we foolish to think the future of human computer interaction will be voice? No. I think in the long term, when devices are advanced enough to provide human level, meaningful conversation then there is no doubt in my mind that voice will be the one of primary user interfaces we use for <em>some</em> tasks at least. When I ask ask Alexa to order the precise groceries I want and have the confidence to know it will work, and that the device will be capability to ask me for confirm anything its unsure about then maybe I can see it working. But I still can’t help thinking that humans like to see as well as hear things, especially when it comes to making choices. Voice is great for issuing commands and receiving quick updates, but your voice assistant starts talking for more than about 20 seconds, then it’s usually quicker to glance down at a screen and see a text or graphical representation.</p>
+<p>I think the future is bright for voice assistants like Siri because they complement alternative user interfaces and are part of a deep ecosystem, and so can integrate with health, home automation, contacts and other information users have provided. Voice based AI is also making large strides in call centres. Unless Amazon changes tact, the Amazon Echo however with its limited ecosystem will remain glorified clock radios for a while longer.</p>
+
+</article>
+<hr>
+
+
+
+<nav class="pagination-links">
+  <a href="/page/3/">Older&nbsp;Posts &rarr;</a> 
+</nav>
+
+
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="inner">
+        <p>&copy; 2000 –
+          2025
+          Marc Wickens
+        </p>
+      </div>
+    </footer>
+
+    <script src="/static/js/compare.js" defer="defer"></script>
+    <script data-goatcounter="https://imarc.goatcounter.com/count" async="async" src="//gc.zgo.at/count.js"></script>
+
+  </body>
+</html>

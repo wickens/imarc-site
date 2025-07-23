@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-default">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>
+      iMarc
+      
+    </title>
+    
+
+    <link rel="stylesheet" href="/static/css/site.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&family=Fira+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+
+    <link rel="icon" type="image/png" href="/imarc-icon.png">
+    <link rel="apple-touch-icon" href="/imarc-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/imarc-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/imarc-icon.png">
+    <link rel="alternate" type="application/rss+xml" href="/feed/index.xml" title="iMarc RSS">
+
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="inner">
+        <a class="site-title" href="/">iMarc</a>
+        <p class="tagline">thoughts on tech • by Marc Wickens</p>
+
+        <nav class="site-nav">
+          <a href="/">Home</a>
+          <a href="/Gear/">Gear</a>
+          <a href="/archive/">All Posts</a>
+          <a href="http://marc.wickens.org.uk">About</a>
+          <a href="/riseley">Riseley History</a>
+          <!-- <a href="https://mandiandmarc.wickens.uk/">Wedding</a> -->
+
+          <form class="site-search" action="/search/" method="get">
+            <label for="search-input" class="visually-hidden">Search</label>
+            <input id="search-input" name="q" type="search" placeholder="Search…"/>
+          </form>
+
+        </nav>
+      </div>
+    </header>
+
+    <main class="content inner">
+      
+
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2010/12/23/the-painted-man-by-peter-v-brett/">The Painted Man by Peter V Brett</a></h2>
+  <p class="meta">
+    <time datetime="2010-12-23T11:50:00.000+00:00">23 Dec 2010</time>
+  </p>
+
+  <p>I don’t usually read fantasy books; in fact, before I read <em>The Painted Man</em>, I had never read a fantasy book. Not that I am one for boxing things into genres – I am far more likely to pick up a book based on the merit of its author’s previous work or by reading reviews. Luckily, my brother recommended this book to me, so I took it on holiday to Greece. Having just finished Stephen King’s <em>Salem’s Lot</em>, the pace and style of this book were difficult to get used to. However, once you get going, this book comes into its own. The author takes his time to build a realistic, plausible world, one plagued by monsters that arise from the core of the Earth whenever the sun sets.</p>
+<p>The story follows three characters over a number of years, and by the time the narrative climaxes, you truly feel as though you are inside their heads, fully empathising with them and their actions. Along the way, there is, of course, plenty of action, heartbreak, and surprises – but what really makes this book so compelling is the fascinating world it exists in and the characters that inhabit it.</p>
+<p>I was sad when I finished this book, not because the ending was bad (it isn’t) but because I knew I would be leaving that world behind. Luckily, there is a second book, and I’ve just started it. So far, so good.</p>
+<p>I highly recommend this book.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2010/03/11/from-the-archive-iomega-nas-media-server-review/">Iomega NAS Media Server Review</a></h2>
+  <p class="meta">
+    <time datetime="2010-03-11T17:39:00.000+00:00">11 Mar 2010</time>
+  </p>
+
+  <p><img src="/wp-content/uploads/2024/04/iomega-nas.png?w=244" alt=""></p>
+<p>I have a lot of media on my various computers: music, photos, videos, and the like, but I’ve never found a satisfactory way of storing them all. My solution was to put them on my main laptop, which has a large hard disk, and then share the folders to my other laptop and Xbox 360. This is fine, except I tend to reformat my laptop quite often, and I don’t keep it on all the time at a desk. Instead, it’s packed away in its bag when not in use, making playing some music from my Xbox a bit of a hassle. So I decided a NAS box was what I needed. My only consideration really was price; I really don’t care about speed since most of the time I’ll be using 802.11g to access the files, and so the Iomega 1TB drive is what I picked. It cost £120 from PC World, which I thought was good value. I’d read a few reviews, but since those reviews, Iomega has released a new firmware (which came preinstalled on mine), and so a lot of the drawbacks have been addressed.</p>
+<p>I have to say, I am very impressed. The drive is fully accessible via SMB, meaning the software that comes with the drive is not essential (I only needed to install it once to find out what IP address my DHCP server had assigned it). The drive is actually a very small computer (probably running Linux, though I can’t be sure), and so it offers extra functionality. So-called “Live Folders” allow you to create a folder that’s contents get uploaded to Facebook, YouTube, or resized, for example. The NAS box can also act as a BitTorrent client, but unfortunately, it can’t be set to download a large file over FTP/HTTP. The device is also an iTunes server as well as a DLNA server (this is an open standard that the Xbox 360 uses to stream music and video over a LAN). If only TV shows purchased from iTunes didn’t have DRM, I’d buy a few, since being able to download a series of 24 straight to this device and watch it on my Xbox would be amazing. Still, having all your media always available via Media Centre/Xbox/iTunes is great.</p>
+<p>The downsides to this device are that the hard disk appears to be FAT32 (according to another review I read) – this means it’s not journaled and in the event of a power cut, the drive/data could be corrupted. There is only one hard disk, and 1TB of data is a LOT of data to be held at the whim of someone spilling something on it or a cat knocking it over, so I will still be keeping the stuff I value most in two places. Anyone wanting a proper backup solution rather than a media server solution would be wise to get something that has RAID. It’s also quite noisy and doesn’t spin down the hard disk when it’s not in use.</p>
+<p>Overall, I am pleased with this purchase and would recommend this media server to others looking for a good value solution.</p>
+<h2>Update</h2>
+<p>I found the following information in the manual that states the drive actually uses the XFS file system, which was one of the first journaled file systems. Hooray!</p>
+<blockquote>
+<p>The Home Media Drive shares files using the SMB (Server Message Block) protocol and stores its files on XFS (built-in), FAT32 (external), and NTFS (external) hard drives.</p>
+</blockquote>
+<p>I didn’t mention this before, but you can also plug in a USB drive and share it, or you can plug in a USB printer and then share that instead. Shame there’s no SSH access, however. :)</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2009/07/08/goodbye-nokia-n95-hello-iphone/">Goodbye Nokia N95, Hello iPhone</a></h2>
+  <p class="meta">
+    <time datetime="2009-07-08T20:14:00.000+00:00">8 Jul 2009</time>
+  </p>
+
+  <p>For the past two years, I’ve been using the Nokia N95. At the time of its release, it was revolutionary. Even today, it holds its own when compared to the majority of phones on the market. From a top-quality camera with flash and autofocus, a GPS receiver and built-in sat-nav, DVD-quality video recording, to the more gimmicky two-way slider, the N95 really is the bee’s knees.</p>
+<p>However, it was time for an upgrade. I seriously contemplated sticking with T-Mobile and the N95, perhaps switching to a cheaper tariff. But the N95’s biggest flaw let me down: build quality. My first N95 had a loose keypad, and the volume-up button broke. After about 20 months, the volume-up button broke on my second handset as well. A quick Google search reveals it’s a common fault. Whereas Nokias were once virtually indestructible (think 3310), the N95 was a fragile ornament. Other aspects of the N95 began to bug me too. The upper keypad is too cramped, making it easy to accidentally exit an application when trying to press the ‘C’ key. Application start-up times are also slow; nothing feels seamless. I decided I needed a new phone.</p>
+<p>I was torn between the iPhone and the N97. After the disappointing build quality of the N95, I swore never to return to Nokia, which is a big deal for me. I’ve owned the 3330, 3510i, 6630, 6100, and 6230i – and of course the N95 – since 2001. I tried out the N97, and it looks amazing. The camera is top-notch, and it feels a lot more solid than the N95. However, the touchscreen is very poor. Like the 5800, it’s resistive, which means it works on pressure, making it a real chore to use. The UI isn’t designed for touch but rather adapted for it, and poorly in my opinion. Still, the slide-out keyboard and integrated flash in the browser were tempting enough to keep me interested. Yet, I decided to stick to my guns and not risk another N95 disappointment. I opted for the iPhone.</p>
+<p>I’ve had many iPods before. I hate iTunes – it’s a prime example of bloatware. I’ve been using iTunes since 2001 when it was version 1 and came with Mac OS 9, so I have a lot of experience with it. From about version 6 onwards, it became painfully slow. On Windows, it has an annoying bug where it steals focus every few minutes, which can be fixed by adjusting Windows Live Messenger not to display your song information. I’m sure Apple makes iTunes run as slowly as possible on Windows to make Microsoft look bad. Why on earth does QuickTime, a mediocre media player that no one ever runs (except as a plug-in), need a notification icon? What exactly is it notifying me of? Anyway, we all know iTunes sucks, but for syncing music and downloading podcasts, it does the job adequately.</p>
+<p>The iPhone, like the N97, looks great. However, unlike the N97, it’s not immediately obvious where the SIM card goes, so be sure to read the manual or, as I did, Google it. The screen is capacitive, meaning it works by conducting electricity from your finger. It’s much smoother and more enjoyable to use. The browser and email are excellent, but I do miss a few features of my N95.</p>
+<p>Firstly, the calendar. An iPhone will only let you set a reminder for two days before an event. This is no good for something like a car service or a big birthday, where you might want a reminder a week or so in advance. It seems like a pointless limitation or oversight to me.</p>
+<p>Secondly, Bluetooth. The iPhone might as well not have Bluetooth, as you can’t send photos or contacts using it. I understand Apple restricting music, but why limit photos, contacts, and calendar entries? These are basics, Apple, and you’ve got them wrong.</p>
+<p>Additionally, you can’t download podcasts over 10MB or use the iPhone as a modem – the N95 could do both. The N95 was a phone, not a marketing tool for O2.</p>
+<p>Thirdly, 3G reception seems poor compared to other phones on the same network in the same room.</p>
+<p>The camera is bad. Even the newer 3GS, which I have, is subpar and lacks a flash.</p>
+<p>I don’t want to sound entirely negative – the iPhone is a worthy upgrade from the N95. Email is much quicker and supports HTML (though Apple limits you to sending five photos as attachments), and it also syncs emails and calendars with Exchange. The N95 would take about 30 seconds to ‘think about’ my emails after receiving them, which was just plain annoying. Direct uploads to YouTube, along with some great games and applications, put the iPhone ahead of Nokia. Facebook, Twitter, even Windows Live Messenger via push (although the developer notes that the application is under review by Apple, likely because it might affect network revenues) all work seamlessly. The interface is a pleasure to use.</p>
+<p>Overall, I’m glad I upgraded – though I do miss a few key features!</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2004/09/30/from-the-archives-my-review-of-the-nokia-6630/">My Review of the Nokia 6630</a></h2>
+  <p class="meta">
+    <time datetime="2004-09-30T16:13:00.000+00:00">30 Sep 2004</time>
+  </p>
+
+  <p><em>Originally posted <a href="https://web.archive.org/web/20060504060032/http://www.imarc.co.uk:80/2006/nokia_6630review.html">here</a>.</em></p>
+<p><img src="/wp-content/uploads/2024/04/nokia-6630-593.png?w=162" alt=""></p>
+<p>The Nokia 6630 is Nokia's latest smartphone offering with a 1.3 megapixel camera, 10mb of internal memory, a 200mhz processor, Bluetooth, 3G, stereo MP3/ACC playback and the latest Symbian operating system, version 8a.</p>
+<p>The basic functions work well, the processor is the fastest yet to be used in a Nokia phone, and makes the menu lags and photo delays that dogged many previous Symbian based phones a thing of the past. The fast processor does take its toll on battery life however, with the average battery time with Bluetooth switched on with moderate usage of the phone about 2 days. My old Nokia 6100 lasted about 4 days, so this short time is by and large the biggest shock to me, but its not as bad as it sounds. This is a smartphone running many processes at a time and so battery life was always going to be an issue. The 6100 was a series 40 Nokia that didn't do much at all. It's a case of features vs. battery life, and since I am don't need to take this phone out in the wilderness for days at a time without mains power access, the 2 day battery time is not a problem.</p>
+<p>Texting is a joy on this phone, the keypad is small yet responsive enough to text very quickly. The screen is so large that you can fit a whole text message on the screen without the need for scrolling, and of course with 10mb of memory there's plenty of room for hundreds of text messages, and multimedia messages. The messaging application also has a POP3 and IMAP client, which is flawed because it doesn't let users choose any port to connect on - such a basic concept and Nokia have left it out. So unless your ISP uses the standard ports for email (Gmail don't!), this will be of no use to you. Other email applications can be installed, but many of them cost money.</p>
+<p>Making calls on the phone is also easily done, just like any Nokia in fact. The loud speaker isn't as loud as I'd have liked, but it does the job and I seldom use it anyway. The phone, being a 3G phone also supports Video calls - in my opinion the stupidest idea ever, why would I want to pay over the odds to see the person I'm calling when I can just hear them? For those that do see a use for this, and can afford it - the phone makes it easy, when you select call a menu pops up allowing you to select phone or video call. There's no camera on the front, so in order for the other person to see you you need to connect the phone to the stand, which comes in the box. Not exactly video on the move, but adding another camera to the front would just add to the bulk and Nokia have obviously realised that hardly anyone wants to use this feature anyway.</p>
+<p>The camera on this phone is brilliant. It can take photos at an amazing quality, but its such a shame there's only 10mb of internal memory. This trivial amount of memory is simply not proportionate to the other great specifications of the phone. The video recorder also captures sound, and can record for up to an hour if you have a big enough memory card. The phone takes dual voltage reduced-size multimedia cards. Why couldn't it just take standard MMC cards? Is it a plot by the memory card manufactures to make people like me who already own an assortment of memory cards go out and buy more? The reduced-size card comes with an adaptor that is suppose to make the card fit into a standard MMC slot in a card reader. IT DOESN'T WORK. Mine doesn't anyway, and so I've had to use the data able that came with the phone to access the phone's memory and the card. The phone comes with a 32mb card, enough for about 8 music files at a decent quality.</p>
+<p>MP3 playback is average and no way near as good as my PocketPC. Vodafone decided to restrict the phone so you can't set MP3s as ringtones. Luckily you can set AAC files as ringtones, AAC is Apple's music format and you can create AAC files using iTunes. Music playback also drains the battery big time, but its good enough if you don't want to be carrying a phone and an MP3 player all the time. Playing music for about 4 hours a day made the battery last about a day and a half. I've used it extensively with the supplied headphones (which also double as a hands-free kit) and found them to be lacking in base, I think this is not because the speakers are no good, but because there's no equaliser on the phone.</p>
+<p>Browsing the web is also a joy on this piece of equipment, the large screen and Opera web browser make it a easy and fun The 3G speed is also blindingly fast, and with a free program called Agile Messenger, MSN Messenger, AOL Instant Messenger and ICQ can all be used on the move. Watch out however, 3G is stupidly expensive. The fast speed simply means you spend more in less time, so I'd advice anyone to switch off images on the browser to save them selves money. One day maybe we'll get mobile data at a decent price, but Vodafone charge a whopping £2.75 per megabyte!! Daylight robbery, but fair enough they did give me this £400 phone for free on a £33/ month contract which is a pretty good deal.</p>
+<p>Word and Excel file can be viewed on this phone using the built in QuickOffice applications, there's also a first-rate image viewer that displays images in a rotating wheel format, or as a slideshow with fade-in animations. This is useful for showing your mates a collection of photos in full-screen. There's also a photo editor, where photos can be cropped and borders added to them. Its quite difficult to use, and I think I'll stick to sending photos to my PDA via Bluetooth, and editing them on the PocketPC - some tasks are just easier with a mouse or stylus. Then there's a video editor, videos captured can be slowed down (good for photo finishes) and background music can be set (disappointingly not any music file, only MIDI files). You can probably do more, I haven't had a chance to play with this application much yet.</p>
+<p>Overall: A very impressive phone with nearly every feature I could want.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2004/04/30/hp-ipaq-2200-review/">HP iPaq 2200 Review</a></h2>
+  <p class="meta">
+    <time datetime="2004-04-30T17:12:00.000+00:00">30 Apr 2004</time>
+  </p>
+
+  <p><img src="/wp-content/uploads/2021/02/ipaq2200.jpeg?w=103" alt=""></p>
+<p>At £279 this PDA seemed too good to be true. It has 56MB of usable internal memory, a compact flash slot and secure digital slot. It also has Bluetooth, infrared, backlight and a replaceable battery that lasts about 8 hours, depending on usage and backlight brightness.</p>
+<p>Out of the box you get everything you need, except one thing, which I’ll come to later. If like me you decide to buy from Dixon’s and take advantage of the “buy now, pay in 9 months” option be aware that SD cards and CF cards are sold at much lower prices on Amazon.co.uk – although at £279 you need to spend over £300 to use the “buy now, pay in 9 months” option. If you don’t want to pay later, then the PDA is also available cheaply online.</p>
+<p>The 2200 is a good size, with a brilliant screen. If you have a digital camera that takes either SD cards or CF cards, then you will find much use for this PDA as you can view your photos on a much larger screen than most cameras, crop photos, adjust brightness and contrast, and even email your photos – without even stepping near a proper PC. The small size and lightweight can be a disadvantage. Coming from a Palm m105, I was used to having a PDA with a built in screen protector. The iPaq has no such thing, the screen is exposed much of the time like that of a phone. A soft case included does partially solve this issue, but it is no way near as convenient as the flip-top my Palm m105 had. It’s annoying when using the iPaq as an MP3 player when you want to skip songs on the move.</p>
+<p><img src="/wp-content/uploads/2021/02/pocketpc2003.jpg?w=480" alt=""></p>
+<p>The build quality of the device seems good, however the 5 way directional button does pop-out on times (it has been made removable for cleaning purposes) and the rubber side grips seems to peel off within a month – THIS IS A BIG ISSUE! Many users have reported this problem, which is why I suggest HP include some superglue in the box, as that seems to do the trick. Having said that, the battery door seems very secure, the CF and SD slots are well built, even if it is all too easy to eject the SD card while pushing the device into your pocket. I guess having a door would have made the device bigger, so I can’t really complain there. The 5 other buttons seem solid. The software included is very good.</p>
+<p>You get Outlook 2003 for your PC, and Outlook for your iPaq. This consists of Address book, Inbox, Tasks and Notes. Pocket Word and Pocket Excel are also included. Pocket Word really is nothing special, more a glorified notepad application than a word processor. It has basic RTF formatting but no images sadly; I don’t see why support for images has been omitted. Maybe because Microsoft need some sort of reason for people to upgrade to the next version, other than a few new icons like we seem to get on the desktop counterparts. Excel however does have what you’d expect, since images aren’t really needed in a spreadsheet the fact that again they are not supported doesn’t matter. Viewing large sheets can be awkward, when the start bar, toolbar and input panel are being used – luckily there is a full screen option. Windows Media Player Mobile edition is also included, and it does a fine job of playing back MP3 and WMA. Windows Media Videos are also supported, but there’s no support for rival formats like .mov, which is a shame since most other mobile devices (cameras, phones etc) seem to record in the QuickTime format. Still, rivals will be rivals but it happens to be a shame. Perhaps the best bit of included software is ‘nevo’. A universal remote control. Have fun switching off TVs in shops that have them at the front showing CCTV footage. Apart from that obvious use, you can control your video, DVD, stereo, projector, lights – in fact anything that supports infrared control. What Nevo doesn’t know, Nevo can learn from the existing remote control.</p>
+<p>Getting online is easy too. That’s if you have a Bluetooth phone with a modem, an infrared phone with a modem, or a WiFi CF Card. You can easily send and receive email, as long as your ISP allows you to use their SMTP server from other networks (assuming you use a different ISP on your phone than you do on your PC). For some stupid reason, the Inbox application can’t have different usernames and passwords set for POP3 and SMTP – they have to be the same. The web browser (Internet Explorer) is great, and thankfully has an option to switch off images – because GPRS costs a lot, and I easily spent £5 in one session. MSN is a good addition, and integrates well into the OS when you place it in the background. The operating system itself is a typical Microsoft affair and resembles early versions of Mac OS. With a main menu in the top right. Sometimes you get “OK” in a window at the top right title bar, other times it’s a command button on the actual form. Standardisation on issues like this would be good. Having said that, I did make a conscious decision to choose PocketPC over Palm because it has better multitasking abilities, and better built in software.</p>
+<p>Switching between tasks is badly done; the iTask application is inconvenient, having to press a hardware button to bring up a list of tasks. Instead I use a 3rd party program called Magic Button, which is far better.</p>
+<p>Overall, a good buy. The dictaphone facilities, mobile net access and music features have come in handy, so much so that my iPod hasn’t been used since I got the PDA. Well worth the money. As after all this is a <em>Pocket PC</em>.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2000/12/24/netmag-netscape-6-review-2000-windows98/">Netscape 6 Review</a></h2>
+  <p class="meta">
+    <time datetime="2000-12-24T18:04:00.000+00:00">24 Dec 2000</time>
+  </p>
+
+  <p>I started off by downloading the installer, and after about 1 hour, it crashed and failed to resume. So I waited for it to appear on the .net cover disc, and to my excitement, on the 22nd of December 2000 I received issue 80 of .net and installed Netscape 6.</p>
+<p><img src="/wp-content/uploads/2000/12/installing-netscape-6.png" alt="installing netscape 6"></p>
+<p>First impressions were OK, at least the installer had worked. The only thing I use communicator for really is to browse newsgroups, and so the first thing I tried was to connect the password protected server I use. Now NS4 didn’t remember my password every session, that was livable, NS6 however can’t even remember it within 1 session, every time I changed group or composed a message I was asked to re-enter my password. Maybe fiddling around in the settings could solve this, but at the speed which NS6 functions, looking around the settings dialogue is a chore. Browsing the web in NS6 was slow and many sites didn’t appear correctly, and please Netscape, for the last time – I DON’T want to join Netcenter!!</p>
+<p>So overall, I’m completely unhappy with Netscape 6, it may look nice, but it’s slow and bug-ridden.</p>
+<p>Compare it to Internet Explorer and there’s no competition. Internet Explorer works, it works fast, and doesn’t have (as many) annoying bugs. People mock Microsoft for the occasional bug and security hitch, but don’t seem to act the same way with companies like Netscape release a program like this. Netscape is a tacky,  poor quality, below standard web browser suit,  even if it was bundled with Windows sixty times over, I would never use it. Internet Explore works, and I’ll be sticking with my current set of applications: IE5 for web browsing, Eudora for email and Netscape 4 for newsgroups.</p>
+
+</article>
+<hr>
+
+
+
+<nav class="pagination-links">
+  <a href="/archive/">View all posts →</a>
+</nav>
+
+
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="inner">
+        <p>&copy; 2000 –
+          2025
+          Marc Wickens
+        </p>
+      </div>
+    </footer>
+
+    <script src="/static/js/compare.js" defer="defer"></script>
+    <script data-goatcounter="https://imarc.goatcounter.com/count" async="async" src="//gc.zgo.at/count.js"></script>
+
+  </body>
+</html>

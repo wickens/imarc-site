@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-default">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>
+      iMarc
+      
+    </title>
+    
+
+    <link rel="stylesheet" href="/static/css/site.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&family=Fira+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+
+    <link rel="icon" type="image/png" href="/imarc-icon.png">
+    <link rel="apple-touch-icon" href="/imarc-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/imarc-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/imarc-icon.png">
+    <link rel="alternate" type="application/rss+xml" href="/feed/index.xml" title="iMarc RSS">
+
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="inner">
+        <a class="site-title" href="/">iMarc</a>
+        <p class="tagline">thoughts on tech • by Marc Wickens</p>
+
+        <nav class="site-nav">
+          <a href="/">Home</a>
+          <a href="/Gear/">Gear</a>
+          <a href="/archive/">All Posts</a>
+          <a href="http://marc.wickens.org.uk">About</a>
+          <a href="/riseley">Riseley History</a>
+          <!-- <a href="https://mandiandmarc.wickens.uk/">Wedding</a> -->
+
+          <form class="site-search" action="/search/" method="get">
+            <label for="search-input" class="visually-hidden">Search</label>
+            <input id="search-input" name="q" type="search" placeholder="Search…"/>
+          </form>
+
+        </nav>
+      </div>
+    </header>
+
+    <main class="content inner">
+      
+  <h1 class="visually-hidden">Latest posts</h1>
+
+
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2025/05/31/virtual-private-nonsense/">Virtual Private Nonsense</a></h2>
+  <p class="meta">
+    <time datetime="2025-05-31T04:01:00.000+00:00">31 May 2025</time>
+  </p>
+
+  <p>Adverts for Virtual Private Networks (VPNs) are now a regular feature on many podcasts. A common theme I’ve noticed is the attempt to justify using a VPN by claiming that public WiFi networks are inherently unsafe without one. Take this <a href="https://podcasts.apple.com/gb/podcast/the-scent-of-humane/id918152703?i=1000709986055&amp;r=4716">recent example</a>:</p>
+<blockquote>
+<p>When you connect to an unencrypted network in cafes, hotels, airports, your online data is not secure. Someone on the same network can gain access to your information, passwords, bank logins, credit card information, and other things that you don't want in someone else's hands.</p>
+</blockquote>
+<p>This is <strong><em>absolute nonsense</em></strong>. Yes, it's true that if the WiFi network doesn't require a password to connect to, then your data will be sent in the clear and could theoretically be accessed by anyone, as made famous by the app <a href="https://en.wikipedia.org/wiki/Firesheep">Firesheep</a>. This was in 2010 however. In fifteen years since then, and the twelve years since the Snowden leaks, the vast, vast majority of websites have adopted their own encryption to protect data in transit. Even before then, any reputable site handling sensitive information (such as online banking or payment processing) was already using TLS (Transport Layer Security). In 2025 (and really for the past decade), you do not <strong><em>need</em></strong> a VPN when on public WiFi.</p>
+<p>Regardless of whether the WiFi network is encrypted, there are inherent risks in connecting to a network you can't necessarily trust. Most devices have built in firewalls to mitigate this. As long as that's switched on, you're probably going to be OK.</p>
+<p>So why would anyone use a VPN? As far as I can tell there are only three reasons why anyone would use a VPN:</p>
+<ul>
+<li>To access protected network resources — it's common for companies to require employees to be on a VPN before they can access sensitive resources as an additional security layer.</li>
+<li>To fake your location — Netflix and many other streaming platforms often offer better content in different regions, or perhaps you simply want to access BBC iPlayer while you're abroad.</li>
+<li>To conceal your IP address — for instance, if you're involved in illegal activity or working as a journalist needing anonymity.</li>
+</ul>
+<p>I would not hesitate to use online banking over Starbucks WiFi. In fact, I’d be more worried about someone peering over my shoulder than any threat from the network itself.</p>
+<p>So don’t be taken in by the scaremongering ads. The chances are, you don’t need a VPN.</p>
+<p>But if you’ve got another reason for using one, let me know in the comments below.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2025/05/24/microsoft-ai-gimmicks-risk-ai-fatigue/">Microsoft AI Gimmicks Risk AI Fatigue</a></h2>
+  <p class="meta">
+    <time datetime="2025-05-24T08:31:48.000+00:00">24 May 2025</time>
+  </p>
+
+  <p><img src="/wp-content/uploads/2025/05/ai-actions.png.webp?w=1024" alt=""></p>
+<p>Microsoft, in its ongoing quest to make Windows 11 feel increasingly clumsy and tone-deaf, has now decided to <a href="https://www.theverge.com/news/670251/microsoft-windows-11-ai-actions-file-explorer-context-menu">add a new “AI Tools” menu to Windows Explorer.</a> One can almost picture the product management meeting, where some directive from on high decreed: “We must be seen to be using <a href="https://www.theverge.com/news/672984/microsoft-notepad-paint-snipping-tool-generative-ai-windows-insiders">AI in everything</a>, everywhere and all at once.”</p>
+<p>While they may have a tendency to over-explain the obvious (as shown by <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/new-user-experience-for-consumer-authentication/3822035">this 1,000+ word blog post just to say they’re replacing passwords with PassKeys</a> – something that could be summarised in a single paragraph), the decision to lump a collection of seemingly unrelated features into one menu simply because they involve “AI” suggests either a complete absence of user centric thinking or a rather desperate attempt to appear as an AI leader.</p>
+<p>The screenshot shows four menu items. The first, “Visual Search with Bing” (one can only imagine how many bureaucrats had to approve that name), allows you to search the web using something similar to Google’s reverse image search or Apple’s Visual Lookup. The other three are image editing tools: one for adding a background blur (which uses AI to detect the main subject in an image and blur everything else), one for erasing objects (where AI estimates what would be behind the removed element and fills it in), and one for removing the background entirely (essentially the same as the blur tool, but deleting the background pixels instead of blurring them). There’s also another totally separate “Ask Copilot” menu, which presumably also uses AI, but I’m guessing this was built by another team which would explain why it’s in a totally different place in the context menu.</p>
+<p>All of these features are genuinely useful, and it’s great to see them included in Windows (presumably using on-device processing rather than relying on the cloud). However, grouping them under an “AI Tools” menu doesn’t make much sense. “AI” in this context means machine learning-based processing and is becoming as commonplace as traditional processing tasks. Designing a user interface around the underlying technology rather than the user experience is a fundamental mistake. That's not to say a UI shouldn't ever mention &quot;AI&quot; – it is important to let users know when AI (especially generative AI) is going to be used or was used, as it provides a useful prompt to scrutinise the output more carefully and helps set expectations. But Microsoft’s overuse of it just makes them seem a little desperate to be seen as jumping on the AI bandwagon and risks users switching off every time they see yet another &quot;AI&quot; feature.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2025/05/05/the-rise-and-fall-of-vector-databases/">The Rise and Fall of Vector Databases</a></h2>
+  <p class="meta">
+    <time datetime="2025-05-05T15:59:45.000+00:00">5 May 2025</time>
+  </p>
+
+  <p><a href="https://twitter.com/jobergum/status/1872923872007217309">Jo Kristian Bergum on Twitter</a>:</p>
+<blockquote>
+<p>This surge was partly driven by a widespread misconception that embedding-based similarity search was the only viable method for retrieving context for LLMs. The resulting &quot;vector database gold rush&quot; saw massive investment and attention directed toward vector search infrastructure, even though traditional information retrieval techniques remained equally valuable for many RAG applications. … However, the landscape has evolved rapidly. What started as pure vector search engines now expand their capabilities to match traditional search functionality. Vector database providers have recognized that real-world applications often require more than just similarity search.</p>
+</blockquote>
+<p>I’ve never quite understood the hype around using similarity search to retrieve content for a RAG system. Yes, cosine similarity can be useful in certain situations, but in many cases, there are better ways to find the right content. This is especially true when the user’s question has little semantic resemblance to the answer. Not to mention when you have potentially multiple versions of the same documents that may or may not be relevant depending on the context of the question. Now every major database supports vector search, is there even a need for a dedicated product? I’d recommend giving the latest episode of the <a href="https://podcasts.apple.com/gb/podcast/latent-space-the-ai-engineer-podcast/id1674008350?i=1000705713887">Latent Space</a> podcast a listen where they explore these issues, and alternatives, in more depth.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2024/12/19/apples-notification-summaries-why-starting-small-still-matters-in-ai/">Apple’s Notification Summaries: Why Starting Small Still Matters in AI</a></h2>
+  <p class="meta">
+    <time datetime="2024-12-19T21:42:07.000+00:00">19 Dec 2024</time>
+  </p>
+
+  <p><img src="/wp-content/uploads/2024/12/e453dc00-bdeb-11ef-a2ca-e99d0c9a24e3.jpg.png?w=1024" alt="A iOS notification summary from BBC News that reads Luigi Mangione shoots himself; Syrian mother hopes Assad pays the price; South Korea police raid Yoon Suk Yeol's office.&quot;"></p>
+<p><em>Image source: <a href="https://www.bbc.co.uk/news/articles/cx2v778x85yo">BBC News</a></em></p>
+<p><a href="https://www.bbc.co.uk/news/articles/cx2v778x85yo">Graham Fraser reporting for BBC News</a> about Apple's new notification summarisation feature:</p>
+<blockquote>
+<p>A major journalism body has urged Apple to scrap its new generative AI feature after it created a misleading headline about a high-profile killing in the United States.<br>
+The BBC made a complaint to the US tech giant after Apple Intelligence, which uses artificial intelligence (AI) to summarise and group together notifications, falsely created a headline about murder suspect Luigi Mangione.</p>
+<p>The AI-powered summary falsely made it appear that BBC News had published an article claiming Mangione, the man accused of the murder of healthcare insurance CEO Brian Thompson in New York, had shot himself. He has not.</p>
+</blockquote>
+<p>I’ve worked on implementing AI into software products for the past seven years, and the first rule is always to start with a narrow domain, carefully assess how effective it is, and, if your approach is working, gradually expand your domain coverage. When it comes to notification summaries, I can’t help but wonder why Apple didn’t adopt this approach. Instead, they’ve delivered something that feels more like a hasty student project than the polished innovation we’ve come to expect.</p>
+<p>Specifically, I would have started by limiting the product to summarising notifications where summaries are genuinely most useful. Of course, not being a product manager at Apple, I haven’t done the research, but let’s assume messaging apps would top the list. A &quot;TL;DR&quot; summary for lengthy WhatsApp group chats, for instance, could be genuinely valuable. On the other hand, attempting to summarise product promotions or delivery notifications from Amazon, breaking news, or even the alerts I get when my wife logs a feed on our baby-tracking app feels far less useful. Most of the complaints I’ve seen online seem to involve apps like BBC News, Amazon, or other non-communication apps. Apple would be better off avoiding attempts to summarise these types of notifications and instead focusing on apps where summarisation truly adds value: messaging apps such as WhatsApp or Slack.</p>
+<p>That’s not to say the current implementation is flawless when it comes to messaging apps either. In an example shared by <em>WSJ</em> technology journalist Joanna Stern, <a href="https://www.threads.net/@joannastern/post/DCezF5pRbjM">the iPhone mistakenly assumed her wife was referring to a non-existent husband</a>. The issue likely arose because Stern has her wife saved as “Wife” in her address book. The smaller language model onboard the iPhone, relying on statistical assumptions, concluded that someone called “Wife” must be referring to a husband when mentioning another unnamed person. It’s exactly the sort of edge case<a href="#835b0802-a0c7-4b2f-8d5a-37d7a5a1be2d">1</a> that could have been caught more easily during testing if the first version had maintained a laser-like focus on summarising messaging app content.</p>
+<p>By starting small and focusing on where summarisation adds the most value, Apple could have delivered a more refined and impactful feature, avoiding many of the issues we've seen reported .</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2024/09/25/on-mkbhds-new-app/">On MKBHD’s New App</a></h2>
+  <p class="meta">
+    <time datetime="2024-09-25T22:57:19.000+00:00">25 Sep 2024</time>
+  </p>
+
+  <p><a href="https://daringfireball.net/2024/09/panels">John Gruber writes</a></p>
+<blockquote>
+<p><a href="https://www.theverge.com/2024/9/24/24253023/mkbhd-panels-wallpaper-app-response-criticism">A swing-and-a-miss from MKBHD</a>. Criticism of the app is on two separate levels, but they’re being conflated. Level 1: the app is not good. Level 2: <em><a href="https://x.com/_ali_taylor/status/1838655765730726172">a paid wallpaper app</a>? — LOL, wallpapers are free on Reddit</em>. That second form of criticism — that there shouldn’t even exist a paid wallpaper app — is annoying and depressing, and speaks to how many people do not view original art as being worth paying for. But it also speaks to the breadth of Brownlee’s audience, which I think is more tech-focused than design-focused.</p>
+</blockquote>
+<p>What’s even more annoying and depressing is the inability to separate the appreciation of art from the act of commerce. Perhaps people didn’t expect someone reportedly already making millions to charge so much for so little. The app description mentions &quot;teaming up with top-tier digital artists,&quot; so it’s not as if it’s even showcasing lesser-known artists who might benefit from the app's exposure and thus warrant some philanthropy. Gruber is wrong here. You can appreciate good design while also thinking £12/month is a rip-off.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2024/09/21/be-the-main-character/">Be the Main Character</a></h2>
+  <p class="meta">
+    <time datetime="2024-09-21T07:14:30.000+00:00">21 Sep 2024</time>
+  </p>
+
+  <p><a href="https://arstechnica.com/information-technology/2024/09/dead-internet-theory-comes-to-life-with-new-ai-powered-social-media-app/">Benj Edwards for Ars Technica</a>:</p>
+<blockquote>
+<p>On Monday, software developer Michael Sayman launched a <a href="https://socialai.co/">new AI-populated social network app called SocialAI</a> that feels like it’s bringing that conspiracy theory to life, allowing users to interact solely with AI chatbots instead of other humans. It’s available on the iPhone app store, but so far, it’s picking up pointed criticism.</p>
+</blockquote>
+<p>A social networking app where you are the centre of the universe, surrounded by bots constantly providing you with positive reinforcement and worshipping your every word. Elon Musk must be kicking himself – he could have saved $44 billion.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2024/08/15/troubleshooting-glibcxx3-4-26-error-on-raspberry-pi-net-9-compatibility-issue/">Troubleshooting GLIBCXX_3.4.26 Error on Raspberry Pi: .NET 9 Compatibility Issue</a></h2>
+  <p class="meta">
+    <time datetime="2024-08-15T19:37:54.000+00:00">15 Aug 2024</time>
+  </p>
+
+  <p><img src="/wp-content/uploads/2024/08/error_glibcxx-.png?w=1024" alt=""></p>
+<p>I was recently trying to compile a .NET project as a self-contained binary for <code>linux-arm</code> to run on my Raspberry Pi. When trying to run the binary, I kept getting the following error:</p>
+<pre><code>/usr/lib/arm-linux-gnueabihf/libstdc++.so.6: version GLIBCXX_3.4.26' not found (required by ./[executable])
+</code></pre>
+<p>It turned out the issue was caused by using .NET 9. <strong>Downgrading the project to .NET 8 resolved it</strong>. I'm unsure whether Microsoft or Raspbian needs to address compatibility with .NET 9, but as it didn't impact my code, it wasn't a problem for me.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2024/04/30/apple-vision-problematic/">Apple Vision Pro…blematic</a></h2>
+  <p class="meta">
+    <time datetime="2024-04-30T15:17:05.000+00:00">30 Apr 2024</time>
+  </p>
+
+  <p><img src="/wp-content/uploads/2024/04/apple-wwcd23-vision-pro-lifestyle-with-battery-facetime-230605_big.jpg.large_.jpg?w=980" alt=""></p>
+<p>Image credit: Apple (<a href="https://www.apple.com/ca/newsroom/2023/06/introducing-apple-vision-pro/">https://www.apple.com/ca/newsroom/2023/06/introducing-apple-vision-pro/</a>)</p>
+<p>Three and a half months after the release of Apple Vision Pro, and I am finding it difficult to get on board with Apple's vision for the future of computing. While admittedly I haven't tried the Vision Pro due to it not being available in the UK, and I'm sure I would be momentarily wowed by the experience, I just can't get excited about what I see as a deeply dystopian vision of the future.</p>
+<p>Let’s start with the vision itself. We spend too much time on screens as it is. Endless doomscrolling and the inability to switch off are widely believed to be behind rising anxiety and depression. Apple, to their credit, has attempted to remedy this with features like Screen Time which allow limits to be put in place. The very concept of the Vision Pro goes against this progress. It's a screen strapped to your face. Right now, the discomfort of a hot and heavy device acts as a deterrent against using it too much. My worry is that as technology progresses and much like the smartphone, the Apple Vision Pro will get lighter and more comfortable — more addictive. If the headset follows the path of the smartphone, then it will eventually be something we want to wear as much as possible. We live in a world of filter bubbles. If you use Twitter (sorry, X), then your view of reality can be vastly different from your next-door neighbour who also uses Twitter, due to the fact that you both like and follow totally different posts and sets of people. Smaller social networks don’t need an algorithm to do this as they will typically only attract people of a certain political leaning in the first place. The end result is the same. Filter bubbles are an obvious problem for social cohesion, and while they are not limited to social networks (hello Fox News), I can’t help thinking that when literally everything is viewed through a screen — yes, your entire reality — the problem will only get worse. If you've seen Black Mirror, then I don’t need to explain why, but let me anyway. Imagine an app for a future revision of Vision Pro (or its rivals) that can be worn all day. The app allows users to employ Twitter-style blocking, so the faces of people they would rather not see are blurred out. Could someone with right-wing views use an app to blur out TV screens showing CNN or the front page of the New York Times, allowing them to walk down the high street and not be bothered by reality, or what they consider dissenting opinions? In 2020, as California was struck by awful wildfires, people noticed something strange. Their smartphones were automatically adjusting the apocalyptical red-tinted sky to look more “normal.” The image of humans using VR goggles to deny climate change or insert virtual green spaces into an otherwise industrial wasteland is just terrifying. In short, I am deeply worried about a future in which our entire reality is seen through the filter of a screen. The Apple Vision Pro can’t do any of this right now, and I doubt Apple would ever allow it to. Yet as the Twitter/Musk debacle shows us, the people who run companies can change, and their policies with it. Not to mention that if the Apple Vision Pro were to be a success, then there would naturally be rival products released which may not be as restrictive.</p>
+<p>All of what I’ve said so far is admittedly far-fetched, and perhaps assumes the worst of humanity. So let me focus on the Apple Vision Pro as the product it is today. Apart from being deeply antisocial, the main problem I see is that it is an iPad strapped to your face but priced as if it were a fully-featured MacBook strapped to your face. The iPad and tablets, in general, are great content consumption devices, but the limitations inherent in mobile operating systems make them poor substitutes for a laptop. Samsung and Apple have taken steps to address this, including making the iPad more like a laptop with the addition of support for trackpads, mice, and keyboards. Yet the apps themselves are more often than not baby versions of the same applications available for desktop operating systems, if an app is available at all. There are exceptions — Logic and Final Cut Pro. Overall, it seems a combination of iOS (sorry iPadOS) limitations, Apple’s greedy business practices, and the poor ergonomics of tablet devices has contributed to the iPad not taking off in a productivity context, outside some niche verticals. By designing the Apple Vision Pro’s software stack in the image of the iPad, the device is unfortunately severely limited. Had the device been based on macOS, with the ability to run Mac software, then it would be a completely different story. I understand that technical limitations likely prohibit this: the accuracy of Vision Pro’s gesture recognition simply isn’t good enough to allow Mac apps designed for use with a mouse to be comfortably driven. Which brings me to my final criticism. One of the most touted features of the Vision Pro is the ability to VNC into a desktop Mac and control it remotely. The fact that this was pushed as a feature is the most damning indictment of the Vision Pro’s capabilities as a computing device. A proper computing device worth its $3,500+ price tag wouldn’t need the ability to remotely connect into your other $2,000+ laptop — it would be as capable itself. On various forums I’ve seen happy Vision Pro customers tout the ability to work on a plane for hours on end with both their MacBook and Apple Vision Pro. Here we go again with the dystopian future: can someone not take a flight for a few hours without needing to be productive? For goodness' sake, read a book, listen to a podcast, or just look out of the window!</p>
+<p>So, while the nerd in me is ready to be wowed by the Apple Vision Pro, I find myself despairing as I think about a potential future where we are always plugged in, online, and unable to escape work. I can’t help but think this isn’t what technology was supposed to be about. I have to ask myself, would the figure from Apple’s famous 1984 commercial who throws a sledgehammer at the big screen be wearing an Apple Vision Pro, does the screen itself represent Apple latest Vision?</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2024/02/25/microsoft-this-feels-desperate-now/">Microsoft: This Feels Desperate Now</a></h2>
+  <p class="meta">
+    <time datetime="2024-02-25T09:08:53.000+00:00">25 Feb 2024</time>
+  </p>
+
+  <p><img src="/wp-content/uploads/2024/02/microsoft-edge-dark-pattern.png?w=268" alt=""></p>
+<p>Andrew Cunningham at Ars Technica has written a nearly 3,000 word article explaining <a href="https://arstechnica.com/gadgets/2024/02/what-i-do-to-clean-up-a-clean-install-of-windows-11-23h2-and-edge/">how to remove advertisements and other annoyances from Windows 11 and Microsoft Edge</a>. Microsoft are not alone in degrading the quality of their software in order to sell more services, <a href="https://imarc.co.uk/2021/02/18/squashing-services-into-apps/">Apple has been doing this as lot recently too.</a> With Microsoft though it feels increasingly desperate. Its Copilot feature acts like a thin wrapper around the OpenAI API, no doubt created in order so that Microsoft can be seen as fully riding the LLM bandwagon. Of course the resulting stock price bump from this perception was probably factor here as well. Its garish icon is placed on the taskbar by default, yet has no intuitive way to be removed. You'd think would be able to simply right-click and unpin it like any other icon, right? Of course not. Instead, you have to dig around in the system settings app. Either their UX designers are bad at their jobs, or more likely a manager stepped in and said <em>&quot;Actually, let's enhance the friction in removing the icon; my forthcoming bonus hinges on maximising user engagements with it. (evil laugh)&quot;</em></p>
+<p>The same is true in Microsoft Edge. Any setting that Microsoft would rather you didn't change is unbelievably difficult to find. Want to remove the side bar, or change the default search engine from Bing? One might think, perhaps naively, that altering something as basic as the default search engine shouldn't require a degree in computer science. Yet, here I am, resorting to the wisdom of Google search to uncover the elusive setting (I did try asking Microsoft Copilot, but alas, it came back with something completely unrelated). Edge is also desperate for me to make it the default browser. Instead of cutting to the chase, it dances around like a slick sales rep, coyly offering me the choice of &quot;Microsoft's Recommended Settings&quot; as if I'm choosing to enhance my computer security, when really it's more about padding Microsoft's bottom line.</p>
+<p>I suppose we should be grateful for Microsoft at least offering settings for these options - there's no reason they have to. Microsoft's strategy seems to be a delicate balancing act between making it difficult for the masses and maintaining some appeal for the more tech-savvy who would switch to another vendor if they didn't have these options at all.</p>
+<p>Anyway, it's a desperate look. Please Microsoft, show some class!</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2023/12/03/fixing-focus-modes-on-ios/">Fixing Focus Modes on iOS</a></h2>
+  <p class="meta">
+    <time datetime="2023-12-03T11:50:19.000+00:00">3 Dec 2023</time>
+  </p>
+
+  <p>When Apple introduced Focus <em>Modes</em> and Focus <em>Filters</em>, I hoped it might finally mean the ability to cleanly separate work and personal life within iOS. Unfortunately, the system is flawed.</p>
+<p>Let’s briefly recap on how it works. Focus Modes are an extension of “Do Not Disturb” which has been with iOS since version 2011 (if my memory is correct) and allow precise control of notifications for different scenarios. Apple allows users to create various focus modes for different activities. For each focus mode, you can control who and which apps are allowed to send notifications. Apple ships iOS with several default modes such as “Sleep”, “Work”, and “Reading”. For example, I might turn off Slack notifications in the “Personal” Focus Mode, and then schedule that to activate in the evenings.</p>
+<p>Focus filters on the other hand control which data is available inside apps and are linked to a particular Focus Mode. For example, for to-do list app that allow you to create different lists, you could use Focus Filters to hide your shopping list when the “Work” Focus Mode is activated, and then hide your work tasks while your “Personal” Focus Mode is activated.</p>
+<p>The problem with Apple’s implementation is that it always requires a particular Focus Mode to be activated. There is no way to apply Focus Filters or control notifications when no Focus Mode is activated. Additionally, Focus Modes and Focus Filters are literally <em>filters</em>. This means they can only reduce content that is already enabled. In my use case, I want to turn off my work email and calendars by default but have then enabled during work hours. I want to disable Slack Notifications all the time, except during work hours. This is simply not possible with iOS and represents a fundamental flaw in the design. I can of course disable Slack Notifications fully, but then I can’t enable them for a particular Focus Mode. I could also painstakingly configure focus modes to consume contiguous time blocks throughout the day, but this is error prone and there are times when a focus mode gets switched off for some reason and I’m inundated with notifications I don’t want. The Apple Watch is also unaware of Focus Filters and will happily show calendar appointments despite the same appointments being filtered out on my Phone.</p>
+<p>I’m not quite sure how Apple missed the obvious on this one. Perhaps they are stuck dealing with technical debt and the current system is a compromise based on what is technically achievable. Perhaps they genuinely think the current system is adequate. Perhaps I’m the outlier. Either way, I hope they address this issue. Currently, iOS still makes it far too difficult to separate work and personal content.</p>
+
+</article>
+<hr>
+
+
+
+<nav class="pagination-links">
+  <a href="/page/2/">Older&nbsp;Posts &rarr;</a> 
+</nav>
+
+
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="inner">
+        <p>&copy; 2000 –
+          2025
+          Marc Wickens
+        </p>
+      </div>
+    </footer>
+
+    <script src="/static/js/compare.js" defer="defer"></script>
+    <script data-goatcounter="https://imarc.goatcounter.com/count" async="async" src="//gc.zgo.at/count.js"></script>
+
+  </body>
+</html>

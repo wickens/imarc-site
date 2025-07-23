@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-default">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>
+      Chrome Uses More RAM by Design
+        ·
+        iMarc
+      
+    </title>
+    
+
+    <link rel="stylesheet" href="/static/css/site.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&family=Fira+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+
+    <link rel="icon" type="image/png" href="/imarc-icon.png">
+    <link rel="apple-touch-icon" href="/imarc-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/imarc-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/imarc-icon.png">
+    <link rel="alternate" type="application/rss+xml" href="/feed/index.xml" title="iMarc RSS">
+
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="inner">
+        <a class="site-title" href="/">iMarc</a>
+        <p class="tagline">thoughts on tech • by Marc Wickens</p>
+
+        <nav class="site-nav">
+          <a href="/">Home</a>
+          <a href="/Gear/">Gear</a>
+          <a href="/archive/">All Posts</a>
+          <a href="http://marc.wickens.org.uk">About</a>
+          <a href="/riseley">Riseley History</a>
+          <!-- <a href="https://mandiandmarc.wickens.uk/">Wedding</a> -->
+
+          <form class="site-search" action="/search/" method="get">
+            <label for="search-input" class="visually-hidden">Search</label>
+            <input id="search-input" name="q" type="search" placeholder="Search…"/>
+          </form>
+
+        </nav>
+      </div>
+    </header>
+
+    <main class="content inner">
+      <article>
+  <h1>Chrome Uses More RAM by Design</h1>
+  <p class="meta">26 Feb 2021</p>
+  <p>Great <a href="https://birchtree.me/blog/yes-chrome-uses-more-ram-than-safari-but-how-much-more/">video by Matt</a> that shows that Chrome isn't always <em>that</em> different to Safari in its memory consumption as others <a href="https://www.flotato.com/post/memory-chrome-safari-flotato">have found</a>. Most of my daily collaboration is done using Microsoft Teams, which is an Electron app - <a href="https://imarc.co.uk/2021/01/05/microsoft-is-replacing-the-outlook-app-with-a-web-app/">which is to say a web application bundled in its own Chromium wrapper so it can run like a desktop application</a>. I've often noticed Microsoft Teams takes up <em>huge</em> amounts of RAM, especially considering it's not really doing anything that complicated most of the time. A while back I researched phenomena and found this article about <strong><a href="https://docs.microsoft.com/en-us/microsoftteams/teams-memory-usage-perf">how Chromium manages memory</a></strong> on Microsoft's site:</p>
+<blockquote>
+<p>Chromium detects how much system memory is available and utilizes enough of that memory to optimize the rendering experience. When other apps or services require system memory, Chromium gives up memory to those processes. Chromium tunes Teams memory usage on an ongoing basis in order to optimize Teams performance without impacting anything else currently running.<br>
+…<br>
+When computers have more memory, Teams will use that memory. In systems where memory is scarce, Teams will use less.</p>
+</blockquote>
+<p>Put simply, Chrome is taking the idea that <em>'empty RAM is wasted RAM'</em>, and running with it. The article goes on to link to the specific documentation from the Chromium project.</p>
+<p>This reminds me of when Windows Vista came out, complete with a <a href="/wp-content/uploads/2021/02/windows-vista-sidebar.jpg">sidebar full of widgets</a>. One of the default widgets showed CPU and RAM usage. At the time I was working in my local computer retailer, and remember customers being shocked that even with no applications running, Windows Vista was often using 40% of the available RAM, even on higher spec'd machines. Of course Windows was doing a smart thing by pre-loading applications likely to be used into memory so they could be launched faster, and so it was nothing to worry about.</p>
+<p>Chrome's philosophy has long been that <em>it is an operating system for the web</em> - it even has its own task manager. So it makes sense from that perspective to grab as much memory as possible, and use it to speed things up for users. For users who spend most of their day inside Chrome, it's probably doing them a favour. The problem is that these days we often end up running multiple instances of Chrome or Chromium derived apps like Slack or Teams competing alongside each other for system resources.</p>
+<p>As Matt shows, the difference between Safari isn't always that much, but the important thing to remember is that Chrome's memory usage will depend on how much overall memory your system has <em>available</em>.</p>
+
+  
+</article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="inner">
+        <p>&copy; 2000 –
+          2025
+          Marc Wickens
+        </p>
+      </div>
+    </footer>
+
+    <script src="/static/js/compare.js" defer="defer"></script>
+    <script data-goatcounter="https://imarc.goatcounter.com/count" async="async" src="//gc.zgo.at/count.js"></script>
+
+  </body>
+</html>

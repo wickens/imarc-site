@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-default">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>
+      Microsoft Is Replacing Outlook With a Web App
+        ·
+        iMarc
+      
+    </title>
+    
+
+    <link rel="stylesheet" href="/static/css/site.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&family=Fira+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+
+    <link rel="icon" type="image/png" href="/imarc-icon.png">
+    <link rel="apple-touch-icon" href="/imarc-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/imarc-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/imarc-icon.png">
+    <link rel="alternate" type="application/rss+xml" href="/feed/index.xml" title="iMarc RSS">
+
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="inner">
+        <a class="site-title" href="/">iMarc</a>
+        <p class="tagline">thoughts on tech • by Marc Wickens</p>
+
+        <nav class="site-nav">
+          <a href="/">Home</a>
+          <a href="/Gear/">Gear</a>
+          <a href="/archive/">All Posts</a>
+          <a href="http://marc.wickens.org.uk">About</a>
+          <a href="/riseley">Riseley History</a>
+          <!-- <a href="https://mandiandmarc.wickens.uk/">Wedding</a> -->
+
+          <form class="site-search" action="/search/" method="get">
+            <label for="search-input" class="visually-hidden">Search</label>
+            <input id="search-input" name="q" type="search" placeholder="Search…"/>
+          </form>
+
+        </nav>
+      </div>
+    </header>
+
+    <main class="content inner">
+      <article>
+  <h1>Microsoft Is Replacing Outlook With a Web App</h1>
+  <p class="meta">5 Jan 2021</p>
+  <p>According to <a href="https://www.windowscentral.com/project-monarch-outlook-web-universal-email-client-microsoft">Windows Central</a>, Microsoft is planning to replace the aging native Outlook apps for both Windows and Mac with a <a href="https://www.electronjs.org/">Chromium-wrapped HTML app</a>. I came across this link thanks to John Gruber, whose <a href="https://daringfireball.net/linked/2021/01/04/bowden-outlook">take on it</a> is unsurprisingly negative - within the Mac community there is a definite preference for native over web software over web apps.</p>
+<p>While I am inclined to agree - native software can often be superior to web software, it really depends on the UI framework being used. Outlook for Windows has a codebase that dates back to at least 1997, and so is likely using the Microsoft Foundation Classes, which themselves date back to 1992. Age itself is not the issue - Apple's own Cocoa framework derives much from early 90s NeXTSTEP technologies. The difference is Apple have constantly updated Cocoa, whereas Microsoft have instead introduced a series of new frameworks that never took off (<a href="https://en.wikipedia.org/wiki/Windows_Forms">here</a>, <a href="https://en.wikipedia.org/wiki/Windows_Presentation_Foundation">here</a> and <a href="https://en.wikipedia.org/wiki/Universal_Windows_Platform_apps">here</a>) and using them would have meant rewriting much of the Outlook codebase. This means the latest version of Outlook in 2021 still operates very much like a piece of software from the mid-2000s. Searching a few thousand emails causes Outlook to stop responding on a latest generate Intel i7.</p>
+<p>So given where Microsoft are, with no decent, modern and mature UI framework for Windows, what are the Outlook team supposed to do? Their biggest competitors are Gmail, Slack and Microsoft's own Teams - all web apps. They could spend the next 3 years rewriting the native app in a new UI framework, or they could utilise the already feature rich web app and spend the next 3 years building competitive features. Chromium based apps are also slow, but they're faster than a poorly written native apps. It's a crappy situation, but I think they've made a pragmatic choice.</p>
+<p>Of course if Outlook were Mac-only then it would be a no-brainier. The difficult choice would be between AppKit and UIKit.</p>
+
+  
+</article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="inner">
+        <p>&copy; 2000 –
+          2025
+          Marc Wickens
+        </p>
+      </div>
+    </footer>
+
+    <script src="/static/js/compare.js" defer="defer"></script>
+    <script data-goatcounter="https://imarc.goatcounter.com/count" async="async" src="//gc.zgo.at/count.js"></script>
+
+  </body>
+</html>

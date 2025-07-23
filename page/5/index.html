@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-default">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>
+      iMarc
+      
+    </title>
+    
+
+    <link rel="stylesheet" href="/static/css/site.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&family=Fira+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+
+    <link rel="icon" type="image/png" href="/imarc-icon.png">
+    <link rel="apple-touch-icon" href="/imarc-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/imarc-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/imarc-icon.png">
+    <link rel="alternate" type="application/rss+xml" href="/feed/index.xml" title="iMarc RSS">
+
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="inner">
+        <a class="site-title" href="/">iMarc</a>
+        <p class="tagline">thoughts on tech • by Marc Wickens</p>
+
+        <nav class="site-nav">
+          <a href="/">Home</a>
+          <a href="/Gear/">Gear</a>
+          <a href="/archive/">All Posts</a>
+          <a href="http://marc.wickens.org.uk">About</a>
+          <a href="/riseley">Riseley History</a>
+          <!-- <a href="https://mandiandmarc.wickens.uk/">Wedding</a> -->
+
+          <form class="site-search" action="/search/" method="get">
+            <label for="search-input" class="visually-hidden">Search</label>
+            <input id="search-input" name="q" type="search" placeholder="Search…"/>
+          </form>
+
+        </nav>
+      </div>
+    </header>
+
+    <main class="content inner">
+      
+
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2021/04/18/apple-please-make-it-easier-to-report-scam-apps/">Apple, Please Make It Easier To Report Scam Apps</a></h2>
+  <p class="meta">
+    <time datetime="2021-04-18T06:04:55.000+00:00">18 Apr 2021</time>
+  </p>
+
+  <p><img src="/wp-content/uploads/2021/04/img_8009.jpg?w=1024" alt=""></p>
+<p>I was searching Apple's App Store for something and came across a bunch of apps from a developer who offers a suite of apps that seem designed to confuse customers into paying for in-app purchases and subscriptions under false pretences.</p>
+<p>First there is a &quot;Find My AirPods&quot; type app which costs $4.99 a month and claims to be able to find Fitbit devices as well. Obviously this is a scam since this functionality is built into iOS and the APIs are not exposed to allow developers to even do this.</p>
+<p>Next there is a <em>Among Us</em> wallpaper app with a £2.99 in-app purchase - questionable as it seems to be using intellectual property owned by the creators of Among Us, <em>Innersloth</em>. This app is however nothing to do with them.</p>
+<p>Finally, there is an app named &quot;Audacity&quot; that uses the same icon as the popular open source audio editor <a href="https://www.audacityteam.org/">Audacity</a>. Only judging from the screenshots, it offers none of the functionality you would expect from its open source namesake and its privacy policy is hosted by Google Sites, not on audacityteam.org as one might expect. Unsurprisingly, this fake Audacity app costs £4.49 a month.</p>
+<p>There is also a “count down to a day” app which on the face of it doesn’t seem like a scam, this is a useful piece of functionality and I use such an app myself. This countdown app costs a whopping £9.99 per month.</p>
+<p>When responding to the case of a man who lost $600, 000 worth of bitcoin by using a scam app, Apple <a href="https://www.macrumors.com/2021/03/30/bitcoin-scam-app-costs-iphone-user-life-savings/">claimed</a> that “<em>In the limited instances when criminals defraud our users, we take swift action against these actors as well as to prevent similar violations in the future</em>.”.</p>
+<p>I am surprised that this developer has managed to get apps that use the names <em>AirPods</em>, <em>Among</em> <em>Us</em>, and <em>Audacity</em> through Apple’s review process since they are all well known brand names. While not directly comparable, when developing an Android app for a well-known global bank that was to be published in the Google Play Store, I had to have someone from the bank contact the Google Play review team to confirm I was authorised to publish an app that uses the bank’s name and logo. While the stakes here aren’t as high as a fake banking app, I would expect Apple to do something similar for apps related to popular games and open source software, not to mention apps using Apple’s own trademarks.</p>
+<p>So how to report these seemingly dodgy apps to Apple? The only way I can find so far is to install an app first.</p>
+<p>Yes that’s right - it’s only possible to report a problem with an app by going to your App Store purchase history page after purchasing or downloading it. There is no &quot;Report Suspicious App&quot; button on the App Store listing itself.</p>
+<p>But who in their right mind would install software they suspect is dodgy? I understand that some people might inadvertently pay for scam apps and need a refund, but waiting until after the fact seems lazy of Apple.</p>
+<ul>
+<li>
+<p><img src="/wp-content/uploads/2021/04/app-store-scam-1-1.png?w=1024" alt=""></p>
+</li>
+<li>
+<p><img src="/wp-content/uploads/2021/04/app-store-scam-4.png?w=1024" alt=""></p>
+</li>
+<li>
+<p><img src="/wp-content/uploads/2021/04/app-store-scam-7.png?w=1024" alt=""></p>
+</li>
+</ul>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2021/04/12/the-little-things-view-current-headphone-decibel-level-on-ios/">The Little Things: View Current Headphone Decibel Level on iOS</a></h2>
+  <p class="meta">
+    <time datetime="2021-04-12T19:58:09.000+00:00">12 Apr 2021</time>
+  </p>
+
+  <p><img src="/wp-content/uploads/2021/04/img_0008.png?w=237" alt=""></p>
+<p>A quick tip for iOS users. It’s possible to view the dB level that is currently being produced by your headphones at any time on iOS. This is useful if you want to make sure that your headphones don’t get too loud.</p>
+<p>To view the decibel level, you’ll first need to add the “Hearing” widget to Control Centre. You can do this by going to the Control Centre menu within the Settings app. Once you’ve added <em>Hearing</em>, the next time you swipe open Control Centre and select the newly added widget, you will see live a dB meter beneath the name of your headphones.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2021/04/10/online-advertising-might-be-one-giant-scam/">Online Advertising Might Be One Giant Scam</a></h2>
+  <p class="meta">
+    <time datetime="2021-04-10T15:57:46.000+00:00">10 Apr 2021</time>
+  </p>
+
+  <p><img src="/wp-content/uploads/2021/04/cant-get-you-out-of-my-head-adam-curtis.jpg?w=1024" alt=""></p>
+<p>If you listen to only one podcast this week then it should be the latest episode of <a href="https://www.talkingpoliticspodcast.com/blog/2021/314-adam-curtis">Talking Politics featuring the great documentary film-maker Adam Curtis</a>. I recommend listening to the entire episode, the bit at the 29 minutes was of particular interest as he explores the modern Internet, whether online advertising can possibly work, and how peculiar it is that advertising is no longer an add-on to the economy but central to it. Curtis also likens mining 'Big Data' for hidden patterns and inferring causality to the way in which conspiracy theories work. This seems obvious in hindsight. Mind blown. If 48 minutes isn't enough, he also delves deeper into a lot of the material covered in the podcast in his new BBC documentary series <a href="https://www.bbc.co.uk/iplayer/episodes/p093wp6h/cant-get-you-out-of-my-head">Can’t Get You Out of My Head</a>, which I also thoroughly recommend.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2021/03/27/20-years-of-macos/">20 Years of macOS</a></h2>
+  <p class="meta">
+    <time datetime="2021-03-27T18:01:04.000+00:00">27 Mar 2021</time>
+  </p>
+
+  <p>It is 2021 and would you believe it, macOS is 20 years old. Like someone who found out about band before they became famous, I used Mac OS X back when it was a strangely futuristic operating system that most people had never heard of.</p>
+<p>I left school in the summer of 2001 and to help jumpstart my journey into further education, I used some money gifted to me by my grandparents to buy a G3 Snow <a href="https://512pixels.net/2016/07/summer-2001-imac-g3/">iMac</a>. Already a bit of a geek, I knew enough about Macs to know that they were now capable of running OS X, which was Unix based. This meant I could use it do geeky things like running Apache and PHP, and also write up college homework in Microsoft Office. Buying an G3 iMac in the summer of 2001 was also exceptionally poor timing because weeks later Apple would release an updated G4 model, which ran Mac OS X much more smoothly.</p>
+<p>My early memories of Mac OS X were mainly of disappointment. Here was an exceedingly beautiful and stable operating system, but it was frustratingly slow. It would take many minutes to boot up, and simple tasks like opening a pulldown menu or resizing a window would cause it to chug. Until I received my <a href="https://www.macworld.com/article/151808/25osx-2.html">free 10.1 upgrade</a> from John Lewis, it was unusable, and so I stuck with MacOS 9.</p>
+<p>After installing 10.1 I did however start using Mac OS X as my main system. I recently found some old screenshots from that era, and so I thought it would be fun to take a look at some of the applications I was using 20 years ago. I’m not sure of the exact dates but I believe they are all from either 10.0 or 10.1. The screenshots were taken by <em>16 year old me</em>, so please forgive the embarrassing MSN Messenger friend lists and poorly written homework assignments.</p>
+<p>Scouting around the screenshots, here’s what I was running in 2001:</p>
+<ul>
+<li>
+<p><img src="/wp-content/uploads/2021/03/macosx-desktop-2001-1.jpg?w=1024" alt=""></p>
+<p>Mac OS X 10.1</p>
+</li>
+<li>
+<p><img src="/wp-content/uploads/2021/03/macosx-desktop-2002-1.jpg?w=1024" alt=""></p>
+<p>Mac OS X 10.1</p>
+</li>
+<li>
+<p><img src="/wp-content/uploads/2021/03/macosx-desktop-2002-2.jpg?w=1024" alt=""></p>
+<p>Mac OS X 10.1</p>
+</li>
+<li>
+<p><img src="/wp-content/uploads/2021/03/macosx-desktop-2002-3.jpg?w=1024" alt=""></p>
+<p>Mac OS X 10.1</p>
+</li>
+<li>
+<p><img src="/wp-content/uploads/2021/03/macosx-website-2001.jpg?w=800" alt=""></p>
+<p>Windows XP, reading about Mac OS X</p>
+</li>
+<li>
+<p><img src="/wp-content/uploads/2021/03/desktop-macos11-2021.jpg?w=1024" alt=""></p>
+<p>macOS in 2021</p>
+</li>
+</ul>
+<p><strong>Activity Monitor</strong> - Still something I use often to see how my system is performing. Thankfully now it looks a lot nicer.</p>
+<p><strong>Adobe Reader</strong> - An awful piece of software, which is thankfully no longer needed on the Mac these days. In 2001, I must have thought it necessary, despite the Preview app being bundled with the OS.</p>
+<p><strong>AOL</strong> - It was ugly, but it was one of the best unmetered dialup services in the UK at the time.</p>
+<p><strong>Clock</strong> - Early versions of OS X included a clock ‘widget’. This wasn’t an official widget like we have now, nor was it the HTML based widgets we would later see in Dashboard. It was simply an application with a non-rectangular window. Best of all, it was possible to customise how translucent the clock was - a novelty in 2001.</p>
+<p><strong>Fire</strong> - Before iChat, Fire was <em>the</em> app to use for accessing instant messaging platforms. ICQ, AIM, Yahoo - I was on all of them. The idea of instant messaging that emphasises online presence feels exceptionally dated now, since we are now always online.</p>
+<p><strong>iCab</strong> - Back in 2001 decent web browsers were difficult to come by. There was no Safari yet. Internet Explorer was pretty good, and had the ability to customise its colour scheme to match the iMac being used.  There was also Mozilla, which was starting to become a usable alternative to IE, but was still extremely slow. iCab was the third option and the only one that really felt “OS X native”.  Astonishingly iCab is still available for download in 2021.</p>
+<p><strong>iTunes</strong> - The first of Apple consumer high quality consumer oriented software that later included the likes of iPhoto and GarageBand. iTunes was in of itself a reason to own a Mac. It made the process of ripping and burning CDs painless. I remember the novel feeling of being able to browse the web while iTunes was burning a CD, thanks to Mac OS X’s ability to multitask. On Windows ME and 98 (XP had not been released yet) this wasn’t possible. Burning a CD would make the entire computer unresponsive. iTunes came in to its own with the release of the <a href="http://lostinlogic.com/2011/11/06/10-years-of-the-ipod/index.html">iPod</a>, which I was lucky enough to own early on too.</p>
+<p><strong>MSN Messenger</strong> - More commonly known as simply ‘MSN’, it was the centre of my social life from the age of 13. I would use it to chat to friends after school or to random people I’d added who I’d met on <a href="https://imarc.co.uk/2020/06/21/farewell-net-magazine/">forums</a>. I wonder if today we would be concerned if a 16 year old was talking to random people they’ve met online, but for me it was fine. At 16, I felt like I was an adult!</p>
+<p><strong>Microsoft Office</strong> - I purchased the full version of ‘Office X’ which included Word, Excel, PowerPoint and Entourage. It was clearly a straight port from the classic MacOS version, and was using some kind of translation layer to translate Windows code to Mac code. I remember writing Visual Basic for Applications (VBA) code to make full on Windows windows appear. The headline feature for Word was non-contiguous selection.</p>
+<p><strong>Palm Desktop</strong> - This one really sums up 2001. Back then we had PDAs. My phone was a <a href="https://archive.lostinlogic.wickens.org.uk/content/2013/09/12/my-history-in-phones/">Motorola T191</a>. If you wanted to have more than just a handful of phone numbers in your pocket, you needed a Personal Digital Assistant (PDA). I would later upgrade my Palm IIIe to a <a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwid04D--9DvAhWERxUIHcvfDdIQFjAAegQIAxAD&amp;url=https://imarc.co.uk/2003/07/24/hp-ipaq-2200-review/&amp;usg=AOvVaw1GYvY3K77yo8XDEmz_e_IV">Microsoft Pocket PC</a>.</p>
+<p><strong>Stickies</strong> - The venerable Post-it note app. Enough said.</p>
+<p><strong>Terminal</strong> - I used to use this for learning basic Linux commands, and configuring the likes of PHP, Apache and MySQL. Oh, and browsing the web in Lynx, apparently.</p>
+<p><strong>Windows Media Player</strong> - Steaming audio or video on the web was a horrible experience in 2001. Partly due to limited bandwidth, but also because there were multiple competing formats. Apple would push QuickTime. Microsoft would insist on you installing Windows Media Player, and everyone else would use RealPlayer. Windows Media Player for the Mac wasn’t the full-on media management solution it was on Windows, but merely a way to playback files encrypted using Microsoft’s DRM.</p>
+<p>After 20 years, I really think Apple deserve enormous credit for not screwing up macOS. Despite some missteps, on the whole they’ve keep modernising it without any major regressions. If you were to sit someone from 2001 down in front of the latest version of the operating system in 2021, they would find their way around just fine. Yet it doesn’t feel old. Contrast this to Windows, which has had multiple makeovers and seems to be less of a priority for Microsoft these days, doesn’t support non-modal dialogs, and still has screens that date back to Windows XP. Not many operating systems can claim to be <a href="https://youtu.be/6gezrVPZHZA?t=176">referenced in a U2 song either.</a> After all these years, macOS is still the only desktop operating system that feels like it’s made for users, rather than IT administrators or developers. Little things like being able to drag a project folder to the dock for the duration of that project in order to have easy access to all the related files, the ability to <a href="https://www.macobserver.com/tmo/article/working-with-windows-in-the-background">operate a background window without bringing it to the foreground</a>, and best of all, the varied ecosystem of <a href="http://netnewswireapp.com">indie software</a>.</p>
+<p>Happy Birthday Mac OS X, here's to 20 more years!</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2021/03/27/no-video-calls-on-friday/">No Video Calls on Friday</a></h2>
+  <p class="meta">
+    <time datetime="2021-03-27T09:05:30.000+00:00">27 Mar 2021</time>
+  </p>
+
+  <p><a href="https://www.theguardian.com/business/2021/mar/23/citigroup-ceo-ordains-zoom-free-fridays-to-ease-relentless-pandemic-workday">The Guardian</a> on Citigroup banning internal video calls on Fridays::</p>
+<blockquote>
+<p>Global investment bank Citigroup has banned work video calls on Fridays in an attempt to help employees break free from the “relentlessness of the pandemic workday”.</p>
+<p>Jane Fraser, Citi’s new chief executive, told staff that the last day of the working week would be known as “Zoom-free Fridays”.</p>
+</blockquote>
+<p>This is in the context of what appears to be an unhealthy workaholic culture over at Citigroup, but it's still interesting to see more and more people coming to the view that video calls <a href="https://imarc.co.uk/2021/02/28/time-to-turn-off-video-to-avoid-online-meeting-fatigue/">aren't always the right form of communication</a>.</p>
+<p>Here's The Verge's Nilay Patel:</p>
+<p>https://twitter.com/reckless/status/1371873243045433344</p>
+<p>Once it is safe to go back to the office, I can see myself and others opting to go in for meetings once or twice a week, while remaining at home the rest of the time to get work done. In this world video calls become increasingly unnecessary. It also sets a clear boundary between discussing getting work done, and <em>actually</em> getting work done, which might be quite illuminating.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2021/03/14/saying-goodbye-to-podcast-subscriptions/">Saying Goodbye to Podcast &quot;Subscriptions&quot;</a></h2>
+  <p class="meta">
+    <time datetime="2021-03-14T07:10:03.000+00:00">14 Mar 2021</time>
+  </p>
+
+  <p><img src="/wp-content/uploads/2021/03/outlook-subscribe.png?w=566" alt=""></p>
+<p>I_mage courtesy of <a href="https://www.dbase.com/Knowledgebase/dbulletin/bu01su.htm">dbase.com</a>_</p>
+<p>Apple is ditching the word 'Subscribe' as a means to describe the act of telling your favourite podcast player to keep checking a particular feed and have the latest episode available at a moment's notice. Instead it will use &quot;Follow&quot;, which seems to make a lot more sense as a way represent passively consuming a feed at no cost. <em>Subscribe</em> is one of those words that predates podcasts, I remember &quot;subscribing&quot; to newsgroups as a teenager and worrying that my parents were going to receive a bill for it. They never did.</p>
+<p>My bet is the etymology comes from email mailing lists, where I think the word <em>subscribe</em> still makes sense. Funnily enough, in 2021 email mailing lists are having something of a <a href="https://www.theguardian.com/music/2021/feb/25/new-cue-former-q-editors-join-newsletter-publishing-boom">renaissance</a>. With paid newsletters being <em>in</em>, and advertising being <em>out</em>, I also expect this change will be because Apple will be pushing paid podcasts, where the word <em>subscribe</em> does make sense.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2021/03/12/monetising-hobbies/">Monetising Hobbies</a></h2>
+  <p class="meta">
+    <time datetime="2021-03-12T08:42:13.000+00:00">12 Mar 2021</time>
+  </p>
+
+  <p><img src="/wp-content/uploads/2021/03/marc-running.jpg?w=1024" alt=""></p>
+<p><em>That's me (right) - want your logo on display?</em></p>
+<p>I am looking for ways to monetise my running.  I usually run 5 kilometres a couple of times during the week and a longer 10 mile (16.10K) run at the weekend. This is a heavy time investment. The 5K runs take between 22 and 30 minutes depending on the weather, my energy levels and the incline of the route. Similarly, the 10 mile run takes usually takes around 1 hour and 26 minutes from my Sunday. This may seem like a small slice of the weekend, but I have to make sure I get up extra early and eat a good breakfast and then wait for a couple of hours before I’m ready to start pounding the pavement. On my return, I need a shower, followed by a long recovery period which involves eating again and then sitting still for a few hours. There are other costs too; a decent pair of running shoes costs between £100 and £120, and only last a year. I could pay less, but I like to support smaller, specialist running shops rather than the likes of Sports Direct. I also need shoes that offer strong support due to the weird way I run which increases the price still. Not forgetting too the copious amount of pasta and other carbohydrates I have to consume. Running costs more than you'd think.</p>
+<p>All this has led me to the conclusion that I need to find a way to earn some extra cash from my running.</p>
+<p>This post is of course, not at all serious. No, I am not looking for anyone to pay me to do the thing I enjoy. Just as I wouldn’t expect to be paid to go climbing, canoeing, golfing, or to watch a film at the cinema. It’s fine to have an interest that you don’t make money from. I never expect to make money from this blog. It is something I do because I enjoy it. <em>It’s a hobby</em>. I won’t go as far as to say I should be paying <em>you</em> to read it, but I do expect to pay a small amount for WordPress hosting, and to put a few hours a week into writing content.</p>
+<p>The reason I’m writing this is because I’ve noticed a theme in various podcasts, blogs and YouTube channels that I've come across recently that some creators who are doing the thing they love and not as their sole means of income are expressing their dissatisfaction at not being able to monetise what is essentially a hobby. I use the term &quot;hobby&quot; not in a derogatory sense - indeed the fact that many creators are not a full on professionals is what gives some of my favourite podcasts and YouTube channels their charm.</p>
+<p>Of course I'm not saying creators shouldn't <em>try</em> to make money, and some professionals will of course rely on their creative output as their main source of income. For many of us however, maybe a hobby is just fine? We can't all be <em>The Verge</em>. Just I’m never going to be competing at running with <a href="https://en.wikipedia.org/wiki/Mo_Farah">Mo Farah</a>, not everyone will end up as successful as the podcast <em><a href="https://atp.fm/sponsor">ATP</a></em>.</p>
+<p>If you enjoy the process of creating, and giving something away to an audience, then maybe that's payment enough?</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2021/03/02/m1-macs-really-are-always-on/">M1 Macs Really Are ‘Always-On’</a></h2>
+  <p class="meta">
+    <time datetime="2021-03-02T20:01:53.000+00:00">2 Mar 2021</time>
+  </p>
+
+  <p><a href="https://youtu.be/5AwdkGKmZ0I?t=723"><img src="/wp-content/uploads/2021/04/m1-always-on.png?w=1024" alt=""></a></p>
+<p>Apple's new M1 Macs use the same 'always-on' processor technology that mobile devices have been using for years. It has always been imperative that a mobile phone must be permanently sitting and listening, waiting for a call or message to come in, so it can sound the ringtone. Modern tablets such as the iPad evolved from this line of thinking and so are naturally <em>always-on</em> too.</p>
+<p>Laptops and Desktops have however have never taken this route. Recent versions of Windows and macOS will wake up periodically to perform certain tasks, or in response network events, but I've never noticed them doing much in realtime.</p>
+<p>I was surprised then to notice that my new M1 MacBook, while apparently asleep, was busy running rules on incoming mail seconds after it had arrived. My phone buzzes as a new email is received, and I open the mail app on my phone to see the message has been flagged, moved or whatever else I have set as a rule on my Mac. This would happen with my old 2013 MacBook, but the rules would only run every few hours. It's not a bug as far as I can tell, as the battery life when the MacBook is sleeping is still outstanding. I'm yet to explore how this works, or how much 3rd party developers can take advantage of this <em>always-on</em> state, but the possibility of having powerful devices, which aren't locked down in the same way as iPads and iPhones, performing <em>useful</em> tasks in near realtime while using hardly any battery, is pretty exciting.</p>
+<p><strong><em>Update:</em></strong> As of macOS 11.3, Apple has <a href="https://support.apple.com/en-us/HT211896">restored hibernation support</a> to M1 Macs. Hibernation mode is a lower power state Mac laptops go into after being asleep for around 3 hours. I’ve not noticed any difference in behaviour yet, let me know about your experience in the comments.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2021/02/28/time-to-turn-off-video-to-avoid-online-meeting-fatigue/">Time to Turn Off Video to Avoid Online Meeting Fatigue?</a></h2>
+  <p class="meta">
+    <time datetime="2021-02-28T09:49:00.000+00:00">28 Feb 2021</time>
+  </p>
+
+  <p><img src="/wp-content/uploads/2021/02/pexels-andrea-piacquadio-3755755.jpg?w=1024" alt=""></p>
+<p><strong>Researchers at Stanford have <a href="https://news.stanford.edu/2021/02/23/four-causes-zoom-fatigue-solutions/">identified four causes of what they call &quot;Zoom fatigue&quot;</a></strong>. They all resonate with me as someone who has a lot of online meetings,. (Though I'm not keen on the attempt to turn &quot;Zoom&quot; into a generic noun!)</p>
+<p>I recommend reading the article in full, but the four causes boil down to <em><strong>excessive eye contact,</strong></em> <strong><em>always seeing yourself</em>,</strong> <strong><em>reduced mobility</em>,</strong> and <em><strong>higher cognitive load</strong></em> due to the fact it's difficult to interpret body language. The solutions offered range from suggestions on how conference software could be adapted to taking regular &quot;audio only&quot; breaks.</p>
+<p>Seeing people is great, and a necessary part of working together, but once the the initial greetings are done, it adds little value most of time, in my experience at least. Thankfully Microsoft Teams lets you hide <em>other people's video</em> as well as your own. Back when I used to work in the office, I would often pace up and down while on calls with clients, and studies have shown we are more intelligent and creative when we're moving. Now though, as the Stanford team point out, we are all sat in chairs, staring at each other directly in the eyes all day.</p>
+<p>There is no doubt that video is useful when you're meeting people for the first time and trying to form a connection with them, or for calls where you really want to gauge the other person's true feelings about something. But for meetings that require excessive brainpower or creativity, it's probably worth switching off video and going for a walk.</p>
+<p>Photo by <strong><a href="https://www.pexels.com/@olly?utm_content=attributionCopyText&amp;utm_medium=referral&amp;utm_source=pexels">Andrea Piacquadio</a></strong>.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2021/02/26/moving-away-from-lastpass-premium/">Moving Away From LastPass Premium</a></h2>
+  <p class="meta">
+    <time datetime="2021-02-26T11:46:00.000+00:00">26 Feb 2021</time>
+  </p>
+
+  <p>LastPass made headlines recently because it's stripping back its free offering and asking users to pay for features that were once bundled for free.</p>
+<p>I've been a paid LastPass subscriber for over 5 years, and over that time it has become a critical part of both my professional and home workflows. The problem is the issues it had 5 years ago are still problems now. The product seemingly hasn't moved forward much at all. LastPass has a fundamental misunderstanding of basic User Interface design principals. It looks awful and is difficult to use. Each app behaves differently on different platforms, and features are shoehorned in with little regard to the expected user workflow. How many times have I searched for a site, copied the username, only to have to <em>search for the site again</em> in order to copy the password. Errors are frequent, when generating a new password I always end up pasting it into a text editor temporarily in case LastPass fails to save it. It's also incredibly slow, even on 2020 Intel i5 processor.</p>
+<p>I mention this because I recently helped a friend migrate from LastPass's free offering to Apple's iCloud Keychain. Compared so LastPass, iCloud is so much <em>nicer</em> to user. I understand LastPass are at a disadvantage in trying to make their product fit into the ecosystems of Apple and Google, but it made me think about switching. Now Apple have made an official way to access <a href="https://support.apple.com/en-gb/guide/icloud/mmfeee20145e/1.0/icloud/1.0">iCloud passwords on Windows</a>, I'm seriously thinking about switching. To their credit LastPass do make it easy to get a CSV export of all your data.</p>
+<p>What's your experience with iCloud Keychain? Is it worth switching to from LastPass Premium?</p>
+
+</article>
+<hr>
+
+
+
+<nav class="pagination-links">
+  <a href="/page/6/">Older&nbsp;Posts &rarr;</a> 
+</nav>
+
+
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="inner">
+        <p>&copy; 2000 –
+          2025
+          Marc Wickens
+        </p>
+      </div>
+    </footer>
+
+    <script src="/static/js/compare.js" defer="defer"></script>
+    <script data-goatcounter="https://imarc.goatcounter.com/count" async="async" src="//gc.zgo.at/count.js"></script>
+
+  </body>
+</html>

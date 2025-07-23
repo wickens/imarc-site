@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-default">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>
+      Developer Centric Design
+        ·
+        iMarc
+      
+    </title>
+    
+
+    <link rel="stylesheet" href="/static/css/site.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&family=Fira+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+
+    <link rel="icon" type="image/png" href="/imarc-icon.png">
+    <link rel="apple-touch-icon" href="/imarc-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/imarc-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/imarc-icon.png">
+    <link rel="alternate" type="application/rss+xml" href="/feed/index.xml" title="iMarc RSS">
+
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="inner">
+        <a class="site-title" href="/">iMarc</a>
+        <p class="tagline">thoughts on tech • by Marc Wickens</p>
+
+        <nav class="site-nav">
+          <a href="/">Home</a>
+          <a href="/Gear/">Gear</a>
+          <a href="/archive/">All Posts</a>
+          <a href="http://marc.wickens.org.uk">About</a>
+          <a href="/riseley">Riseley History</a>
+          <!-- <a href="https://mandiandmarc.wickens.uk/">Wedding</a> -->
+
+          <form class="site-search" action="/search/" method="get">
+            <label for="search-input" class="visually-hidden">Search</label>
+            <input id="search-input" name="q" type="search" placeholder="Search…"/>
+          </form>
+
+        </nav>
+      </div>
+    </header>
+
+    <main class="content inner">
+      <article>
+  <h1>Developer Centric Design</h1>
+  <p class="meta">17 Oct 2021</p>
+  <p>The new version of Safari for iPad is a classic case of 'developer centric design'. That is, designing a product that you as a developer would love to have, but not considering how a less technical user base might approach the app. Take the new sidebar - technically, it's a marvel: I can access tab groups (a new feature), my bookmarks, the reading list and browsing history all from one convenient location. In addition, Private browsing is now just another tab group - how cool is that? I wonder if they inherit the same Objective-C <a href="https://www.tutorialspoint.com/objective_c/objective_c_inheritance.htm">interfaces</a> under the hood? Of course they do - and that's the problem. The interface appears to have been designed around its technical implementation.</p>
+<ul>
+<li>
+<p><a href="/wp-content/uploads/2021/10/img_0142_ipadair4_skyblue_landscape.png"><img src="/wp-content/uploads/2021/10/img_0142_ipadair4_skyblue_landscape.png?w=656" alt=""></a></p>
+</li>
+<li>
+<p><a href="/wp-content/uploads/2021/10/bookmarks_ios1.jpg"><img src="/wp-content/uploads/2021/10/bookmarks_ios1.jpg?w=656" alt=""></a></p>
+</li>
+</ul>
+<p>While new the new 'do everything' sidebar in Safari might sound great on paper, it just doesn't old up in real world usage. Since the release of iOS 15, I've found myself using the iPad far less because of this. Tasks that should be highly optimised are frustratingly slow to complete. Take opening a bookmark and then closing the sidebar in order to browse using the entire width of the screen. It takes up to 6 steps:</p>
+<ol>
+<li>Open the sidebar</li>
+<li>Optionally press <em>back</em> if the side bar was in another list (History or Reading List)</li>
+<li>Select <em>Bookmarks</em></li>
+<li>Navigate to the bookmark and click it</li>
+<li>Navigate back up to the root of the sidebar</li>
+<li>Close the sidebar</li>
+</ol>
+<p>Contrast this with the original version of Safari:</p>
+<ol>
+<li>Tap the <em>bookmarks</em> toolbar button</li>
+<li>Navigate to the bookmark and click it</li>
+</ol>
+<p>That is 3, maybe 4 additional steps - for something which I imagine is a pretty common action.</p>
+<p>While I'm not suggesting we all revert to a version of Safari that came out 10 years ago, I think the spirit of the original design: simplicity and usability are still worthwhile goals in 2021. Even with advanced features such as tab groups and browser extensions, there has to be a better way. A simple fix would be to add a bookmarks button back to the toolbar, and remove <em>tab groups</em> from the sidebar entirely (that functionality can also be accessed from the tab overview screen).</p>
+<p>Importantly, Apple need to learn how to <em>think like their users</em> again, and not build products simply for themselves. While I can't claim to represent all Apple users, I'm certainly <a href="https://daringfireball.net/linked/2021/10/15/safari-15-favorites-bar">not the only one</a> who finds the new design messy and confusing.</p>
+
+  
+</article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="inner">
+        <p>&copy; 2000 –
+          2025
+          Marc Wickens
+        </p>
+      </div>
+    </footer>
+
+    <script src="/static/js/compare.js" defer="defer"></script>
+    <script data-goatcounter="https://imarc.goatcounter.com/count" async="async" src="//gc.zgo.at/count.js"></script>
+
+  </body>
+</html>

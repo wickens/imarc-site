@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-default">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>
+      In Shock News, Regulators Regulate
+        ·
+        iMarc
+      
+    </title>
+    
+
+    <link rel="stylesheet" href="/static/css/site.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&family=Fira+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+
+    <link rel="icon" type="image/png" href="/imarc-icon.png">
+    <link rel="apple-touch-icon" href="/imarc-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/imarc-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/imarc-icon.png">
+    <link rel="alternate" type="application/rss+xml" href="/feed/index.xml" title="iMarc RSS">
+
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="inner">
+        <a class="site-title" href="/">iMarc</a>
+        <p class="tagline">thoughts on tech • by Marc Wickens</p>
+
+        <nav class="site-nav">
+          <a href="/">Home</a>
+          <a href="/Gear/">Gear</a>
+          <a href="/archive/">All Posts</a>
+          <a href="http://marc.wickens.org.uk">About</a>
+          <a href="/riseley">Riseley History</a>
+          <!-- <a href="https://mandiandmarc.wickens.uk/">Wedding</a> -->
+
+          <form class="site-search" action="/search/" method="get">
+            <label for="search-input" class="visually-hidden">Search</label>
+            <input id="search-input" name="q" type="search" placeholder="Search…"/>
+          </form>
+
+        </nav>
+      </div>
+    </header>
+
+    <main class="content inner">
+      <article>
+  <h1>In Shock News, Regulators Regulate</h1>
+  <p class="meta">21 May 2022</p>
+  <p>Apple blogger John Gruber isn’t happy about recently agreed EU legislation. In a recent post entitled “<a href="https://daringfireball.net/linked/2022/05/20/eu-regulators-gonna-regulate">E.U. Regulators Gonna Regulate</a>” he wrote:</p>
+<blockquote>
+<p>This is bananas. All third party developers get control over the secure enclave and the software that controls it? Would be good to give them such control over the camera, microphone, and location data, too.</p>
+</blockquote>
+<p>The text of the legislation <a href="https://www.consilium.europa.eu/media/56086/st08722-xx22.pdf">says the following</a> (original emphasis):</p>
+<blockquote>
+<p>A gatekeeper that is a manufacturer of a device <strong><em>can</em></strong> restrict access to some of the functionalities in that device, such as near-field-communication technology <strong><em>secure elements and processors, authentication mechanisms and</em></strong> the software used to operate <strong><em>those technologies</em></strong>, which <strong><em>can</em></strong> be required for the effective provision of <strong><em>a</em></strong> service <strong><em>provided together with, or in support of, the core platform service</em></strong> by the gatekeeper as well <strong><em>as by any potential third party undertaking providing such service.<br>
+….</em></strong></p>
+<p><strong><em>If dual roles are used in a manner that prevents alternative service and hardware providers from having access under equal conditions to the same operating system, hardware or software features that are available or used by the gatekeeper in the provision of its own complementary or supporting services or hardware, this could significantly undermine innovation by such alternative providers, as well as choice for end users.</em></strong></p>
+<p><strong><em>The gatekeepers should, therefore, be required to ensure, free of charge, effective interoperability with, and access for the purposes of interoperability to, the same operating system, hardware or software features that are available or used in the provision of its own complementary and supporting services and hardware. Such access can equally be required by software applications related to the relevant services provided together with or in support of the core platform service in order to effectively develop and provide functionalities interoperable with those provided by gatekeepers.</em></strong></p>
+</blockquote>
+<p>My admittedly layperson's interpretation of the legislation is that all Apple would need to do is provide API access that would allow competitors to provide equivalent services to those that Apple provide. Just as no modern operating system gives application software <strong><em>direct access</em></strong> to the CPU and memory, Apple won’t need to give anyone <strong><em>direct access</em></strong> to the Secure Enclave if they've designed it well**.** The text explitcly says <em>&quot;A gatekeeper that is a manufacturer of a device <strong>can</strong> restrict access to some of the functionalities in that device&quot;.</em> In the same way anyone can write an application that creates Instagram-like photo filters, the EU is saying that anyone should be able to create a rival to any service Apple also offers, such as a digital wallet application or App Store. But then again I am no legal scholar and could be reading this wrong.</p>
+<p>Gruber then goes on to write:</p>
+<blockquote>
+<p>This is profoundly anti-consumer. Consumers aren’t asking for any of this shit. Actual people love their phones more than their computers — whether Macs or PCs — not despite the fact that their phones are tightly controlled consoles, but because they are tightly controlled consoles. These regulators don’t see it that way, because they’re idiots. They think they can legislate their way to a world where the iPhone (and Android, which is also console-like) remains far safer and more reliable than PCs while mandating that all the protections that have made them far safer and more reliable than PCs be removed. It’s absurd.</p>
+</blockquote>
+<p>I would have loved to see a citation when he says <em>&quot;consumers aren’t asking for any of this shit&quot;</em>, as I presume he is referring to a survey that was carried at some point. And no, the iPhone and iPad are not consoles. <a href="https://imarc.co.uk/2021/01/09/what-is-a-console/">I've covered this before</a>.</p>
+<p>Unfortunately, Gruber then makes a 90º turn and drives his argument straight into a brick wall, calling the EU &quot;idiots&quot;. Instead of trying to understand the EU position and offer some valuable insights and perhaps an alternative solution, he resorts to petty name-calling.</p>
+<p>He then goes on:</p>
+<blockquote>
+<p>Worth noting: “Europe” accounts for nearly 25 percent of Apple’s revenue. That includes 23 countries that aren’t in the E.U. — most notably, of course, the U.K. — but the E.U. is too big for Apple to just tell them to pound sand. I would imagine though, if this comes to fruition, E.U. citizens are going to wind up buying iPhones that operate very differently from those sold everywhere else in the world, and they will suffer for it.</p>
+</blockquote>
+<p>I think this is an overly pessimistic take on the proposals. If Apple were to constructively engage with the EU, then opening up iOS could give the ecosystem a boost and offer some much needed novelty and excitement that has been missing for at least half a decade. I can't remember the last time I installed a new app on my iPhone or iPad that excited me in some way. Between 2010 and 2013 it seemed like every week there was something new and exciting my devices could do with a new app. Now it seems that all we get is more and more refined text editors and to-do list apps. Instead, I fear that Apple will belligerently fight the EU, resulting in poor outcomes for everyone.</p>
+<p>I'm not saying I agree with every word of the EU legislation, far from it. The EU has a poor track record when it comes to legislating tech companies. Just look at the Microsoft browser-ballot which was far too late to be effective, and mandatory cookie banners which haven't solved any of the concerns around privacy yet have made browsing the web far more annoying. I just feel that a more constructive discourse that goes beyond &quot;they're idiots&quot; is needed. I don't want to live in a world where my Sony TV only lets me watch movies from Sony Pictures, or a Telsa Car that only allows me drive to some future Elon Musk-owned restaurant chain, yet that's essentially how the iPhone and iPad operate today when it comes to certain vertical markets.</p>
+<p>It is possible to be a fan of Apple while resisting the paternal instinct to defend everything it does. Surely a company that can make a UNIX-based wrist-computers and competition-thrashing CPUs can figure out a way to allow 3rd parties take payments, or run App Stores without compromising security?</p>
+
+  
+</article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="inner">
+        <p>&copy; 2000 –
+          2025
+          Marc Wickens
+        </p>
+      </div>
+    </footer>
+
+    <script src="/static/js/compare.js" defer="defer"></script>
+    <script data-goatcounter="https://imarc.goatcounter.com/count" async="async" src="//gc.zgo.at/count.js"></script>
+
+  </body>
+</html>
