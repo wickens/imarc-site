@@ -1,16 +1,18 @@
 name: Build & Deploy Eleventy to GitHub Pages
 
-# ← This section tells Actions *when* to run
 on:
   push:
     branches:
-      - main          # run on every push to `main`
-  workflow_dispatch:  # also allow you to trigger it manually from the UI
+      - main
+  workflow_dispatch:
+
+# ← Add this
+permissions:
+  contents: write
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
