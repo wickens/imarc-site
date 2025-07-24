@@ -46,4 +46,4 @@ In fact, there’s an app for almost everything available on the iPhone, and the
 
 So I can’t say I miss iOS much, except for the eye candy. Maybe iOS 5 will sway me next time.
 
-A highly recommended phone.
+A highly recommended phone!
