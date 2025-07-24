@@ -12,7 +12,7 @@ Compared to iOS, Android has a very “home-brewed” feel to it. The interface 
 
 ## Unlocked Doors
 
-While the software does have a “rough and ready” feel to it, this has benefits, as there is virtually no vendor lock-in. I managed to stream music from my [DLNA NAS](http://www.imarc.co.uk/marcwickens/2010/03/gadget-review-iomega-nas-media-server/) box quite easily. Apple will let you do this, but only within their ecosystem. There is free satnav (although the phone doesn’t come with a car kit), voice input, and a whole host of good-quality apps available from the app store. One really useful feature is HTC Sense Online, which lets you locate your phone, make it ring, and lock it remotely – great when you think you may have lost it.
+While the software does have a “rough and ready” feel to it, this has benefits, as there is virtually no vendor lock-in. I managed to stream music from my [DLNA NAS](/2010/03/11/from-the-archive-iomega-nas-media-server-review/) box quite easily. Apple will let you do this, but only within their ecosystem. There is free satnav (although the phone doesn’t come with a car kit), voice input, and a whole host of good-quality apps available from the app store. One really useful feature is HTC Sense Online, which lets you locate your phone, make it ring, and lock it remotely – great when you think you may have lost it.
 
 ## Battery Life
 
@@ -26,7 +26,7 @@ Having used the phone for over a month now (nearly two), I have a good idea of w
 
 The user experience is nowhere near as good as the iPhone. A good example of this is when I enter the contacts app and press the *Search* key. The search field does not automatically get focus, so I have to tap at the top of the screen (having just pressed the search key at the bottom), and then move back down again to begin typing. It feels awkward and unpolished.
 
-Then there are the bundled apps. Like a new laptop, the phone came bundled with lots of OEM crapware. It seems HTC want me to use *their* Twitter client, and there’s no way to delete it (or even remove the icon). What is it with hardware manufacturers trying to be software companies? Just like those pointless Wi-Fi utilities or launcher bars that the likes of Acer and HP used to bundle with their laptops (HP even made their own Media Centre – the Me Too Edition).
+Then there are the bundled apps. Like a new laptop, the phone came bundled with lots of OEM crapware. It seems HTC want me to use *their* Twitter client, and there’s no way to delete it (or even remove the icon). What is it with hardware manufacturers trying to be software companies? Just like those pointless Wi-Fi utilities or launcher bars that the likes of Acer and HP used to bundle with their laptops (HP even made their own Media Centre – the Me Too Edition). 
 
 Anyway, it’s a small annoyance, but the abundance of icons is likely to confuse many people.
 
