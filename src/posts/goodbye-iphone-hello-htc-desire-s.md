@@ -18,7 +18,6 @@ While the software does have a “rough and ready” feel to it, this has benefi
 
 I am disappointed with the battery life. My iPhone (when new) would be at about 70% at 5:30 pm when I left work, with average use. The Desire S was at about 40%. It is doing a lot more, however, and just proves how little battery technology has improved in the last few years.
 
-Part 2 of the review to come soon.
 
 Having used the phone for over a month now (nearly two), I have a good idea of what I think of it and how it compares to the iPhone.
 
