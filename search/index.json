@@ -43,7 +43,7 @@
 
   {
     "title":   "Troubleshooting GLIBCXX_3.4.26 Error on Raspberry Pi: .NET 9 Compatibility Issue",
-    "url":     "/2024/08/15/troubleshooting-glibcxx3-4-26-error-on-raspberry-pi-net-9-compatibility-issue/",
+    "url":     "/2024/08/15/troubleshooting-glibcxx3426-error-on-raspberry-pi-net-9-compatibility-issue/",
     "excerpt": "",
     "tags":    []
   },
@@ -71,7 +71,7 @@
 
   {
     "title":   "Why Is My Apple Watch Not Charging to 100%?",
-    "url":     "/2023/10/13/why-is-my-apple-watch-not-charging-to-100/",
+    "url":     "/2023/10/13/why-is-my-apple-watch-not-charging-to-100percent/",
     "excerpt": "",
     "tags":    []
   },
@@ -120,14 +120,14 @@
 
   {
     "title":   "Microsoft OneDrive Causing Sleepless Nights (on My Mac)",
-    "url":     "/2023/01/22/microsoft-onedrive-causing-sleepless-nights/",
+    "url":     "/2023/01/22/microsoft-onedrive-causing-sleepless-nights-on-my-mac/",
     "excerpt": "",
     "tags":    []
   },
 
   {
     "title":   "My First Gadget: The Oregon Scientific AM-080C 34KB",
-    "url":     "/2023/01/22/my-first-gadget-the-the-oregon-scientific-am-080c-34kb/",
+    "url":     "/2023/01/22/my-first-gadget-the-oregon-scientific-am-080c-34kb/",
     "excerpt": "",
     "tags":    []
   },
@@ -155,7 +155,7 @@
 
   {
     "title":   "System Preferences: Then and Now",
-    "url":     "/2022/09/03/macos-system-preferences-then-and-now/",
+    "url":     "/2022/09/03/system-preferences-then-and-now/",
     "excerpt": "",
     "tags":    []
   },
@@ -246,7 +246,7 @@
 
   {
     "title":   "How to Remove Clickbait Headlines From Apple News",
-    "url":     "/2021/06/19/how-to-remove-click-bait-headlines-from-apple-news/",
+    "url":     "/2021/06/19/how-to-remove-clickbait-headlines-from-apple-news/",
     "excerpt": "",
     "tags":    []
   },
@@ -428,7 +428,7 @@
 
   {
     "title":   "Microsoft Is Replacing Outlook With a Web App",
-    "url":     "/2021/01/05/microsoft-is-replacing-the-outlook-app-with-a-web-app/",
+    "url":     "/2021/01/05/microsoft-is-replacing-outlook-with-a-web-app/",
     "excerpt": "",
     "tags":    []
   },
@@ -582,7 +582,7 @@
 
   {
     "title":   "watchOS 7: After Five Years, The Apple Watch Is Hitting Its Stride, but at What Price?",
-    "url":     "/2020/09/27/watchos-7-after-five-years-the-apple-watch-is-hitting-its-stride-but-at-what-expense/",
+    "url":     "/2020/09/27/watchos-7-after-five-years-the-apple-watch-is-hitting-its-stride-but-at-what-price/",
     "excerpt": "",
     "tags":    []
   },
@@ -638,7 +638,7 @@
 
   {
     "title":   "Xbox Game Pass: Is the Future of Software Streamed?",
-    "url":     "/2020/08/08/streaming-software-xbox-game-pass/",
+    "url":     "/2020/08/08/xbox-game-pass-is-the-future-of-software-streamed/",
     "excerpt": "",
     "tags":    []
   },
@@ -652,7 +652,7 @@
 
   {
     "title":   "4 Questions to Improve Transparency in AI",
-    "url":     "/2020/08/05/transparency-in-ai/",
+    "url":     "/2020/08/05/4-questions-to-improve-transparency-in-ai/",
     "excerpt": "",
     "tags":    []
   },
@@ -673,7 +673,7 @@
 
   {
     "title":   "Hey.com's attitude is a refreshing change",
-    "url":     "/2020/07/19/hey-dot-coms-attitude-is-a-refreshing-change/",
+    "url":     "/2020/07/19/heycoms-attitude-is-a-refreshing-change/",
     "excerpt": "",
     "tags":    []
   },
@@ -701,7 +701,7 @@
 
   {
     "title":   "Hey.com should be an email client, not provider",
-    "url":     "/2020/06/20/hey-com-should-be-an-email-client-not-provider/",
+    "url":     "/2020/06/20/heycom-should-be-an-email-client-not-provider/",
     "excerpt": "",
     "tags":    []
   },
@@ -715,7 +715,7 @@
 
   {
     "title":   "\"Robots\"",
-    "url":     "/2020/05/31/msn-robots/",
+    "url":     "/2020/05/31/robots/",
     "excerpt": "",
     "tags":    []
   },
@@ -729,7 +729,7 @@
 
   {
     "title":   "There is no such thing as \"Common Sense\"",
-    "url":     "/2020/05/30/common-sense/",
+    "url":     "/2020/05/30/there-is-no-such-thing-as-common-sense/",
     "excerpt": "",
     "tags":    []
   },
@@ -806,7 +806,7 @@
 
   {
     "title":   "Can an iPad Replace a Laptop?",
-    "url":     "/2015/05/03/can-an-ipad-replace-a-laptop-seriously/",
+    "url":     "/2015/05/03/can-an-ipad-replace-a-laptop/",
     "excerpt": "",
     "tags":    []
   },
@@ -841,7 +841,7 @@
 
   {
     "title":   "Goodbye iPhone, Hello HTC Desire S",
-    "url":     "/2011/05/14/goodbye-iphone-hello-htc-desire-s/",
+    "url":     "/2011/08/03/goodbye-iphone-hello-htc-desire-s/",
     "excerpt": "",
     "tags":    []
   },
@@ -862,7 +862,7 @@
 
   {
     "title":   "Iomega NAS Media Server Review",
-    "url":     "/2010/03/11/from-the-archive-iomega-nas-media-server-review/",
+    "url":     "/2010/03/11/iomega-nas-media-server-review/",
     "excerpt": "",
     "tags":    []
   },
@@ -876,7 +876,7 @@
 
   {
     "title":   "My Review of the Nokia 6630",
-    "url":     "/2004/09/30/from-the-archives-my-review-of-the-nokia-6630/",
+    "url":     "/2004/09/30/my-review-of-the-nokia-6630/",
     "excerpt": "",
     "tags":    []
   },
@@ -890,7 +890,7 @@
 
   {
     "title":   "Netscape 6 Review",
-    "url":     "/2000/12/24/netmag-netscape-6-review-2000-windows98/",
+    "url":     "/2000/12/24/netscape-6-review/",
     "excerpt": "",
     "tags":    []
   }

@@ -103,9 +103,9 @@ The BBC made a complaint to the US tech giant after Apple Intelligence, which us
     
     <item>
       <title>Troubleshooting GLIBCXX_3.4.26 Error on Raspberry Pi: .NET 9 Compatibility Issue</title>
-      <link>https://imarc.co.uk/2024/08/15/troubleshooting-glibcxx3-4-26-error-on-raspberry-pi-net-9-compatibility-issue/</link>
+      <link>https://imarc.co.uk/2024/08/15/troubleshooting-glibcxx3426-error-on-raspberry-pi-net-9-compatibility-issue/</link>
       <pubDate>Thu, 15 Aug 2024 19:37:54 GMT</pubDate>
-      <guid>https://imarc.co.uk/2024/08/15/troubleshooting-glibcxx3-4-26-error-on-raspberry-pi-net-9-compatibility-issue/</guid>
+      <guid>https://imarc.co.uk/2024/08/15/troubleshooting-glibcxx3426-error-on-raspberry-pi-net-9-compatibility-issue/</guid>
       <description><![CDATA[<p><img src="/wp-content/uploads/2024/08/error_glibcxx-.png?w=1024" alt=""></p>
 <p>I was recently trying to compile a .NET project as a self-contained binary for <code>linux-arm</code> to run on my Raspberry Pi. When trying to run the binary, I kept getting the following error:</p>
 <pre><code>/usr/lib/arm-linux-gnueabihf/libstdc++.so.6: version GLIBCXX_3.4.26' not found (required by ./[executable])
@@ -156,9 +156,9 @@ The BBC made a complaint to the US tech giant after Apple Intelligence, which us
     
     <item>
       <title>Why Is My Apple Watch Not Charging to 100%?</title>
-      <link>https://imarc.co.uk/2023/10/13/why-is-my-apple-watch-not-charging-to-100/</link>
+      <link>https://imarc.co.uk/2023/10/13/why-is-my-apple-watch-not-charging-to-100percent/</link>
       <pubDate>Fri, 13 Oct 2023 10:31:27 GMT</pubDate>
-      <guid>https://imarc.co.uk/2023/10/13/why-is-my-apple-watch-not-charging-to-100/</guid>
+      <guid>https://imarc.co.uk/2023/10/13/why-is-my-apple-watch-not-charging-to-100percent/</guid>
       <description><![CDATA[<p>Apple have recently introduced a new featured called &quot;Optimized Charge Limit&quot; which aims to lengthen the lifespan of the battery embedded within an Apple Watch:</p>
 <p>From Apple's support pages:</p>
 <blockquote>
@@ -260,9 +260,9 @@ The BBC made a complaint to the US tech giant after Apple Intelligence, which us
     
     <item>
       <title>Microsoft OneDrive Causing Sleepless Nights (on My Mac)</title>
-      <link>https://imarc.co.uk/2023/01/22/microsoft-onedrive-causing-sleepless-nights/</link>
+      <link>https://imarc.co.uk/2023/01/22/microsoft-onedrive-causing-sleepless-nights-on-my-mac/</link>
       <pubDate>Sun, 22 Jan 2023 17:11:58 GMT</pubDate>
-      <guid>https://imarc.co.uk/2023/01/22/microsoft-onedrive-causing-sleepless-nights/</guid>
+      <guid>https://imarc.co.uk/2023/01/22/microsoft-onedrive-causing-sleepless-nights-on-my-mac/</guid>
       <description><![CDATA[<p><img src="/wp-content/uploads/2023/01/laptop_sleep.jpg?w=1024" alt=""></p>
 <p>My M1 Mac mini has been sleeping dreadfully recently. Perhaps it's the thought of one day having <a href="https://mjtsai.com/blog/2022/12/27/ventura-issues/">macOS Ventura</a> installed on it, or the knowledge that its younger <a href="https://www.apple.com/uk/newsroom/2023/01/apple-introduces-new-mac-mini-with-m2-and-m2-pro-more-powerful-capable-and-versatile-than-ever/">M2 brethren</a> beats it in both <a href="https://www.tomsguide.com/news/mac-mini-m2-pro-first-benchmark-scores-are-in-this-is-big">performance</a> and <a href="https://twitter.com/felix_schwarz/status/1616365408356818945">power efficiency.</a> Or perhaps, it was something else altogether.</p>
 <p>I could tell it wasn't sleeping due to the fact the attached USB storage would endlessly spin up and back down during the day; the Mac min sits under my desk while I work all day on my laptop. One time while it was supposedly asleep and idle, I went to plug a device into it, and could feel the fan blowing out hot air from the back. It wasn't sleeping at all.</p>
@@ -279,9 +279,9 @@ The BBC made a complaint to the US tech giant after Apple Intelligence, which us
     
     <item>
       <title>My First Gadget: The Oregon Scientific AM-080C 34KB</title>
-      <link>https://imarc.co.uk/2023/01/22/my-first-gadget-the-the-oregon-scientific-am-080c-34kb/</link>
+      <link>https://imarc.co.uk/2023/01/22/my-first-gadget-the-oregon-scientific-am-080c-34kb/</link>
       <pubDate>Sun, 22 Jan 2023 17:11:42 GMT</pubDate>
-      <guid>https://imarc.co.uk/2023/01/22/my-first-gadget-the-the-oregon-scientific-am-080c-34kb/</guid>
+      <guid>https://imarc.co.uk/2023/01/22/my-first-gadget-the-oregon-scientific-am-080c-34kb/</guid>
       <description><![CDATA[<p>https://www.youtube.com/watch?v=PUN5aKdxC3Q</p>
 ]]></description>
     </item>
@@ -399,9 +399,9 @@ The BBC made a complaint to the US tech giant after Apple Intelligence, which us
     
     <item>
       <title>System Preferences: Then and Now</title>
-      <link>https://imarc.co.uk/2022/09/03/macos-system-preferences-then-and-now/</link>
+      <link>https://imarc.co.uk/2022/09/03/system-preferences-then-and-now/</link>
       <pubDate>Sat, 03 Sep 2022 07:28:14 GMT</pubDate>
-      <guid>https://imarc.co.uk/2022/09/03/macos-system-preferences-then-and-now/</guid>
+      <guid>https://imarc.co.uk/2022/09/03/system-preferences-then-and-now/</guid>
       <description><![CDATA[<p>After 21 years, the original macOS System Preferences is being retired. The next version of macOS, “Ventura” will have an <a href="https://www.macworld.com/article/803390/macos-ventura-system-preferences-settings.html">all-new iOS style preferences application named “System Settings</a>”. I decided to go all the way back to 2001 and look at the original System Preferences (or “System Prefs” as it was called in the Menu Bar) in Mac OS X 10.0 “Cheeta” to see which of the original 21 preference panes made through all 21 years, and how they ended up in their final incarnation under macOS 12 “Monterey”.</p>
 <h2>All Preferences</h2>
 <div class="compare" data-before-label="Then" data-after-label="Now">
@@ -784,9 +784,9 @@ The BBC made a complaint to the US tech giant after Apple Intelligence, which us
     
     <item>
       <title>How to Remove Clickbait Headlines From Apple News</title>
-      <link>https://imarc.co.uk/2021/06/19/how-to-remove-click-bait-headlines-from-apple-news/</link>
+      <link>https://imarc.co.uk/2021/06/19/how-to-remove-clickbait-headlines-from-apple-news/</link>
       <pubDate>Sat, 19 Jun 2021 06:44:50 GMT</pubDate>
-      <guid>https://imarc.co.uk/2021/06/19/how-to-remove-click-bait-headlines-from-apple-news/</guid>
+      <guid>https://imarc.co.uk/2021/06/19/how-to-remove-clickbait-headlines-from-apple-news/</guid>
       <description><![CDATA[<p>Apple News can be a nice way to catch up on the day’s events, however it can also be a source of clickbait headlines and celebrity gossip that I couldn’t care less about. I’m sure it’s the inverse for others too, perhaps you want to read celebrity gossip but keep getting exaggerated political controversies.</p>
 <p>Thankfully, there is an option hidden away in the iOS Settings app called “<em>Restrict Stories in Today</em>”. Turning it on will cause News to limit articles to those from publishers you actively follow.</p>
 <p>I definitely recommend following a wide variety of outlets to avoid a filter bubble, but I’ve found this option to be a great quality filter so far.</p>
@@ -1218,9 +1218,9 @@ When computers have more memory, Teams will use that memory. In systems where me
     
     <item>
       <title>Microsoft Is Replacing Outlook With a Web App</title>
-      <link>https://imarc.co.uk/2021/01/05/microsoft-is-replacing-the-outlook-app-with-a-web-app/</link>
+      <link>https://imarc.co.uk/2021/01/05/microsoft-is-replacing-outlook-with-a-web-app/</link>
       <pubDate>Tue, 05 Jan 2021 20:51:00 GMT</pubDate>
-      <guid>https://imarc.co.uk/2021/01/05/microsoft-is-replacing-the-outlook-app-with-a-web-app/</guid>
+      <guid>https://imarc.co.uk/2021/01/05/microsoft-is-replacing-outlook-with-a-web-app/</guid>
       <description><![CDATA[<p>According to <a href="https://www.windowscentral.com/project-monarch-outlook-web-universal-email-client-microsoft">Windows Central</a>, Microsoft is planning to replace the aging native Outlook apps for both Windows and Mac with a <a href="https://www.electronjs.org/">Chromium-wrapped HTML app</a>. I came across this link thanks to John Gruber, whose <a href="https://daringfireball.net/linked/2021/01/04/bowden-outlook">take on it</a> is unsurprisingly negative - within the Mac community there is a definite preference for native over web software over web apps.</p>
 <p>While I am inclined to agree - native software can often be superior to web software, it really depends on the UI framework being used. Outlook for Windows has a codebase that dates back to at least 1997, and so is likely using the Microsoft Foundation Classes, which themselves date back to 1992. Age itself is not the issue - Apple's own Cocoa framework derives much from early 90s NeXTSTEP technologies. The difference is Apple have constantly updated Cocoa, whereas Microsoft have instead introduced a series of new frameworks that never took off (<a href="https://en.wikipedia.org/wiki/Windows_Forms">here</a>, <a href="https://en.wikipedia.org/wiki/Windows_Presentation_Foundation">here</a> and <a href="https://en.wikipedia.org/wiki/Universal_Windows_Platform_apps">here</a>) and using them would have meant rewriting much of the Outlook codebase. This means the latest version of Outlook in 2021 still operates very much like a piece of software from the mid-2000s. Searching a few thousand emails causes Outlook to stop responding on a latest generate Intel i7.</p>
 <p>So given where Microsoft are, with no decent, modern and mature UI framework for Windows, what are the Outlook team supposed to do? Their biggest competitors are Gmail, Slack and Microsoft's own Teams - all web apps. They could spend the next 3 years rewriting the native app in a new UI framework, or they could utilise the already feature rich web app and spend the next 3 years building competitive features. Chromium based apps are also slow, but they're faster than a poorly written native apps. It's a crappy situation, but I think they've made a pragmatic choice.</p>
@@ -1498,9 +1498,9 @@ When computers have more memory, Teams will use that memory. In systems where me
     
     <item>
       <title>watchOS 7: After Five Years, The Apple Watch Is Hitting Its Stride, but at What Price?</title>
-      <link>https://imarc.co.uk/2020/09/27/watchos-7-after-five-years-the-apple-watch-is-hitting-its-stride-but-at-what-expense/</link>
+      <link>https://imarc.co.uk/2020/09/27/watchos-7-after-five-years-the-apple-watch-is-hitting-its-stride-but-at-what-price/</link>
       <pubDate>Sun, 27 Sep 2020 10:36:30 GMT</pubDate>
-      <guid>https://imarc.co.uk/2020/09/27/watchos-7-after-five-years-the-apple-watch-is-hitting-its-stride-but-at-what-expense/</guid>
+      <guid>https://imarc.co.uk/2020/09/27/watchos-7-after-five-years-the-apple-watch-is-hitting-its-stride-but-at-what-price/</guid>
       <description><![CDATA[<p><img src="/wp-content/uploads/2020/09/image-2.png?w=1024" alt=""></p>
 <p>It's hard to believe that the Apple Watch has been a product now for over five years. It still seems like yesterday that I drove home from the Apple Store with the fancy new gadget in my bag, excited to see what it could do. That was June 2015. Over the past five years the product has evolved so gradually that if you've been paying close attention to each release, it would be difficult to pin down what exactly changed and when. However, just like seeing an infant relative for the first time in months and noticing how much they've grown, if you were to compare the current generation Apple Watch and its latest operating system to the original, it's clear that the product released in 2015 and the product Apple sells today is vastly different.</p>
 <p>When Apple announced the Apple Watch in 2014, it was billed as three things:</p>
@@ -1640,9 +1640,9 @@ When computers have more memory, Teams will use that memory. In systems where me
     
     <item>
       <title>Xbox Game Pass: Is the Future of Software Streamed?</title>
-      <link>https://imarc.co.uk/2020/08/08/streaming-software-xbox-game-pass/</link>
+      <link>https://imarc.co.uk/2020/08/08/xbox-game-pass-is-the-future-of-software-streamed/</link>
       <pubDate>Sat, 08 Aug 2020 08:16:03 GMT</pubDate>
-      <guid>https://imarc.co.uk/2020/08/08/streaming-software-xbox-game-pass/</guid>
+      <guid>https://imarc.co.uk/2020/08/08/xbox-game-pass-is-the-future-of-software-streamed/</guid>
       <description><![CDATA[<p>Another day, another news story about Apple's App Store policies. This time, it is Microsoft <a href="https://www.businessinsider.com/microsoft-calls-out-apple-xbox-game-pass-roadblock-2020-8?r=US&amp;IR=T">complaining</a> about the fact Apple's rules mean Xbox Game Pass cannot be made be available on the iPhone or iPad.</p>
 <p>While I can see the argument that Xbox Game Pass is simply <a href="https://birchtree.me/blog/netflix-and-xbox-game-pass/">Netflix for games</a>, as I see it, the key difference is that <em>games are <a href="https://en.wikipedia.org/wiki/Instruction_set_architecture#Instructions">software</a> and videos are <a href="https://en.wikipedia.org/wiki/Data_(computing)">content</a></em>. If Apple allow software to be streamed in the store, could this, in theory, open the floodgates to other developers whose motivations might not be as sincere as Microsoft's?</p>
 <p>Apple already has a struggle on its hands to encourage big application makers to build high quality, native applications for its platforms. Many apps that need a presence on both Android and iOS use some kind of intermediate framework that makes the app cheaper to develop, as there's only one codebase with minimal changes for each operating system. This usually comes at the expense of usability and inability to take advantage of platform specific features. You can usually tell when this is the case, as the resulting apps often won't feel quite right - if you're looking for an example, then maybe try your electricity company's app (for some reason, utility companies seem to be ripe for this kind of cheaply made app).</p>
@@ -1667,9 +1667,9 @@ When computers have more memory, Teams will use that memory. In systems where me
     
     <item>
       <title>4 Questions to Improve Transparency in AI</title>
-      <link>https://imarc.co.uk/2020/08/05/transparency-in-ai/</link>
+      <link>https://imarc.co.uk/2020/08/05/4-questions-to-improve-transparency-in-ai/</link>
       <pubDate>Wed, 05 Aug 2020 20:28:11 GMT</pubDate>
-      <guid>https://imarc.co.uk/2020/08/05/transparency-in-ai/</guid>
+      <guid>https://imarc.co.uk/2020/08/05/4-questions-to-improve-transparency-in-ai/</guid>
       <description><![CDATA[<p><img src="/wp-content/uploads/2020/08/ai-glasses.jpg?w=1024" alt="Computer code and glasses"></p>
 <p><em>If you're paying for something with your data, then that makes data a currency.</em></p>
 <p>So it seems <a href="https://www.beehive.govt.nz/release/new-algorithm-charter-world-first">New Zealand is at it again</a> when it comes to leadership <a href="https://data.govt.nz/assets/data-ethics/algorithm/Algorithm-Charter-2020_Final-English-1.pdf"></a>on the world stage. The government has released an '<a href="https://data.govt.nz/assets/data-ethics/algorithm/Algorithm-Charter-2020_Final-English-1.pdf">algorithm charter</a>' that aims to tackle the lack of transparency and potential bias in automated systems.</p>
@@ -1724,9 +1724,9 @@ When computers have more memory, Teams will use that memory. In systems where me
     
     <item>
       <title>Hey.com&#39;s attitude is a refreshing change</title>
-      <link>https://imarc.co.uk/2020/07/19/hey-dot-coms-attitude-is-a-refreshing-change/</link>
+      <link>https://imarc.co.uk/2020/07/19/heycoms-attitude-is-a-refreshing-change/</link>
       <pubDate>Sun, 19 Jul 2020 15:15:17 GMT</pubDate>
-      <guid>https://imarc.co.uk/2020/07/19/hey-dot-coms-attitude-is-a-refreshing-change/</guid>
+      <guid>https://imarc.co.uk/2020/07/19/heycoms-attitude-is-a-refreshing-change/</guid>
       <description><![CDATA[<p>I've not yet paid for a Hey.com subscription as I'm a strong believer in owning your own domain name for email, but I have to admit I that find their style of business a welcome change to the norm and reminiscent of what I can only imagine the <a href="https://en.wikipedia.org/wiki/1984_(advertisement)">counter-culture inspired Apple</a> must have been like in the mid 1980s.</p>
 <p>Take <a href="https://m.signalvnoise.com/spy-pixels-are-evolving-like-malware-so-heys-adapting/">this recent blog post</a> from their CTO:</p>
 <blockquote>
@@ -1788,9 +1788,9 @@ When computers have more memory, Teams will use that memory. In systems where me
     
     <item>
       <title>Hey.com should be an email client, not provider</title>
-      <link>https://imarc.co.uk/2020/06/20/hey-com-should-be-an-email-client-not-provider/</link>
+      <link>https://imarc.co.uk/2020/06/20/heycom-should-be-an-email-client-not-provider/</link>
       <pubDate>Sat, 20 Jun 2020 09:16:43 GMT</pubDate>
-      <guid>https://imarc.co.uk/2020/06/20/hey-com-should-be-an-email-client-not-provider/</guid>
+      <guid>https://imarc.co.uk/2020/06/20/heycom-should-be-an-email-client-not-provider/</guid>
       <description><![CDATA[<p>With all the <a href="https://twitter.com/search?q=Hey.com&amp;src=typed_query">kerfuffle</a> over Hey.com - an exciting new email service from the makers of Basecamp, it's important to remember that if it takes off, Hey.com will be in a similar position to Apple. Groundskeeper of the walled garden.</p>
 <p>https://twitter.com/dhh/status/1272968382329942017</p>
 <p>While the service appears to be a refreshingly original rethink on how email should work (I've not signed up myself), it appears to be designed to lock users in. There is no way to use an external email client, and right now there is no support for custom domains (despite being targeted at business users with a $99/year charge - they say its coming). You'll also have to continue to pay if you decide to move to a different provider but want to keep your Hey.com address forwarding. I see no reason why the features advertised (great as they are) couldn't be part of an email client designed by Hey.com - using a combination of cloud services and native clients, Hey could provide a powerful front-end to any open email service such as Outlook.com or Gmail which provide access via IMAP.</p>
@@ -1823,9 +1823,9 @@ When computers have more memory, Teams will use that memory. In systems where me
     
     <item>
       <title>&quot;Robots&quot;</title>
-      <link>https://imarc.co.uk/2020/05/31/msn-robots/</link>
+      <link>https://imarc.co.uk/2020/05/31/robots/</link>
       <pubDate>Sun, 31 May 2020 07:30:40 GMT</pubDate>
-      <guid>https://imarc.co.uk/2020/05/31/msn-robots/</guid>
+      <guid>https://imarc.co.uk/2020/05/31/robots/</guid>
       <description><![CDATA[<p>&quot;Microsoft 'to replace journalists with robots'&quot; from <a href="https://www.bbc.co.uk/news/world-us-canada-52860247">BBC News</a></p>
 <blockquote>
 <p>Microsoft is to replace dozens of contract journalists on its MSN website and use automated systems to select news stories, US and UK media report.</p>
@@ -1851,9 +1851,9 @@ When computers have more memory, Teams will use that memory. In systems where me
     
     <item>
       <title>There is no such thing as &quot;Common Sense&quot;</title>
-      <link>https://imarc.co.uk/2020/05/30/common-sense/</link>
+      <link>https://imarc.co.uk/2020/05/30/there-is-no-such-thing-as-common-sense/</link>
       <pubDate>Sat, 30 May 2020 07:52:52 GMT</pubDate>
-      <guid>https://imarc.co.uk/2020/05/30/common-sense/</guid>
+      <guid>https://imarc.co.uk/2020/05/30/there-is-no-such-thing-as-common-sense/</guid>
       <description><![CDATA[<p>Linda Geddes <a href="https://www.newscientist.com/article/mg24632843-300-at-work-school-and-seeing-friends-how-to-lower-your-coronavirus-risk/">writing for New Scientist</a>:</p>
 <blockquote>
 <p>You are most likely to catch the SARS-CoV-2 virus by spending a long time near an infected person in an enclosed space. Researchers in Guangzhou, China, examined how the virus was transmitted between 347 people with confirmed infections and the people they had contact with. They found that the risk of the infection being passed on at home or by repeated contact with the same person was approximately 10 times greater than the risk of passing it on in a hospital and 100 times greater than doing so on public transport (medRxiv, doi.org/dwgj).</p>
@@ -1999,9 +1999,9 @@ When computers have more memory, Teams will use that memory. In systems where me
     
     <item>
       <title>Can an iPad Replace a Laptop?</title>
-      <link>https://imarc.co.uk/2015/05/03/can-an-ipad-replace-a-laptop-seriously/</link>
+      <link>https://imarc.co.uk/2015/05/03/can-an-ipad-replace-a-laptop/</link>
       <pubDate>Sun, 03 May 2015 20:07:15 GMT</pubDate>
-      <guid>https://imarc.co.uk/2015/05/03/can-an-ipad-replace-a-laptop-seriously/</guid>
+      <guid>https://imarc.co.uk/2015/05/03/can-an-ipad-replace-a-laptop/</guid>
       <description><![CDATA[<p>Ever since I was <a href="https://archive.lostinlogic.wickens.org.uk/content/2011/08/06/i-did-it-i-bought-an-ipad/index.html">convinced</a> to buy an <a href="http://www.theguardian.com/technology/blog/2010/may/28/ipad-regent-street-buyers-survey">iPad</a> 4 years ago, I’ve been a massive fan and predicted they would eventually replace laptops for most consumers. Just as <a href="http://allthingsd.com/20130109/steve-jobs-was-right-tablets-are-cars-pcs-are-trucks/">not everyone needs a truck</a>, not everyone needs a laptop right? It turns out however, that <a href="http://www.forbes.com/sites/dougolenick/2015/04/30/apple-ipad-shipments-down-23-as-tablet-market-continues-to-lose-steam/">iPad sales are falling</a>. This is more likely a combination of people having much larger phones, iPads being reliable and not needing replacing, lack of innovation (today’s fifth generation iPad does the same as a second generation, only faster), and the fact that the vast majority of consumers don’t need anything more powerful than a phone. It saddens me that despite the Internet being a place where anyone can publish anything at very low cost (or for free in many cases), most people use it to consume TV and post frivolous Facebook updates that don’t require much more than a mobile phone - but that’s another topic altogether. At the other end of the scale you have business and professional users, who tend to use laptops because they offer much more power. Processing power isn’t as far off as you might think, the power difference is now in the software. Take for example a simple task I needed to achieve last week - downloading an MP3 from a web site (legit I might add! It was to accompany a course I was taking) and add it to my iTunes Match Library so it would be available on all of my devices. This is easy to do on a Mac or Windows laptop, but impossible on an iPad. That’s ridiculous. The other software issue that holds back these devices is the transient nature of applications. At any time your application might get terminated due to lack of memory. This rarely results in any loss of work, as developers usually code with this in min (until iOS 4, this happened overtime you left an app). Not many developers both to restore the state of an application (as they are suppose to), and even when they do having to wait for it to load again is painful. So the answer is no, an iPad can’t replace a laptop at the moment. I would like to see Apple push forward with this vision. Why not have a simplified version of Xcode for the iPad? It could be a great way to introduce people to programming (and could feature the Playground function introduced last year). The built in applications should be updated to support ‘Open In’ so I can open that MP3 file in the Music app, for example. For many users, nothing will beat a dual screen setup with a mouse and keyboard - but I can’t help thinking that 90% of my non-work computing needs could be done on an iPad if the software were better.</p>
 <h3>Update: 31/5/2015</h3>
 <p>I've been using an external keyboard with my iPad a lot recently, so hardware wise it's more on par with a laptop. Here's what I miss most from a full blown Windows/Mac laptop:</p>
@@ -2079,9 +2079,9 @@ When computers have more memory, Teams will use that memory. In systems where me
     
     <item>
       <title>Goodbye iPhone, Hello HTC Desire S</title>
-      <link>https://imarc.co.uk/2011/05/14/goodbye-iphone-hello-htc-desire-s/</link>
+      <link>https://imarc.co.uk/2011/08/03/goodbye-iphone-hello-htc-desire-s/</link>
       <pubDate>Wed, 03 Aug 2011 19:46:01 GMT</pubDate>
-      <guid>https://imarc.co.uk/2011/05/14/goodbye-iphone-hello-htc-desire-s/</guid>
+      <guid>https://imarc.co.uk/2011/08/03/goodbye-iphone-hello-htc-desire-s/</guid>
       <description><![CDATA[<p>So it’s nearly two years since <a href="/2009/07/08/goodbye-nokia-n95-hello-iphone/">I got my iPhone 3GS</a>, and I decided I wanted to change. Not because the old 3GS was feeling slow – it still felt snappy and the battery lasted two days. What made me change was those ever-so-annoying “<a href="http://www.youtube.com/watch?v=onLYKU-CNhM">if you don’t have an iPhone</a>” adverts. The thought of being associated with a brand that came across as self-obsessed and narcissistic had slowly been eating away at me, and when I read <a href="http://news.cnet.com/as-iflow-reader-app-closes-harsh-words-for-apple/8301-17938_105-20061802-1.html">this story</a>, my decision was made.</p>
 <p>Compared to iOS, Android has a very “home-brewed” feel to it. The interface is much more complex and far less intuitive. On the flip side, however, that means everything is a lot more configurable. In this respect, Android reminds me more of Windows Mobile and Symbian than it does of iOS. I can schedule my work email to only push new items during work hours, for example – something I missed from my Nokia, which the iPhone did not offer. The home screen is far superior to that of the iPhone, but it falls down on simple things. Renaming a folder was surprisingly difficult to work out; it turned out I needed to click and hold on the folder name in the folder’s pop-up. Dragging widgets is awkward, as you can’t seem to have more than one floating at once, so rearranging them when the screen is full is impossible.</p>
 <h2>Unlocked Doors</h2>
@@ -2132,9 +2132,9 @@ When computers have more memory, Teams will use that memory. In systems where me
     
     <item>
       <title>Iomega NAS Media Server Review</title>
-      <link>https://imarc.co.uk/2010/03/11/from-the-archive-iomega-nas-media-server-review/</link>
+      <link>https://imarc.co.uk/2010/03/11/iomega-nas-media-server-review/</link>
       <pubDate>Thu, 11 Mar 2010 17:39:00 GMT</pubDate>
-      <guid>https://imarc.co.uk/2010/03/11/from-the-archive-iomega-nas-media-server-review/</guid>
+      <guid>https://imarc.co.uk/2010/03/11/iomega-nas-media-server-review/</guid>
       <description><![CDATA[<p><img src="/wp-content/uploads/2024/04/iomega-nas.png?w=244" alt=""></p>
 <p>I have a lot of media on my various computers: music, photos, videos, and the like, but I’ve never found a satisfactory way of storing them all. My solution was to put them on my main laptop, which has a large hard disk, and then share the folders to my other laptop and Xbox 360. This is fine, except I tend to reformat my laptop quite often, and I don’t keep it on all the time at a desk. Instead, it’s packed away in its bag when not in use, making playing some music from my Xbox a bit of a hassle. So I decided a NAS box was what I needed. My only consideration really was price; I really don’t care about speed since most of the time I’ll be using 802.11g to access the files, and so the Iomega 1TB drive is what I picked. It cost £120 from PC World, which I thought was good value. I’d read a few reviews, but since those reviews, Iomega has released a new firmware (which came preinstalled on mine), and so a lot of the drawbacks have been addressed.</p>
 <p>I have to say, I am very impressed. The drive is fully accessible via SMB, meaning the software that comes with the drive is not essential (I only needed to install it once to find out what IP address my DHCP server had assigned it). The drive is actually a very small computer (probably running Linux, though I can’t be sure), and so it offers extra functionality. So-called “Live Folders” allow you to create a folder that’s contents get uploaded to Facebook, YouTube, or resized, for example. The NAS box can also act as a BitTorrent client, but unfortunately, it can’t be set to download a large file over FTP/HTTP. The device is also an iTunes server as well as a DLNA server (this is an open standard that the Xbox 360 uses to stream music and video over a LAN). If only TV shows purchased from iTunes didn’t have DRM, I’d buy a few, since being able to download a series of 24 straight to this device and watch it on my Xbox would be amazing. Still, having all your media always available via Media Centre/Xbox/iTunes is great.</p>
@@ -2171,9 +2171,9 @@ When computers have more memory, Teams will use that memory. In systems where me
     
     <item>
       <title>My Review of the Nokia 6630</title>
-      <link>https://imarc.co.uk/2004/09/30/from-the-archives-my-review-of-the-nokia-6630/</link>
+      <link>https://imarc.co.uk/2004/09/30/my-review-of-the-nokia-6630/</link>
       <pubDate>Thu, 30 Sep 2004 16:13:00 GMT</pubDate>
-      <guid>https://imarc.co.uk/2004/09/30/from-the-archives-my-review-of-the-nokia-6630/</guid>
+      <guid>https://imarc.co.uk/2004/09/30/my-review-of-the-nokia-6630/</guid>
       <description><![CDATA[<p><em>Originally posted <a href="https://web.archive.org/web/20060504060032/http://www.imarc.co.uk:80/2006/nokia_6630review.html">here</a>.</em></p>
 <p><img src="/wp-content/uploads/2024/04/nokia-6630-593.png?w=162" alt=""></p>
 <p>The Nokia 6630 is Nokia's latest smartphone offering with a 1.3 megapixel camera, 10mb of internal memory, a 200mhz processor, Bluetooth, 3G, stereo MP3/ACC playback and the latest Symbian operating system, version 8a.</p>
@@ -2208,9 +2208,9 @@ When computers have more memory, Teams will use that memory. In systems where me
     
     <item>
       <title>Netscape 6 Review</title>
-      <link>https://imarc.co.uk/2000/12/24/netmag-netscape-6-review-2000-windows98/</link>
+      <link>https://imarc.co.uk/2000/12/24/netscape-6-review/</link>
       <pubDate>Sun, 24 Dec 2000 18:04:00 GMT</pubDate>
-      <guid>https://imarc.co.uk/2000/12/24/netmag-netscape-6-review-2000-windows98/</guid>
+      <guid>https://imarc.co.uk/2000/12/24/netscape-6-review/</guid>
       <description><![CDATA[<p>I started off by downloading the installer, and after about 1 hour, it crashed and failed to resume. So I waited for it to appear on the .net cover disc, and to my excitement, on the 22nd of December 2000 I received issue 80 of .net and installed Netscape 6.</p>
 <p><img src="/wp-content/uploads/2000/12/installing-netscape-6.png" alt="installing netscape 6"></p>
 <p>First impressions were OK, at least the installer had worked. The only thing I use communicator for really is to browse newsgroups, and so the first thing I tried was to connect the password protected server I use. Now NS4 didn’t remember my password every session, that was livable, NS6 however can’t even remember it within 1 session, every time I changed group or composed a message I was asked to re-enter my password. Maybe fiddling around in the settings could solve this, but at the speed which NS6 functions, looking around the settings dialogue is a chore. Browsing the web in NS6 was slow and many sites didn’t appear correctly, and please Netscape, for the last time – I DON’T want to join Netcenter!!</p>
