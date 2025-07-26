@@ -1,4 +1,3 @@
-
 ---
 title: "Review: Apple Smart Cover for iPad"
 date: "2012-09-22T10:28:05Z"
