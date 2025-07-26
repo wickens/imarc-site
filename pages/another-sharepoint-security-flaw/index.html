@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-default">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>
+      Another SharePoint Security Flaw
+        ·
+        iMarc
+      
+    </title>
+    
+
+    <link rel="stylesheet" href="/static/css/site.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&family=Fira+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+
+    <link rel="icon" type="image/png" href="/imarc-icon.png">
+    <link rel="apple-touch-icon" href="/imarc-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/imarc-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/imarc-icon.png">
+    <link rel="alternate" type="application/rss+xml" href="/feed/index.xml" title="iMarc RSS">
+
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="inner">
+        <a class="site-title" href="/">iMarc</a>
+        <p class="tagline">thoughts on tech • by Marc Wickens</p>
+
+        <nav class="site-nav">
+          <a href="/">Home</a>
+          <a href="/gear/">Gear</a>
+          <a href="/archive/">Archive</a>
+          <a href="/projects">Projects</a>
+          <a href="http://marc.wickens.org.uk">About</a>
+
+          <!-- <a href="https://mandiandmarc.wickens.uk/">Wedding</a> -->
+
+          <form class="site-search" action="/search/" method="get">
+            <label for="search-input" class="visually-hidden">Search</label>
+            <input id="search-input" name="q" type="search" placeholder="Search…"/>
+          </form>
+
+        </nav>
+      </div>
+    </header>
+
+    <main class="content inner">
+      <article>
+  <h1>Another SharePoint Security Flaw</h1>
+  <p class="meta">26 Jul 2025</p>
+  <p><a href="https://www.techradar.com/pro/security/microsoft-sharepoint-attack-now-sees-victim-count-rises-to-400-organizations-including-us-nuclear-agency">Ellen Jennings-Trace writing for Tech Radar</a>:</p>
+<blockquote>
+<p>New estimates regarding the recently-exploited Microsoft SharePoint vulnerabilities now evaluate that as many as 400 organizations may have been targeted.</p>
+<p>The figure is a sharp increase from the original count of around 100, with Microsoft pointing the finger at Chinese threat actors for the hacks, namely Linen Typhoon, Violet Typhoon, and Storm-2603.</p>
+<p>The victims are primarily US based, and amongst these are some high value targets, including the National Nuclear Security Administration - the US agency responsible for maintaining and designing nuclear weapons, Bloomberg reports.</p>
+</blockquote>
+<p>Microsoft <a href="https://www.microsoft.com/en-us/security/blog/2025/07/22/disrupting-active-exploitation-of-on-premises-sharepoint-vulnerabilities/">makes it clear</a> this is an issue with on-prem instances of SharePoint, not the cloud based Office 365 solution.</p>
+<p>One might question why an organisation would choose to run these services on premises in 2025. In my experience, banks and other security-focused institutions often believe their own teams can outperform Microsoft Azure, Google Cloud or AWS. Yet <a href="https://msrc.microsoft.com/blog/2021/03/guidance-for-responders-investigating-and-remediating-on-premises-exchange-server-vulnerabilities/?utm_source=chatgpt.com">time and time again</a>, we see on-prem is actually less secure than the cloud. Unless your service is complelty air-locked from the Internet, I see very few reasons to be relying on on-premisis software, especially Microsoft products, in 2025.</p>
+
+  
+</article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="inner">
+        <p>&copy; 2000 –
+          2025
+          Marc Wickens.
+        </p>
+      </div>
+    </footer>
+
+    <script src="/static/js/compare.js" defer="defer"></script>
+    <script data-goatcounter="https://imarc.goatcounter.com/count" async="async" src="//gc.zgo.at/count.js"></script>
+
+  </body>
+</html>
