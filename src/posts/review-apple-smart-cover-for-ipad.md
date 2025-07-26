@@ -1,7 +1,7 @@
 
 ---
 title: "Review: Apple Smart Cover for iPad"
-date: "2012-08-27T15:28:05Z"
+date: "2012-09-22T10:28:05Z"
 slug: "review-apple-smart-cover-for-ipad"
 layout: "post.njk"
 categories: []
