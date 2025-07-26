@@ -7,6 +7,23 @@
 
     
     <item>
+      <title></title>
+      <link>https://imarc.co.uk/2025/07/26/review-apple-smart-cover-for-ipad/</link>
+      <pubDate>Sat, 26 Jul 2025 14:50:02 GMT</pubDate>
+      <guid>https://imarc.co.uk/2025/07/26/review-apple-smart-cover-for-ipad/</guid>
+      <description><![CDATA[<hr>
+<h2>title: &quot;Review: Apple Smart Cover for iPad&quot;
+date: &quot;2012-08-27T15:28:05Z&quot;
+slug: &quot;review-apple-smart-cover-for-ipad&quot;
+layout: &quot;post.njk&quot;
+categories: []</h2>
+<p>Despite my <a href="/2012/08/the-cult-of-over-protection/">earlier post</a>, there are times when it’s wise to put a case on your tablet. On the beach, for example. Suncream and iPads really don’t mix, and putting an unprotected device into a bag with suncream will end in disaster (I know from experience). So I thought I would try Apple’s Smart Case, the version of the Smart Cover that fully encloses the entire device. It’s not cheap, but being an Apple product you generally get top-quality goods, and it can also be engraved at no extra charge.</p>
+<p>Upon receiving the case, I was mightily disappointed. For a start, it feels very cheap. It’s not very sturdy: with the Smart Cover you can stand the iPad up and use it as a picture frame or to watch a film. The Smart Case apparently supports this function, but the iPad seems very precarious in this position; any slight nudge of the table would send it crashing to the floor. The Smart Case also adds an enormous bezel around the screen, making the iPad’s display seem small. It also seems to trap a lot of dust on the screen, and it doesn’t wipe the screen clean when you open and close it as the cover does. Speaking of opening it, it’s not obvious which side to open it from, and once you have discovered that you will need long nails to release the magnetic closure.</p>
+<p>On the plus side, it does protect the iPad well, even the back. However, I can’t recommend this product for day-to-day use, and given how poor it is, it seems excessive to shell out for it on occasional trips to places such as the seaside. I’m not sure what has happened at Apple; it’s certainly not up to their usual standards (but it’s still at their usual prices). I have now reverted to using a Smart Cover and it’s like I have a brand-new iPad 🙂</p>
+]]></description>
+    </item>
+    
+    <item>
       <title>appleOS 26</title>
       <link>https://imarc.co.uk/2025/07/26/appleos-26/</link>
       <pubDate>Sat, 26 Jul 2025 13:04:26 GMT</pubDate>
@@ -2060,6 +2077,26 @@ When computers have more memory, Teams will use that memory. In systems where me
     </item>
     
     <item>
+      <title>Review: Outlook for iPad</title>
+      <link>https://imarc.co.uk/2015/02/23/review-outlook-for-ipad/</link>
+      <pubDate>Mon, 23 Feb 2015 23:28:05 GMT</pubDate>
+      <guid>https://imarc.co.uk/2015/02/23/review-outlook-for-ipad/</guid>
+      <description><![CDATA[<p>Last month Microsoft released Outlook for iPad (based on Acompli, an app it previously purchased). Since the company I work for uses Exchange 2013, I was able to take advantage of this and try it out. The interface is a breath of fresh air for anyone like me who is stuck using Outlook 2013’s confusing and dated interface. My favourite feature is the ‘Focused’ inbox, which automatically shows you messages deemed important. Newsletters, alerts and other noise are quietly hidden away so you only see emails from real people. The ‘Other’ inbox is only a swipe away, and the focused view is just that—a view—so it won’t affect your desktop email layout. This is surprisingly accurate and didn’t require much training. Replying to and managing email is pleasant, with the ability to swipe to archive or flag messages quickly.</p>
+<p>Outside the corporate world, the app supports Outlook.com, Gmail and other well-known providers. I like to keep work and personal email separate, so I haven’t tried these yet.</p>
+<h2>Attachments</h2>
+<p>Another surprising feature of Outlook for iPad is the ability to connect to cloud services such as Dropbox and Google Drive[^1]. A lot of network administrators will lose sleep over this, but ultimately it’s a step forward—especially for Office 365 users, who can access all their OneDrive for Business files and attach them to emails wherever they happen to be.</p>
+<p>A weak point, however, is the lack of a system extension, so you can’t share a link from Safari to Outlook or send a document directly from Word for iPad. I’m sure this is on the way, but I do think it should have been included in the initial release.</p>
+<h2>Calendar</h2>
+<p>The calendar seems quite basic. It doesn’t do a great job of letting me see other invitees’ free/busy information (the main benefit of the desktop version of Outlook), but it’s serviceable for a version 1.0 release. It’s quite buggy; for example, I tried to update an appointment’s start and end times, but it just didn’t work. No crash, no error message—it simply did nothing. I’m sure Microsoft’s latest purchase, <a href="http://blogs.microsoft.com/blog/2015/02/11/microsoft-acquires-sunrise-creator-innovative-calendar-app-mobile-devices/">Sunrise</a>, indicates that the company is putting some thought into its calendaring strategy, so major improvements should follow. I’m not sure about the unified-app approach—I’ve always wished Outlook on the PC were separate applications instead of one big conglomerate (especially since it’s still full of modal dialog boxes!). Separate apps seem especially fitting for iOS, and I can only assume it’s a branding decision to have one big ‘Outlook’ app on iOS.</p>
+<h2>Security concerns?</h2>
+<p>The first release had no security requirements at all, so if your system administrator mandated a passcode on your device, Outlook would ignore it. This has been resolved, though unfortunately it now requires you to set a system-wide PIN rather than just one for the app (as was the case with the previous OWA app). I liked that I could have laxer security on my personal device (for example, ‘ask me for a PIN after one hour’) while the app could be stricter (‘ask me for a PIN after five minutes’)—this worked in the old OWA app, but not anymore, which is a major disappointment. Some administrators might lament the fact that the app will store your emails on Amazon’s AWS servers (soon to be Azure, I would imagine), but this does allow the app to perform cloud processing that ultimately benefits users. The bigger concern, in my view, is that Microsoft released the app without warning or a way to block it, which surely upset organisations with established security practices (ISO et al).</p>
+<h2>Conclusion</h2>
+<p>Overall, Outlook for iPad cements the iPad as a tool for business and makes me think that one day many users will be able to use an iPad (or similar device) exclusively at work. It’s missing some key features at the moment (you can’t set your Out of Office), but I’m certain they will arrive in time. The bigger question is whether tablet devices will ever replace traditional PCs in the workplace. That’s probably the subject of a future post, but with Outlook, Office and the cloud it’s becoming an increasing possibility. I personally use Outlook for iPad as more of a sidekick device than a laptop replacement—my job involves traditional desktop software such as Visual Studio and macro-enabled spreadsheets. That said, for many enterprise users an iPad with a decent hardware keyboard is now a viable alternative, if only the screen were larger.</p>
+<p>[^1]: Great to see Microsoft embracing interoperability, in contrast to Google, which refuses to support Windows Phone.</p>
+]]></description>
+    </item>
+    
+    <item>
       <title>Samsung Easy Settings on Windows 8</title>
       <link>https://imarc.co.uk/2013/06/09/samsung-easy-settings-on-windows-8/</link>
       <pubDate>Sun, 09 Jun 2013 16:34:50 GMT</pubDate>
@@ -2077,6 +2114,45 @@ When computers have more memory, Teams will use that memory. In systems where me
     </item>
     
     <item>
+      <title>The Cult of Over-Protection</title>
+      <link>https://imarc.co.uk/2012/08/27/the-cult-of-over-protection/</link>
+      <pubDate>Mon, 27 Aug 2012 15:28:05 GMT</pubDate>
+      <guid>https://imarc.co.uk/2012/08/27/the-cult-of-over-protection/</guid>
+      <description><![CDATA[<p>On my holidays this year I’ve noticed a large number of people donning iPads. In the pub, on the train, on the ferry and even sat on the beach. Like it was intended to do, the iPad is finding its way into places no one would ever imaged a laptop would. One thing did strike me though, and that is how nearly every iPad I’ve seen out and about is parcelled up in a protective case (one person who sat opposite to me proceed to get their iPad out of one case, only for it to be inside another).
+Yes, I get that these things aren’t cheap, but they’re also not as fragile as most people think. Why pay all that money for iconic design if you’re not going to ever see it? This is exactly the thinking behind the <a href="http://en.wikipedia.org/wiki/IPad_accessories#Smart_Cover">Smart Cover</a>, which protects the screen while not in use without sacrificing the slimness and design.</p>
+]]></description>
+    </item>
+    
+    <item>
+      <title>iMarc.co.uk: Happy Anniversary</title>
+      <link>https://imarc.co.uk/2012/07/22/imarccouk-happy-anniversary/</link>
+      <pubDate>Sun, 22 Jul 2012 07:28:05 GMT</pubDate>
+      <guid>https://imarc.co.uk/2012/07/22/imarccouk-happy-anniversary/</guid>
+      <description><![CDATA[<p>It turns out that this domain <a href="https://nominet.uk/lookup/?domain=imarc.co.uk">imarc.co.uk</a> celebrated its tenth anniversary in April this year. How time flies!</p>
+<p>In 2002, the web was a very different place compared with today. The first dot-com bubble had just burst, and there was still far more amateur content online. It was quite common to find personal home pages complete with family photographs or sites devoted to someone’s favourite band. These days, the web is far more corporate, and everything we share is via platforms such as Facebook and Twitter.</p>
+<p>Why is this? Has web design become an elitist art form? Textured backgrounds and blinking text may have looked horrible, but back then it was all about a love of the subject matter, with appearance very much secondary. No one doubts that modern design techniques have improved the look and accessibility of the web, but have they frightened off the average Joe armed only with a copy of FrontPage?</p>
+<p>Perhaps the world has simply ‘moved on’, as our favourite Gunslinger once said. People have better things to do than maintain their own sites. Blogging platforms such as WordPress and Blogger offer the ease of use of Facebook while allowing a greater degree of personalisation and independence. Perhaps these days people are writing apps instead.</p>
+<p>Or maybe I’m just getting old. Who knows? I’m simply rambling.</p>
+<p>Happy anniversary.</p>
+]]></description>
+    </item>
+    
+    <item>
+      <title>Why We Still Need Dropbox</title>
+      <link>https://imarc.co.uk/2012/04/29/why-we-still-need-dropbox/</link>
+      <pubDate>Sun, 29 Apr 2012 23:28:05 GMT</pubDate>
+      <guid>https://imarc.co.uk/2012/04/29/why-we-still-need-dropbox/</guid>
+      <description><![CDATA[<p>Last week, both Google and Microsoft launched cloud file synchronisation services. Together with Apple, three of the biggest players in tech are now competing with the likes of Dropbox and Box.net.</p>
+<p>Google’s service, named “Google Drive” (a name I was hoping they would reserve for their exciting <a href="http://en.wikipedia.org/wiki/Google_driverless_car">autonomous car project</a>), offers tight integration with Google Docs and other Google products such as Picasa, and no doubt with their Chrome OS and Android operating systems in the near future. One of the key selling points of Google Drive is its search facility; they even use OCR to let you search images. You get 5 GB free and can pay for up to 1 TB of space. Crucially, Drive supports sharing files with others, making collaboration on documents much easier. There is support for Windows, macOS, Android and iOS (<strong>no Windows Phone</strong>).</p>
+<p>Microsoft’s SkyDrive has actually been around for a few years but has always been a web-only interface, so despite their initial offering of 25 GB free it was difficult to see how anyone would ever use it if they had to upload files one by one in a browser (I think they knew that too, since now it’s more usable it only offers 7 GB free). SkyDrive also has tight integration with Microsoft’s <strong>ecosystem</strong>; the upcoming Windows 8 will use it to synchronise data within apps and to keep your settings in the cloud. Office documents can be opened using Office Web Apps and there is support for sharing files too. It supports Windows, macOS, Windows Phone and iOS (<strong>no Android</strong>).</p>
+<p>Apple’s iCloud is rather different. There is no way to use the storage arbitrarily like a folder as you can with the other services mentioned here. Instead, developers use the APIs to build iCloud into their apps. For many people this is fine: most ordinary users just want their documents and photos to be safe and do not care much about the file system underneath. For many (including me), this is a major limitation. It’s great if you own multiple iOS devices (say, an iPhone and an iPad), because your bookmarks, notes and documents will stay in sync. It’s not so great if you want to share a document. There is no way, for example, for two iPad users to work on a spreadsheet using Apple’s Numbers app – it just can’t be done. Of course, Apple have not added support for cloud rival Dropbox to their apps, so I found myself continually emailing a spreadsheet back and forth as if it were 1998. Welcome to the future. The biggest drawback of iCloud is the <strong>lack of Windows support</strong>. Not that I would be able to open my Pages documents on Windows anyway. However, if you have a Mac and use only Apple’s products, it’s not bad.</p>
+<h2>So who needs Dropbox?</h2>
+<p>With all these major players now involved, I’ve read many blogs and comments suggesting “Dropbox is doomed” or that there’s no point in it any more. How wrong they are.</p>
+<p>The purpose of these three services is to keep you within an ecosystem. Each has its own small limitations that might seem like a minor inconvenience now, but remember—this is your data, and one day you might decide you no longer want to belong to a particular ecosystem. How easy will it be to move all those gigabytes of data? Dropbox (and other pure‐cloud providers; I just happen to use Dropbox) is not trying to get me to adopt their phone operating system or make it difficult for me to share with a rival. They are just offering cloud synchronisation without the platform politics.</p>
+]]></description>
+    </item>
+    
+    <item>
       <title>10 Years of the iPod</title>
       <link>https://imarc.co.uk/2011/11/06/10-years-of-the-ipod/</link>
       <pubDate>Sun, 06 Nov 2011 21:00:00 GMT</pubDate>
@@ -2089,6 +2165,21 @@ When computers have more memory, Teams will use that memory. In systems where me
 <p>The first generation iPod touch was all about music, and being able to buy it online wherever you were – there were no games, no apps, you couldn’t even edit calendar appointments – this was all about the music (and video). It was therefore a nice addition when Apple released an update (I think it cost about £5) that gave users the ability to install apps.The iPod Touch was also the first time I had ever used a mobile browser and actually enjoyed the experience. My phone at the time (a Nokia N95) was a great phone, but browsing the web it it was awful.</p>
 <p>The iPod Touch, like the iPod Video I own remains in use today (I have passed it down the family). Shocking when you think since 2008 I have had 2 laptops fail on me yet these devices still work perfectly. The original iPod powers up, but the battery only lasts a few minutes, and I don’t have a PC with FireWire to get songs onto it anymore</p>
 <p>So just some of my iPod memories! I wonder what I’ll be using in 10 years time?</p>
+]]></description>
+    </item>
+    
+    <item>
+      <title>Six months on, my Kindle thoughts</title>
+      <link>https://imarc.co.uk/2011/10/02/six-months-on-my-kindle-thoughts/</link>
+      <pubDate>Sun, 02 Oct 2011 10:28:05 GMT</pubDate>
+      <guid>https://imarc.co.uk/2011/10/02/six-months-on-my-kindle-thoughts/</guid>
+      <description><![CDATA[<p>It’s been around six months since I stopped reading paperback books and moved to the Kindle. My reasoning for doing so was not so much environmental concerns (I’m sure an electronic reading device isn’t exactly green to produce and keep charged) but convenience and, hopefully, a better reading experience. It means having all your books with you, being able to synchronise your place with other devices (phone, tablet) for those occasions when you forget your Kindle but want to continue your book, and being able to adjust the text size.</p>
+<h2>Wi-Fi-only would have been enough</h2>
+<p>I opted for the more expensive 3G option, thinking I might take advantage of the free 3G to browse the web or buy books when I was out and about. I have rarely needed or wanted to do this. When I’m at home I can use the Wi-Fi; the same goes at work. When I’m on holiday, there’s usually no shortage of Wi-Fi available (in Lisbon even the tour bus had free Wi-Fi!). In those situations where there is no Wi-Fi, frankly I can wait a few hours before purchasing the next book. Oh, and the web browser isn’t particularly useful—not when you have a smartphone in your pocket, at least.</p>
+<h2>A better reading experience</h2>
+<p>In all honesty, I can say that the Kindle is a more enjoyable reading experience than a normal book. Yes, it lacks that woody aroma, and you never get to see the cover artwork in its full-colour glory, but as someone once said, you shouldn’t judge a book by its cover anyway. Being able to make the text bigger and control the line spacing really helps. Some books that were 900 pages long with an 8 pt text size would have put me off in the past, but with a Kindle you don’t really notice how “fat” a book is; all you see is that percentage indicator gradually creeping up. The built-in dictionary makes it so easy to look up words that I actually learn a lot by looking up words I didn’t know instead of simply inferring what the meaning might be.</p>
+<h2>It’s still a gadget</h2>
+<p>Of course, there’s no getting away from the fact that these things cost a lot of money, and the books themselves aren’t really that much cheaper than their paper counterparts (thanks somewhat to UK VAT laws, which mean digital books are subject to VAT, but traditional paper books are not). Taking an expensive gadget everywhere isn’t always an option, and you’ll probably want to buy a case for it. Oh, and please don’t do what I did and put the Kindle in the same bag as a bottle of sunscreen (yes, the case was a good investment!). That said, I think the benefits outweigh the negatives, and my Kindle has survived trips to the beach. I’d definitely recommend a Kindle.</p>
 ]]></description>
     </item>
     
