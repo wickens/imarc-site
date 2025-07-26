@@ -1,6 +1,6 @@
 ---
 title: "Another SharePoint Security Flaw"
-date: "2025-07-26T10:26:46Z"
+date: "2025-07-25T10:26:46Z"
 slug: "another-sharepoint-security-flaw"
 layout: "post.njk"
 categories: []
