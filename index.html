@@ -52,6 +52,24 @@
 
 
 <article class="post-full">
+  <h2 class="post-title"><a href="/2025/07/26/another-sharepoint-security-flaw/">Another SharePoint Security Flaw</a></h2>
+  <p class="meta">
+    <time datetime="2025-07-26T10:26:46.000+00:00">26 Jul 2025</time>
+  </p>
+
+  <p><a href="https://www.techradar.com/pro/security/microsoft-sharepoint-attack-now-sees-victim-count-rises-to-400-organizations-including-us-nuclear-agency">Ellen Jennings-Trace writing for Tech Radar</a>:</p>
+<blockquote>
+<p>New estimates regarding the recently-exploited Microsoft SharePoint vulnerabilities now evaluate that as many as 400 organizations may have been targeted.</p>
+<p>The figure is a sharp increase from the original count of around 100, with Microsoft pointing the finger at Chinese threat actors for the hacks, namely Linen Typhoon, Violet Typhoon, and Storm-2603.</p>
+<p>The victims are primarily US based, and amongst these are some high value targets, including the National Nuclear Security Administration - the US agency responsible for maintaining and designing nuclear weapons, Bloomberg reports.</p>
+</blockquote>
+<p>Microsoft <a href="https://www.microsoft.com/en-us/security/blog/2025/07/22/disrupting-active-exploitation-of-on-premises-sharepoint-vulnerabilities/">makes it clear</a> this is an issue with on-prem instances of SharePoint, not the cloud based Office 365 solution.</p>
+<p>One might question why an organisation would choose to run these services on premises in 2025. In my experience, banks and other security-focused institutions often believe their own teams can outperform Microsoft Azure, Google Cloud or AWS. Yet <a href="https://msrc.microsoft.com/blog/2021/03/guidance-for-responders-investigating-and-remediating-on-premises-exchange-server-vulnerabilities/?utm_source=chatgpt.com">time and time again</a>, we see on-prem is actually less secure than the cloud. Unless your service is complelty air-locked from the Internet, I see very few reasons to be relying on on-premisis software, especially Microsoft products, in 2025.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
   <h2 class="post-title"><a href="/2025/05/31/virtual-private-nonsense/">Virtual Private Nonsense</a></h2>
   <p class="meta">
     <time datetime="2025-05-31T04:01:00.000+00:00">31 May 2025</time>
@@ -200,21 +218,6 @@ The BBC made a complaint to the US tech giant after Apple Intelligence, which us
 <p>The same is true in Microsoft Edge. Any setting that Microsoft would rather you didn't change is unbelievably difficult to find. Want to remove the side bar, or change the default search engine from Bing? One might think, perhaps naively, that altering something as basic as the default search engine shouldn't require a degree in computer science. Yet, here I am, resorting to the wisdom of Google search to uncover the elusive setting (I did try asking Microsoft Copilot, but alas, it came back with something completely unrelated). Edge is also desperate for me to make it the default browser. Instead of cutting to the chase, it dances around like a slick sales rep, coyly offering me the choice of &quot;Microsoft's Recommended Settings&quot; as if I'm choosing to enhance my computer security, when really it's more about padding Microsoft's bottom line.</p>
 <p>I suppose we should be grateful for Microsoft at least offering settings for these options - there's no reason they have to. Microsoft's strategy seems to be a delicate balancing act between making it difficult for the masses and maintaining some appeal for the more tech-savvy who would switch to another vendor if they didn't have these options at all.</p>
 <p>Anyway, it's a desperate look. Please Microsoft, show some class!</p>
-
-</article>
-<hr>
-
-<article class="post-full">
-  <h2 class="post-title"><a href="/2023/12/03/fixing-focus-modes-on-ios/">Fixing Focus Modes on iOS</a></h2>
-  <p class="meta">
-    <time datetime="2023-12-03T11:50:19.000+00:00">3 Dec 2023</time>
-  </p>
-
-  <p>When Apple introduced Focus <em>Modes</em> and Focus <em>Filters</em>, I hoped it might finally mean the ability to cleanly separate work and personal life within iOS. Unfortunately, the system is flawed.</p>
-<p>Let’s briefly recap on how it works. Focus Modes are an extension of “Do Not Disturb” which has been with iOS since version 2011 (if my memory is correct) and allow precise control of notifications for different scenarios. Apple allows users to create various focus modes for different activities. For each focus mode, you can control who and which apps are allowed to send notifications. Apple ships iOS with several default modes such as “Sleep”, “Work”, and “Reading”. For example, I might turn off Slack notifications in the “Personal” Focus Mode, and then schedule that to activate in the evenings.</p>
-<p>Focus filters on the other hand control which data is available inside apps and are linked to a particular Focus Mode. For example, for to-do list app that allow you to create different lists, you could use Focus Filters to hide your shopping list when the “Work” Focus Mode is activated, and then hide your work tasks while your “Personal” Focus Mode is activated.</p>
-<p>The problem with Apple’s implementation is that it always requires a particular Focus Mode to be activated. There is no way to apply Focus Filters or control notifications when no Focus Mode is activated. Additionally, Focus Modes and Focus Filters are literally <em>filters</em>. This means they can only reduce content that is already enabled. In my use case, I want to turn off my work email and calendars by default but have then enabled during work hours. I want to disable Slack Notifications all the time, except during work hours. This is simply not possible with iOS and represents a fundamental flaw in the design. I can of course disable Slack Notifications fully, but then I can’t enable them for a particular Focus Mode. I could also painstakingly configure focus modes to consume contiguous time blocks throughout the day, but this is error prone and there are times when a focus mode gets switched off for some reason and I’m inundated with notifications I don’t want. The Apple Watch is also unaware of Focus Filters and will happily show calendar appointments despite the same appointments being filtered out on my Phone.</p>
-<p>I’m not quite sure how Apple missed the obvious on this one. Perhaps they are stuck dealing with technical debt and the current system is a compromise based on what is technically achievable. Perhaps they genuinely think the current system is adequate. Perhaps I’m the outlier. Either way, I hope they address this issue. Currently, iOS still makes it far too difficult to separate work and personal content.</p>
 
 </article>
 <hr>
