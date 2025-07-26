@@ -5,7 +5,7 @@ slug: “wwdc2025-appleos-26"
 layout: "post.njk"
 categories: []
 ---
-The public betas for Apple’s various operating systems are now out now, which will gradually make their way to many of the the [2.35 billion active iPhones, iPads, Macs and other Apple devices reports as active](https://www.macrumors.com/2025/01/30/apple-active-devices-worldwide-record/?utm_source=chatgpt.com), starting in in the Autumn. 
+The public betas for Apple’s various operating systems are now out now, which will gradually make their way to many of the the [2.35 billion active iPhones, iPads, Macs and other Apple devices reports as active](https://www.macrumors.com/2025/01/30/apple-active-devices-worldwide-record/?utm_source=chatgpt.com), starting in the Autumn. 
 
 I haven’t quite dared to try any of them in person yet, but from what I’ve observed this year’s operating system releases are generally positive.
 
