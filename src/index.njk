@@ -7,7 +7,7 @@ pagination:
 permalink: "{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% else %}index.html{% endif %}"
 ---
 {% if pagination.pageNumber == 0 %}
-  <h1 class="visually-hidden">Latest posts</h1>
+<!--   <h1 class="visually-hidden">Latest posts</h1> -->
 {% endif %}
 
 {% for post in posts %}
