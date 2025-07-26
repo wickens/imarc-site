@@ -1,8 +1,8 @@
 ---
 title: "Troubleshooting GLIBCXX_3.4.26 Error on Raspberry Pi: .NET 9 Compatibility Issue"
 date: "2024-08-15T19:37:54Z"
-permalink: "/2024/08/15/troubleshooting-glibcxx3-4-26-error-on-raspberry-pi-net-9-compatibility-issue/"
-slug: "troubleshooting-glibcxx3-4-26-error-on-raspberry-pi-net-9-compatibility-issue"
+permalink: "/2024/08/15/troubleshooting-glibcxx3426-error-on-raspberry-pi-net-9-compatibility-issue/"
+slug: "troubleshooting-glibcxx3426-error-on-raspberry-pi-net-9-compatibility-issue"
 categories:
   - "uncategorized"
 wordpress_id: "2893"
