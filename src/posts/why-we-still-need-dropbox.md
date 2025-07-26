@@ -1,7 +1,7 @@
 ---
 title: "Why We Still Need Dropbox"
 date: "2012-04-29T23:28:05Z"
-slug: "why-we-still-need-dropbox/"
+slug: "why-we-still-need-dropbox"
 layout: "post.njk"
 categories: []
 ---
