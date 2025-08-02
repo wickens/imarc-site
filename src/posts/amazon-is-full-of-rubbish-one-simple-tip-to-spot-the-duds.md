@@ -1,4 +1,3 @@
-# amazon-is-full-of-rubbish-one-simple-tip-to-spot-the-duds
 ---
 title: "Amazon Is Full of Rubbish: One Simple Tip to Spot the Duds"
 date: "2025-08-02T19:33:19Z"
