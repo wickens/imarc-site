@@ -67,6 +67,21 @@ Coded and designed by Marc Wickens. Powered by 11ty.
 
 
 <article class="post-full">
+  <h2 class="post-title"><a href="/2023/02/04/sorting-by-date-is-also-an-algorithm/">Sorting by Date Is Also an Algorithm</a></h2>
+  <p class="meta">
+    <time datetime="2023-02-04T13:51:58.000+00:00">4 Feb 2023</time>
+  </p>
+
+  <p><img src="/wp-content/uploads/2023/02/evil-algorithm.png?w=1024" alt=""></p>
+<p>It's a common refrain in tech circles when discussing Twitter to talk about &quot;The Algorithm&quot;. Take this Lifewire article: <em>&quot;<a href="https://web.archive.org/web/20190613224737/https://www.lifewire.com/how-to-use-twitter-timeline-algorithm-4174499">How to Turn off the Twitter Timeline Algorithm</a>&quot;</em>, or this one by TechCrunch: <em>&quot;<a href="https://techcrunch.com/2023/01/11/twitter-makes-algorithmic-timeline-default-on-ios/?guccounter=1&amp;guce_referrer=aHR0cHM6Ly9kdWNrZHVja2dvLmNvbS8&amp;guce_referrer_sig=AQAAADCeaYUdBR1NNtjFLiP1nDMAgJItWZoj9bndqsKR3oXUleBopWE6Otoiap6zWxOEpHlPsT8fLSpym8gNJU7xqwacnEmE8WOTeVMukbNMjJxJ4ETjCKZ1pUEZ-KZtJ-lQbH2ZIgNdjmDeREqLsrdepwIqtp8vBB1dOKPDy2XQePCN">Twitter makes algorithmic timeline default on iOS</a>&quot;</em>.</p>
+<p>In the beginning the Twitter timeline was a simple list of posts by people you follow sorted by date descending. In 2013 Twitter introduced a new timeline that wasn't so transparent. It was seemingly designed to optimise for engagement. All of a sudden, people were seeing posts from people they didn't follow, or that were posted days ago and for some reason had been boosted by the algorithm.</p>
+<p>The point is, both the classic timeline and the &quot;algorithmic&quot; timeline are both in fact <em>algorithmic</em>. In fact, the first algorithm taught in computer science is often the <a href="https://www.bbc.co.uk/bitesize/guides/zjdkw6f/revision/4">Bubble Sort</a> algorithm. It's still an algorithm! In the case of Twitter, or its upcoming rival Mastodon, sorting by date may be a preferable, but there are possibly downsides too. Prioritising something because it happens to have been posted recently is a form of <a href="https://en.wikipedia.org/wiki/Recency_bias">Recency bias</a> after all. The key seems to be <a href="https://imarc.co.uk/2020/08/05/transparency-in-ai/">transparency</a>.</p>
+<p>So enjoy your favourite algorithm, and remember, they're not all bad.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
   <h2 class="post-title"><a href="/2023/01/22/microsoft-onedrive-causing-sleepless-nights-on-my-mac/">Microsoft OneDrive Causing Sleepless Nights (on My Mac)</a></h2>
   <p class="meta">
     <time datetime="2023-01-22T17:11:58.000+00:00">22 Jan 2023</time>
@@ -416,41 +431,6 @@ Coded and designed by Marc Wickens. Powered by 11ty.
 <p>That's why I've written <a href="https://github.com/wickens/PodcastArchive">Podcast Archive.</a> A simple Command-line utility written in .NET that downloads an entire podcast feed in a tidy Year &gt; Month &gt; Date folder structure. It's smart enough not to download files that have already been downloaded, so it's safe to run over and over again without wasting bandwidth. Files downloaded will have their creation date set to the original publish date, so once downloaded you can easily use tools like Spotlight to search by date.</p>
 <p><img src="/wp-content/uploads/2022/06/screenshot3.png?w=1024" alt=""></p>
 <p>At the moment you'll need to compile the app using .NET 6, but I plan to add pre-compiled versions for Windows, Linux and Mac very soon.</p>
-
-</article>
-<hr>
-
-<article class="post-full">
-  <h2 class="post-title"><a href="/2022/05/21/in-shock-news-regulators-regulate/">In Shock News, Regulators Regulate</a></h2>
-  <p class="meta">
-    <time datetime="2022-05-21T12:05:42.000+00:00">21 May 2022</time>
-  </p>
-
-  <p>Apple blogger John Gruber isn’t happy about recently agreed EU legislation. In a recent post entitled “<a href="https://daringfireball.net/linked/2022/05/20/eu-regulators-gonna-regulate">E.U. Regulators Gonna Regulate</a>” he wrote:</p>
-<blockquote>
-<p>This is bananas. All third party developers get control over the secure enclave and the software that controls it? Would be good to give them such control over the camera, microphone, and location data, too.</p>
-</blockquote>
-<p>The text of the legislation <a href="https://www.consilium.europa.eu/media/56086/st08722-xx22.pdf">says the following</a> (original emphasis):</p>
-<blockquote>
-<p>A gatekeeper that is a manufacturer of a device <strong><em>can</em></strong> restrict access to some of the functionalities in that device, such as near-field-communication technology <strong><em>secure elements and processors, authentication mechanisms and</em></strong> the software used to operate <strong><em>those technologies</em></strong>, which <strong><em>can</em></strong> be required for the effective provision of <strong><em>a</em></strong> service <strong><em>provided together with, or in support of, the core platform service</em></strong> by the gatekeeper as well <strong><em>as by any potential third party undertaking providing such service.<br>
-….</em></strong></p>
-<p><strong><em>If dual roles are used in a manner that prevents alternative service and hardware providers from having access under equal conditions to the same operating system, hardware or software features that are available or used by the gatekeeper in the provision of its own complementary or supporting services or hardware, this could significantly undermine innovation by such alternative providers, as well as choice for end users.</em></strong></p>
-<p><strong><em>The gatekeepers should, therefore, be required to ensure, free of charge, effective interoperability with, and access for the purposes of interoperability to, the same operating system, hardware or software features that are available or used in the provision of its own complementary and supporting services and hardware. Such access can equally be required by software applications related to the relevant services provided together with or in support of the core platform service in order to effectively develop and provide functionalities interoperable with those provided by gatekeepers.</em></strong></p>
-</blockquote>
-<p>My admittedly layperson's interpretation of the legislation is that all Apple would need to do is provide API access that would allow competitors to provide equivalent services to those that Apple provide. Just as no modern operating system gives application software <strong><em>direct access</em></strong> to the CPU and memory, Apple won’t need to give anyone <strong><em>direct access</em></strong> to the Secure Enclave if they've designed it well**.** The text explitcly says <em>&quot;A gatekeeper that is a manufacturer of a device <strong>can</strong> restrict access to some of the functionalities in that device&quot;.</em> In the same way anyone can write an application that creates Instagram-like photo filters, the EU is saying that anyone should be able to create a rival to any service Apple also offers, such as a digital wallet application or App Store. But then again I am no legal scholar and could be reading this wrong.</p>
-<p>Gruber then goes on to write:</p>
-<blockquote>
-<p>This is profoundly anti-consumer. Consumers aren’t asking for any of this shit. Actual people love their phones more than their computers — whether Macs or PCs — not despite the fact that their phones are tightly controlled consoles, but because they are tightly controlled consoles. These regulators don’t see it that way, because they’re idiots. They think they can legislate their way to a world where the iPhone (and Android, which is also console-like) remains far safer and more reliable than PCs while mandating that all the protections that have made them far safer and more reliable than PCs be removed. It’s absurd.</p>
-</blockquote>
-<p>I would have loved to see a citation when he says <em>&quot;consumers aren’t asking for any of this shit&quot;</em>, as I presume he is referring to a survey that was carried at some point. And no, the iPhone and iPad are not consoles. <a href="https://imarc.co.uk/2021/01/09/what-is-a-console/">I've covered this before</a>.</p>
-<p>Unfortunately, Gruber then makes a 90º turn and drives his argument straight into a brick wall, calling the EU &quot;idiots&quot;. Instead of trying to understand the EU position and offer some valuable insights and perhaps an alternative solution, he resorts to petty name-calling.</p>
-<p>He then goes on:</p>
-<blockquote>
-<p>Worth noting: “Europe” accounts for nearly 25 percent of Apple’s revenue. That includes 23 countries that aren’t in the E.U. — most notably, of course, the U.K. — but the E.U. is too big for Apple to just tell them to pound sand. I would imagine though, if this comes to fruition, E.U. citizens are going to wind up buying iPhones that operate very differently from those sold everywhere else in the world, and they will suffer for it.</p>
-</blockquote>
-<p>I think this is an overly pessimistic take on the proposals. If Apple were to constructively engage with the EU, then opening up iOS could give the ecosystem a boost and offer some much needed novelty and excitement that has been missing for at least half a decade. I can't remember the last time I installed a new app on my iPhone or iPad that excited me in some way. Between 2010 and 2013 it seemed like every week there was something new and exciting my devices could do with a new app. Now it seems that all we get is more and more refined text editors and to-do list apps. Instead, I fear that Apple will belligerently fight the EU, resulting in poor outcomes for everyone.</p>
-<p>I'm not saying I agree with every word of the EU legislation, far from it. The EU has a poor track record when it comes to legislating tech companies. Just look at the Microsoft browser-ballot which was far too late to be effective, and mandatory cookie banners which haven't solved any of the concerns around privacy yet have made browsing the web far more annoying. I just feel that a more constructive discourse that goes beyond &quot;they're idiots&quot; is needed. I don't want to live in a world where my Sony TV only lets me watch movies from Sony Pictures, or a Telsa Car that only allows me drive to some future Elon Musk-owned restaurant chain, yet that's essentially how the iPhone and iPad operate today when it comes to certain vertical markets.</p>
-<p>It is possible to be a fan of Apple while resisting the paternal instinct to defend everything it does. Surely a company that can make a UNIX-based wrist-computers and competition-thrashing CPUs can figure out a way to allow 3rd parties take payments, or run App Stores without compromising security?</p>
 
 </article>
 <hr>

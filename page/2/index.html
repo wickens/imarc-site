@@ -67,6 +67,21 @@ Coded and designed by Marc Wickens. Powered by 11ty.
 
 
 <article class="post-full">
+  <h2 class="post-title"><a href="/2024/08/15/troubleshooting-glibcxx3426-error-on-raspberry-pi-net-9-compatibility-issue/">Troubleshooting GLIBCXX_3.4.26 Error on Raspberry Pi: .NET 9 Compatibility Issue</a></h2>
+  <p class="meta">
+    <time datetime="2024-08-15T19:37:54.000+00:00">15 Aug 2024</time>
+  </p>
+
+  <p><img src="/wp-content/uploads/2024/08/error_glibcxx-.png?w=1024" alt=""></p>
+<p>I was recently trying to compile a .NET project as a self-contained binary for <code>linux-arm</code> to run on my Raspberry Pi. When trying to run the binary, I kept getting the following error:</p>
+<pre><code>/usr/lib/arm-linux-gnueabihf/libstdc++.so.6: version GLIBCXX_3.4.26' not found (required by ./[executable])
+</code></pre>
+<p>It turned out the issue was caused by using .NET 9. <strong>Downgrading the project to .NET 8 resolved it</strong>. I'm unsure whether Microsoft or Raspbian needs to address compatibility with .NET 9, but as it didn't impact my code, it wasn't a problem for me.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
   <h2 class="post-title"><a href="/2024/04/30/apple-vision-problematic/">Apple Vision Pro…blematic</a></h2>
   <p class="meta">
     <time datetime="2024-04-30T15:17:05.000+00:00">30 Apr 2024</time>
@@ -211,21 +226,6 @@ Coded and designed by Marc Wickens. Powered by 11ty.
 <p>Apple Music retains most of the features from the heyday of iTunes</p>
 <p>Yes, it does have many annoying bugs and could certainly do with some investment in the QA department. But thankfully it still has many ‘power user’ features that I admire, and I’m grateful for this. Apple Music is able to still, believe it on not, rip CDs to MP3 or AAC and will still fetch CD metadata from the venerable Gracenote CDDB service. This may sound arcane, but <a href="https://immersiveaudioalbum.com/the-surround-sound-series-xtc-5-1-surround-sound/">some music is only available on CD</a>. (As a more general point, if you’re limiting your music discovery to what’s available on streaming services, you should definitely expand your horizons. Even the old iTunes Store has a much wider range, and streaming - especially Spotify, <a href="https://jwillgoose.tumblr.com/post/675168562108858368/streaming-payment-rates-there-has-been-a-lot-of">is notoriously bad for artists</a>.) Once ‘ripped’, the songs are uploaded into <a href="https://support.apple.com/en-gb/HT204146">iTunes Match</a> and are available on all of my devices, including my <a href="https://imarc.co.uk/2022/01/16/has-time-been-kind-to-the-apple-watch/">Apple Watch</a>. Apple Music also allows me manually select which albums I want to keep locally, unlike the Photos app. I can also see the status of both uploads and downloads, again unlike Photos. Best of all, I can manually remove local copy of songs stored in the cloud in order to free up space on my Mac. Yet again, such a basic function is not provided by Photos. In addition, I can easily backup my music collection using the Finder, and the data will travel across different filesystems (no special, Mac-only bundle files). Best of all, Apple Music is able to mostly, seamlessly meld my offline library, tracks synchronised via iTunes Match, and songs added from Apple's music subscription service into one seamless library. It even allows me to create a &quot;Smart Playlist&quot; which can catalog songs based on whether they are rented through Apple Music, or fully owned, as well as countless other criteria such as Genre, Artist, Play Count (which incidentally, includes plays from all of my other devices), File Size, File Type, Date Added, Last Played, Composer, Year Released, and even how many times I've skipped a song. Yes, I could create a playlist of my most skipped songs. How's that for a <a href="https://en.wikipedia.org/wiki/Desert_Island_Discs">desert island disc</a>?</p>
 <p>So while it's not perfect, I'm glad Apple haven't released some half-arsed rewrite of Apple Music focused on flogging their subscription. iTunes lives on for now, if not in name, then in spirit.</p>
-
-</article>
-<hr>
-
-<article class="post-full">
-  <h2 class="post-title"><a href="/2023/02/04/sorting-by-date-is-also-an-algorithm/">Sorting by Date Is Also an Algorithm</a></h2>
-  <p class="meta">
-    <time datetime="2023-02-04T13:51:58.000+00:00">4 Feb 2023</time>
-  </p>
-
-  <p><img src="/wp-content/uploads/2023/02/evil-algorithm.png?w=1024" alt=""></p>
-<p>It's a common refrain in tech circles when discussing Twitter to talk about &quot;The Algorithm&quot;. Take this Lifewire article: <em>&quot;<a href="https://web.archive.org/web/20190613224737/https://www.lifewire.com/how-to-use-twitter-timeline-algorithm-4174499">How to Turn off the Twitter Timeline Algorithm</a>&quot;</em>, or this one by TechCrunch: <em>&quot;<a href="https://techcrunch.com/2023/01/11/twitter-makes-algorithmic-timeline-default-on-ios/?guccounter=1&amp;guce_referrer=aHR0cHM6Ly9kdWNrZHVja2dvLmNvbS8&amp;guce_referrer_sig=AQAAADCeaYUdBR1NNtjFLiP1nDMAgJItWZoj9bndqsKR3oXUleBopWE6Otoiap6zWxOEpHlPsT8fLSpym8gNJU7xqwacnEmE8WOTeVMukbNMjJxJ4ETjCKZ1pUEZ-KZtJ-lQbH2ZIgNdjmDeREqLsrdepwIqtp8vBB1dOKPDy2XQePCN">Twitter makes algorithmic timeline default on iOS</a>&quot;</em>.</p>
-<p>In the beginning the Twitter timeline was a simple list of posts by people you follow sorted by date descending. In 2013 Twitter introduced a new timeline that wasn't so transparent. It was seemingly designed to optimise for engagement. All of a sudden, people were seeing posts from people they didn't follow, or that were posted days ago and for some reason had been boosted by the algorithm.</p>
-<p>The point is, both the classic timeline and the &quot;algorithmic&quot; timeline are both in fact <em>algorithmic</em>. In fact, the first algorithm taught in computer science is often the <a href="https://www.bbc.co.uk/bitesize/guides/zjdkw6f/revision/4">Bubble Sort</a> algorithm. It's still an algorithm! In the case of Twitter, or its upcoming rival Mastodon, sorting by date may be a preferable, but there are possibly downsides too. Prioritising something because it happens to have been posted recently is a form of <a href="https://en.wikipedia.org/wiki/Recency_bias">Recency bias</a> after all. The key seems to be <a href="https://imarc.co.uk/2020/08/05/transparency-in-ai/">transparency</a>.</p>
-<p>So enjoy your favourite algorithm, and remember, they're not all bad.</p>
 
 </article>
 <hr>

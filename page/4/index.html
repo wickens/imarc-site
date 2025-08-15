@@ -67,6 +67,41 @@ Coded and designed by Marc Wickens. Powered by 11ty.
 
 
 <article class="post-full">
+  <h2 class="post-title"><a href="/2022/05/21/in-shock-news-regulators-regulate/">In Shock News, Regulators Regulate</a></h2>
+  <p class="meta">
+    <time datetime="2022-05-21T12:05:42.000+00:00">21 May 2022</time>
+  </p>
+
+  <p>Apple blogger John Gruber isn’t happy about recently agreed EU legislation. In a recent post entitled “<a href="https://daringfireball.net/linked/2022/05/20/eu-regulators-gonna-regulate">E.U. Regulators Gonna Regulate</a>” he wrote:</p>
+<blockquote>
+<p>This is bananas. All third party developers get control over the secure enclave and the software that controls it? Would be good to give them such control over the camera, microphone, and location data, too.</p>
+</blockquote>
+<p>The text of the legislation <a href="https://www.consilium.europa.eu/media/56086/st08722-xx22.pdf">says the following</a> (original emphasis):</p>
+<blockquote>
+<p>A gatekeeper that is a manufacturer of a device <strong><em>can</em></strong> restrict access to some of the functionalities in that device, such as near-field-communication technology <strong><em>secure elements and processors, authentication mechanisms and</em></strong> the software used to operate <strong><em>those technologies</em></strong>, which <strong><em>can</em></strong> be required for the effective provision of <strong><em>a</em></strong> service <strong><em>provided together with, or in support of, the core platform service</em></strong> by the gatekeeper as well <strong><em>as by any potential third party undertaking providing such service.<br>
+….</em></strong></p>
+<p><strong><em>If dual roles are used in a manner that prevents alternative service and hardware providers from having access under equal conditions to the same operating system, hardware or software features that are available or used by the gatekeeper in the provision of its own complementary or supporting services or hardware, this could significantly undermine innovation by such alternative providers, as well as choice for end users.</em></strong></p>
+<p><strong><em>The gatekeepers should, therefore, be required to ensure, free of charge, effective interoperability with, and access for the purposes of interoperability to, the same operating system, hardware or software features that are available or used in the provision of its own complementary and supporting services and hardware. Such access can equally be required by software applications related to the relevant services provided together with or in support of the core platform service in order to effectively develop and provide functionalities interoperable with those provided by gatekeepers.</em></strong></p>
+</blockquote>
+<p>My admittedly layperson's interpretation of the legislation is that all Apple would need to do is provide API access that would allow competitors to provide equivalent services to those that Apple provide. Just as no modern operating system gives application software <strong><em>direct access</em></strong> to the CPU and memory, Apple won’t need to give anyone <strong><em>direct access</em></strong> to the Secure Enclave if they've designed it well**.** The text explitcly says <em>&quot;A gatekeeper that is a manufacturer of a device <strong>can</strong> restrict access to some of the functionalities in that device&quot;.</em> In the same way anyone can write an application that creates Instagram-like photo filters, the EU is saying that anyone should be able to create a rival to any service Apple also offers, such as a digital wallet application or App Store. But then again I am no legal scholar and could be reading this wrong.</p>
+<p>Gruber then goes on to write:</p>
+<blockquote>
+<p>This is profoundly anti-consumer. Consumers aren’t asking for any of this shit. Actual people love their phones more than their computers — whether Macs or PCs — not despite the fact that their phones are tightly controlled consoles, but because they are tightly controlled consoles. These regulators don’t see it that way, because they’re idiots. They think they can legislate their way to a world where the iPhone (and Android, which is also console-like) remains far safer and more reliable than PCs while mandating that all the protections that have made them far safer and more reliable than PCs be removed. It’s absurd.</p>
+</blockquote>
+<p>I would have loved to see a citation when he says <em>&quot;consumers aren’t asking for any of this shit&quot;</em>, as I presume he is referring to a survey that was carried at some point. And no, the iPhone and iPad are not consoles. <a href="https://imarc.co.uk/2021/01/09/what-is-a-console/">I've covered this before</a>.</p>
+<p>Unfortunately, Gruber then makes a 90º turn and drives his argument straight into a brick wall, calling the EU &quot;idiots&quot;. Instead of trying to understand the EU position and offer some valuable insights and perhaps an alternative solution, he resorts to petty name-calling.</p>
+<p>He then goes on:</p>
+<blockquote>
+<p>Worth noting: “Europe” accounts for nearly 25 percent of Apple’s revenue. That includes 23 countries that aren’t in the E.U. — most notably, of course, the U.K. — but the E.U. is too big for Apple to just tell them to pound sand. I would imagine though, if this comes to fruition, E.U. citizens are going to wind up buying iPhones that operate very differently from those sold everywhere else in the world, and they will suffer for it.</p>
+</blockquote>
+<p>I think this is an overly pessimistic take on the proposals. If Apple were to constructively engage with the EU, then opening up iOS could give the ecosystem a boost and offer some much needed novelty and excitement that has been missing for at least half a decade. I can't remember the last time I installed a new app on my iPhone or iPad that excited me in some way. Between 2010 and 2013 it seemed like every week there was something new and exciting my devices could do with a new app. Now it seems that all we get is more and more refined text editors and to-do list apps. Instead, I fear that Apple will belligerently fight the EU, resulting in poor outcomes for everyone.</p>
+<p>I'm not saying I agree with every word of the EU legislation, far from it. The EU has a poor track record when it comes to legislating tech companies. Just look at the Microsoft browser-ballot which was far too late to be effective, and mandatory cookie banners which haven't solved any of the concerns around privacy yet have made browsing the web far more annoying. I just feel that a more constructive discourse that goes beyond &quot;they're idiots&quot; is needed. I don't want to live in a world where my Sony TV only lets me watch movies from Sony Pictures, or a Telsa Car that only allows me drive to some future Elon Musk-owned restaurant chain, yet that's essentially how the iPhone and iPad operate today when it comes to certain vertical markets.</p>
+<p>It is possible to be a fan of Apple while resisting the paternal instinct to defend everything it does. Surely a company that can make a UNIX-based wrist-computers and competition-thrashing CPUs can figure out a way to allow 3rd parties take payments, or run App Stores without compromising security?</p>
+
+</article>
+<hr>
+
+<article class="post-full">
   <h2 class="post-title"><a href="/2022/04/27/the-software-slump/">The Software Slump</a></h2>
   <p class="meta">
     <time datetime="2022-04-27T20:19:47.000+00:00">27 Apr 2022</time>
@@ -247,22 +282,6 @@ Coded and designed by Marc Wickens. Powered by 11ty.
 <p>Thankfully, there is an option hidden away in the iOS Settings app called “<em>Restrict Stories in Today</em>”. Turning it on will cause News to limit articles to those from publishers you actively follow.</p>
 <p>I definitely recommend following a wide variety of outlets to avoid a filter bubble, but I’ve found this option to be a great quality filter so far.</p>
 <p><img src="/wp-content/uploads/2021/06/img_0069.jpg?w=1024" alt=""></p>
-
-</article>
-<hr>
-
-<article class="post-full">
-  <h2 class="post-title"><a href="/2021/06/11/fancier-macbooks-are-on-the-way-but-you-probably-dont-need-one/">Fancier MacBooks Are on the Way, but You Probably Don’t Need One</a></h2>
-  <p class="meta">
-    <time datetime="2021-06-11T17:39:20.000+00:00">11 Jun 2021</time>
-  </p>
-
-  <p><img src="/wp-content/uploads/2021/06/macbook-pro-m1.png?w=1024" alt=""></p>
-<p>Rumours are abundant, and so it <em>must</em> be true that in the coming months Apple will release updated versions its high-end computers. But for the majority of users, even us “professionals”, the current crop of M1 Macs will probably do just fine.</p>
-<p>I've been using an M1 MacBook Pro as my own personal laptop now for 3 and a half months and I have to admit, the hype is real. It's a beast. Day to day it's exceedingly fast at nearly everything I throw at it. Anything you could possibly consider “day to day” use doesn’t even warrant a mention - it’s blindingly fast. It breezed through more advanced photo editing, compiling apps using Xcode, editing video in the Photos app, and pretty much every other task I've thrown at it. Contrary to many reports however is the fan. It does get extremely loud when performing intense tasks. In my case, when transcoding video that wasn't natively supported by the M1's instruction set.</p>
-<p>In comparison to my other laptop, a work-provided 15&quot; Dell XPS 9500 running Intel's 2020 i7 which has a bigger screen and costs £400 more but is far is hotter, slower and less reliable (frequently overheating while charging to a point it shuts itself off, and unable to stay in sleep mode without draining the battery completely over night) the latest MacBook Air and MacBook Pro are no-brainers for anyone who doesn't need Windows to do their job.</p>
-<p>Unless you are playing (or making) AAA games, working with video at a professional level, or training large machine learning models, the current crop of M1 Macs will likely far exceed your needs. Even Marco Arment can <a href="https://overcast.fm/+R7DWXqqm0/47:00">get by with the latest MacBook Air</a> for software development. As with any processor transition, it's not all plain sailing - I struggled to get an older version of TensorFlow working on the M1 Mac because Apple have forked the project for M1 at a later version - but these kind of teething issues will resolve themselves over time. As with anything like this, if you have specific software needs, check compatibility first.</p>
-<p>So while the latest, shiniest, <em>fastest</em> laptop might seem temping, the mid-range is where the value is right now.</p>
 
 </article>
 <hr>
