@@ -19,7 +19,7 @@ We’ve come a long way from 2022, when a group of Apple employees attempted a S
 
 I am fortunate enough to work from home 3 days of the week, but I also know that meeting colleagues in person is very important when it comes to building trust and camaraderie. It’s also vital for mentoring junior colleagues. I know several people early in their careers who have switched jobs to find companies where being in the office is the norm rather than the exception.
 
-Hybrid is the way forward. A great employer understands that allowing workers to fit work around their life, whether that’s picking up kids, attending appointments, or other commitments, leads to the best performance. 
+Hybrid is the way forward. A great employer understands that allowing workers to fit work around their life, whether that’s picking up children, attending appointments, or other commitments, leads to the best performance. 
 
 At the same time, it’s up to *employees* to take a mature view and acknowledge that it’s not just about *them*. Maybe other people they work with will need human contact. Maybe they do too, but don’t realise it. It’s no surprise that Microsoft reports higher employee wellbeing among those who come into the office.
 
