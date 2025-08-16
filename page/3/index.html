@@ -67,6 +67,22 @@ Coded and designed by Marc Wickens. Powered by 11ty.
 
 
 <article class="post-full">
+  <h2 class="post-title"><a href="/2023/04/16/in-praise-of-apple-music-yes-the-mac-app/">In Praise of Apple Music (Yes, the Mac App)</a></h2>
+  <p class="meta">
+    <time datetime="2023-04-16T18:11:03.000+00:00">16 Apr 2023</time>
+  </p>
+
+  <p>Apple Music has a poor reputation these days. I’m not talking about the music streaming service here, nor the iOS apps that share the same name. I’m talking about the 22 year old application formally known as iTunes. You see it’s the same application really, only with a new name and a fresh coat of paint. Squint a bit, or rather go to the Songs view and turn on Column Browser, and you will see it for what it really is. iTunes with slightly different icon and all of the video and podcast bloat removed.</p>
+<p>Having been around since <a href="https://youtu.be/_5-BIPybAOI?t=3193">January 2001</a>, in many places it really shows. When compared to more modern applications that come bundled with macOS, such as the nine-year old Photos app, and unlike Apple Music for iOS Apple Music for Mac retains many of it’s power user features and can be used to manage a local music library effectively, if that’s something you still want to do.</p>
+<p><img src="/wp-content/uploads/2023/04/itunes1.png" alt=""><img src="/wp-content/uploads/2023/04/ituneslatest.png" alt=""></p>
+<p>Apple Music retains most of the features from the heyday of iTunes</p>
+<p>Yes, it does have many annoying bugs and could certainly do with some investment in the QA department. But thankfully it still has many ‘power user’ features that I admire, and I’m grateful for this. Apple Music is able to still, believe it on not, rip CDs to MP3 or AAC and will still fetch CD metadata from the venerable Gracenote CDDB service. This may sound arcane, but <a href="https://immersiveaudioalbum.com/the-surround-sound-series-xtc-5-1-surround-sound/">some music is only available on CD</a>. (As a more general point, if you’re limiting your music discovery to what’s available on streaming services, you should definitely expand your horizons. Even the old iTunes Store has a much wider range, and streaming - especially Spotify, <a href="https://jwillgoose.tumblr.com/post/675168562108858368/streaming-payment-rates-there-has-been-a-lot-of">is notoriously bad for artists</a>.) Once ‘ripped’, the songs are uploaded into <a href="https://support.apple.com/en-gb/HT204146">iTunes Match</a> and are available on all of my devices, including my <a href="https://imarc.co.uk/2022/01/16/has-time-been-kind-to-the-apple-watch/">Apple Watch</a>. Apple Music also allows me manually select which albums I want to keep locally, unlike the Photos app. I can also see the status of both uploads and downloads, again unlike Photos. Best of all, I can manually remove local copy of songs stored in the cloud in order to free up space on my Mac. Yet again, such a basic function is not provided by Photos. In addition, I can easily backup my music collection using the Finder, and the data will travel across different filesystems (no special, Mac-only bundle files). Best of all, Apple Music is able to mostly, seamlessly meld my offline library, tracks synchronised via iTunes Match, and songs added from Apple's music subscription service into one seamless library. It even allows me to create a &quot;Smart Playlist&quot; which can catalog songs based on whether they are rented through Apple Music, or fully owned, as well as countless other criteria such as Genre, Artist, Play Count (which incidentally, includes plays from all of my other devices), File Size, File Type, Date Added, Last Played, Composer, Year Released, and even how many times I've skipped a song. Yes, I could create a playlist of my most skipped songs. How's that for a <a href="https://en.wikipedia.org/wiki/Desert_Island_Discs">desert island disc</a>?</p>
+<p>So while it's not perfect, I'm glad Apple haven't released some half-arsed rewrite of Apple Music focused on flogging their subscription. iTunes lives on for now, if not in name, then in spirit.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
   <h2 class="post-title"><a href="/2023/02/04/sorting-by-date-is-also-an-algorithm/">Sorting by Date Is Also an Algorithm</a></h2>
   <p class="meta">
     <time datetime="2023-02-04T13:51:58.000+00:00">4 Feb 2023</time>
@@ -415,22 +431,6 @@ Coded and designed by Marc Wickens. Powered by 11ty.
 </blockquote>
 <p><em>(As an aside, I'd love to know how the word 'god' made it into the URL slug - now I really want to know what the original title was!)</em></p>
 <p>What he hits on here is the crux of why the iPad has been a disappointment to me. The first point is that rather than advance tablet computing, Apple seems to have given up and instead opted to imitate the established laptop paradigm. They're going backwards instead of forwards. If we leave that to one side and accept that the tablet has reached its limits and in order to evolve it must act more like a traditional PC laptop, then the iPad still has the problem that its software is just too limited. The first step to remedy this would be to allow software from sources other than the App Store. There is a vast swathe of open source software and developer tools are are just waiting to be ported to the iPad, but current App Store policies forbid it.</p>
-
-</article>
-<hr>
-
-<article class="post-full">
-  <h2 class="post-title"><a href="/2022/06/04/a-podcast-archive-utility/">A Podcast Archive Utility</a></h2>
-  <p class="meta">
-    <time datetime="2022-06-04T15:54:00.000+00:00">4 Jun 2022</time>
-  </p>
-
-  <p>I have been an avid podcast listener since it first emerged in the mid-2000s, in the past few years everyone who is anyone it seems now has a podcast. What was once the domain of nerdy introverts is now decidedly mainstream.</p>
-<p>The beauty of podcasts is that like the web, they use (mostly) open standards. HTTP, RSS, XML and MP3. Like the web, they also disappear sometimes. In the case of the web, clicking links on pages written 10 years ago will inevitability result in frequent dead links, where a site’s owner has decided to move on. Go back another 10 years the the ratio of working links to 404 errors increases even more. Thankfully Archive.org can be used to recover many dead links on the web.</p>
-<p>Like blogging before it, which was similarity open in spirit, economic realities will one day set in for podcasts too. Already there are shows I remember whose feeds no longer exists. The episodes are gone forever.</p>
-<p>That's why I've written <a href="https://github.com/wickens/PodcastArchive">Podcast Archive.</a> A simple Command-line utility written in .NET that downloads an entire podcast feed in a tidy Year &gt; Month &gt; Date folder structure. It's smart enough not to download files that have already been downloaded, so it's safe to run over and over again without wasting bandwidth. Files downloaded will have their creation date set to the original publish date, so once downloaded you can easily use tools like Spotlight to search by date.</p>
-<p><img src="/wp-content/uploads/2022/06/screenshot3.png?w=1024" alt=""></p>
-<p>At the moment you'll need to compile the app using .NET 6, but I plan to add pre-compiled versions for Windows, Linux and Mac very soon.</p>
 
 </article>
 <hr>
