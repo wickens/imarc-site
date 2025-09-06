@@ -8,38 +8,98 @@ permalink: "search/index.html"
   <p>Type a query above to search.</p>
 </div>
 
+
+
+
+
+
+
+
 <script>
 (async () => {
-  const idx = await fetch("/search/index.json").then(r => r.json());
-  // Simple in-memory search
-  const posts = idx;
+  const res = await fetch("/search/index.json", { cache: "no-store" });
+  const posts = await res.json();
+
   const input = document.getElementById("search-input");
   const results = document.getElementById("search-results");
 
-  input.addEventListener("input", () => {
-    const q = input.value.trim().toLowerCase();
-    if (!q) {
+  const norm = s => (s||"")
+    .toLowerCase()
+    .normalize("NFD").replace(/\p{Diacritic}/gu,"")
+    .replace(/[^a-z0-9\s]/g," ")
+    .replace(/\s+/g," ")
+    .trim();
+
+  const escaped = s => (s||"").toString().replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const reEsc = s => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+  // Precompute normalised fields
+  const idx = posts.map(p => ({
+    ...p,
+    titleN: norm(p.title),
+    excerptN: norm(p.excerpt)
+  }));
+
+  function parseQuery(qRaw){
+    const phrases = [];
+    qRaw = qRaw.replace(/"([^"]+)"/g, (_,ph) => { phrases.push(norm(ph)); return " "; });
+    const terms = [...new Set(norm(qRaw).split(" ").filter(Boolean))];
+    return { phrases, terms };
+  }
+
+  function score(doc, q){
+    let s = 0;
+
+    // Require all terms somewhere (order-free)
+    if (!q.terms.every(t => doc.titleN.includes(t) || doc.excerptN.includes(t))) return 0;
+
+    // Phrase boosts
+    for (const ph of q.phrases){
+      if (ph && doc.titleN.includes(ph)) s += 8;
+      else if (ph && doc.excerptN.includes(ph)) s += 4;
+    }
+    // Term weights
+    for (const t of q.terms){
+      if (doc.titleN.includes(t)) s += 3;
+      if (doc.excerptN.includes(t)) s += 1;
+    }
+    return s;
+  }
+
+  function highlight(html, terms){
+    const toks = terms.filter(Boolean).map(reEsc);
+    if (!toks.length) return html;
+    const re = new RegExp(`\\b(${toks.join("|")})\\b`, "gi");
+    return html.replace(re, "<mark>$1</mark>");
+  }
+
+  function run(qRaw){
+    const q = parseQuery(qRaw);
+    if (!q.terms.length && !q.phrases.length){
       results.innerHTML = "<p>Type a query above to search.</p>";
       return;
     }
-    const matches = posts.filter(p =>
-      p.title.toLowerCase().includes(q) ||
-      p.excerpt.toLowerCase().includes(q)
-    );
-    if (!matches.length) {
+    const matches = idx
+      .map(d => ({ d, s: score(d, q) }))
+      .filter(x => x.s > 0)
+      .sort((a,b) => b.s - a.s)   // by score, then leave date order as-is
+      .map(x => x.d);
+
+    if (!matches.length){
       results.innerHTML = "<p>No results found.</p>";
       return;
     }
-    results.innerHTML = "<ul>" + matches.map(p => 
-      `<li><a href="${p.url}">${p.title}</a><br><small>${p.excerpt}</small></li>`
-    ).join("") + "</ul>";
-  });
 
-  // If there's a `?q=…` param, prefill and trigger
-  const params = new URLSearchParams(window.location.search);
-  if (params.has("q")) {
-    input.value = params.get("q");
-    input.dispatchEvent(new Event("input"));
+    results.innerHTML =
+      "<ul>" + matches.map(p => {
+        const titleH = highlight(escaped(p.title), q.terms);
+        const excerptH = highlight(escaped(p.excerpt), q.terms);
+        return `<li><a href="${escaped(p.url)}">${titleH}</a><br><small>${excerptH}</small></li>`;
+      }).join("") + "</ul>";
   }
+
+  input?.addEventListener("input", () => run(input.value));
+  const params = new URLSearchParams(location.search);
+  if (params.has("q")) { input.value = params.get("q"); run(input.value); }
 })();
 </script>
