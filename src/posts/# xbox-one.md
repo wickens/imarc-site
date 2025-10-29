@@ -1,0 +1,22 @@
+---
+title: "Xbox One: Initial Thoughts"
+date: "2014-01-11T22:31:54Z"
+slug: "xbox-one-initial-thoughts2"
+layout: "post.njk"
+categories: []
+---
+
+
+I was lucky enough to be bought an Xbox One for Christmas, so I thought I’d post some of my initial thoughts.
+## The games look amazing
+I have one game (Forza 5) and at £50 a pop I will likely only have one game for many months to come. That said, together with the new controller that has vibration motors in each trigger (lets you feel feedback from the brakes), speeding around Circuit de la Sarthe has never felt so real. Whether it’s being blinded temporarily by the sun, or seeing a glimpse of the driver in the windscreen, it just feels so real.
+## The Interface is Confusing
+While I wanted to love ‘Metro’ on the PC, after trying it for just over a month on my main development machine, I had to revert to using Start8 – it didn’t work out for me (loved it on the Surface RT, however) – so how does it stack up on the Xbox One? My view is that it could work, but the current execution isn’t great. On the main screen the positions of apps move about too often, so it’s impossible to remember where anything is. After a while I realised the tiles on the main screen amounted to a ‘recently used list’ the with exception of the left and right columns, which are fixed. There’s no visual differentiation, barley any visual hierarchy (the currently running app is the largest, everything else just looks like it was thrown in) and so it all gets rather confusing. To get to Settings for example, you have to go to ‘My Games & Apps’.
+## Apps for the sake of Apps
+No device these days would be complete without an ‘App Store’ – however the Xbox One has taken this to extremes. For example, if you’re in a game and you get an achievement, in order to see the full details of that achievement you need to leave the current game and open another app (complete with an [awful “splash screen”](http://cyrilmottier.com/2012/05/03/splash-screens-are-evil-dont-use-them/) which makes the effect of leaving one app and going to another feel even slower), if the Xbox 360 could do this, surly the Xbox One should be able to? Another example of this was when browsing the video store, in order to view ‘TV Deals’ I had to install the Xbox Video app. It seems a bit ridiculous that this isn’t just built in.
+## Kinect is impressive if still work in progress
+Having Kinect recognise you and automatically log you in is very clever. The speech recognition however is limited. Unlike Siri on an iPhone you need to keep to a precise syntax, and it’s not very forgiving. Say to Siri “Hello my friend, could please turn on the Bluetooth thingamajig” and it will turn on the Bluetooth radio. Ask your Xbox to “switch off” rather than “turn off” and it does nothing. I really hope this gets improved. That said it is still very useful, especially the “record that” function that lets you record the last 30 seconds of gameplay and share it online. I can’t imagine using the Xbox One without the Kinect plugged in, it just feels like work in progress still. I don’t have any Kinect games, so I can’t comment on how good it is for games, which I guess is its main purpose after all.
+## Everything is fast and fluid, it multitasks like a dream
+The Xbox 360 despite being able to render Skyrim at a decent frame-rate was seemingly unable to load a simple system menu without a few seconds delay. Game updates would block the entire interface and it just felt very sluggish, The Xbox One however always feels snappy. Even mid game I was able to press the ‘home button’ and get straight back to the Start Screen, compete with a smooth transition and sound effect. Subsequently opening an app such as Skype or Internet Explorer was very quick. I was also able to install a demo from the store and keep playing. I hope it doesn’t slow down over time, but this fluidity will do a lot to tempt me to use the Xbox One rather than the Apple TV or Virgin TiVo box to access Netflix or rent movies etc
+## The best is yet to come
+I hope (and predict) Microsoft will keep updating the Xbox One as they did with the 360. I’ve only used it for a couple of days so far and you can only fairly judge a a games console after many months of usage. Overall I’m very pleased with it, and look forward to more exciting releases.
