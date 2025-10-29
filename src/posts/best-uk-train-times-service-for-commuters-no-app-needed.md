@@ -1,8 +1,8 @@
 ---
-title: “The Best UK Train Times Service for Commuters (No App Needed)”
-date: “2025-10-29T08:59:43Z”
-slug: “the-best-uk-train-times-service-for-commuters-no-app-needed”
-layout: “post.njk”
+title: "The Best UK Train Times Service for Commuters (No App Needed)"
+date: "2025-10-29T08:59:43Z"
+slug: "the-best-uk-train-times-service-for-commuters-no-app-needed"
+layout: "post.njk"
 categories: []
 ---
 
