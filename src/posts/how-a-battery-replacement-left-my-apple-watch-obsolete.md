@@ -10,9 +10,12 @@ layout: "post.njk"
 excerpt: ""
 ---
 
-![](/wp-content/uploads/2022/10/img_0407.jpg?w=300)
+![](/wp-content/uploads/2022/10/img_0407.jpg)
 
-£91 a year for a watch?
+*£91 a year for a watch?*
+
+
+**Update December 2025: [It started working 3 years later!](#update-2025-12-30)**
 
 I’ve been using an Apple Watch for over 7 years now, and throughout this time I’ve owned the original Series 0, the Series 2, and Series 4. Recently I decided it was time to upgrade to the latest and greatest Series 8. Each time I’ve upgraded I’ve given the previous model to a family member and so my girlfriend has been wearing my old Series 2 for the past 4 years. Having been originally purchased in 2016, 6 years of daily use was most definitely taking its toll on the Series 2’s battery. My partner likes to cycle and workout, which hammers the battery even more than typical use. She was therefore keen to take on my old Series 4 which still has decent battery life. That left us with her otherwise fully functional 6 year old Apple Watch Series 2, that apart from the knackered battery, still worked absolutely fine and even paired with the latest version of iOS, version 16. I really wanted to give this to someone else in our family, and so decided to pay Apple £85 for a battery replacement.
 
@@ -31,3 +34,15 @@ This brand new Series 2 was destined to sit on a shelf for ever more. What a was
 The point of this post is not to complain about Apple or the staff in the Apple Store. The store staff did a good job turning around a bad situation. The point is to raise awareness about how utterly disposable Apple Watches are. I can understand that there must be a limit to how long companies like Apple provide updates to devices for, but a phone without updates will still work for a few years. The Apple Watch however won’t even pair to a modern phone, or even the the original phone I had when I bought the Series 2 (an iPhone SE, which if kept up to date would be on iOS 15).
 
 So if you’re thinking of buying one of the more expensive, premium watches with premium materials, maybe think again.
+
+<h1 id="update-2025-12-30">Update: 30/12/2025</h1>
+
+
+Three years, a wedding and a baby later, I was clearing out some old drawers after Christmas and found my old Series 2, which I had diligently left at 50% charge, as per Apple’s recommendation when storing a lithium iron battery long term. I thought I would take it to the Apple Store to be recycled. Before doing so, I decided to give it *one more try* with my current iPhone running iOS 26.
+
+After a few hours on the charger (the battery was dead), to my absolute surprise, the phone detected that the watch needed to be updated and offered to update it to the most recent version of watchOS supported by the Series 2, watchOS 6.3. The watch then proceeded to pair with my iPhone 16 Pro max and actually works! Someone at Apple has clearly taken the time to fix the issues outlined in the original post. Great work.
+
+I am not sure if I will have much use for a Series 2 now in 2025, but as a nerd, I find it interesting to go back to older devices and see how the UI has evolved over time.
+
+![](/wp-content/uploads/2025/watchos6-update-on-ios26.png "Updating a Series 2 Apple Watch to watchOS 6 on iOS 26")
+*Updating an Apple Watch Series 2 from iOS 26*
