@@ -40,7 +40,8 @@ So if you’re thinking of buying one of the more expensive, premium watches wit
 
 Three years, a wedding and a baby later, I was clearing out some old drawers after Christmas and found my old Series 2, which I had diligently left at 50% charge, as per Apple’s recommendation when storing a lithium iron battery long term. I thought I would take it to the Apple Store to be recycled. Before doing so, I decided to give it *one more try* with my current iPhone running iOS 26.
 
-After a few hours on the charger (the battery was dead), to my absolute surprise, the phone detected that the watch needed to be updated and offered to update it to the most recent version of watchOS supported by the Series 2, watchOS 6.3. The watch then proceeded to pair with my iPhone 16 Pro max and actually works! Someone at Apple has clearly taken the time to fix the issues outlined in the original post. Great work.
+After a few hours on the charger (the battery was dead), to my absolute surprise, the phone detected that the watch needed to be updated and offered to update it to the most recent version of watchOS supported by the Series 2, watchOS 6.3. The watch then proceeded to pair with my iPhone 16 Pro max and actually works! Someone at Apple has clearly taken the time to fix the issues outlined in the original post. Great work! Although I am unable to synchronise podcasts or music from the Watch app on my phone.  I also can't configure certain complications such as Weather from the Watch app either (although I'm able to do so from the watch itself)  – workouts still work as you'd expect, as do Maps and Messages. ￼ At this point the watch is 9 years old, so this is not surpassed.
+
 
 I am not sure if I will have much use for a Series 2 now in 2025, but as a nerd, I find it interesting to go back to older devices and see how the UI has evolved over time.
 
