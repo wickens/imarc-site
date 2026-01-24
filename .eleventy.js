@@ -11,6 +11,9 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy({ "uploads": "wp-content/uploads" });
     eleventyConfig.addPassthroughCopy("static");                 // copies everything under static/*
     eleventyConfig.addPassthroughCopy({ "static/imarc-icon.png": "imarc-icon.png" });
+    eleventyConfig.addPassthroughCopy("CNAME");
+
+
 
     /* Optional: watch so JS/CSS changes trigger reloads */
     eleventyConfig.addWatchTarget("static");
