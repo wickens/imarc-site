@@ -7,18 +7,11 @@
 
     
     <item>
-      <title></title>
+      <title>Bevel Review: AI Powered Health Tracking</title>
       <link>https://www.imarc.co.uk/2026/01/31/bevel-review-ai-powered-health-tracking/</link>
-      <pubDate>Sat, 31 Jan 2026 20:02:37 GMT</pubDate>
+      <pubDate>Sat, 31 Jan 2026 18:51:53 GMT</pubDate>
       <guid>https://www.imarc.co.uk/2026/01/31/bevel-review-ai-powered-health-tracking/</guid>
-      <description><![CDATA[<p>—–
-title: “Bevel Review: AI Powered Health Tracking”
-date: “2026-01-31T18:51:53Z”
-slug: “bevel-review—ai-powered-health-tracking”
-layout: “post.njk”
-categories: []
-—–</p>
-<p><img src="/static/img/bevel-watch.png" alt="My Recovery Score"></p>
+      <description><![CDATA[<p><img src="/static/img/bevel-watch.png" alt="My Recovery Score"></p>
 <p>The Apple Watch has been out for over a decade now, and yet its health and fitness insights have only improved marginally. GPS brought maps of your running routes, while more accurate accelerometers and gyroscopes enabled more in-depth running analysis. Better heart rate sensors allow for ongoing heart monitoring, and the addition of a thermometer helps with sleep and menstrual cycle tracking. There have been other improvements, admittedly, but the Health app itself has mostly just accumulated more charts.</p>
 <p>Bevel aims to augment Apple’s base offering with its own app that analyses and interprets data from an Apple Watch, or any fitness tracker that writes to Apple Health, and provides actual recommendations, commentary, and more actionable insights. At least, that is the pitch.</p>
 <p>The key tenets of the app are the scores it provides for “Strain”, “Recovery”, “Sleep”, and “Stress”. The app is often compared to the Whoop fitness tracker, as both provide similar functionality<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>. Strain is a measure of how much you have put your body through on any given day. Unlike Apple’s Activity metric, it does not just look at movement and heart rate. It also factors in the toll your overall stress level takes on your body, as well as your ability to cope with that stress based on how well you recovered from the previous day, hence the Recovery and Sleep scores. Sleep takes into account how much time you spend in each sleep stage, not just total time asleep, along with wake-ups and bedtime consistency. Recovery looks at how quickly your nervous system calms down after stress and exercise. Stress uses resting heart rate and heart rate variability to estimate how stressed you are.</p>
