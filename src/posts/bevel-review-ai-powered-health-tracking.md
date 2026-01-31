@@ -1,10 +1,13 @@
-—--
-title: “Bevel Review: AI Powered Health Tracking”
-date: “2026-01-31T18:51:53Z”
-slug: “bevel-review—ai-powered-health-tracking”
-layout: “post.njk”
+---
+title: "Bevel Review: AI Powered Health Tracking"
+date: "2026-01-31T18:51:53Z"
+slug: "bevel-review---ai-powered-health-tracking"
+layout: "post.njk"
 categories: []
-—--
+---
+
+
+
 
  ![My Recovery Score](/static/img/bevel-watch.png)
 
