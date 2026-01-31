@@ -69,6 +69,38 @@ Coded and designed by Marc Wickens. Powered by 11ty.
 
 
 <article class="post-full">
+  <h2 class="post-title"><a href="/2026/01/31/bevel-review-ai-powered-health-tracking/"></a></h2>
+  <p class="meta">
+    <time datetime="2026-01-31T19:58:08.858+00:00">31 Jan 2026</time>
+  </p>
+
+  <p>—
+title: “Bevel Review: AI Powered Health Tracking”
+date: “2026-01-31T18:51:53Z”
+slug: “bevel-review—ai-powered-health-tracking”
+layout: “post.njk”
+categories: []
+—</p>
+<p><img src="/static/img/bevel-watch.png" alt="My Recovery Score"></p>
+<p>The Apple Watch has been out for over a decade now, and yet its health and fitness insights have only improved marginally. GPS brought maps of your running routes, while more accurate accelerometers and gyroscopes enabled more in-depth running analysis. Better heart rate sensors allow for ongoing heart monitoring, and the addition of a thermometer helps with sleep and menstrual cycle tracking. There have been other improvements, admittedly, but the Health app itself has mostly just accumulated more charts.</p>
+<p>Bevel aims to augment Apple’s base offering with its own app that analyses and interprets data from an Apple Watch, or any fitness tracker that writes to Apple Health, and provides actual recommendations, commentary, and more actionable insights. At least, that is the pitch.</p>
+<p>The key tenets of the app are the scores it provides for “Strain”, “Recovery”, “Sleep”, and “Stress”. The app is often compared to the Whoop fitness tracker, as both provide similar functionality<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>. Strain is a measure of how much you have put your body through on any given day. Unlike Apple’s Activity metric, it does not just look at movement and heart rate. It also factors in the toll your overall stress level takes on your body, as well as your ability to cope with that stress based on how well you recovered from the previous day, hence the Recovery and Sleep scores. Sleep takes into account how much time you spend in each sleep stage, not just total time asleep, along with wake-ups and bedtime consistency. Recovery looks at how quickly your nervous system calms down after stress and exercise. Stress uses resting heart rate and heart rate variability to estimate how stressed you are.</p>
+<p>Overall, I have found the scores to be pretty helpful. It is important to take them in context. Sleep tracking using a device on your wrist is far from perfect, so if I wake up feeling great but Bevel says I had a bad night, I am not going to lose any sleep over it. Where it does help is in showing the impact of lifestyle choices on things like sleep and stress. Having a single pint of 4% IPA at lunchtime led to my HRV spiking for the next 24 hours and reduced the amount of deep sleep I got that night. Training too hard by pushing myself on runs too close together also spikes my stress levels. I more or less knew this already, but seeing the data as evidence, and seeing when positive changes make a difference, is genuinely useful. The stress metric is also much simpler than trying to work what your HRV means. As someone who has a tendency to over train and over work while not paying attention to my what my body is telling me, having a large stress score a tap away is good way to know when to skip that run or log off early.</p>
+<p>And of course, it would not be 2026 if the app did not include a conversational interface courtesy of an LLM. The chat feature is actually very good. As someone who has worked in AI for the past decade, I cannot imagine that even three years ago we would have had a chatbot capable of making such accurate and useful insights about my own health. I can ask whether I should attempt a 10-mile run tomorrow or hold off for another day, and it will look at my scores, workout history, and other data to make a data-driven recommendation. It is not perfect. Like many LLM-based systems, it keeps a memory of things you say that it considers significant. This data is then fed into subsequent prompts, allowing an otherwise stateless model to learn about you over time. This can lead to amusing results when it overplays the importance or timing of something it has stored, such as when it assumed a beer I had at lunchtime on a Saturday was consumed at 6am on Sunday morning before a 10-mile run. Still, while many tech companies and LinkedIn influencers talk up so-called “agentic” software, Bevel is actually doing it, and it is providing real value. The LLM is cloud-based, probably OpenAI, Google Gemini, or Claude Sonnet, and Bevel state that they do not bulk-share your health data. Instead, they appear to send limited snippets as part of the prompt.</p>
+<p>Bevel also supports logging food and drink, allowing you to correlate this with your scores and see how they are affected. For example, log a cup of tea at 5pm and you will probably see your sleep score drop noticeably. I have not really used this feature properly. For me, life is too short to estimate food intake precisely enough to be genuinely useful, although I can see how this would be worthwhile for some people.</p>
+<p>Finally, there is the cost. It is £50 a year for the features mentioned above. Compared to the competition, namely Whoop or possibly the Oura Ring, that is very good value, assuming you already own an Apple Watch. The fact that you also get a capable smartwatch that does many other things, rather than a commodity fitness tracker or a very limited ring, makes this feel like a much better deal. It is also widely expected that Apple will introduce its own AI-based offering at some point in the near future.</p>
+<p>Overall, I am very pleased with it and will be subscribing for a year.</p>
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>As an aside, I have noticed Whoop becoming increasingly popular recently, which shows where Fitbit could have gone. It is essentially a Fitbit for the 2020s. I have even noticed people wearing both a Whoop and an Apple Watch. This really should not be necessary and is the primary reason I sought out a software-based solution. <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+
+</article>
+<hr>
+
+<article class="post-full">
   <h2 class="post-title"><a href="/2025/10/29/the-best-uk-train-times-service-for-commuters-no-app-needed/">The Best UK Train Times Service for Commuters (No App Needed)</a></h2>
   <p class="meta">
     <time datetime="2025-10-29T08:59:43.000+00:00">29 Oct 2025</time>
@@ -229,21 +261,6 @@ Over the past few months, I’ve noticed a number of Amazon sellers using blatan
 <p>While they may have a tendency to over-explain the obvious (as shown by <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/new-user-experience-for-consumer-authentication/3822035">this 1,000+ word blog post just to say they’re replacing passwords with PassKeys</a> – something that could be summarised in a single paragraph), the decision to lump a collection of seemingly unrelated features into one menu simply because they involve “AI” suggests either a complete absence of user centric thinking or a rather desperate attempt to appear as an AI leader.</p>
 <p>The screenshot shows four menu items. The first, “Visual Search with Bing” (one can only imagine how many bureaucrats had to approve that name), allows you to search the web using something similar to Google’s reverse image search or Apple’s Visual Lookup. The other three are image editing tools: one for adding a background blur (which uses AI to detect the main subject in an image and blur everything else), one for erasing objects (where AI estimates what would be behind the removed element and fills it in), and one for removing the background entirely (essentially the same as the blur tool, but deleting the background pixels instead of blurring them). There’s also another totally separate “Ask Copilot” menu, which presumably also uses AI, but I’m guessing this was built by another team which would explain why it’s in a totally different place in the context menu.</p>
 <p>All of these features are genuinely useful, and it’s great to see them included in Windows (presumably using on-device processing rather than relying on the cloud). However, grouping them under an “AI Tools” menu doesn’t make much sense. “AI” in this context means machine learning-based processing and is becoming as commonplace as traditional processing tasks. Designing a user interface around the underlying technology rather than the user experience is a fundamental mistake. That’s not to say a UI shouldn’t ever mention “AI” – it is important to let users know when AI (especially generative AI) is going to be used or was used, as it provides a useful prompt to scrutinise the output more carefully and helps set expectations. But Microsoft’s overuse of it just makes them seem a little desperate to be seen as jumping on the AI bandwagon and risks users switching off every time they see yet another “AI” feature.</p>
-
-</article>
-<hr>
-
-<article class="post-full">
-  <h2 class="post-title"><a href="/2025/05/05/the-rise-and-fall-of-vector-databases/">The Rise and Fall of Vector Databases</a></h2>
-  <p class="meta">
-    <time datetime="2025-05-05T15:59:45.000+00:00">5 May 2025</time>
-  </p>
-
-  <p><a href="https://twitter.com/jobergum/status/1872923872007217309">Jo Kristian Bergum on Twitter</a>:</p>
-<blockquote>
-<p>This surge was partly driven by a widespread misconception that embedding-based similarity search was the only viable method for retrieving context for LLMs. The resulting “vector database gold rush” saw massive investment and attention directed toward vector search infrastructure, even though traditional information retrieval techniques remained equally valuable for many RAG applications. … However, the landscape has evolved rapidly. What started as pure vector search engines now expand their capabilities to match traditional search functionality. Vector database providers have recognized that real-world applications often require more than just similarity search.</p>
-</blockquote>
-<p>I’ve never quite understood the hype around using similarity search to retrieve content for a RAG system. Yes, cosine similarity can be useful in certain situations, but in many cases, there are better ways to find the right content. This is especially true when the user’s question has little semantic resemblance to the answer. Not to mention when you have potentially multiple versions of the same documents that may or may not be relevant depending on the context of the question. Now every major database supports vector search, is there even a need for a dedicated product? I’d recommend giving the latest episode of the <a href="https://podcasts.apple.com/gb/podcast/latent-space-the-ai-engineer-podcast/id1674008350?i=1000705713887">Latent Space</a> podcast a listen where they explore these issues, and alternatives, in more depth.</p>
 
 </article>
 <hr>

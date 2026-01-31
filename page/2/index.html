@@ -67,6 +67,21 @@ Coded and designed by Marc Wickens. Powered by 11ty.
 
 
 <article class="post-full">
+  <h2 class="post-title"><a href="/2025/05/05/the-rise-and-fall-of-vector-databases/">The Rise and Fall of Vector Databases</a></h2>
+  <p class="meta">
+    <time datetime="2025-05-05T15:59:45.000+00:00">5 May 2025</time>
+  </p>
+
+  <p><a href="https://twitter.com/jobergum/status/1872923872007217309">Jo Kristian Bergum on Twitter</a>:</p>
+<blockquote>
+<p>This surge was partly driven by a widespread misconception that embedding-based similarity search was the only viable method for retrieving context for LLMs. The resulting “vector database gold rush” saw massive investment and attention directed toward vector search infrastructure, even though traditional information retrieval techniques remained equally valuable for many RAG applications. … However, the landscape has evolved rapidly. What started as pure vector search engines now expand their capabilities to match traditional search functionality. Vector database providers have recognized that real-world applications often require more than just similarity search.</p>
+</blockquote>
+<p>I’ve never quite understood the hype around using similarity search to retrieve content for a RAG system. Yes, cosine similarity can be useful in certain situations, but in many cases, there are better ways to find the right content. This is especially true when the user’s question has little semantic resemblance to the answer. Not to mention when you have potentially multiple versions of the same documents that may or may not be relevant depending on the context of the question. Now every major database supports vector search, is there even a need for a dedicated product? I’d recommend giving the latest episode of the <a href="https://podcasts.apple.com/gb/podcast/latent-space-the-ai-engineer-podcast/id1674008350?i=1000705713887">Latent Space</a> podcast a listen where they explore these issues, and alternatives, in more depth.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
   <h2 class="post-title"><a href="/2024/12/19/apples-notification-summaries-why-starting-small-still-matters-in-ai/">Apple’s Notification Summaries: Why Starting Small Still Matters in AI</a></h2>
   <p class="meta">
     <time datetime="2024-12-19T21:42:07.000+00:00">19 Dec 2024</time>
@@ -206,17 +221,6 @@ The BBC made a complaint to the US tech giant after Apple Intelligence, which us
   </p>
 
   <p>Wordpress <a href="https://wordpress.com/blog/2023/10/11/activitypub/">have enabled support for ActivtyPub</a>. So you can now follow this blog on platforms such as Mastodon by searching for <strong><em><a href="mailto:imarc.co.uk@imarc.co.uk">imarc.co.uk@imarc.co.uk</a></em></strong> - let me know if it works by replying to this post.</p>
-
-</article>
-<hr>
-
-<article class="post-full">
-  <h2 class="post-title"><a href="/2023/10/09/microsoft-to-discontinue-visual-studio-for-mac/">Microsoft to Discontinue Visual Studio for Mac</a></h2>
-  <p class="meta">
-    <time datetime="2023-10-09T17:02:20.000+00:00">9 Oct 2023</time>
-  </p>
-
-  <p>In a disappointing move, Microsoft have <a href="https://devblogs.microsoft.com/visualstudio/visual-studio-for-mac-retirement-announcement/">discontinued Visual Studio for the Mac</a>. This comes not long after they <a href="https://visualstudiomagazine.com/articles/2022/05/25/vs-2022-for-mac-ga.aspx">rewrote</a> the user interface to be faster and more fluid using native frameworks. Given the depressing state of Windows these days, the lack of a full-featured IDE does not bode well for the long-term future of .NET and other related technologies. For many years, Windows has seemed stuck in limbo. Adding pointless features like Dark Mode, but still with nowhere near the number of productivity features Mac users take for granted. I had considered VS for Mac somewhat if a lifeboat for .NET developers wanting jump ship from Microsoft’s <a href="https://www.theguardian.com/technology/blog/2011/feb/09/nokia-burning-platform-memo-elop">burning platform</a>.</p>
 
 </article>
 <hr>
