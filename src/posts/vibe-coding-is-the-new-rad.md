@@ -1,0 +1,29 @@
+
+---
+title: "Vibe Coding Is the New RAD"
+date: "2026-04-03T20:27:31Z"
+slug: "vibe-coding-is-the-new-rad"
+layout: "post.njk"
+categories: []
+---
+
+ ![My Recovery Score](/static/img/vb6-llm-ui.gif)
+
+In the late 90s, the term “RAD” was everywhere in software development. This had nothing to do with being stoner movies or being totally radical however. RAD stood for “Rapid Application Development”. It described an approach centred on speed and accessibility, where tools such as Delphi from Borland and Visual Basic from Microsoft made it possible to build working applications quickly, often with far less overhead and knowledge. This stood in contrast to more traditional methods of Windows development, which typically involved working directly with the C/C++ APIs and Win32 libraries, a process that was considerably more complex and time-consuming. 
+
+Visual Basic even came packaged as a “Leaning Edition” aimed at hobbyists looking to learn to code.  The name Visual Studio was called this because it was “visual” - you could design your software by using a mouse and keyboard and by laying out elements on the screen. On the web development side, software like Microsoft FrontPage and Macromedia Dreamweaver also had this goal. 
+
+This idea that the layperson could do anything they want with their computer, not just what some somewhere software company  somewhere allow them to do seemed to get lost somewhere in the mid-2000s. Software development got more and more complex and harder to pickup from scratch.
+
+But now thanks to LLMs we are entering this era again. Right now, LLMs are unfathomably good at writing code. Good code. At present, to get the most out of tools like Open AI’s Codex or Claude Code, you need to have some prior experience of software development. This requirement is only going to lessen. In the near future it’s likely anyone will be able to type in an idea for an iPhone app and have something of decent quality generated within a few hours, if not minutes.  I’ve recently “written” a bespoke iPhone app that fills a niche in my life. It’s production quality. It supports all the little things you’d expect on iOS, including widgets and an Apple Watch companion app. I didn’t write a single line of code. Instead, I used my experience as a developer to direct Codex and architect an application that is of sufficient quality that I’ve decided to release it to the App Store, in case anyone else finds it useful (more on this soon).
+
+In my role as a product manager, I make extensive use of Jira. Nobody likes Jira. It is typical enterprise software that does everything for everyone, yet pleases nobody!  While it’s possible to bend it to any process, but impossible to do so easily and elegantly without a million “hacks” or spending hours learning how to use its confusing UI. So I asked Claude Code to write an app that connects to the Jira API and presents a user interface that actually makes sense for the way we plan work.  It took about 90 minutes in total and turned out to be very helpful.
+
+What this means for SaaS companies is unknown. The way I see it, these “vibe coded” apps have a lot in common with the Visual Basic or Microsoft Access apps that would have been spun up by “power users” in the late 90s. They are able to fill gaps in software that SaaS companies struggle to justify the time to address, yet unless they happen to have an ex-developer building them,  they will likely have all the pitfalls of RAD in the 90s. No backups. No upgrade path. Minimal testing. Little thought given to edge cases, compliance or security.
+
+Maybe LLMs will be able to cover all that too. It is quite possible. But unless the human in charge knows to check for these things, then who knows? In the meantime, I can see SaaS companies that are able to bring the best of both worlds thriving by filling those bespoke gaps rapidly using LLMs to speed up development, while also providing SLAs and quality guarantees.
+
+This also changes what users will expect from a computer. An iPad that can’t run Claude Code and do *anything* I can imagine, in minutes, is now orders of magnitude less useful than a full laptop that can. 
+
+AI is making it easier than ever to build your own software – and this is fantastic for users – but doing it well still takes care and attention.
+
