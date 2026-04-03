@@ -1,11 +1,11 @@
 
----
+—-
 title: "Vibe Coding Is the New RAD"
 date: "2026-04-03T20:27:31Z"
 slug: "vibe-coding-is-the-new-rad"
 layout: "post.njk"
 categories: []
----
+—-
 
  ![Visual Basic 6 on Windows 98](/static/img/vb6-llm-ui.gif)
 
