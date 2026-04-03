@@ -1,5 +1,5 @@
 ---
-title: "xVibe Coding Is the New RAD"
+title: "Vibe Coding Is the New RAD"
 date: "2026-04-03T20:27:31Z"
 slug: "vibe-coding-is-the-new-rad"
 layout: "post.njk"
