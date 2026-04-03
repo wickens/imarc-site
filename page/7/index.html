@@ -67,6 +67,21 @@ Coded and designed by Marc Wickens. Powered by 11ty.
 
 
 <article class="post-full">
+  <h2 class="post-title"><a href="/2021/02/24/m1-mac-users-report-excessive-ssd-usage/">‘M1 Mac Users Report Excessive SSD Usage’</a></h2>
+  <p class="meta">
+    <time datetime="2021-02-24T07:52:56.000+00:00">24 Feb 2021</time>
+  </p>
+
+  <p>From <a href="https://9to5mac.com/2021/02/23/m1-mac-users-report-excessive-ssd-usage-potentially-affecting-the-components-lifespan/">9to5 Mac</a>:</p>
+<blockquote>
+<p>Some advanced users have been reporting an overuse of the SSD for writing and reading data on the newly-released Macs with M1, Apple’s first computer chip based on ARM architecture. The issue could eventually affect the lifespan of the internal SSD used in M1 Macs — not to mention the machine itself.</p>
+</blockquote>
+<p>My betting is on this being a bug in the software being used to measure SSD usage (a utility called <strong><a href="https://formulae.brew.sh/formula/smartmontools">smartmontools</a></strong> that can be installed via <a href="http://brew.sh"><strong>Homebrew</strong></a>). SSD usage seems like something that should be pretty easy to automate testing for, and so for this to be a bug would be a major omission from Apple’s test suite. <a href="https://www.theguardian.com/technology/2017/nov/29/macos-high-sierra-bug-apple-mac-unlock-blank-password-security-flaw">Not impossible of course</a>.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
   <h2 class="post-title"><a href="/2021/02/18/botched-cosmetic-surgery/">Botched Cosmetic Surgery</a></h2>
   <p class="meta">
     <time datetime="2021-02-18T18:15:00.000+00:00">18 Feb 2021</time>
@@ -217,20 +232,6 @@ Coded and designed by Marc Wickens. Powered by 11ty.
 <p>While I’m not advocating Apple open up their devices to software from anywhere, I do think it’s right that the pros and cons are properly framed. There are benefits just as there are drawbacks. My view is that for the iPad in particular to evolve, it must be a device in which you can not only <em>play</em> the latest chart topping game, but also <em>make</em> the next one.</p>
 <p><em>* Update 11/01/2021: My mistake. <a href="https://youtu.be/VQKMoT-6XSg?t=4570">Steve Jobs did actually mention</a> games consoles during the 2007 iPhone keynote alongside digital cameras, MP3 Players and PCs. He talks about their comparative worldwide unit sales. What’s interesting is that all of the product categories in the chart he shows (below) have in 2021 either been entirely replaced, or replaced in-part by iOS devices, except arguably the PC. Regardless, it’s clear <strong>he is in no way calling the iPhone a console.</strong></em></p>
 <p><img src="/wp-content/uploads/2021/01/iphone_event.png?w=1024" alt=""></p>
-
-</article>
-<hr>
-
-<article class="post-full">
-  <h2 class="post-title"><a href="/2021/01/05/microsoft-is-replacing-outlook-with-a-web-app/">Microsoft Is Replacing Outlook With a Web App</a></h2>
-  <p class="meta">
-    <time datetime="2021-01-05T20:51:00.000+00:00">5 Jan 2021</time>
-  </p>
-
-  <p>According to <a href="https://www.windowscentral.com/project-monarch-outlook-web-universal-email-client-microsoft">Windows Central</a>, Microsoft is planning to replace the aging native Outlook apps for both Windows and Mac with a <a href="https://www.electronjs.org/">Chromium-wrapped HTML app</a>. I came across this link thanks to John Gruber, whose <a href="https://daringfireball.net/linked/2021/01/04/bowden-outlook">take on it</a> is unsurprisingly negative - within the Mac community there is a definite preference for native over web software over web apps.</p>
-<p>While I am inclined to agree - native software can often be superior to web software, it really depends on the UI framework being used. Outlook for Windows has a codebase that dates back to at least 1997, and so is likely using the Microsoft Foundation Classes, which themselves date back to 1992. Age itself is not the issue - Apple’s own Cocoa framework derives much from early 90s NeXTSTEP technologies. The difference is Apple have constantly updated Cocoa, whereas Microsoft have instead introduced a series of new frameworks that never took off (<a href="https://en.wikipedia.org/wiki/Windows_Forms">here</a>, <a href="https://en.wikipedia.org/wiki/Windows_Presentation_Foundation">here</a> and <a href="https://en.wikipedia.org/wiki/Universal_Windows_Platform_apps">here</a>) and using them would have meant rewriting much of the Outlook codebase. This means the latest version of Outlook in 2021 still operates very much like a piece of software from the mid-2000s. Searching a few thousand emails causes Outlook to stop responding on a latest generate Intel i7.</p>
-<p>So given where Microsoft are, with no decent, modern and mature UI framework for Windows, what are the Outlook team supposed to do? Their biggest competitors are Gmail, Slack and Microsoft’s own Teams - all web apps. They could spend the next 3 years rewriting the native app in a new UI framework, or they could utilise the already feature rich web app and spend the next 3 years building competitive features. Chromium based apps are also slow, but they’re faster than a poorly written native apps. It’s a crappy situation, but I think they’ve made a pragmatic choice.</p>
-<p>Of course if Outlook were Mac-only then it would be a no-brainier. The difficult choice would be between AppKit and UIKit.</p>
 
 </article>
 <hr>
