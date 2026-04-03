@@ -7,7 +7,7 @@ layout: "post.njk"
 categories: []
 ---
 
- ![My Recovery Score](/static/img/vb6-llm-ui.gif)
+ ![Visual Basic 6 on Windows 98](/static/img/vb6-llm-ui.gif)
 
 In the late 90s, the term “RAD” was everywhere in software development. This had nothing to do with being stoner movies or being totally radical however. RAD stood for “Rapid Application Development”. It described an approach centred on speed and accessibility, where tools such as Delphi from Borland and Visual Basic from Microsoft made it possible to build working applications quickly, often with far less overhead and knowledge. This stood in contrast to more traditional methods of Windows development, which typically involved working directly with the C/C++ APIs and Win32 libraries, a process that was considerably more complex and time-consuming. 
 
