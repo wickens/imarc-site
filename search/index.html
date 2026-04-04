@@ -19,6 +19,7 @@ Coded and designed by Marc Wickens. Powered by 11ty.
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"/>
     <title>
       iMarc
       
@@ -97,7 +98,8 @@ Coded and designed by Marc Wickens. Powered by 11ty.
   const idx = posts.map(p => ({
     ...p,
     titleN: norm(p.title),
-    excerptN: norm(p.excerpt)
+    excerptN: norm(p.excerpt),
+    dateTs: p.date ? Date.parse(p.date) : 0
   }));
 
   function parseQuery(qRaw){
@@ -142,7 +144,7 @@ Coded and designed by Marc Wickens. Powered by 11ty.
     const matches = idx
       .map(d => ({ d, s: score(d, q) }))
       .filter(x => x.s > 0)
-      .sort((a,b) => b.s - a.s)   // by score, then leave date order as-is
+      .sort((a,b) => (b.s - a.s) || (b.d.dateTs - a.d.dateTs))
       .map(x => x.d);
 
     if (!matches.length){
@@ -163,6 +165,7 @@ Coded and designed by Marc Wickens. Powered by 11ty.
   if (params.has("q")) { input.value = params.get("q"); run(input.value); }
 })();
 </script>
+
     </main>
 
     <footer class="site-footer">
