@@ -1,7 +1,7 @@
 ---
 title: "appleOS 26"
 date: "2025-07-26T13:04:26Z"
-slug: “wwdc2025-appleos-26"
+slug: "wwdc2025-appleos-26"
 layout: "post.njk"
 categories: []
 ---

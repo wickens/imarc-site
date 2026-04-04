@@ -37,7 +37,8 @@ permalink: "search/index.html"
   const idx = posts.map(p => ({
     ...p,
     titleN: norm(p.title),
-    excerptN: norm(p.excerpt)
+    excerptN: norm(p.excerpt),
+    dateTs: p.date ? Date.parse(p.date) : 0
   }));
 
   function parseQuery(qRaw){
@@ -82,7 +83,7 @@ permalink: "search/index.html"
     const matches = idx
       .map(d => ({ d, s: score(d, q) }))
       .filter(x => x.s > 0)
-      .sort((a,b) => b.s - a.s)   // by score, then leave date order as-is
+      .sort((a,b) => (b.s - a.s) || (b.d.dateTs - a.d.dateTs))
       .map(x => x.d);
 
     if (!matches.length){

@@ -70,6 +70,22 @@ module.exports = function (eleventyConfig) {
         return sub + ellipsis;
     });
 
+    eleventyConfig.addFilter("stripHtml", function (str) {
+        if (!str) return "";
+        return String(str)
+            .replace(/<style[\s\S]*?<\/style>/gi, " ")
+            .replace(/<script[\s\S]*?<\/script>/gi, " ")
+            .replace(/<[^>]+>/g, " ")
+            .replace(/&nbsp;/gi, " ")
+            .replace(/&amp;/gi, "&")
+            .replace(/&lt;/gi, "<")
+            .replace(/&gt;/gi, ">")
+            .replace(/&#39;/gi, "'")
+            .replace(/&quot;/gi, "\"")
+            .replace(/\s+/g, " ")
+            .trim();
+    });
+
     // Image slider shortcode
     eleventyConfig.addPairedShortcode("compare", function (content, before = "Before", after = "After") {
         const imgs = [...content.matchAll(/!\[[^\]]*\]\(([^)]+)\)/g)].map(m => m[1]);

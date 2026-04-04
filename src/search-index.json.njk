@@ -6,7 +6,8 @@ eleventyExcludeFromCollections: true
   {
     "title":   {{ post.data.title  | jsonify | safe }},
     "url":     {{ post.url         | jsonify | safe }},
-
+    "date":    {{ post.date        | isoDate | jsonify | safe }},
+    "excerpt": {{ (post.data.excerpt or post.templateContent | stripHtml | truncate(220)) | jsonify | safe }},
     "tags":    {{ post.data.tags   | default([]) | jsonify | safe }}
   }{% if not loop.last %},{% endif %}
 {% endfor %}]
