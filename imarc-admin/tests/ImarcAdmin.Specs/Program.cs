@@ -1,0 +1,626 @@
+using System.Text;
+using System.Diagnostics;
+using ImarcAdmin.Config;
+using ImarcAdmin.Middleware;
+using ImarcAdmin.Models;
+using ImarcAdmin.Services;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Components.Forms;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.FileProviders;
+using Microsoft.Extensions.Logging.Abstractions;
+using Microsoft.Extensions.Options;
+
+var failures = new List<string>();
+var tests = new (string Name, Func<Task> Run)[]
+{
+    ("Slug generation and permalink formatting", TestSlugAndPermalinkAsync),
+    ("Front matter round-trip preserves unknown keys and time", TestFrontMatterRoundTripAsync),
+    ("Preview rewrites staged uploads to temp URLs", TestPreviewRewriteAsync),
+    ("Preview asset service resolves blog media paths", TestPreviewAssetResolutionAsync),
+    ("Upload snippets use wp-content/uploads and resolve collisions", TestUploadSnippetGenerationAsync),
+    ("Cloudflare Access middleware protects editor routes", TestCloudflareAccessMiddlewareAsync),
+    ("Post list caching returns cached results until refreshed", TestPostListCachingAsync),
+    ("Publish can commit locally without pushing", TestPublishWithoutPushAsync),
+    ("Delete removes an existing post and commits the change", TestDeletePostAsync)
+};
+
+foreach (var (name, run) in tests)
+{
+    try
+    {
+        await run();
+        Console.WriteLine($"PASS {name}");
+    }
+    catch (Exception ex)
+    {
+        failures.Add($"{name}: {ex.Message}");
+        Console.Error.WriteLine($"FAIL {name}");
+        Console.Error.WriteLine(ex.Message);
+    }
+}
+
+if (failures.Count > 0)
+{
+    Console.Error.WriteLine();
+    Console.Error.WriteLine("Failures:");
+    foreach (var failure in failures)
+    {
+        Console.Error.WriteLine($"- {failure}");
+    }
+
+    Environment.Exit(1);
+}
+
+Console.WriteLine();
+Console.WriteLine($"All {tests.Length} specs passed.");
+
+static Task TestSlugAndPermalinkAsync()
+{
+    var slugService = new SlugService();
+    var frontMatterService = new FrontMatterService(slugService);
+
+    ExpectEqual("hello-world-cafe-more", slugService.Slugify("Hello, World! Café & More"));
+    ExpectEqual("/2025/05/04/my-post/", frontMatterService.BuildPermalink("2025-05-04", "my-post"));
+    return Task.CompletedTask;
+}
+
+static Task TestFrontMatterRoundTripAsync()
+{
+    var service = new FrontMatterService(new SlugService());
+    var raw = """
+        ---
+        title: "Original title"
+        date: "2024-08-16T09:30:00Z"
+        slug: "original-title"
+        layout: "post.njk"
+        excerpt: "Original excerpt"
+        categories:
+          - "apple"
+        tags:
+          - "ios"
+        wordpress_id: "99"
+        custom_note: "keep me"
+        ---
+
+        Original body
+        """;
+
+    var post = service.ParseEditablePost("src/posts/original-title.md", "post-1", raw, "abc123", "session-1");
+    ExpectEqual("09:30", post.PublishTime);
+    post.Title = "Updated title";
+    post.Excerpt = "Updated excerpt";
+    post.MarkdownBody = "Updated body";
+    post.PublishTime = "14:45";
+
+    var serialized = service.Serialize(post);
+
+    ExpectContains(serialized, "title: \"Updated title\"");
+    ExpectContains(serialized, "date: \"2024-08-16T14:45:00Z\"");
+    ExpectContains(serialized, "wordpress_id: \"99\"");
+    ExpectContains(serialized, "custom_note: \"keep me\"");
+    ExpectContains(serialized, "Updated body");
+
+    return Task.CompletedTask;
+}
+
+static Task TestPreviewRewriteAsync()
+{
+    var previewService = new MarkdownPreviewService(
+        new FixedOptionsMonitor<AdminOptions>(new AdminOptions()),
+        new SimpleMarkdownRenderer());
+
+    var post = new EditablePost
+    {
+        Title = "Preview title",
+        PublishDate = "2025-05-04",
+        MarkdownBody = """
+            Before image
+
+            ![](/wp-content/uploads/2025/05/example.png)
+            """
+    };
+
+    var upload = new UploadedImageDescriptor
+    {
+        Id = "upload-1",
+        SessionId = "session-1",
+        OriginalFileName = "example.png",
+        RelativeUploadPath = "uploads/2025/05/example.png",
+        PublicUrl = "/wp-content/uploads/2025/05/example.png",
+        MarkdownSnippet = "![](/wp-content/uploads/2025/05/example.png)",
+        PreviewUrl = "/temp-uploads/session-1/upload-1",
+        TempFilePath = "/tmp/example.png",
+        ContentType = "image/png"
+    };
+
+    var html = previewService.Render(post, new[] { upload });
+
+    ExpectContains(html, "Preview title");
+    ExpectContains(html, "/temp-uploads/session-1/upload-1");
+    ExpectDoesNotContain(html, "/wp-content/uploads/2025/05/example.png");
+
+    return Task.CompletedTask;
+}
+
+static async Task TestPreviewAssetResolutionAsync()
+{
+    var root = Path.Combine(Path.GetTempPath(), "imarc-admin-specs", Guid.NewGuid().ToString("N"));
+    var repoPath = Path.Combine(root, "repo");
+    Directory.CreateDirectory(Path.Combine(repoPath, "uploads", "2025", "05"));
+    Directory.CreateDirectory(Path.Combine(repoPath, "static", "img"));
+
+    var uploadFile = Path.Combine(repoPath, "uploads", "2025", "05", "example.png");
+    var staticFile = Path.Combine(repoPath, "static", "img", "example.gif");
+    await File.WriteAllBytesAsync(uploadFile, Encoding.UTF8.GetBytes("upload"));
+    await File.WriteAllBytesAsync(staticFile, Encoding.UTF8.GetBytes("static"));
+
+    var service = new PreviewAssetService(new FixedOptionsMonitor<AdminOptions>(new AdminOptions
+    {
+        BlogRepoPath = repoPath
+    }));
+
+    ExpectTrue(service.TryResolveWpContentAsset("uploads/2025/05/example.png", out var resolvedUpload, out var uploadType), "Expected wp-content asset to resolve.");
+    ExpectEqual(uploadFile, resolvedUpload);
+    ExpectEqual("image/png", uploadType);
+
+    ExpectTrue(service.TryResolveStaticAsset("img/example.gif", out var resolvedStatic, out var staticType), "Expected static asset to resolve.");
+    ExpectEqual(staticFile, resolvedStatic);
+    ExpectEqual("image/gif", staticType);
+
+    ExpectTrue(!service.TryResolveWpContentAsset("../secret.txt", out _, out _), "Traversal paths should be rejected.");
+
+    if (Directory.Exists(root))
+    {
+        Directory.Delete(root, recursive: true);
+    }
+}
+
+static async Task TestUploadSnippetGenerationAsync()
+{
+    var root = Path.Combine(Path.GetTempPath(), "imarc-admin-specs", Guid.NewGuid().ToString("N"));
+    var repoPath = Path.Combine(root, "repo");
+    var tempPath = Path.Combine(root, "temp");
+    Directory.CreateDirectory(Path.Combine(repoPath, "uploads", "2025", "05"));
+    await File.WriteAllBytesAsync(Path.Combine(repoPath, "uploads", "2025", "05", "example.png"), Encoding.UTF8.GetBytes("existing"));
+
+    var options = new AdminOptions
+    {
+        BlogRepoPath = repoPath,
+        TempPath = tempPath,
+        MaxUploadSizeBytes = 1024 * 1024
+    };
+
+    var service = new TempUploadService(
+        new FixedOptionsMonitor<AdminOptions>(options),
+        new SlugService(),
+        NullLogger<TempUploadService>.Instance);
+
+    const string sessionId = "session-1";
+    var first = await service.SaveUploadAsync(sessionId, new FakeBrowserFile("example.png", "image/png", "first"), "2025-05-04", CancellationToken.None);
+    var second = await service.SaveUploadAsync(sessionId, new FakeBrowserFile("example.png", "image/png", "second"), "2025-05-04", CancellationToken.None);
+
+    ExpectEqual("/wp-content/uploads/2025/05/example-2.png", first.PublicUrl);
+    ExpectEqual("![](/wp-content/uploads/2025/05/example-2.png)", first.MarkdownSnippet);
+    ExpectEqual("/wp-content/uploads/2025/05/example-3.png", second.PublicUrl);
+
+    service.DeleteSession(sessionId);
+    if (Directory.Exists(root))
+    {
+        Directory.Delete(root, recursive: true);
+    }
+}
+
+static async Task TestCloudflareAccessMiddlewareAsync()
+{
+    var options = new FixedOptionsMonitor<AdminOptions>(new AdminOptions
+    {
+        AdminEmail = "owner@example.com"
+    });
+
+    var environment = new FakeEnvironment("Production");
+
+    var unauthorizedContext = CreateContext("/posts");
+    var unauthorizedCalled = false;
+    var middleware = new CloudflareAccessMiddleware(
+        context =>
+        {
+            unauthorizedCalled = true;
+            context.Response.StatusCode = StatusCodes.Status204NoContent;
+            return Task.CompletedTask;
+        },
+        options,
+        environment);
+
+    await middleware.InvokeAsync(unauthorizedContext);
+    ExpectEqual(StatusCodes.Status401Unauthorized, unauthorizedContext.Response.StatusCode);
+    ExpectTrue(!unauthorizedCalled, "Unauthorized request should not reach the next middleware.");
+
+    var forbiddenContext = CreateContext("/posts");
+    forbiddenContext.Request.Headers["Cf-Access-Authenticated-User-Email"] = "someone@example.com";
+    await middleware.InvokeAsync(forbiddenContext);
+    ExpectEqual(StatusCodes.Status403Forbidden, forbiddenContext.Response.StatusCode);
+
+    var allowedContext = CreateContext("/posts");
+    var allowedCalled = false;
+    var allowedMiddleware = new CloudflareAccessMiddleware(
+        context =>
+        {
+            allowedCalled = true;
+            context.Response.StatusCode = StatusCodes.Status204NoContent;
+            return Task.CompletedTask;
+        },
+        options,
+        environment);
+    allowedContext.Request.Headers["Cf-Access-Authenticated-User-Email"] = "owner@example.com";
+    await allowedMiddleware.InvokeAsync(allowedContext);
+    ExpectEqual(StatusCodes.Status204NoContent, allowedContext.Response.StatusCode);
+    ExpectTrue(allowedCalled, "Authorized request should reach the next middleware.");
+
+    var healthContext = CreateContext("/healthz");
+    var healthCalled = false;
+    var healthMiddleware = new CloudflareAccessMiddleware(
+        context =>
+        {
+            healthCalled = true;
+            context.Response.StatusCode = StatusCodes.Status204NoContent;
+            return Task.CompletedTask;
+        },
+        options,
+        environment);
+    await healthMiddleware.InvokeAsync(healthContext);
+    ExpectEqual(StatusCodes.Status204NoContent, healthContext.Response.StatusCode);
+    ExpectTrue(healthCalled, "Health checks should bypass Cloudflare Access.");
+}
+
+static async Task TestPostListCachingAsync()
+{
+    await using var fixture = await TestGitFixture.CreateAsync(pushChangesToRemote: false, postListCacheSeconds: 300);
+    var repository = fixture.CreateRepository();
+
+    var initialPosts = await repository.GetPostsAsync(CancellationToken.None);
+    ExpectEqual(1, initialPosts.Count);
+
+    await fixture.PushRemotePostAsync("Remote follow-up", "remote-follow-up", "2024-02-02T17:10:00Z");
+
+    var cachedPosts = await repository.GetPostsAsync(CancellationToken.None);
+    ExpectEqual(1, cachedPosts.Count);
+
+    var refreshedPosts = await repository.GetPostsAsync(forceRefresh: true, CancellationToken.None);
+    ExpectEqual(2, refreshedPosts.Count);
+}
+
+static async Task TestPublishWithoutPushAsync()
+{
+    await using var fixture = await TestGitFixture.CreateAsync(pushChangesToRemote: false);
+    var repository = fixture.CreateRepository();
+
+    var post = await repository.StartNewPostAsync(CancellationToken.None);
+    post.Title = "Local only post";
+    post.Slug = "local-only-post";
+    post.PublishDate = "2025-05-04";
+    post.Permalink = fixture.FrontMatterService.BuildPermalink(post.PublishDate, post.Slug);
+    post.Excerpt = "Local excerpt";
+    post.CategoriesText = "apple";
+    post.MarkdownBody = "Local body";
+
+    var result = await repository.PublishAsync(post, CancellationToken.None);
+
+    ExpectTrue(!result.PushedToRemote, "Expected local development publish to skip pushing.");
+    ExpectContains(result.CommitMessage, "Add post: Local only post");
+
+    var managedPostPath = Path.Combine(fixture.ManagedClonePath, "src", "posts", "local-only-post.md");
+    ExpectTrue(File.Exists(managedPostPath), "Expected published post file to exist in the managed clone.");
+
+    var remoteHead = CommandHelpers.RunGit("rev-parse main", fixture.RemoteBareRepoPath);
+    ExpectEqual(fixture.InitialRemoteHead, remoteHead);
+}
+
+static async Task TestDeletePostAsync()
+{
+    await using var fixture = await TestGitFixture.CreateAsync(pushChangesToRemote: false);
+    var repository = fixture.CreateRepository();
+
+    var post = await repository.LoadPostAsync(fixture.ExistingPostId, CancellationToken.None);
+    var result = await repository.DeletePostAsync(post, CancellationToken.None);
+
+    ExpectTrue(!result.PushedToRemote, "Expected local delete to skip pushing.");
+    ExpectContains(result.CommitMessage, "Delete post: Existing post");
+
+    var managedPostPath = Path.Combine(fixture.ManagedClonePath, "src", "posts", "existing-post.md");
+    ExpectTrue(!File.Exists(managedPostPath), "Expected deleted post file to be removed from the managed clone.");
+}
+
+static DefaultHttpContext CreateContext(string path)
+{
+    var context = new DefaultHttpContext();
+    context.Request.Path = path;
+    context.Response.Body = new MemoryStream();
+    return context;
+}
+
+static void ExpectEqual<T>(T expected, T actual)
+{
+    if (!EqualityComparer<T>.Default.Equals(expected, actual))
+    {
+        throw new InvalidOperationException($"Expected '{expected}' but got '{actual}'.");
+    }
+}
+
+static void ExpectContains(string text, string expected)
+{
+    if (!text.Contains(expected, StringComparison.Ordinal))
+    {
+        throw new InvalidOperationException($"Expected to find '{expected}' in output.");
+    }
+}
+
+static void ExpectDoesNotContain(string text, string unexpected)
+{
+    if (text.Contains(unexpected, StringComparison.Ordinal))
+    {
+        throw new InvalidOperationException($"Did not expect to find '{unexpected}' in output.");
+    }
+}
+
+static void ExpectTrue(bool condition, string message)
+{
+    if (!condition)
+    {
+        throw new InvalidOperationException(message);
+    }
+}
+
+sealed class FixedOptionsMonitor<T> : IOptionsMonitor<T>
+    where T : class
+{
+    public FixedOptionsMonitor(T value)
+    {
+        CurrentValue = value;
+    }
+
+    public T CurrentValue { get; }
+
+    public T Get(string? name) => CurrentValue;
+
+    public IDisposable OnChange(Action<T, string?> listener) => EmptyDisposable.Instance;
+
+    private sealed class EmptyDisposable : IDisposable
+    {
+        public static readonly EmptyDisposable Instance = new();
+
+        public void Dispose()
+        {
+        }
+    }
+}
+
+sealed class FakeEnvironment : IWebHostEnvironment
+{
+    public FakeEnvironment(string environmentName)
+    {
+        EnvironmentName = environmentName;
+    }
+
+    public string ApplicationName { get; set; } = "ImarcAdmin.Specs";
+    public IFileProvider WebRootFileProvider { get; set; } = new NullFileProvider();
+    public string WebRootPath { get; set; } = string.Empty;
+    public string EnvironmentName { get; set; }
+    public string ContentRootPath { get; set; } = Directory.GetCurrentDirectory();
+    public IFileProvider ContentRootFileProvider { get; set; } = new NullFileProvider();
+}
+
+sealed class FakeBrowserFile : IBrowserFile
+{
+    private readonly byte[] _bytes;
+
+    public FakeBrowserFile(string name, string contentType, string content)
+    {
+        Name = name;
+        ContentType = contentType;
+        _bytes = Encoding.UTF8.GetBytes(content);
+    }
+
+    public string Name { get; }
+    public DateTimeOffset LastModified { get; } = DateTimeOffset.UtcNow;
+    public long Size => _bytes.Length;
+    public string ContentType { get; }
+
+    public Stream OpenReadStream(long maxAllowedSize = 512000, CancellationToken cancellationToken = default)
+    {
+        if (_bytes.Length > maxAllowedSize)
+        {
+            throw new IOException("File exceeds the permitted upload size.");
+        }
+
+        return new MemoryStream(_bytes, writable: false);
+    }
+}
+
+sealed class TestGitFixture : IAsyncDisposable
+{
+    private readonly string _root;
+    private readonly FixedOptionsMonitor<AdminOptions> _options;
+    private readonly TempUploadService _tempUploadService;
+    private readonly GitCommandRunner _gitCommandRunner;
+
+    private TestGitFixture(
+        string root,
+        string remoteBareRepoPath,
+        string managedClonePath,
+        string initialRemoteHead,
+        string existingPostId,
+        FrontMatterService frontMatterService,
+        SlugService slugService,
+        FixedOptionsMonitor<AdminOptions> options,
+        TempUploadService tempUploadService,
+        GitCommandRunner gitCommandRunner)
+    {
+        _root = root;
+        RemoteBareRepoPath = remoteBareRepoPath;
+        ManagedClonePath = managedClonePath;
+        InitialRemoteHead = initialRemoteHead;
+        ExistingPostId = existingPostId;
+        FrontMatterService = frontMatterService;
+        SlugService = slugService;
+        _options = options;
+        _tempUploadService = tempUploadService;
+        _gitCommandRunner = gitCommandRunner;
+    }
+
+    public string RemoteBareRepoPath { get; }
+    public string ManagedClonePath { get; }
+    public string InitialRemoteHead { get; }
+    public string ExistingPostId { get; }
+    public FrontMatterService FrontMatterService { get; }
+    public SlugService SlugService { get; }
+
+    public static async Task<TestGitFixture> CreateAsync(bool pushChangesToRemote, int postListCacheSeconds = 60)
+    {
+        var root = Path.Combine(Path.GetTempPath(), "imarc-admin-specs", Guid.NewGuid().ToString("N"));
+        var remoteBareRepoPath = Path.Combine(root, "remote.git");
+        var seedRepoPath = Path.Combine(root, "seed");
+        var managedClonePath = Path.Combine(root, "managed");
+        var tempPath = Path.Combine(root, "temp");
+
+        Directory.CreateDirectory(root);
+        CommandHelpers.RunCommand("git", "init --bare --initial-branch=main remote.git", root);
+        CommandHelpers.RunCommand("git", $"clone {CommandHelpers.QuoteArg(remoteBareRepoPath)} {CommandHelpers.QuoteArg(seedRepoPath)}", root);
+
+        Directory.CreateDirectory(Path.Combine(seedRepoPath, "src", "posts"));
+        await File.WriteAllTextAsync(
+            Path.Combine(seedRepoPath, "src", "posts", "existing-post.md"),
+            """
+            ---
+            title: "Existing post"
+            date: "2024-01-01T12:00:00Z"
+            slug: "existing-post"
+            layout: "post.njk"
+            excerpt: "Existing excerpt"
+            categories:
+              - "general"
+            permalink: "/2024/01/01/existing-post/"
+            ---
+
+            Existing body
+            """);
+
+        CommandHelpers.RunCommand("git", "checkout -B main", seedRepoPath);
+        CommandHelpers.RunCommand("git", "config user.name \"Spec Runner\"", seedRepoPath);
+        CommandHelpers.RunCommand("git", "config user.email \"specs@example.com\"", seedRepoPath);
+        CommandHelpers.RunCommand("git", "add src/posts/existing-post.md", seedRepoPath);
+        CommandHelpers.RunCommand("git", "commit -m \"Seed repo\"", seedRepoPath);
+        CommandHelpers.RunCommand("git", "push origin main", seedRepoPath);
+
+        var initialRemoteHead = CommandHelpers.RunGit("rev-parse main", remoteBareRepoPath);
+        var slugService = new SlugService();
+        var frontMatterService = new FrontMatterService(slugService);
+        var options = new FixedOptionsMonitor<AdminOptions>(new AdminOptions
+        {
+            BlogRepoPath = managedClonePath,
+            BlogRepoRemote = remoteBareRepoPath,
+            TempPath = tempPath,
+            PushChangesToRemote = pushChangesToRemote,
+            PostListCacheSeconds = postListCacheSeconds,
+            GitAuthorName = "Spec Runner",
+            GitAuthorEmail = "specs@example.com"
+        });
+        var tempUploadService = new TempUploadService(options, slugService, NullLogger<TempUploadService>.Instance);
+        var gitCommandRunner = new GitCommandRunner(options, NullLogger<GitCommandRunner>.Instance);
+
+        return new TestGitFixture(
+            root,
+            remoteBareRepoPath,
+            managedClonePath,
+            initialRemoteHead,
+            PostIdCodec.Encode("src/posts/existing-post.md"),
+            frontMatterService,
+            slugService,
+            options,
+            tempUploadService,
+            gitCommandRunner);
+    }
+
+    public GitContentRepository CreateRepository()
+        => new(
+            _options,
+            _gitCommandRunner,
+            FrontMatterService,
+            _tempUploadService,
+            SlugService);
+
+    public async Task PushRemotePostAsync(string title, string slug, string timestamp)
+    {
+        var publisherRepoPath = Path.Combine(_root, $"publisher-{Guid.NewGuid():N}");
+        CommandHelpers.RunCommand("git", $"clone {CommandHelpers.QuoteArg(RemoteBareRepoPath)} {CommandHelpers.QuoteArg(publisherRepoPath)}", _root);
+        CommandHelpers.RunCommand("git", "checkout -B main", publisherRepoPath);
+        CommandHelpers.RunCommand("git", "config user.name \"Spec Runner\"", publisherRepoPath);
+        CommandHelpers.RunCommand("git", "config user.email \"specs@example.com\"", publisherRepoPath);
+
+        var filePath = Path.Combine(publisherRepoPath, "src", "posts", $"{slug}.md");
+        Directory.CreateDirectory(Path.GetDirectoryName(filePath) ?? publisherRepoPath);
+        await File.WriteAllTextAsync(
+            filePath,
+            $"""
+            ---
+            title: "{title}"
+            date: "{timestamp}"
+            slug: "{slug}"
+            layout: "post.njk"
+            excerpt: "Remote excerpt"
+            categories:
+              - "general"
+            permalink: "/2024/02/02/{slug}/"
+            ---
+
+            Remote body
+            """);
+
+        CommandHelpers.RunCommand("git", $"add {CommandHelpers.QuoteArg($"src/posts/{slug}.md")}", publisherRepoPath);
+        CommandHelpers.RunCommand("git", $"commit -m {CommandHelpers.QuoteArg($"Add {title}")}", publisherRepoPath);
+        CommandHelpers.RunCommand("git", "push origin main", publisherRepoPath);
+    }
+
+    public ValueTask DisposeAsync()
+    {
+        if (Directory.Exists(_root))
+        {
+            Directory.Delete(_root, recursive: true);
+        }
+
+        return ValueTask.CompletedTask;
+    }
+}
+
+static class CommandHelpers
+{
+    public static string RunGit(string arguments, string workingDirectory)
+        => RunCommand("git", arguments, workingDirectory);
+
+    public static string RunCommand(string fileName, string arguments, string workingDirectory)
+    {
+        var psi = new ProcessStartInfo(fileName, arguments)
+        {
+            WorkingDirectory = workingDirectory,
+            RedirectStandardOutput = true,
+            RedirectStandardError = true,
+            UseShellExecute = false,
+            CreateNoWindow = true
+        };
+
+        using var process = Process.Start(psi) ?? throw new InvalidOperationException($"Failed to start {fileName}.");
+        var stdout = process.StandardOutput.ReadToEnd();
+        var stderr = process.StandardError.ReadToEnd();
+        process.WaitForExit();
+
+        if (process.ExitCode != 0)
+        {
+            throw new InvalidOperationException($"{fileName} {arguments} failed: {stderr.Trim()}");
+        }
+
+        return stdout.Trim();
+    }
+
+    public static string QuoteArg(string value)
+        => $"\"{value.Replace("\"", "\\\"", StringComparison.Ordinal)}\"";
+}

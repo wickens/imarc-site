@@ -1,0 +1,121 @@
+@page "/posts"
+@using ImarcAdmin.Models
+@inject GitContentRepository Repository
+@using Microsoft.AspNetCore.Components
+
+<PageTitle>Posts · iMarc Admin</PageTitle>
+
+<section class="page-shell">
+    <header class="page-header">
+        <div>
+            <p class="eyebrow">Content</p>
+            <h1>Posts</h1>
+            <p class="subtle">Browse the live blog repository, search by title or slug, and open a post to edit.</p>
+        </div>
+        <a class="primary-link" href="/posts/new">New post</a>
+    </header>
+
+    @if (!string.IsNullOrWhiteSpace(Deleted))
+    {
+        <section class="message-banner success-banner">Deleted post at <code>@Deleted</code>.</section>
+    }
+
+    <section class="panel-card">
+        <div class="section-header">
+            <div>
+                <label class="field-label" for="post-search">Search</label>
+                <p class="subtle">@PostItems.Count post(s) cached locally.</p>
+            </div>
+            <button type="button" class="button-link" disabled="@(IsLoading || IsRefreshing)" @onclick="RefreshPostsAsync">
+                @(IsRefreshing ? "Refreshing..." : "Refresh list")
+            </button>
+        </div>
+        <input id="post-search" class="text-input" type="search" placeholder="Search by title or slug" @bind="SearchText" @bind:event="oninput" />
+    </section>
+
+    @if (!string.IsNullOrWhiteSpace(ErrorMessage))
+    {
+        <section class="message-banner error-banner">@ErrorMessage</section>
+    }
+    else if (IsLoading)
+    {
+        <section class="panel-card">Loading posts...</section>
+    }
+    else if (FilteredPosts.Count == 0)
+    {
+        <section class="panel-card">No posts matched your search.</section>
+    }
+    else
+    {
+        <section class="post-list">
+            @foreach (var post in FilteredPosts)
+            {
+                <a class="post-card" href="@($"/posts/{post.PostId}")">
+                    <div>
+                        <h2>@post.Title</h2>
+                        <p class="subtle">@post.Permalink</p>
+                    </div>
+                    <div class="post-card-meta">
+                        <span>@post.PublishedAt?.ToString("dd MMM yyyy HH:mm")</span>
+                        <code>@post.Slug</code>
+                    </div>
+                </a>
+            }
+        </section>
+    }
+</section>
+
+@code {
+    [Parameter]
+    [SupplyParameterFromQuery(Name = "deleted")]
+    public string? Deleted { get; set; }
+
+    private IReadOnlyList<PostSummary> PostItems { get; set; } = Array.Empty<PostSummary>();
+    private string SearchText { get; set; } = string.Empty;
+    private string ErrorMessage { get; set; } = string.Empty;
+    private bool IsLoading { get; set; } = true;
+    private bool IsRefreshing { get; set; }
+
+    private IReadOnlyList<PostSummary> FilteredPosts
+        => string.IsNullOrWhiteSpace(SearchText)
+            ? PostItems
+            : PostItems.Where(post =>
+                    post.Title.Contains(SearchText, StringComparison.OrdinalIgnoreCase) ||
+                    post.Slug.Contains(SearchText, StringComparison.OrdinalIgnoreCase))
+                .ToList();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadPostsAsync(forceRefresh: false);
+    }
+
+    private async Task RefreshPostsAsync()
+        => await LoadPostsAsync(forceRefresh: true);
+
+    private async Task LoadPostsAsync(bool forceRefresh)
+    {
+        if (forceRefresh)
+        {
+            IsRefreshing = true;
+        }
+        else
+        {
+            IsLoading = true;
+        }
+
+        ErrorMessage = string.Empty;
+        try
+        {
+            PostItems = await Repository.GetPostsAsync(forceRefresh, CancellationToken.None);
+        }
+        catch (Exception ex)
+        {
+            ErrorMessage = ex.Message;
+        }
+        finally
+        {
+            IsLoading = false;
+            IsRefreshing = false;
+        }
+    }
+}

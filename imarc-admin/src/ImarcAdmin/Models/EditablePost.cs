@@ -1,0 +1,23 @@
+namespace ImarcAdmin.Models;
+
+public sealed class EditablePost
+{
+    public string? PostId { get; set; }
+    public string? OriginalRelativePath { get; set; }
+    public string Title { get; set; } = string.Empty;
+    public string PublishDate { get; set; } = DateTime.UtcNow.ToString("yyyy-MM-dd");
+    public string PublishTime { get; set; } = "12:00";
+    public string Slug { get; set; } = string.Empty;
+    public string CategoriesText { get; set; } = string.Empty;
+    public string TagsText { get; set; } = string.Empty;
+    public string Excerpt { get; set; } = string.Empty;
+    public string MarkdownBody { get; set; } = string.Empty;
+    public string Permalink { get; set; } = string.Empty;
+    public string Layout { get; set; } = "post.njk";
+    public string BaseCommit { get; set; } = string.Empty;
+    public string SessionId { get; set; } = string.Empty;
+    public bool IsNew { get; set; }
+    public bool SlugLocked { get; set; }
+    public DateTimeOffset? OriginalTimestamp { get; set; }
+    public FrontMatterDocument FrontMatter { get; set; } = new();
+}

@@ -1,0 +1,13 @@
+bin/
+obj/
+.DS_Store
+publish/
+TestResults/
+*.user
+*.suo
+*.pfx
+.env
+.env.*
+src/ImarcAdmin/appsettings.Local.json
+src/ImarcAdmin/appsettings.*.local.json
+src/ImarcAdmin/appsettings.Production.json

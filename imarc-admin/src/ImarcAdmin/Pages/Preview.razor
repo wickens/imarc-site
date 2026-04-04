@@ -1,0 +1,44 @@
+@page "/preview"
+@using ImarcAdmin.Models
+@inject MarkdownPreviewService PreviewService
+
+<PageTitle>Preview · iMarc Admin</PageTitle>
+
+<section class="page-shell">
+    <header class="page-header">
+        <div>
+            <p class="eyebrow">Sandbox</p>
+            <h1>Preview playground</h1>
+            <p class="subtle">Use this page to test the lightweight markdown renderer outside the main editor.</p>
+        </div>
+    </header>
+
+    <div class="preview-playground">
+        <section class="panel-card">
+            <label class="field-label" for="preview-title">Title</label>
+            <input id="preview-title" class="text-input" type="text" @bind="Title" @bind:event="oninput" />
+
+            <label class="field-label" for="preview-body">Markdown</label>
+            <textarea id="preview-body" class="editor-textarea" @bind="Markdown" @bind:event="oninput"></textarea>
+        </section>
+
+        <section class="panel-card preview-column">
+            <div class="preview-frame">
+                @((MarkupString)PreviewHtml)
+            </div>
+        </section>
+    </div>
+</section>
+
+@code {
+    private string Title { get; set; } = "Preview";
+    private string Markdown { get; set; } = "## Hello\n\nPaste markdown here.";
+
+    private string PreviewHtml => PreviewService.Render(new EditablePost
+    {
+        Title = Title,
+        PublishDate = DateTime.UtcNow.ToString("yyyy-MM-dd"),
+        MarkdownBody = Markdown
+    }, Array.Empty<UploadedImageDescriptor>());
+}
+

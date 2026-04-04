@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5AA3BFAE-21E5-49A8-8989-AEFF7B3318D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImarcAdmin", "src\ImarcAdmin\ImarcAdmin.csproj", "{6E84516A-ABB0-4C9E-89CA-582BF8A5A485}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{AA4DD4DB-9A57-4475-B50E-5763E3A7725D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImarcAdmin.Specs", "tests\ImarcAdmin.Specs\ImarcAdmin.Specs.csproj", "{95B69D35-1867-4349-AD85-735D39517C39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E84516A-ABB0-4C9E-89CA-582BF8A5A485}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E84516A-ABB0-4C9E-89CA-582BF8A5A485}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E84516A-ABB0-4C9E-89CA-582BF8A5A485}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E84516A-ABB0-4C9E-89CA-582BF8A5A485}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95B69D35-1867-4349-AD85-735D39517C39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95B69D35-1867-4349-AD85-735D39517C39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95B69D35-1867-4349-AD85-735D39517C39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95B69D35-1867-4349-AD85-735D39517C39}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6E84516A-ABB0-4C9E-89CA-582BF8A5A485} = {5AA3BFAE-21E5-49A8-8989-AEFF7B3318D6}
+		{95B69D35-1867-4349-AD85-735D39517C39} = {AA4DD4DB-9A57-4475-B50E-5763E3A7725D}
+	EndGlobalSection
+EndGlobal

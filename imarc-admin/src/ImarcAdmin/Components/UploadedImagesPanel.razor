@@ -1,0 +1,53 @@
+@using ImarcAdmin.Models
+
+<details class="panel-card uploads-panel" open>
+    <summary>
+        Uploaded images
+        <span class="badge">@Images.Count</span>
+    </summary>
+
+    @if (Images.Count == 0)
+    {
+        <p class="empty-state">Upload an image and it will appear here with the final URL plus a markdown snippet you can copy or insert.</p>
+    }
+    else
+    {
+        <div class="upload-list">
+            @foreach (var image in Images)
+            {
+                var inputId = $"snippet-{image.Id}";
+                <article class="upload-card">
+                    <img class="upload-thumb" src="@image.PreviewUrl" alt="@image.OriginalFileName" />
+                    <div class="upload-content">
+                        <h3>@image.OriginalFileName</h3>
+                        <p class="upload-url">@image.PublicUrl</p>
+                        <input id="@inputId" class="snippet-input" type="text" value="@image.MarkdownSnippet" readonly />
+                        <div class="upload-actions">
+                            <button type="button" class="toolbar-button" @onclick="() => OnCopyMarkdown.InvokeAsync(image.Id)">
+                                @(CopiedUploadId == image.Id ? "Copied" : "Copy Markdown")
+                            </button>
+                            <button type="button" class="toolbar-button" @onclick="() => OnInsertMarkdown.InvokeAsync(image.MarkdownSnippet)">
+                                Insert at Cursor
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            }
+        </div>
+    }
+</details>
+
+@code {
+    [Parameter]
+    public IReadOnlyList<UploadedImageDescriptor> Images { get; set; } = Array.Empty<UploadedImageDescriptor>();
+
+    [Parameter]
+    public EventCallback<string> OnCopyMarkdown { get; set; }
+
+    [Parameter]
+    public EventCallback<string> OnInsertMarkdown { get; set; }
+
+    [Parameter]
+    public string? CopiedUploadId { get; set; }
+}
+

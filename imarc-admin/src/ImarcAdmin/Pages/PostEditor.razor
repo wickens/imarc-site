@@ -1,0 +1,425 @@
+@page "/posts/new"
+@page "/posts/{PostId}"
+@using ImarcAdmin.Models
+@using System.Text.RegularExpressions
+@inject GitContentRepository Repository
+@inject MarkdownPreviewService PreviewService
+@inject TempUploadService TempUploadService
+@inject SlugService SlugService
+@inject FrontMatterService FrontMatterService
+@inject IJSRuntime JS
+@inject NavigationManager Navigation
+
+<PageTitle>@PageTitleText</PageTitle>
+
+<NavigationLock ConfirmExternalNavigation="HasUnsavedChanges" OnBeforeInternalNavigation="@(context => ConfirmInternalNavigationAsync(context))" />
+
+<section class="page-shell">
+    <header class="page-header">
+        <div>
+            <p class="eyebrow">Editor</p>
+            <h1>@(Model.IsNew ? "New post" : "Edit post")</h1>
+            <p class="subtle">Posts are saved as git commits. Existing URLs stay fixed unless you deliberately change them outside this tool.</p>
+        </div>
+        <a class="secondary-link" href="/posts">Back to posts</a>
+    </header>
+
+    @if (!string.IsNullOrWhiteSpace(StatusMessage))
+    {
+        <section class="message-banner success-banner">@StatusMessage</section>
+    }
+
+    @if (!string.IsNullOrWhiteSpace(ErrorMessage))
+    {
+        <section class="message-banner error-banner">@ErrorMessage</section>
+    }
+
+    @if (IsLoading)
+    {
+        <section class="panel-card">Loading editor...</section>
+    }
+    else
+    {
+        <div class="editor-shell">
+            <div class="editor-column">
+                <section class="panel-card">
+                    <div class="field-grid">
+                        <div class="field-group field-span-2">
+                            <label class="field-label" for="title">Title</label>
+                            <input id="title" class="text-input" type="text" value="@Model.Title" @oninput="HandleTitleChanged" />
+                        </div>
+
+                        <div class="field-group">
+                            <label class="field-label" for="publish-date">Publish date</label>
+                            <input id="publish-date" class="text-input" type="date" value="@Model.PublishDate" @oninput="HandleDateChanged" />
+                        </div>
+
+                        <div class="field-group">
+                            <label class="field-label" for="publish-time">Publish time</label>
+                            <input id="publish-time" class="text-input" type="time" step="60" value="@Model.PublishTime" @oninput="HandleTimeChanged" />
+                        </div>
+
+                        <div class="field-group">
+                            <label class="field-label" for="slug">Slug</label>
+                            <input id="slug" class="text-input" type="text" @bind="Model.Slug" @bind:event="oninput" disabled="@Model.SlugLocked" />
+                        </div>
+
+                        <div class="field-group field-span-2">
+                            <label class="field-label" for="permalink">Permalink</label>
+                            <input id="permalink" class="text-input" type="text" value="@Model.Permalink" readonly />
+                        </div>
+
+                        <div class="field-group field-span-2">
+                            <label class="field-label" for="excerpt">Excerpt</label>
+                            <textarea id="excerpt" class="text-input small-textarea" @bind="Model.Excerpt" @bind:event="oninput"></textarea>
+                        </div>
+
+                        <div class="field-group field-span-2">
+                            <label class="field-label" for="categories">Categories</label>
+                            <input id="categories" class="text-input" type="text" placeholder="uncategorized, apple" @bind="Model.CategoriesText" @bind:event="oninput" />
+                        </div>
+
+                        <div class="field-group field-span-2">
+                            <label class="field-label" for="tags">Tags</label>
+                            <input id="tags" class="text-input" type="text" placeholder="ai, apple, microsoft" @bind="Model.TagsText" @bind:event="oninput" />
+                        </div>
+                    </div>
+                </section>
+
+                <section class="panel-card">
+                    <div class="section-header">
+                        <div>
+                            <h2>Markdown</h2>
+                            <p class="subtle">Paste or write the post body here.</p>
+                        </div>
+                        <EditorToolbar OnInsertSnippet="InsertSnippetAsync" />
+                    </div>
+
+                    <div class="mobile-preview-toggle">
+                        <button type="button" class="toggle-button @(ActiveMobilePane == "edit" ? "active" : string.Empty)" @onclick='() => ActiveMobilePane = "edit"'>Edit</button>
+                        <button type="button" class="toggle-button @(ActiveMobilePane == "preview" ? "active" : string.Empty)" @onclick='() => ActiveMobilePane = "preview"'>Preview</button>
+                    </div>
+
+                    <textarea id="markdown-editor"
+                              class="editor-textarea @(ActiveMobilePane == "preview" ? "mobile-hidden" : string.Empty)"
+                              @bind="Model.MarkdownBody"
+                              @bind:event="oninput"></textarea>
+
+                    <div class="editor-stats">
+                        <span><strong>@BodyWordCount</strong> body words</span>
+                        <span><strong>@ExcerptWordCount</strong> excerpt words</span>
+                    </div>
+                </section>
+
+                <section class="panel-card">
+                    <div class="section-header">
+                        <div>
+                            <h2>Upload images</h2>
+                            <p class="subtle">Images are staged in temp storage until the post is published.</p>
+                        </div>
+                    </div>
+
+                    <InputFile OnChange="HandleFilesSelectedAsync" multiple accept="image/*" />
+                </section>
+
+                <UploadedImagesPanel Images="CurrentUploads"
+                                     OnCopyMarkdown="CopyMarkdownAsync"
+                                     OnInsertMarkdown="InsertSnippetAsync"
+                                     CopiedUploadId="CopiedUploadId" />
+            </div>
+
+            <section class="panel-card preview-column @(ActiveMobilePane == "edit" ? "mobile-hidden" : string.Empty)">
+                <div class="section-header">
+                    <div>
+                        <h2>Preview</h2>
+                        <p class="subtle">Rendered with the current site CSS from the blog clone.</p>
+                    </div>
+                </div>
+
+                <div class="preview-frame">
+                    @((MarkupString)PreviewHtml)
+                </div>
+            </section>
+        </div>
+
+        <div class="action-bar">
+            <span class="subtle">Base commit: <code>@ShortCommit(Model.BaseCommit)</code></span>
+            @if (!Model.IsNew)
+            {
+                <button type="button" class="button-link danger-button" disabled="@IsDeleting" @onclick="DeletePostAsync">
+                    @(IsDeleting ? "Deleting..." : "Delete post")
+                </button>
+            }
+            <button type="button" class="button-link" disabled="@(IsPublishing || IsDeleting)" @onclick="ReloadEditorAsync">Reload</button>
+            <button type="button" class="primary-link button-link" disabled="@(IsPublishing || IsDeleting)" @onclick="PublishAsync">
+                @(IsPublishing ? "Saving..." : "Save post")
+            </button>
+        </div>
+    }
+</section>
+
+@code {
+    [Parameter]
+    public string? PostId { get; set; }
+
+    private EditablePost Model { get; set; } = new();
+    private bool IsLoading { get; set; } = true;
+    private bool IsPublishing { get; set; }
+    private bool IsDeleting { get; set; }
+    private string ErrorMessage { get; set; } = string.Empty;
+    private string StatusMessage { get; set; } = string.Empty;
+    private string CopiedUploadId { get; set; } = string.Empty;
+    private string ActiveMobilePane { get; set; } = "edit";
+    private string Fingerprint { get; set; } = string.Empty;
+
+    private IReadOnlyList<UploadedImageDescriptor> CurrentUploads
+        => string.IsNullOrWhiteSpace(Model.SessionId)
+            ? Array.Empty<UploadedImageDescriptor>()
+            : TempUploadService.GetUploads(Model.SessionId);
+
+    private string PageTitleText
+        => Model.IsNew ? "New post · iMarc Admin" : $"{Model.Title} · iMarc Admin";
+
+    private bool HasUnsavedChanges => Fingerprint != BuildFingerprint();
+
+    private string PreviewHtml => PreviewService.Render(Model, CurrentUploads);
+    private int BodyWordCount => CountWords(Model.MarkdownBody);
+    private int ExcerptWordCount => CountWords(Model.Excerpt);
+
+    protected override async Task OnParametersSetAsync()
+    {
+        await LoadEditorAsync();
+    }
+
+    private async Task LoadEditorAsync()
+    {
+        IsLoading = true;
+        ErrorMessage = string.Empty;
+        StatusMessage = string.Empty;
+
+        try
+        {
+            Model = string.IsNullOrWhiteSpace(PostId)
+                ? await Repository.StartNewPostAsync(CancellationToken.None)
+                : await Repository.LoadPostAsync(PostId, CancellationToken.None);
+
+            Fingerprint = BuildFingerprint();
+        }
+        catch (Exception ex)
+        {
+            ErrorMessage = ex.Message;
+        }
+        finally
+        {
+            IsLoading = false;
+        }
+    }
+
+    private Task HandleTitleChanged(ChangeEventArgs args)
+    {
+        Model.Title = args.Value?.ToString() ?? string.Empty;
+        if (Model.IsNew && !Model.SlugLocked)
+        {
+            Model.Slug = SlugService.Slugify(Model.Title);
+            Model.Permalink = FrontMatterService.BuildPermalink(Model.PublishDate, Model.Slug);
+        }
+
+        return Task.CompletedTask;
+    }
+
+    private Task HandleDateChanged(ChangeEventArgs args)
+    {
+        Model.PublishDate = args.Value?.ToString() ?? Model.PublishDate;
+        if (Model.IsNew)
+        {
+            Model.Permalink = FrontMatterService.BuildPermalink(Model.PublishDate, Model.Slug);
+        }
+
+        return Task.CompletedTask;
+    }
+
+    private Task HandleTimeChanged(ChangeEventArgs args)
+    {
+        Model.PublishTime = NormalizeTime(args.Value?.ToString());
+        return Task.CompletedTask;
+    }
+
+    private async Task HandleFilesSelectedAsync(InputFileChangeEventArgs args)
+    {
+        ErrorMessage = string.Empty;
+        StatusMessage = string.Empty;
+        CopiedUploadId = string.Empty;
+
+        foreach (var file in args.GetMultipleFiles())
+        {
+            try
+            {
+                await TempUploadService.SaveUploadAsync(Model.SessionId, file, Model.PublishDate, CancellationToken.None);
+            }
+            catch (Exception ex)
+            {
+                ErrorMessage = ex.Message;
+                break;
+            }
+        }
+    }
+
+    private async Task CopyMarkdownAsync(string uploadId)
+    {
+        var copied = await JS.InvokeAsync<bool>("imarcAdmin.copyFromInput", $"snippet-{uploadId}");
+        if (copied)
+        {
+            CopiedUploadId = uploadId;
+            StatusMessage = "Markdown copied to the clipboard.";
+        }
+        else
+        {
+            StatusMessage = "Markdown selected for manual copy.";
+        }
+    }
+
+    private async Task InsertSnippetAsync(string snippet)
+        => await JS.InvokeVoidAsync("imarcAdmin.insertAtCursor", "markdown-editor", snippet);
+
+    private async Task PublishAsync()
+    {
+        ErrorMessage = string.Empty;
+        StatusMessage = string.Empty;
+
+        if (string.IsNullOrWhiteSpace(Model.Title))
+        {
+            ErrorMessage = "Title is required.";
+            return;
+        }
+
+        if (string.IsNullOrWhiteSpace(Model.Slug))
+        {
+            ErrorMessage = "Slug is required.";
+            return;
+        }
+
+        IsPublishing = true;
+        try
+        {
+            var result = await Repository.PublishAsync(Model, CancellationToken.None);
+            Model.IsNew = false;
+            Model.SlugLocked = true;
+            Model.PostId = result.PostId;
+            Model.OriginalRelativePath = result.RelativePath;
+            Model.BaseCommit = result.HeadCommit;
+            StatusMessage = result.PushedToRemote
+                ? $"{result.CommitMessage} and pushed to main."
+                : $"{result.CommitMessage} and committed locally.";
+            Fingerprint = BuildFingerprint();
+
+            if (PostId != result.PostId)
+            {
+                Navigation.NavigateTo($"/posts/{result.PostId}");
+            }
+        }
+        catch (RepoConflictException ex)
+        {
+            ErrorMessage = ex.Message;
+        }
+        catch (Exception ex)
+        {
+            ErrorMessage = ex.Message;
+        }
+        finally
+        {
+            IsPublishing = false;
+        }
+    }
+
+    private async Task DeletePostAsync()
+    {
+        ErrorMessage = string.Empty;
+        StatusMessage = string.Empty;
+
+        if (Model.IsNew)
+        {
+            ErrorMessage = "This post has not been created yet.";
+            return;
+        }
+
+        var confirmed = await JS.InvokeAsync<bool>("confirm", $"Delete '{Model.Title}'?");
+        if (!confirmed)
+        {
+            return;
+        }
+
+        IsDeleting = true;
+        try
+        {
+            var result = await Repository.DeletePostAsync(Model, CancellationToken.None);
+            Navigation.NavigateTo($"/posts?deleted={Uri.EscapeDataString(result.RelativePath)}");
+        }
+        catch (RepoConflictException ex)
+        {
+            ErrorMessage = ex.Message;
+        }
+        catch (Exception ex)
+        {
+            ErrorMessage = ex.Message;
+        }
+        finally
+        {
+            IsDeleting = false;
+        }
+    }
+
+    private Task ReloadEditorAsync()
+        => LoadEditorAsync();
+
+    private async Task ConfirmInternalNavigationAsync(LocationChangingContext context)
+    {
+        if (!HasUnsavedChanges)
+        {
+            return;
+        }
+
+        var leave = await JS.InvokeAsync<bool>("confirm", "You have unsaved changes. Leave this page?");
+        if (!leave)
+        {
+            context.PreventNavigation();
+        }
+    }
+
+    private string BuildFingerprint()
+        => string.Join(
+            "||",
+            Model.Title,
+            Model.PublishDate,
+            Model.PublishTime,
+            Model.Slug,
+            Model.CategoriesText,
+            Model.TagsText,
+            Model.Excerpt,
+            Model.MarkdownBody,
+            string.Join(";", CurrentUploads.Select(upload => upload.Id)));
+
+    private static int CountWords(string? text)
+    {
+        if (string.IsNullOrWhiteSpace(text))
+        {
+            return 0;
+        }
+
+        var cleaned = text;
+        cleaned = Regex.Replace(cleaned, "```[\\s\\S]*?```", " ", RegexOptions.Singleline);
+        cleaned = Regex.Replace(cleaned, "`[^`]*`", " ");
+        cleaned = Regex.Replace(cleaned, "!\\[([^\\]]*)\\]\\([^\\)]*\\)", "$1");
+        cleaned = Regex.Replace(cleaned, "\\[([^\\]]+)\\]\\([^\\)]*\\)", "$1");
+        cleaned = Regex.Replace(cleaned, "<[^>]+>", " ");
+
+        return Regex.Matches(cleaned, @"[\p{L}\p{N}]+(?:['’-][\p{L}\p{N}]+)*").Count;
+    }
+
+    private static string NormalizeTime(string? value)
+        => TimeOnly.TryParse(value, out var parsed)
+            ? parsed.ToString("HH:mm")
+            : "12:00";
+
+    private static string ShortCommit(string commit)
+        => string.IsNullOrWhiteSpace(commit) ? "n/a" : commit[..Math.Min(7, commit.Length)];
+}

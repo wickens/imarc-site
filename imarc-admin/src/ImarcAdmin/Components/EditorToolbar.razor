@@ -1,0 +1,13 @@
+<div class="toolbar">
+    <button type="button" class="toolbar-button" @onclick='() => OnInsertSnippet.InvokeAsync("## Heading")'>Heading</button>
+    <button type="button" class="toolbar-button" @onclick='() => OnInsertSnippet.InvokeAsync("**bold**")'>Bold</button>
+    <button type="button" class="toolbar-button" @onclick='() => OnInsertSnippet.InvokeAsync("_italic_")'>Italic</button>
+    <button type="button" class="toolbar-button" @onclick='() => OnInsertSnippet.InvokeAsync("[link text](https://)")'>Link</button>
+    <button type="button" class="toolbar-button" @onclick='() => OnInsertSnippet.InvokeAsync("![](/wp-content/uploads/YYYY/MM/file.ext)")'>Image</button>
+</div>
+
+@code {
+    [Parameter]
+    public EventCallback<string> OnInsertSnippet { get; set; }
+}
+
