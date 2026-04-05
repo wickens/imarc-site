@@ -1,12 +1,12 @@
 ---
-title: "The Best UK Train Times Service for Commuters (No App Needed)"
-date: "2025-10-29T08:59:43Z"
+title: "Great Website for UK Train Times Service for Commuters"
+date: "2025-10-29T08:59:00Z"
 slug: "the-best-uk-train-times-service-for-commuters-no-app-needed"
 layout: "post.njk"
 categories: []
+excerpt: ""
+permalink: "/2025/10/29/the-best-uk-train-times-service-for-commuters-no-app-needed/"
 ---
-
-
 
 Having become a semi-regular commuter to London, I’ve found that the various well-known apps for checking train times are all terrible. There isn’t an app where you can simply say: h*ere is my regular commute; I just need to know the next train, which platform it’s on, and whether it’s delayed.*
 TheTrainLine is arguably focused on planning journeys, and the National Rail app is just plain awful, especially in areas with poor signal.
