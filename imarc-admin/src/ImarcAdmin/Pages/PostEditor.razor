@@ -7,6 +7,7 @@
 @inject TempUploadService TempUploadService
 @inject SlugService SlugService
 @inject FrontMatterService FrontMatterService
+@inject PostEditorStateService EditorState
 @inject IJSRuntime JS
 @inject NavigationManager Navigation
 
@@ -19,7 +20,7 @@
         <div>
             <p class="eyebrow">Editor</p>
             <h1>@(Model.IsNew ? "New post" : "Edit post")</h1>
-            <p class="subtle">Posts are saved as git commits. Existing URLs stay fixed unless you deliberately change them outside this tool.</p>
+            <p class="subtle">Posts are saved as git commits. Existing URLs stay fixed, and if `main` changes while you are editing, saving will ask you to reload first.</p>
         </div>
         <a class="secondary-link" href="/posts">Back to posts</a>
     </header>
@@ -61,7 +62,7 @@
 
                         <div class="field-group">
                             <label class="field-label" for="slug">Slug</label>
-                            <input id="slug" class="text-input" type="text" @bind="Model.Slug" @bind:event="oninput" disabled="@Model.SlugLocked" />
+                            <input id="slug" class="text-input" type="text" value="@Model.Slug" @oninput="HandleSlugChanged" disabled="@Model.SlugLocked" />
                         </div>
 
                         <div class="field-group field-span-2">
@@ -203,6 +204,7 @@
                 ? await Repository.StartNewPostAsync(CancellationToken.None)
                 : await Repository.LoadPostAsync(PostId, CancellationToken.None);
 
+            EditorState.Initialize(Model);
             Fingerprint = BuildFingerprint();
         }
         catch (Exception ex)
@@ -217,24 +219,19 @@
 
     private Task HandleTitleChanged(ChangeEventArgs args)
     {
-        Model.Title = args.Value?.ToString() ?? string.Empty;
-        if (Model.IsNew && !Model.SlugLocked)
-        {
-            Model.Slug = SlugService.Slugify(Model.Title);
-            Model.Permalink = FrontMatterService.BuildPermalink(Model.PublishDate, Model.Slug);
-        }
-
+        EditorState.ApplyTitleChange(Model, args.Value?.ToString());
         return Task.CompletedTask;
     }
 
     private Task HandleDateChanged(ChangeEventArgs args)
     {
-        Model.PublishDate = args.Value?.ToString() ?? Model.PublishDate;
-        if (Model.IsNew)
-        {
-            Model.Permalink = FrontMatterService.BuildPermalink(Model.PublishDate, Model.Slug);
-        }
+        EditorState.ApplyDateChange(Model, args.Value?.ToString());
+        return Task.CompletedTask;
+    }
 
+    private Task HandleSlugChanged(ChangeEventArgs args)
+    {
+        EditorState.ApplySlugChange(Model, args.Value?.ToString());
         return Task.CompletedTask;
     }
 

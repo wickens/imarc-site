@@ -1,5 +1,4 @@
 using ImarcAdmin.Config;
-using ImarcAdmin.Middleware;
 using ImarcAdmin.Services;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
@@ -10,6 +9,7 @@ builder.Services.AddServerSideBlazor();
 builder.Services.Configure<AdminOptions>(builder.Configuration.GetSection("Admin"));
 builder.Services.AddSingleton<SlugService>();
 builder.Services.AddSingleton<FrontMatterService>();
+builder.Services.AddSingleton<PostEditorStateService>();
 builder.Services.AddSingleton<SimpleMarkdownRenderer>();
 builder.Services.AddSingleton<MarkdownPreviewService>();
 builder.Services.AddSingleton<PreviewAssetService>();
@@ -20,7 +20,6 @@ builder.Services.AddSingleton<GitContentRepository>();
 
 var app = builder.Build();
 
-app.UseMiddleware<CloudflareAccessMiddleware>();
 app.UseStaticFiles();
 app.UseRouting();
 

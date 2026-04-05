@@ -12,12 +12,13 @@ It covers:
 
 - slug generation
 - permalink generation
+- editor slug auto-generation rules for new versus existing posts
 - front matter round-tripping with unknown key preservation
 - front matter date/time round-tripping
 - preview rewriting for staged uploads
 - upload markdown snippet generation and file name collision handling
-- Cloudflare Access header enforcement
 - post list caching and manual refresh behavior
+- managed-clone refresh on load and stale-publish conflict blocking
 - local-save behavior when remote push is disabled
 - deleting an existing post
 
@@ -27,21 +28,25 @@ Before these checks, make sure:
 
 - `Admin:BlogRepoPath` points at a clean service-owned clone
 - the Pi can push to GitHub with the configured deploy key
-- `Admin:AdminEmail` matches the Cloudflare Access allow rule
+- Apache is reverse-proxying to `http://127.0.0.1:5005`
+- Apache Basic Auth is enabled for `admin.imarc.co.uk`
+- your WireGuard clients can reach the Pi's LAN IP
 
 ### Create a post
 
-1. Open `https://admin.imarc.co.uk`.
-2. Pass Cloudflare Access email OTP.
-3. Create a new post.
-4. Confirm the slug auto-fills from the title.
-5. Confirm the permalink updates from the selected date.
-6. Confirm the time field can be edited independently.
-7. Confirm the editor shows a live word count while writing.
-6. Publish.
-7. Verify a new file appears under `src/posts/<slug>.md` in the managed clone.
-8. In local development, verify the app creates a local git commit and does not push to GitHub.
-9. In production, verify the app pushes to `main`.
+1. Connect to WireGuard.
+2. Open `http://admin.imarc.co.uk`.
+3. Confirm the browser prompts for Basic Auth credentials.
+4. Enter the `htpasswd` username and password.
+5. Create a new post.
+6. Confirm the slug auto-fills from the title.
+7. Confirm the permalink updates from the selected date.
+8. Confirm the time field can be edited independently.
+9. Confirm the editor shows a live word count while writing.
+10. Publish.
+11. Verify a new file appears under `src/posts/<slug>.md` in the managed clone.
+12. In local development, verify the app creates a local git commit and does not push to GitHub.
+13. In production, verify the app pushes to `main`.
 
 ### Edit a post
 
@@ -49,8 +54,20 @@ Before these checks, make sure:
 2. Change title, excerpt, and body.
 3. Publish.
 4. Verify the existing relative file path did not change.
-5. Verify any existing `wordpress_id` is still present in front matter.
-6. Verify the chosen time is serialized into the front matter `date` value.
+5. Verify the slug and permalink did not change just because the title changed.
+6. Verify any existing `wordpress_id` is still present in front matter.
+7. Verify the chosen time is serialized into the front matter `date` value.
+
+### Slug behavior
+
+1. Create a new post.
+2. Confirm the slug auto-fills from the title.
+3. Manually edit the slug.
+4. Continue editing the title.
+5. Confirm the slug stays on your manual value.
+6. Clear the slug field completely.
+7. Change the title again.
+8. Confirm the slug is regenerated from the new title.
 
 ### Delete a post
 
@@ -89,13 +106,18 @@ Before these checks, make sure:
 
 ### Security checks
 
-1. Visit the app without a Cloudflare Access session and confirm access is blocked.
+1. Confirm `http://127.0.0.1:5005` is reachable locally on the Pi.
 2. Confirm `/healthz` remains reachable for liveness checks.
-3. Confirm requests with the wrong authenticated email are rejected.
+3. Confirm `http://admin.imarc.co.uk` prompts for Basic Auth credentials.
+4. On iPhone or iPad, browse around after logging in and note whether Safari still re-prompts after reconnects or tab restores; occasional repeats are expected with HTTP Basic Auth.
+5. Confirm the app is reachable over WireGuard only after successful Basic Auth.
+6. Confirm port `5005` is not exposed directly on the LAN or internet.
 
 ### Conflict handling
 
 1. Open the same post in the editor.
-2. Change the underlying repo `main` branch outside the app.
-3. Return to the stale editor and publish.
-4. Confirm the app blocks publishing and asks for a reload.
+2. Change the underlying repo `main` branch outside the app by pushing from another machine.
+3. Open `/posts` or reload a different editor and confirm the newer remote content is picked up automatically.
+4. Return to the stale editor and publish.
+5. Confirm the app blocks publishing and asks for a reload.
+6. Avoid making direct edits inside the Pi's managed clone; keep that clone clean and service-owned.
