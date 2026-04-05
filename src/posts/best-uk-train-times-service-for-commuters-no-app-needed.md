@@ -1,5 +1,5 @@
 ---
-title: "Great Website for UK Train Commuters"
+title: "A Great Website for UK Train Commuters"
 date: "2025-10-29T08:59:00Z"
 slug: "the-best-uk-train-times-service-for-commuters-no-app-needed"
 layout: "post.njk"
