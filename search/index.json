@@ -16,14 +16,6 @@
   },
 
   {
-    "title":   "A Great Website for UK Train Commuters",
-    "url":     "/2025/10/29/the-best-uk-train-times-service-for-commuters-no-app-needed/",
-    "date":    "2025-10-29T08:59:00.000+00:00",
-    "excerpt": "Having become a semi-regular commuter to London, I’ve found that the various well-known apps for checking train times are all terrible. There isn’t an app where you can simply say: h ere is my regular commute; I just…",
-    "tags":    []
-  },
-
-  {
     "title":   "Let’s Not Anthropomorphise Chatbots",
     "url":     "/2025/08/30/lets-not-anthropomorphise-chatbots/",
     "date":    "2025-08-30T07:50:02.000+00:00",
@@ -101,6 +93,14 @@
     "date":    "2024-12-19T21:42:07.000+00:00",
     "excerpt": "Image source: BBC News Graham Fraser reporting for BBC News about Apple’s new notification summarisation feature: A major journalism body has urged Apple to scrap its new generative AI feature after it created a…",
     "tags":    ["ai","apple","ios","iphone","technology"]
+  },
+
+  {
+    "title":   "A Great Website for UK Train Commuters",
+    "url":     "/2025/10/29/the-best-uk-train-times-service-for-commuters-no-app-needed/",
+    "date":    "2024-10-29T08:59:00.000+00:00",
+    "excerpt": "Having become a semi-regular commuter to London, I’ve found that the various well-known apps for checking train times are all terrible. There isn’t an app where you can simply say: h ere is my regular commute; I just…",
+    "tags":    []
   },
 
   {
