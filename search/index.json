@@ -960,10 +960,10 @@
   },
 
   {
-    "title":   "The Card Missing From Our Digital Wallets",
+    "title":   "The card missing from our digital wallets",
     "url":     "/2019/12/31/the-card-missing-from-our-digital-wallets/",
     "date":    "2019-12-31T17:20:45.000+00:00",
-    "excerpt": "If you’re lucky enough to own a smartphone these days, as most people do, then you can most likely use it to replace your wallet. With Apple Pay and Google Pay, you can spend money without the need for cash for bank…",
+    "excerpt": "If you're lucky enough to own a smartphone these days, as most people do, then you can most likely use it to replace your wallet. With Apple Pay and Google Pay, you can spend money without the need for cash for bank cards. Store Cards such as Tesco Clubcard can also be placed in your digital wallet. I even store my library card on my phone thanks to this app which lets you digitise any barcode based pass and place it in your Apple Wallet. I'm so used to this situation now, that I rarely go out with a wallet on my person. Once train ticket machines started taking contactless there really was no need. One less thing to lose, one less thing to remember.",
     "tags":    []
   },
 
@@ -984,10 +984,34 @@
   },
 
   {
+    "title":   "Four years of ambient computing",
+    "url":     "/2019/07/07/four-years-of-ambient-computing/",
+    "date":    "2019-07-07T08:35:05.000+00:00",
+    "excerpt": "It's been four years since the Apple Watch was released, and I've worn a variant of the miniature device pretty much every day of my life for most of this time. You see them everywhere now, but in 2015, wearing a smart watch was a novel idea. I've always been interested in gadgets, owning my first \"smartwatch\", as Casio Databank, when I was in secondary school. I remember the sum of £40 seeming like a huge amount when I bought the Casio watch, and to be fair, for a 12 year old in 1997, it was. I would marvel with amazement that a Casio Databank watch could store and entire 50 names and phone numbers, schedule alarms way off into the future, and knew how many days were in each month (no need to manually skip over the date for shorter months). The idea of walking around with all that information and potential on my wrist was both mysterious and exciting. How exactly did such a small device know to sound an alarm at precisely the time I'd chosen? Where exactly did all those names and number go when I entered them? I studied computer science and got a job as a software developer and so now it's much less of a mystery to me how it all works, but my curiosity for these kind of smart devices never went away.",
+    "tags":    []
+  },
+
+  {
+    "title":   "We need better standards",
+    "url":     "/2018/02/04/we-need-better-standards/",
+    "date":    "2018-02-04T21:29:14.000+00:00",
+    "excerpt": "What would the world be like without standards? We take for granted that all of our electrical appliances fit into the same plug sockets, not giving it a second thought. We assume that that tires purchased from any manufacturer will fit our cars, given the correct wheel size and width. Who would even doubt that a lightbulb will screw into its socket no matter where it was bought from or who fitted the light socket. Even the fact that an email can be sent using an Apple iPhone, from a Yahoo email service only to be received by a computer on the other side of the world running compatible email software is pretty amazing when you think about it. In fact, anyone can create their own email service by just registering their own domain and having a computer that is always switched on with an Internet connection. Whether it be the width of railway tracks or the audio encoding on a CD, interoperable standards were key to our way of life in much of the 20th and 21st century. TCP/IP and HTTP famously made the World Wide Web possible, while other Internet standards such as IRC, NNTP and FTP gave us realtime chat, debates and discussions and two-way files-transfers.",
+    "tags":    []
+  },
+
+  {
     "title":   "AirPods",
     "url":     "/2017/05/12/airpods/",
     "date":    "2017-05-12T19:41:00.000+00:00",
     "excerpt": "When Apple first announced the AirPods there was a lot of hyperbole in the media about them being Apple’s next big ‘wearable’ device. For a company that famously said that speeds an feeds did not matter , there was a…",
+    "tags":    []
+  },
+
+  {
+    "title":   "Better software, not a bigger screen, is what the iPad needs",
+    "url":     "/2015/11/14/better-software-not-a-bigger-screen-is-what-the-ipad-needs/",
+    "date":    "2015-11-14T12:21:50.000+00:00",
+    "excerpt": "The iPad Pro is now available, with its much larger screen. Admittedly I haven't had a chance to try one yet, and having only purchased a new iPad last year, I probably wouldn't consider such a purchase so soon anyway. But as someone who does try and do real work on an iPad, (I enjoy stepping away from my desk from time to time to focus in on something, and the iPad is perfect for this.), I am not frustrated by the iPad's lack of screen real estate (though I've no doubt more is better, it usually is) but by its limited software.",
     "tags":    []
   },
 
@@ -1016,6 +1040,22 @@
   },
 
   {
+    "title":   "Print vs Digital Magazines",
+    "url":     "/2014/11/09/print-vs-digital-magazines/",
+    "date":    "2014-11-09T19:34:01.000+00:00",
+    "excerpt": "I've been a subscriber to various magazines over the years. Since 2006 and to this day I've had a subscription to New Scientist (that's just over 400 magazines delivered to my door alone), previously .Net Magazine and PC Pro.",
+    "tags":    []
+  },
+
+  {
+    "title":   "Is it time to stop assuming users have Flash installed?",
+    "url":     "/2014/05/04/is-it-time-to-stop-assuming-users-have-flash-installed/",
+    "date":    "2014-05-04T20:06:34.000+00:00",
+    "excerpt": "Remember when the iPad first came out in 2010, and the first thing everybody said was it was doomed because it didn't have Flash? Well, it turns out most web site owners were able to accommodate this requirement, and these days even Android tablets and phones lack the once ubiquitous browser plugin. Yet, if you've ever browsed the web on an iOS device or an Android device (the chances are you have) you'll know that in the vast majority of cases, everything has continued to work as normal. Staples of the Internet from BBC News to YouTube keep on working - when it comes to video at least (if you want to run Farmville sans plugin then you're out of luck).",
+    "tags":    []
+  },
+
+  {
     "title":   "Xbox One: Initial Thoughts",
     "url":     "/2014/01/11/xbox-one-initial-thoughts2/",
     "date":    "2014-01-11T22:31:54.000+00:00",
@@ -1040,10 +1080,34 @@
   },
 
   {
+    "title":   "The Windows 8 Problem",
+    "url":     "/2013/04/11/the-windows-8-problem/",
+    "date":    "2013-04-11T19:49:16.000+00:00",
+    "excerpt": "Windows 8, by trying to be like iOS and Android and providing a simplified \"one app at a time\" interface (or more precisely 1.3 apps at a time) means that Windows is no longer good at what Windows was always good at. I already have a tablet, and I reach for my Windows laptop when I need to do something my iPad can't. That inevitably means I head straight to the desktop. This is why Windows has failed to reinvigorate the PC market, Windows no longer offers a great desktop experience or a mature tablet experience. I'm sure it will get better, and really hope we see Office for Metro sometime soon.",
+    "tags":    []
+  },
+
+  {
+    "title":   "Microsoft Surface - Initial Thoughts",
+    "url":     "/2012/11/11/microsoft-surface-initial-thoughts/",
+    "date":    "2012-11-11T21:10:49.000+00:00",
+    "excerpt": "I've been using the new Microsoft Surface running Windows RT this weekend, so I thought I'd post by initial thoughts. This was one borrowed from the office.",
+    "tags":    []
+  },
+
+  {
     "title":   "Review: Apple Smart Cover for iPad",
     "url":     "/2012/09/22/apple-smart-cover-for-ipad/",
     "date":    "2012-09-22T10:28:05.000+00:00",
     "excerpt": "Despite my earlier post , there are times when it’s wise to put a case on your tablet. On the beach, for example. Suncream and iPads really don’t mix, and putting an unprotected device into a bag with suncream will end…",
+    "tags":    []
+  },
+
+  {
+    "title":   "How long should a tablet be supported for?",
+    "url":     "/2012/09/02/how-long-should-a-tablet-be-supported-for/",
+    "date":    "2012-09-02T21:37:10.000+00:00",
+    "excerpt": "Tablets are billed as \"post-PC\" products designed to replace the job of a PC for most people. The argument goes, most people don't need a truck (a PC) and instead they just want a small car. True as that may be, I see a problem when the car only gets supported by the manufacture for 2 years. That's the case with the original iPad. According to Apple, iOS 6 will not run on the iPad 1 which was released in 2010. Buy not having the latest operating system, this means the latest security updates will not be available, nor will the latest developer APIs. Many of Apple's own apps (such as the Pages) will likely be updated, and these updates will only support iOS6 (this was the case when iOS 5 was released). Will the file formats be compatible? Let's hope so. The same will probably happen with a lot of 3rd party applications. It also means the new OS features such as shared photo streams and Facebook integration wont be available.",
     "tags":    []
   },
 
@@ -1112,6 +1176,22 @@
   },
 
   {
+    "title":   "Remember when software came in a box?",
+    "url":     "/2011/04/29/remember-when-software-came-in-a-box/",
+    "date":    "2011-04-29T18:44:36.000+00:00",
+    "excerpt": "Console games still do of course, but how long for?",
+    "tags":    []
+  },
+
+  {
+    "title":   "When you buy software, how long should it reasonably continue to work for?",
+    "url":     "/2011/01/15/when-you-buy-software-how-long-should-it-reasonably-continue-to-work-for/",
+    "date":    "2011-01-15T21:58:39.000+00:00",
+    "excerpt": "Electronic Arts have decided to discontinue some of their earlier Xbox 360 games, meaning players will no longer be able to play online. With the 360 still selling exceptionally well, the fact that games publishers are deprecating some of its older games must be worrying news for console owners. To think I can still play Team Fortress Classic, purchased in March 2000 to this day on my Windows 7 laptop - this amazing feat however is because the servers are not run by one company. Lesson learnt?",
+    "tags":    []
+  },
+
+  {
     "title":   "The Painted Man by Peter V Brett",
     "url":     "/2010/12/23/the-painted-man-by-peter-v-brett/",
     "date":    "2010-12-23T11:50:00.000+00:00",
@@ -1132,6 +1212,14 @@
     "url":     "/2009/07/08/goodbye-nokia-n95-hello-iphone/",
     "date":    "2009-07-08T20:14:00.000+00:00",
     "excerpt": "For the past two years, I’ve been using the Nokia N95. At the time of its release, it was revolutionary. Even today, it holds its own when compared to the majority of phones on the market. From a top-quality camera…",
+    "tags":    []
+  },
+
+  {
+    "title":   "Announcing Podcast Tool",
+    "url":     "/2009/05/10/announcing-podcast-tool/",
+    "date":    "2009-05-10T21:28:45.000+00:00",
+    "excerpt": "I download a lot of podcasts. I use iTunes to manage them on my \"junk PC\" (the one I install the rubbish, but necessary software like Real Player and iTunes, for syncing iPods etc).",
     "tags":    []
   },
 

@@ -1,0 +1,91 @@
+<!-- 
+
+
+ _ __  __
+(_|  \/  | __ _ _ __ ___
+| | |\/| |/ _` | '__/ __|
+| | |  | | (_| | | | (__
+|_|_|  |_|\__,_|_|  \___|
+
+
+Coded and designed by Marc Wickens. Powered by 11ty.
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="theme-default">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"/>
+    <title>
+      Is it time to stop assuming users have Flash installed?
+        ·
+        iMarc
+      
+    </title>
+    <meta name="description" content="Remember when the iPad first came out in 2010, and the first thing everybody said was it was doomed because it didn't have Flash? Well, it turns out most web site owners were able to accommodate this requirement, and these days even Android tablets and phones lack the once ubiquitous browser plugin. Yet, if you've ever browsed the web on an iOS device or an Android device (the chances are you have) you'll know that in the vast majority of cases, everything has continued to work as normal. Staples of the Internet from BBC News to YouTube keep on working - when it comes to video at least (if you want to run Farmville sans plugin then you're out of luck)."/>
+
+    <link rel="stylesheet" href="/static/css/site.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&family=Fira+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+
+    <link rel="icon" type="image/png" href="/imarc-icon.png">
+    <link rel="apple-touch-icon" href="/imarc-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/imarc-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/imarc-icon.png">
+    <link rel="alternate" type="application/rss+xml" href="/feed/index.xml" title="iMarc RSS">
+    <link rel="canonical" href="https://www.imarc.co.uk/2014/05/04/is-it-time-to-stop-assuming-users-have-flash-installed/">
+
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="inner">
+        <a class="site-title" href="/">iMarc</a>
+        <p class="tagline">thoughts on tech • by Marc Wickens</p>
+
+        <nav class="site-nav">
+          <a href="/">Home</a>
+          <a href="/archive/">Archive</a>
+          <a href="/projects">Projects</a>
+          <a href="http://marc.wickens.org.uk">About</a>
+
+          <!-- <a href="https://mandiandmarc.wickens.uk/">Wedding</a> -->
+
+          <form class="site-search" action="/search/" method="get">
+            <label for="search-input" class="visually-hidden">Search</label>
+            <input id="search-input" name="q" type="search" placeholder="Search…"/>
+          </form>
+
+        </nav>
+      </div>
+    </header>
+
+    <main class="content inner">
+      <article>
+  <h1>Is it time to stop assuming users have Flash installed?</h1>
+  <p class="meta">4 May 2014</p>
+  <p>Remember when the iPad first came out in 2010, and the first thing everybody said was it was doomed because it didn’t have Flash? Well, it turns out most web site owners were able to accommodate this requirement, and these days even Android tablets and phones lack the once ubiquitous browser plugin. Yet, if you’ve ever browsed the web on an iOS device or an Android device (the chances are you have) you’ll know that in the vast majority of cases, everything has continued to work as normal. Staples of the Internet from BBC News to YouTube keep on working - when it comes to video at least (if you want to run Farmville sans plugin then you’re out of luck).</p>
+<p>So when setting up my MacBook with a clean installation of OS X 10.9, I decided to see if it was possible to live without Flash. My guess was it would be, and why not? One less thing installed on your system means a reduced attack surface for malware, fewer processes running and hence better longer life, and in my experience, fewer browser hangs. I was wrong however - instead of using “feature detection” (as good web developers should) to determine whether the browser supports the Flash alternative to video, “HTML5 Video”- it seems the vast majority of sites employ user agent sniffing and will only show you the non-Flash version if you’re on a known mobile device. I kept on being asked to install Flash, even though my iPad works just fine without it. User agent sniffing is the reason why sites designed for IE6 will ask you to “upgrade” if you visit in IE11 -I can forgive any web developer working back when IE6 came out in 2001 for following what was then a standard industry practice, but User Agent Sniffing is now generally <a href="http://ejohn.org/blog/future-proofing-javascript-libraries/">considered outdated</a>, so why are so many sites still doing it when it comes to playing video?</p>
+
+  
+</article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="inner">
+        <p>&copy; 2000 –
+          2026
+          Marc Wickens.
+        </p>
+      </div>
+    </footer>
+
+    <script src="/static/js/compare.js" defer="defer"></script>
+    <script data-goatcounter="https://imarc.goatcounter.com/count" async="async" src="//gc.zgo.at/count.js"></script>
+
+  </body>
+</html>
