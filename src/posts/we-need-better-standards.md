@@ -1,0 +1,22 @@
+---
+title: "We need better standards"
+date: "2018-02-04T21:29:14Z"
+slug: "we-need-better-standards"
+layout: "post.njk"
+categories: []
+excerpt: "What would the world be like without standards? We take for granted that all of our electrical appliances fit into the same plug sockets, not giving it a second thought. We assume that that tires purchased from any manufacturer will fit our cars, given the correct wheel size and width. Who would even doubt that a lightbulb will screw into its socket no matter where it was bought from or who fitted the light socket. Even the fact that an email can be sent using an Apple iPhone, from a Yahoo email service only to be received by a computer on the other side of the world running compatible email software is pretty amazing when you think about it. In fact, anyone can create their own email service by just registering their own domain and having a computer that is always switched on with an Internet connection. Whether it be the width of railway tracks or the audio encoding on a CD, interoperable standards were key to our way of life in much of the 20th and 21st century. TCP/IP and HTTP famously made the World Wide Web possible, while other Internet standards such as IRC, NNTP and FTP gave us realtime chat, debates and discussions and two-way files-transfers."
+permalink: "/2018/02/04/we-need-better-standards/"
+---
+
+What would the world be like without standards? We take for granted that all of our electrical appliances fit into the same plug sockets, not giving it a second thought. We assume that that tires purchased from any manufacturer will fit our cars, given the correct wheel size and width. Who would even doubt that a lightbulb will screw into its socket no matter where it was bought from or who fitted the light socket. Even the fact that an email can be sent using an Apple iPhone, from a Yahoo email service only to be received by a computer on the other side of the world running compatible email software is pretty amazing when you think about it. In fact, anyone can create their own email service by just registering their own domain and having a computer that is always switched on with an Internet connection. Whether it be the width of railway tracks or the audio encoding on a CD, interoperable standards were key to our way of life in much of the 20th and 21st century. TCP/IP and HTTP famously made the World Wide Web possible, while other Internet standards such as IRC, NNTP and FTP gave us realtime chat, debates and discussions and two-way files-transfers.
+
+What do these technologies have in common though, apart from their interoperability?
+
+They were invented in the distant past.
+
+If I take the apps and services I now use regularly that were invented within the past 10 years, I struggle to think of one that supports interoperability. SMS was replaced with Whatsapp, Facebook Messenger or iMessage. Two of which are owned by the same company, all of which are designed to keep users locked into vendor ecosystems. Slack, which raised billions of dollars in 2015 is essentially 1990's IRC with support for logins and cute emoji, and of course it's closed. Twitter, the debate forum of our time, tightly controls which 3rd party clients can access the service in any meaningful volume, and decides who and what is deemed appropriate content.
+
+This problem highlighted itself further recently when I realised that if I wanted to access a music streaming service on both my Apple Watch and my Amazon Echo, I'd have to pay for two separate streaming services. Apple do not allow users to play music from 3rd parties on the watch, only their streaming service Apple Music. Amazon does not support Apple Music however. How ridiculous is this? Can you imagine Sony releasing a CD player in 1980 that only played songs from artists on the Sony record label?
+
+My worry is that email is next. Google is pushing users towards its Gmail app, and withdraws features such as Push email from users who choose to use a different app. We are lucky that at the low-level, technical details such as how to implement HDR are still agreed as standards. But for how long? What we need is government regulation or oversight to ensure that technology companies compete on the merits of their products, rather than the vendor lock-in they manufacture. Interoperability didn't stifle innovation or harm profits in the previous century, and it won't in this one.
+

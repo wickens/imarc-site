@@ -1,0 +1,14 @@
+---
+title: "Is it time to stop assuming users have Flash installed?"
+date: "2014-05-04T20:06:34Z"
+slug: "is-it-time-to-stop-assuming-users-have-flash-installed"
+layout: "post.njk"
+categories: []
+excerpt: "Remember when the iPad first came out in 2010, and the first thing everybody said was it was doomed because it didn't have Flash? Well, it turns out most web site owners were able to accommodate this requirement, and these days even Android tablets and phones lack the once ubiquitous browser plugin. Yet, if you've ever browsed the web on an iOS device or an Android device (the chances are you have) you'll know that in the vast majority of cases, everything has continued to work as normal. Staples of the Internet from BBC News to YouTube keep on working - when it comes to video at least (if you want to run Farmville sans plugin then you're out of luck)."
+permalink: "/2014/05/04/is-it-time-to-stop-assuming-users-have-flash-installed/"
+---
+
+Remember when the iPad first came out in 2010, and the first thing everybody said was it was doomed because it didn't have Flash? Well, it turns out most web site owners were able to accommodate this requirement, and these days even Android tablets and phones lack the once ubiquitous browser plugin. Yet, if you've ever browsed the web on an iOS device or an Android device (the chances are you have) you'll know that in the vast majority of cases, everything has continued to work as normal. Staples of the Internet from BBC News to YouTube keep on working - when it comes to video at least (if you want to run Farmville sans plugin then you're out of luck).
+
+So when setting up my MacBook with a clean installation of OS X 10.9, I decided to see if it was possible to live without Flash. My guess was it would be, and why not? One less thing installed on your system means a reduced attack surface for malware, fewer processes running and hence better longer life, and in my experience, fewer browser hangs. I was wrong however - instead of using "feature detection" (as good web developers should) to determine whether the browser supports the Flash alternative to video, "HTML5 Video"- it seems the vast majority of sites employ user agent sniffing and will only show you the non-Flash version if you're on a known mobile device. I kept on being asked to install Flash, even though my iPad works just fine without it. User agent sniffing is the reason why sites designed for IE6 will ask you to "upgrade" if you visit in IE11 -I can forgive any web developer working back when IE6 came out in 2001 for following what was then a standard industry practice, but User Agent Sniffing is now generally [considered outdated](http://ejohn.org/blog/future-proofing-javascript-libraries/), so why are so many sites still doing it when it comes to playing video?
+
