@@ -11,12 +11,16 @@ module.exports = {
     },
 
     slug: data =>
-      slugify(data.title || data.page.fileSlug, {
+      data.slug || slugify(data.title || data.page.fileSlug, {
         lower: true,
         strict: true
       }),
 
     permalink: data => {
+      if (data.permalink) {
+        return data.permalink;
+      }
+
       // Make 100% sure `data.date` is a Date
       let d = (data.date instanceof Date) ? data.date : new Date(data.date);
       let year  = d.getFullYear();
