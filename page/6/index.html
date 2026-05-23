@@ -67,6 +67,38 @@ Coded and designed by Marc Wickens. Powered by 11ty.
 
 
 <article class="post-full">
+  <h2 class="post-title"><a href="/2021/04/18/apple-please-make-it-easier-to-report-scam-apps/">Apple, Please Make It Easier To Report Scam Apps</a></h2>
+  <p class="meta">
+    <time datetime="2021-04-18T06:04:55.000+00:00">18 Apr 2021</time>
+  </p>
+
+  <p><img src="/wp-content/uploads/2021/04/img_8009.jpg?w=1024" alt=""></p>
+<p>I was searching Apple’s App Store for something and came across a bunch of apps from a developer who offers a suite of apps that seem designed to confuse customers into paying for in-app purchases and subscriptions under false pretences.</p>
+<p>First there is a “Find My AirPods” type app which costs $4.99 a month and claims to be able to find Fitbit devices as well. Obviously this is a scam since this functionality is built into iOS and the APIs are not exposed to allow developers to even do this.</p>
+<p>Next there is a <em>Among Us</em> wallpaper app with a £2.99 in-app purchase - questionable as it seems to be using intellectual property owned by the creators of Among Us, <em>Innersloth</em>. This app is however nothing to do with them.</p>
+<p>Finally, there is an app named “Audacity” that uses the same icon as the popular open source audio editor <a href="https://www.audacityteam.org/">Audacity</a>. Only judging from the screenshots, it offers none of the functionality you would expect from its open source namesake and its privacy policy is hosted by Google Sites, not on <a href="http://audacityteam.org">audacityteam.org</a> as one might expect. Unsurprisingly, this fake Audacity app costs £4.49 a month.</p>
+<p>There is also a “count down to a day” app which on the face of it doesn’t seem like a scam, this is a useful piece of functionality and I use such an app myself. This countdown app costs a whopping £9.99 per month.</p>
+<p>When responding to the case of a man who lost $600, 000 worth of bitcoin by using a scam app, Apple <a href="https://www.macrumors.com/2021/03/30/bitcoin-scam-app-costs-iphone-user-life-savings/">claimed</a> that “<em>In the limited instances when criminals defraud our users, we take swift action against these actors as well as to prevent similar violations in the future</em>.”.</p>
+<p>I am surprised that this developer has managed to get apps that use the names <em>AirPods</em>, <em>Among</em> <em>Us</em>, and <em>Audacity</em> through Apple’s review process since they are all well known brand names. While not directly comparable, when developing an Android app for a well-known global bank that was to be published in the Google Play Store, I had to have someone from the bank contact the Google Play review team to confirm I was authorised to publish an app that uses the bank’s name and logo. While the stakes here aren’t as high as a fake banking app, I would expect Apple to do something similar for apps related to popular games and open source software, not to mention apps using Apple’s own trademarks.</p>
+<p>So how to report these seemingly dodgy apps to Apple? The only way I can find so far is to install an app first.</p>
+<p>Yes that’s right - it’s only possible to report a problem with an app by going to your App Store purchase history page after purchasing or downloading it. There is no “Report Suspicious App” button on the App Store listing itself.</p>
+<p>But who in their right mind would install software they suspect is dodgy? I understand that some people might inadvertently pay for scam apps and need a refund, but waiting until after the fact seems lazy of Apple.</p>
+<ul>
+<li>
+<p><img src="/wp-content/uploads/2021/04/app-store-scam-1-1.png?w=1024" alt=""></p>
+</li>
+<li>
+<p><img src="/wp-content/uploads/2021/04/app-store-scam-4.png?w=1024" alt=""></p>
+</li>
+<li>
+<p><img src="/wp-content/uploads/2021/04/app-store-scam-7.png?w=1024" alt=""></p>
+</li>
+</ul>
+
+</article>
+<hr>
+
+<article class="post-full">
   <h2 class="post-title"><a href="/2021/04/12/the-little-things-view-current-headphone-decibel-level-on-ios/">The Little Things: View Current Headphone Decibel Level on iOS</a></h2>
   <p class="meta">
     <time datetime="2021-04-12T19:58:09.000+00:00">12 Apr 2021</time>
@@ -239,26 +271,6 @@ Coded and designed by Marc Wickens. Powered by 11ty.
 <p>I’ve been a paid LastPass subscriber for over 5 years, and over that time it has become a critical part of both my professional and home workflows. The problem is the issues it had 5 years ago are still problems now. The product seemingly hasn’t moved forward much at all. LastPass has a fundamental misunderstanding of basic User Interface design principals. It looks awful and is difficult to use. Each app behaves differently on different platforms, and features are shoehorned in with little regard to the expected user workflow. How many times have I searched for a site, copied the username, only to have to <em>search for the site again</em> in order to copy the password. Errors are frequent, when generating a new password I always end up pasting it into a text editor temporarily in case LastPass fails to save it. It’s also incredibly slow, even on 2020 Intel i5 processor.</p>
 <p>I mention this because I recently helped a friend migrate from LastPass’s free offering to Apple’s iCloud Keychain. Compared so LastPass, iCloud is so much <em>nicer</em> to user. I understand LastPass are at a disadvantage in trying to make their product fit into the ecosystems of Apple and Google, but it made me think about switching. Now Apple have made an official way to access <a href="https://support.apple.com/en-gb/guide/icloud/mmfeee20145e/1.0/icloud/1.0">iCloud passwords on Windows</a>, I’m seriously thinking about switching. To their credit LastPass do make it easy to get a CSV export of all your data.</p>
 <p>What’s your experience with iCloud Keychain? Is it worth switching to from LastPass Premium?</p>
-
-</article>
-<hr>
-
-<article class="post-full">
-  <h2 class="post-title"><a href="/2021/02/26/chrome-uses-more-ram-by-design/">Chrome Uses More RAM by Design</a></h2>
-  <p class="meta">
-    <time datetime="2021-02-26T10:21:59.000+00:00">26 Feb 2021</time>
-  </p>
-
-  <p>Great <a href="https://birchtree.me/blog/yes-chrome-uses-more-ram-than-safari-but-how-much-more/">video by Matt</a> that shows that Chrome isn’t always <em>that</em> different to Safari in its memory consumption as others <a href="https://www.flotato.com/post/memory-chrome-safari-flotato">have found</a>. Most of my daily collaboration is done using Microsoft Teams, which is an Electron app - <a href="https://imarc.co.uk/2021/01/05/microsoft-is-replacing-the-outlook-app-with-a-web-app/">which is to say a web application bundled in its own Chromium wrapper so it can run like a desktop application</a>. I’ve often noticed Microsoft Teams takes up <em>huge</em> amounts of RAM, especially considering it’s not really doing anything that complicated most of the time. A while back I researched phenomena and found this article about <strong><a href="https://docs.microsoft.com/en-us/microsoftteams/teams-memory-usage-perf">how Chromium manages memory</a></strong> on Microsoft’s site:</p>
-<blockquote>
-<p>Chromium detects how much system memory is available and utilizes enough of that memory to optimize the rendering experience. When other apps or services require system memory, Chromium gives up memory to those processes. Chromium tunes Teams memory usage on an ongoing basis in order to optimize Teams performance without impacting anything else currently running.<br>
-…<br>
-When computers have more memory, Teams will use that memory. In systems where memory is scarce, Teams will use less.</p>
-</blockquote>
-<p>Put simply, Chrome is taking the idea that <em>‘empty RAM is wasted RAM’</em>, and running with it. The article goes on to link to the specific documentation from the Chromium project.</p>
-<p>This reminds me of when Windows Vista came out, complete with a <a href="/wp-content/uploads/2021/02/windows-vista-sidebar.jpg">sidebar full of widgets</a>. One of the default widgets showed CPU and RAM usage. At the time I was working in my local computer retailer, and remember customers being shocked that even with no applications running, Windows Vista was often using 40% of the available RAM, even on higher spec’d machines. Of course Windows was doing a smart thing by pre-loading applications likely to be used into memory so they could be launched faster, and so it was nothing to worry about.</p>
-<p>Chrome’s philosophy has long been that <em>it is an operating system for the web</em> - it even has its own task manager. So it makes sense from that perspective to grab as much memory as possible, and use it to speed things up for users. For users who spend most of their day inside Chrome, it’s probably doing them a favour. The problem is that these days we often end up running multiple instances of Chrome or Chromium derived apps like Slack or Teams competing alongside each other for system resources.</p>
-<p>As Matt shows, the difference between Safari isn’t always that much, but the important thing to remember is that Chrome’s memory usage will depend on how much overall memory your system has <em>available</em>.</p>
 
 </article>
 <hr>

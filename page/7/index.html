@@ -67,6 +67,26 @@ Coded and designed by Marc Wickens. Powered by 11ty.
 
 
 <article class="post-full">
+  <h2 class="post-title"><a href="/2021/02/26/chrome-uses-more-ram-by-design/">Chrome Uses More RAM by Design</a></h2>
+  <p class="meta">
+    <time datetime="2021-02-26T10:21:59.000+00:00">26 Feb 2021</time>
+  </p>
+
+  <p>Great <a href="https://birchtree.me/blog/yes-chrome-uses-more-ram-than-safari-but-how-much-more/">video by Matt</a> that shows that Chrome isn’t always <em>that</em> different to Safari in its memory consumption as others <a href="https://www.flotato.com/post/memory-chrome-safari-flotato">have found</a>. Most of my daily collaboration is done using Microsoft Teams, which is an Electron app - <a href="https://imarc.co.uk/2021/01/05/microsoft-is-replacing-the-outlook-app-with-a-web-app/">which is to say a web application bundled in its own Chromium wrapper so it can run like a desktop application</a>. I’ve often noticed Microsoft Teams takes up <em>huge</em> amounts of RAM, especially considering it’s not really doing anything that complicated most of the time. A while back I researched phenomena and found this article about <strong><a href="https://docs.microsoft.com/en-us/microsoftteams/teams-memory-usage-perf">how Chromium manages memory</a></strong> on Microsoft’s site:</p>
+<blockquote>
+<p>Chromium detects how much system memory is available and utilizes enough of that memory to optimize the rendering experience. When other apps or services require system memory, Chromium gives up memory to those processes. Chromium tunes Teams memory usage on an ongoing basis in order to optimize Teams performance without impacting anything else currently running.<br>
+…<br>
+When computers have more memory, Teams will use that memory. In systems where memory is scarce, Teams will use less.</p>
+</blockquote>
+<p>Put simply, Chrome is taking the idea that <em>‘empty RAM is wasted RAM’</em>, and running with it. The article goes on to link to the specific documentation from the Chromium project.</p>
+<p>This reminds me of when Windows Vista came out, complete with a <a href="/wp-content/uploads/2021/02/windows-vista-sidebar.jpg">sidebar full of widgets</a>. One of the default widgets showed CPU and RAM usage. At the time I was working in my local computer retailer, and remember customers being shocked that even with no applications running, Windows Vista was often using 40% of the available RAM, even on higher spec’d machines. Of course Windows was doing a smart thing by pre-loading applications likely to be used into memory so they could be launched faster, and so it was nothing to worry about.</p>
+<p>Chrome’s philosophy has long been that <em>it is an operating system for the web</em> - it even has its own task manager. So it makes sense from that perspective to grab as much memory as possible, and use it to speed things up for users. For users who spend most of their day inside Chrome, it’s probably doing them a favour. The problem is that these days we often end up running multiple instances of Chrome or Chromium derived apps like Slack or Teams competing alongside each other for system resources.</p>
+<p>As Matt shows, the difference between Safari isn’t always that much, but the important thing to remember is that Chrome’s memory usage will depend on how much overall memory your system has <em>available</em>.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
   <h2 class="post-title"><a href="/2021/02/24/m1-mac-users-report-excessive-ssd-usage/">‘M1 Mac Users Report Excessive SSD Usage’</a></h2>
   <p class="meta">
     <time datetime="2021-02-24T07:52:56.000+00:00">24 Feb 2021</time>
@@ -207,31 +227,6 @@ Coded and designed by Marc Wickens. Powered by 11ty.
 </blockquote>
 <p>Put simply, Donald Trump would have been banned from Geocities too. Of course AWS is a far cry from Geocities, and in 2021 the online world is far more entangled with the offline that it was in the year 2000. However, I still think important to understand that web hosts not wanting to host certain content is nothing new.</p>
 <p>This is where the concept of Net Neutrality is important. While I think it’s fine for AWS to not want to <em>host</em> certain content, it would be a sad day for the Internet if ISPs could choose not to <em>carry traffic</em> for sites they find objectionable.</p>
-
-</article>
-<hr>
-
-<article class="post-full">
-  <h2 class="post-title"><a href="/2021/01/09/what-is-a-console/">What Is a Console?</a></h2>
-  <p class="meta">
-    <time datetime="2021-01-09T18:22:40.000+00:00">9 Jan 2021</time>
-  </p>
-
-  <p><img src="/wp-content/uploads/2021/01/isnotacomputer.jpg?w=800" alt=""></p>
-<p>Is a console…?</p>
-<p>I was recently listening to John Gruber and Rene Ritchie speaking on an episode of <a href="https://daringfireball.net/thetalkshow/2020/12/24/ep-304">The Talk Show</a>. They both make the argument that by calling an iOS device a <em>console</em>, it somehow justifies Apple’s position that the only way to load software onto it should be via their App Store. <a href="https://overcast.fm/+B7NDhvVMk/1:57:44">Have a listen</a>. While I have a huge amount of respect for both John and Rene, I think this is a poor take. John even admitted that this was probably his most controversial take of 2020, and I’m not surprised.</p>
-<p>Let’s have a look at the definition of the word “console” from the Oxford American English Dictionary, courtesy of Apple’s own dictionary app:</p>
-<p><img src="/wp-content/uploads/2021/01/define_console.png?w=541" alt=""></p>
-<p>As you can see, none of these definitions bring to mind a device that anyone could sincerely claim encapsulates an iPad or an iPhone. The definition of a <em>console</em> is not <em>“A locked-down computing device.”</em></p>
-<p>Definitions aside, there is a point to be made that many people seem to find it acceptable that games consoles are closed ecosystems but have a problem when it comes to smartphones and tablets.</p>
-<p>I believe this disparity is for two reasons:</p>
-<ol>
-<li>Games console hardware is subsidised by charging more for software. There’s a reason games consoles are more popular than gaming PCs, yet PC games have traditionally been sold at cheaper prices than their console counterparts. Many more people can afford to buy the latest Xbox because it is likely sold at cost, or even as a loss-lead. The manufacturer will hope to make up for lost profit by selling games later on. (See <a href="https://en.wikipedia.org/wiki/Razor_and_blades_model">razor-blade economics</a>.) While this method of selling a product is frustrating in the case of printers and ink cartridges, it turns out that many people don’t mind when they get a high performance gaming computer as part of the bargain. My bet is that because buying games is something you opt into, rather than being forced into, you don’t feel so cheated by having to pay a premium for the software. (Unlike razors and ink cartridges, you never feel like you need to buy a new game to keep your games console working.) Apple on the other hand makes enormous amounts of margin on each device sale <em>and</em> takes a cut of all software sold through the store. It may be legal and it may be in the spirit of capitalism, but that doesn’t mean it won’t rub customers the wrong way.</li>
-<li>Apple has long marketed iOS devices as being more than mere handsets or consoles. As long ago as 2016, Apple’s then marketing chief Phil Schiller <a href="https://9to5mac.com/2016/03/22/phil-schiller-old-windows-pcs/">noted</a> that there was a huge market for the iPad in people switching from old Windows PCs. In a 2017 iPad advertisement they used the slogan “What is a computer?”. Inferring that the iPad, while not looking like a traditional laptop, is in fact a powerful computer. In one scene a <a href="https://youtu.be/pI-iJcC9JUc?t=49">boy is sat outside on his iPad when his mum asks</a> <em>What are you doing on your computer?</em> The boy replies by asking <em>What’s a computer?</em> He does not say <em>Actually Mum it’s a console, not a computer</em>. Even The Verge <a href="https://www.theverge.com/2018/11/19/18103515/ipad-pro-replace-your-computer-ad-apple">wrote the headline</a> in 2018 <em>Apple really wants you to think the iPad Pro is a computer</em>. More recent commercials have used wordplay such as <em>Your next computer is not a computer</em>. When introducing the iPhone in 2007, Steve Jobs noted that it ran OS X with “desktop class” software and that Safari could show the full web, not the “baby Internet”. Contrary to what Ritchie <a href="https://overcast.fm/+B7NDhvVMk/1:58:18">said</a> on The Talk Show, Steve Jobs absolutely did not introduce the iPhone as a console. (A search of <a href="https://singjupost.com/steve-jobs-iphone-2007-presentation-full-transcript/?singlepage=1">2007 iPhone keynote transcript</a> for the word returns zero results*.) Over the years, Apple has set the expectation that iOS devices should be on par with real computers, and for many, that means freedom to install software from any source you want.</li>
-</ol>
-<p>While I’m not advocating Apple open up their devices to software from anywhere, I do think it’s right that the pros and cons are properly framed. There are benefits just as there are drawbacks. My view is that for the iPad in particular to evolve, it must be a device in which you can not only <em>play</em> the latest chart topping game, but also <em>make</em> the next one.</p>
-<p><em>* Update 11/01/2021: My mistake. <a href="https://youtu.be/VQKMoT-6XSg?t=4570">Steve Jobs did actually mention</a> games consoles during the 2007 iPhone keynote alongside digital cameras, MP3 Players and PCs. He talks about their comparative worldwide unit sales. What’s interesting is that all of the product categories in the chart he shows (below) have in 2021 either been entirely replaced, or replaced in-part by iOS devices, except arguably the PC. Regardless, it’s clear <strong>he is in no way calling the iPhone a console.</strong></em></p>
-<p><img src="/wp-content/uploads/2021/01/iphone_event.png?w=1024" alt=""></p>
 
 </article>
 <hr>
