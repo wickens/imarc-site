@@ -30,6 +30,4 @@ It should be possible to prompt my phone to  make an app that shows me a map of 
 [^2]: Worldometer, world population estimate based on United Nations data: https://www.worldometers.info/world-population/
 [^3]: Counterpoint Research (Feb. 10, 2026): https://counterpointresearch.com/en/insights/Active-Installed-Base-8-Smartphone-OEMs-Top-200-mn-Nearly-1-in-4-is-an-iPhone
 
-[^4]:Unbeknown to me I was actually building "agentic" AI in 2023. I wrote an app that used an LLM to control Selenium and interact with online chatbots in a web browser, testing whether they were working correctly. It would automatically stop when it determined that the chatbot being tested had satisfied the objective it had been given. 
-
-#folder
+[^4]:Unbeknown to me I was actually building "agentic" AI in 2023. I wrote an app that used an LLM to control Selenium and interact with online chatbots in a web browser, testing whether they were working correctly. It would automatically stop when it determined that the chatbot being tested had satisfied the objective it had been given.
