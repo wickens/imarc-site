@@ -8,7 +8,7 @@ categories: []
 permalink: "/2026/08/05/nxtrain-major-update/"
 ---
 
-nxTrain 1.7 is now available in the App Store (UK only). It’s an app I built to make commuting by train more pleasant. It will show you your next train, the platform, and time at a glance - on your phone’s lock screen, Home Screen, or Apple Watch face. Or you can just open the app. It knows what time you leave and return home, so it shows the right direction automatically.
+[nxTrain 1.7 is now available in the App Store](https://apps.apple.com/gb/app/nxtrain-train-times-widgets/id6760363268) (UK only). It’s an app I built to make commuting by train more pleasant. It will show you your next train, the platform, and time at a glance - on your phone’s lock screen, Home Screen, or Apple Watch face. Or you can just open the app. It knows what time you leave and return home, so it shows the right direction automatically.
 
 In short: In 1.7 it looks much better now. The previous version was functional, this version not only looks like something you’d actually want to have on your watch face or Home Screen, it’s also much more useful as a result.
 
