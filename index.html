@@ -69,6 +69,29 @@ Coded and designed by Marc Wickens. Powered by 11ty.
 
 
 <article class="post-full">
+  <h2 class="post-title"><a href="/2026/08/05/nxtrain-major-update/">nxTrain: Major Update</a></h2>
+  <p class="meta">
+    <time datetime="2026-08-05T07:00:00.000+00:00">5 Aug 2026</time>
+  </p>
+
+  <p>nxTrain 1.7 is now available in the App Store (UK only). It’s an app I built to make commuting by train more pleasant. It will show you your next train, the platform, and time at a glance - on your phone’s lock screen, Home Screen, or Apple Watch face. Or you can just open the app. It knows what time you leave and return home, so it shows the right direction automatically.</p>
+<p>In short: In 1.7 it looks much better now. The previous version was functional, this version not only looks like something you’d actually want to have on your watch face or Home Screen, it’s also much more useful as a result.</p>
+<p>However, important things first. I have a new icon, and I’m probably most excited about this. Especially its dark mode rendering. Yes, the train’s headlights come on at night.</p>
+<p><img src="/wp-content/uploads/2026/08/icon.gif" alt=""></p>
+<h2><strong>Apple Watch App</strong></h2>
+<p><img src="/wp-content/uploads/2026/08/wednesday-05-aug-2026-06-31-17.png" alt=""></p>
+<p>In the watch app, the complications now visualise how long there is to go until the next train arrives. When building this the question arose, but when did your start waiting? When should the countdown ‘start’ from? Initially I assume a 60 minute countdown so it fit naturally with the circular complication and visualising the number of minutes at a glance. That didn’t feel quite right though, so I changed it start from when the previous train left. If there are multiple trains scheduled then I take an average wait time between trains. So it’s a visualisation of how long you would have had to wait at most. I’m not 100% confident on this, so keen to hear feedback on how useful people find it. For me, I just wanted something that looked a bit nicer if I’m going to have it on my watch face all day. Complication designs for ‘off days’ (when no commute is scheduled) are also improved.</p>
+<h2><strong>iPhone App</strong></h2>
+<p><img src="/wp-content/uploads/2026/08/wednesday-05-aug-2026-06-26-48.png" alt=""></p>
+<p>iPhone widgets get a major improve, again with some design applied to them. I should add there is a known bug where the wrong time can be shown if your next train to arrive at your destination isn’t the earliest departure time – I found this about 5 days after I’d submitted to the App Store. Fix incoming.</p>
+<p>The app itself has been updated too. The main screen that lists your different commutes now makes it clearer they are different commutes using colours (these colours are also used in widgets and watch complications). This was a result of feedback that the old screen could be confused for a list of journeys within the same commute, especially at the end of a long day when you’re tired just wanted to get home! In the next update you’ll be able to give each configured commute a colour – for now they are set automatically.</p>
+<p>Along with all this there are many general reliability updates.</p>
+<p>Also the big news (I’ve buried the lede) - I’ve set the app to be FREE until the end of August. In return, please do me a favour and add a review on the App Store if you find it useful.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
   <h2 class="post-title"><a href="/2026/06/07/what-new-ai-will-we-see-at-wwdc-27/">What new AI will we see at WWDC 27?</a></h2>
   <p class="meta">
     <time datetime="2026-06-07T12:00:00.000+00:00">7 Jun 2026</time>
@@ -247,25 +270,6 @@ Over the past few months, I’ve noticed a number of Amazon sellers using blatan
 <p>The iPad has received the most substantial update, with full windowing support now available. I have no complaints about this, and can’t wait to try it out. I was particularly pleased to see that it will work even on the iPad mini and the 2020 iPad Air. While many people will now finally be able to harness the device’s powerful hardware, I still think the iPad’s biggest drawback is that it can only run software from the App Store. There are so many great apps like Visual Studio Code and Chrome that are not there for commercial or Apple’s policy reasons.</p>
 <p>The fact that windowing is not available on the iPhone is also curious. When Apple split iOS and iPadOS into separate brands a few years ago, the reaction was mostly positive; finally, the iPad was getting the attention it deserved. But thinking about it now, I have to wonder if the reason was to reduce any expectation that features added to the iPad would also appear on the iPhone. At this point, with Apple Silicon, Apple is essentially selling its customers the same computer three or four times with only minor differences. They have different-sized screens, some have a keyboard attached and others rely on a touchscreen. Some have a better camera, and built in cellular. The core of the devices, even the operating system, near enough identical. if you own a recent iPhone, iPad,  Mac or Apple Watch – you’ve bought the same computer multiple times. The iPhone’s Apple A18 chip has a similar level of performance to the Mac’s M1 chip, which is still a ridiulasly fast chip. There is no reason why an iPhone could not become a laptop or full desktop simply by plugging it into the a keyboard and monitor. In decades past, mobile phones lagged far behind desktop PCs in terms of performance, but today most people could use their phone as a desktop PC or laptop: the chip is powerful enough and there is ample memory. What’s holding this back is not the “free market” or a lack of demand, but, I suspect, Apple’s preference to continue selling us multiple devices. In this respect, the distinction between device classes is more a marketing one than a technical one.</p>
 <p>Overall, I think the ’26 releases should be exciting, even if I wish Apple would embrace change product category perspective a bit more. Would today’s Apple of 2025 have released the iPhone in 2007 when the iPod was still king? I’m not so sure.</p>
-
-</article>
-<hr>
-
-<article class="post-full">
-  <h2 class="post-title"><a href="/2025/07/25/another-sharepoint-security-flaw/">Another SharePoint Security Flaw</a></h2>
-  <p class="meta">
-    <time datetime="2025-07-25T10:26:46.000+00:00">25 Jul 2025</time>
-  </p>
-
-  <p><a href="https://www.techradar.com/pro/security/microsoft-sharepoint-attack-now-sees-victim-count-rises-to-400-organizations-including-us-nuclear-agency">Ellen Jennings-Trace writing for Tech Radar</a>:</p>
-<blockquote>
-<p>New estimates regarding the recently-exploited Microsoft SharePoint vulnerabilities now evaluate that as many as 400 organizations may have been targeted.</p>
-<p>The figure is a sharp increase from the original count of around 100, with Microsoft pointing the finger at Chinese threat actors for the hacks, namely Linen Typhoon, Violet Typhoon, and Storm-2603.</p>
-<p>The victims are primarily US based, and amongst these are some high value targets, including the National Nuclear Security Administration - the US agency responsible for maintaining and designing nuclear weapons, Bloomberg reports.</p>
-</blockquote>
-<p>Microsoft <a href="https://www.microsoft.com/en-us/security/blog/2025/07/22/disrupting-active-exploitation-of-on-premises-sharepoint-vulnerabilities/">makes it clear</a> this is an issue with on-prem instances of SharePoint, not the cloud based Office 365 solution.</p>
-<p>One might question why an organisation would choose to run these services on premises in 2025. In my experience, banks and other security-focused institutions often believe their own teams can outperform Microsoft Azure, Google Cloud or AWS. Yet <a href="https://msrc.microsoft.com/blog/2021/03/guidance-for-responders-investigating-and-remediating-on-premises-exchange-server-vulnerabilities/?utm_source=chatgpt.com">time and time again</a>, we see on-prem is actually less secure than the cloud. Unless your service is complelty air-locked from the Internet, I see very few reasons to be relying on on-premisis software, especially Microsoft products, in 2025.</p>
-<p>Hopefully, running on-premises commercial services like this in the name of security will soon be consigned to the trash can of computing history, along with other <a href="https://www.ncsc.gov.uk/blog-post/problems-forcing-regular-password-expiry">security theatre</a> measures often imposed by IT administrators, such as <a href="https://learn.microsoft.com/en-us/microsoft-365/admin/manage/set-password-expiration-policy?view=o365-worldwide&amp;">enforced password expiration</a>.</p>
 
 </article>
 <hr>
