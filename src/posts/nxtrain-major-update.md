@@ -16,6 +16,7 @@ However, important things first. I have a new icon, and I’m probably most exci
 
 {% compare "Light", "Dark" %}
 ![](/wp-content/uploads/2026/08/nxtrain-light.png)![](/wp-content/uploads/2026/08/nxtrain-dark.png)
+{% endcompare %}
 
 <!-- ![](/wp-content/uploads/2026/08/icon.gif) -->
 
