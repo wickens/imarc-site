@@ -14,9 +14,11 @@ In short: In 1.7 it looks much better now. The previous version was functional, 
 
 However, important things first. I have a new icon, and I’m probably most excited about this. Especially its dark mode rendering. Yes, the train’s headlights come on at night.
 
+{% compare "Light", "Dark" %}
+![](/wp-content/uploads/2026/08/nxtrain-light.png)![](/wp-content/uploads/2026/08/nxtrain-dark.png)
+{% endcompare %}
 
 
-<!-- ![](/wp-content/uploads/2026/08/icon.gif) -->
 
 ## **Apple Watch App**
 
