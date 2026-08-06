@@ -1,5 +1,5 @@
 ---
-title: "nxTrain: Major Update"
+title: "nxTrain: New Look"
 date: "2026-08-05T07:00:00Z"
 slug: "nxtrain-major-update"
 layout: "post.njk"
