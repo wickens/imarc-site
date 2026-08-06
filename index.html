@@ -69,7 +69,7 @@ Coded and designed by Marc Wickens. Powered by 11ty.
 
 
 <article class="post-full">
-  <h2 class="post-title"><a href="/2026/08/05/nxtrain-major-update/">nxTrain: Major Update</a></h2>
+  <h2 class="post-title"><a href="/2026/08/05/nxtrain-major-update/">nxTrain: New Look</a></h2>
   <p class="meta">
     <time datetime="2026-08-05T07:00:00.000+00:00">5 Aug 2026</time>
   </p>
@@ -77,7 +77,10 @@ Coded and designed by Marc Wickens. Powered by 11ty.
   <p><a href="https://apps.apple.com/gb/app/nxtrain-train-times-widgets/id6760363268">nxTrain 1.7 is now available in the App Store</a> (UK only). It’s an app I built to make commuting by train more pleasant. It will show you your next train, the platform, and time at a glance - on your phone’s lock screen, Home Screen, or Apple Watch face. Or you can just open the app. It knows what time you leave and return home, so it shows the right direction automatically.</p>
 <p>In short: In 1.7 it looks much better now. The previous version was functional, this version not only looks like something you’d actually want to have on your watch face or Home Screen, it’s also much more useful as a result.</p>
 <p>However, important things first. I have a new icon, and I’m probably most excited about this. Especially its dark mode rendering. Yes, the train’s headlights come on at night.</p>
-<p><img src="/wp-content/uploads/2026/08/icon.gif" alt=""></p>
+<div class="compare" data-before-label="Light" data-after-label="Dark">
+  <img src="/wp-content/uploads/2026/08/nxtrain-light.png" alt="Light" data-compare="before">
+  <img src="/wp-content/uploads/2026/08/nxtrain-dark.png" alt="Dark" data-compare="after">
+</div>
 <h2><strong>Apple Watch App</strong></h2>
 <p><img src="/wp-content/uploads/2026/08/wednesday-05-aug-2026-06-31-17.png" alt=""></p>
 <p>In the watch app, the complications now visualise how long there is to go until the next train arrives. When building this the question arose, but when did your start waiting? When should the countdown ‘start’ from? Initially I assume a 60 minute countdown so it fit naturally with the circular complication and visualising the number of minutes at a glance. That didn’t feel quite right though, so I changed it start from when the previous train left. If there are multiple trains scheduled then I take an average wait time between trains. So it’s a visualisation of how long you would have had to wait at most. I’m not 100% confident on this, so keen to hear feedback on how useful people find it. For me, I just wanted something that looked a bit nicer if I’m going to have it on my watch face all day. Complication designs for ‘off days’ (when no commute is scheduled) are also improved. If, for some reason iOS (or watchOS) hasn’t updated the widget for a while, it will show a tilde (~) next to the time, to indicate the data is not fresh. You can tap to open the app to get the latest data. This is more likely to occur if you use low power mode on your phone or watch.</p>
