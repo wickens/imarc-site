@@ -1,13 +1,12 @@
 ---
 title: "Google was my friend"
-date: "2026-09-13T12:00:00Z"
+date: "2026-09-13T14:45:00Z"
 slug: "google-was-my-friend"
 layout: "post.njk"
 excerpt: ""
 categories: []
 permalink: "/2026/09/13/google-was-my-friend/"
 ---
-
 
 ![](/wp-content/uploads/2026/09/google-account-locked.png)
 
