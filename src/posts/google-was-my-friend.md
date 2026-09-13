@@ -24,8 +24,6 @@ I was almost certain Google were not paying human beings to do these reviews, an
 
 I decided to submit another appeal. This time, rather than a few lines, I wrote a more detailed 174-word appeal and again made sure not to use any AI assistance at all. I provided my phone number, my website, and told them they could do a Whois on my domain and see it’s been active for 24 years. I pointed out that the Google account in question was 18 years old. Why only now are they suggesting it was created by a bot? Within a few hours, this appeal was again denied.
 
-![](/wp-content/uploads/2026/09/img-0102.jpeg)
-
 Google explicitly allows multiple accounts. I have never (knowingly) violated any Google policies. The bottom line is Google can’t tell if you are human or not. A slight silver lining is that I can export my data using Google Takeout, but honestly, the fact that Google are so poor at this would make me think twice about relying on Google for anything serious.
 
 So it turns out Google never was my friend, and probably isn’t yours either.
