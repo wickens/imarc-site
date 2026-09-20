@@ -1,5 +1,5 @@
 ---
-title: "Google was my friend"
+title: "Google is no longer my friend"
 date: "2026-09-13T14:45:00Z"
 slug: "google-was-my-friend"
 layout: "post.njk"
