@@ -1032,6 +1032,14 @@
   },
 
   {
+    "title":   "Three books that changed the way I think",
+    "url":     "/2019/07/14/three-books-that-changed-the-way-i-think/",
+    "date":    "2019-07-14T21:08:24.000+00:00",
+    "excerpt": "I like to read, and usually have both a non-fiction and fiction book on the go at the same time. What I love about non-fiction books in particular is discovering new things that might just say with you for the rest for",
+    "tags":    ["Books","Reviews"]
+  },
+
+  {
     "title":   "Four years of ambient computing",
     "url":     "/2019/07/07/four-years-of-ambient-computing/",
     "date":    "2019-07-07T08:35:05.000+00:00",
@@ -1128,11 +1136,27 @@
   },
 
   {
+    "title":   "2016 in Review",
+    "url":     "/2016/12/29/2016-in-review/",
+    "date":    "2016-12-29T17:56:27.000+00:00",
+    "excerpt": "A lot of people are cynical about the whole ‘year in review’ thing. After all, what is a year but just another way we divide up time, like hours, minutes and months?",
+    "tags":    []
+  },
+
+  {
     "title":   "Apple just gave me a new smartwatch, for free",
     "url":     "/2016/09/19/apple-just-gave-me-a-new-smartwatch-for-free/",
     "date":    "2016-09-19T20:33:31.000+00:00",
     "excerpt": "Well, not quite, but the latest update from Apple might as well be a new watch. The new operating system, watchOS 3 is one of the best operating system updates I’ve ever seen in the 18 years or so since I’ve been",
     "tags":    ["iOS","watch","watchOS"]
+  },
+
+  {
+    "title":   "First Day in San Francisco",
+    "url":     "/2016/09/03/san-francisco-day-1/",
+    "date":    "2016-09-03T17:38:14.000+00:00",
+    "excerpt": "On my first day In San Francisco I decided to visit as much as I could on foot, given my jet lagged body state and the uncompromising value of the pound to the dollar making taxis (even Uber) very expensive. I started",
+    "tags":    []
   },
 
   {
@@ -1144,11 +1168,27 @@
   },
 
   {
+    "title":   "On the plus side",
+    "url":     "/2016/08/26/on-the-plus-side/",
+    "date":    "2016-08-26T00:44:54.000+00:00",
+    "excerpt": "Over the past year or so you may like me, have found that it has been easy to fall into the trap of thinking that we’re all doomed. For me in particular; on the eve of becoming 30, I went from being someone who was in a",
+    "tags":    []
+  },
+
+  {
     "title":   "7 Years of iPhone",
     "url":     "/2016/07/06/7-years-of-iphone/",
     "date":    "2016-07-06T20:30:13.000+00:00",
     "excerpt": "I realised this week that it has been seven years since I got my first iPhone, a 3GS model, back in 2009. I happened to be in the same place, Newport, Isle of Wight, which made me reminisce about how much has changed in",
     "tags":    ["iphone"]
+  },
+
+  {
+    "title":   "Manic Street Preachers – Swansea Liberty Stadium",
+    "url":     "/2016/07/04/manic-street-preachers-swansea-liberty-stadium/",
+    "date":    "2016-07-04T19:48:42.000+00:00",
+    "excerpt": "I’ve been a fan of the Manic Street Preachers ever since I heard their first number one hit “If you Tolerate This Your Children Will Be Next” back in August 1998, aged 13. I subsequently received the album on which…",
+    "tags":    []
   },
 
   {
@@ -1189,6 +1229,14 @@
     "date":    "2016-02-07T19:37:45.000+00:00",
     "excerpt": "So it seems iPad sales have fallen for yet another quarter. As someone whose iPad is their favourite computer; on the one hand this surprises me – why wouldn’t everyone and anyone want one of these fabulously useful and",
     "tags":    ["iPad","iphone","watch"]
+  },
+
+  {
+    "title":   "A technologist’s take on the A329M changes",
+    "url":     "/2016/02/06/a-technologists-take-on-the-a329m-changes/",
+    "date":    "2016-02-06T11:54:16.000+00:00",
+    "excerpt": "Recent changes to the A329M have been completed, to much disapproval from local residents, including myself. At peak times, what was a 15 minute journey from Winnersh to neighbouring Bracknell can take over twice as",
+    "tags":    ["a329m"]
   },
 
   {
@@ -1645,6 +1693,14 @@
     "date":    "2011-03-26T17:01:01.000+00:00",
     "excerpt": "I have recently been developing with PhoneGap, the cross platform development kit for mobile devices (essentially a browser window that lets you run HTML 5 web sites as an App)",
     "tags":    ["android","blackberry","iphone","mobile"]
+  },
+
+  {
+    "title":   "My favourite music of 2010",
+    "url":     "/2011/01/23/my-favourite-music-of-2010/",
+    "date":    "2011-01-23T13:17:00.000+00:00",
+    "excerpt": "Yes I know its nearly February but here’s what grabbed my attention the most last year (in no particular order).",
+    "tags":    ["music","Reviews"]
   },
 
   {

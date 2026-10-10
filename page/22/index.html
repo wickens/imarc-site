@@ -67,6 +67,116 @@ Coded and designed by Marc Wickens. Powered by 11ty.
 
 
 <article class="post-full">
+  <h2 class="post-title"><a href="/2011/04/29/remember-when-software-came-in-a-box/">Remember when software came in a box?</a></h2>
+  <p class="meta">
+    <time datetime="2011-04-29T18:44:36.000+00:00">29 Apr 2011</time>
+  </p>
+
+  <p>Console games still do of course, but how long for?</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2011/03/26/phonegap-the-javascript-files-are-different/">PhoneGap: The JavaScript files are different!</a></h2>
+  <p class="meta">
+    <time datetime="2011-03-26T17:01:01.000+00:00">26 Mar 2011</time>
+  </p>
+
+  <p>I have recently been developing with <strong><a href="http://www.phonegap.com/">PhoneGap</a></strong>, the cross platform development kit for mobile devices (essentially a browser window that lets you run HTML 5 web sites as an App)</p>
+<p>I started off developing for iPhone and Android, using the packages provided by their download to get up and running. Great stuff. You write an app using HTML 5, JavaScript and CSS3 and then deploy to each device. The PhoneGap package contains a directory for each platform, with a number of files – the important one being <strong>phonegap.0.9.4.js</strong>.</p>
+<p>So I developed the app on my Windows PC, copying the files across to my trusty Mac to deploy to iPhone. There are some subtle differences in the way Safari and Chrome render, so it was important to test across both devices. I kept coming across intermittent problems on the iPhone however, with the <em>deviceready</em> event not firing. What was going on?</p>
+<h3>phonegap.0.9.4.js</h3>
+<p>Due to the negligible amount of documentation available on PhoneGap’s site (Hey – I am used to having MSDN at my disposal!) I found myself digging through the sourcecode to work out how on earth I could do things. I noticed a lot of Android specific code, but no iPhone code. How odd. I then checked in my BlackBerry project folder and noticed the file was much bigger.</p>
+<p>Yes, folks – the various <em>phonegap.0.9.4.js</em> files – despite having the same filename are totally different for each OS implementation. Not once in the many hours spent reading PhoneGap’s web site did I see anything that told me that. Turned out my iPhone problems were because I was deploying an Android version of PhoneGap to the iPhone. Having the same filename is confusing and they seem destined to get used in place of one and other. I suspect many others will have tried to deploy the wrong file to the wrong device.</p>
+<p>I would really like to see the folks at PhoneGap have a more sensible naming convention. e.g.  phonegap_android.0.9.4.js? It would be apparent straight away the it was specific to that OS, and avoid what amounts to <a href="http://en.wikipedia.org/wiki/DLL_hell">DLL hell</a> issues for mobile apps.</p>
+<p>Of course a file is a file, and I can rename it to whatever I like (and probably will) – but it’s nice not to have to (<a href="https://github.com/jquery/jquery-mobile/issues/593">who renames jQuery?</a>) and would certainly make learning the platform easier.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2011/01/23/my-favourite-music-of-2010/">My favourite music of 2010</a></h2>
+  <p class="meta">
+    <time datetime="2011-01-23T13:17:00.000+00:00">23 Jan 2011</time>
+  </p>
+
+  <p>Yes I know its nearly February but here’s what grabbed my attention the most last year (in no particular order).</p>
+<h3>Arcade Fire – The Suburbs</h3>
+<p>The <a href="http://www.bbc.co.uk/6music/news/20101224_aotd_arcadefire.shtml" title="Listen to an interview">Arcade Fire’s third album</a> is one of those albums that sounds better as a whole that any single track. From the epic orchestral thumping of “Rococo” to the quiet introspection of “Wasted Hours” to the delightfully poppy “Sprawl II (Mountains Beyond Mountains)” this collection of songs deserves your full attention while listening. While it probably is slightly too long, I couldn’t pick a song to drop and I’m glad they didn’t. There really is no filler on this album, a rarity indeed. Original,  catchy, melancholic this if my favourite album of the past 5 years, let alone 2010. It just hooks me every time, it has its rockier moments, it’s quiet moments but they all feel like one. The hallmark of a great album is one where your favourite track changes regularly, for now my favourite track is ‘We Used to Wait’ (<a href="http://www.thewildernessdowntown.com/">checkout this amazing dynamic video</a>) but in the past it has been Rococo, Deep Blue, Ready To Start (in fact they’ve all been a favourite at times). Brilliant.</p>
+<h3>Manic Street Preachers – Postcards From A Young Man</h3>
+<p>The Manics return for their tenth album, a milestone in their career. Thankfully they are still on top form, and this album could be seen as a continuation of what was started with “Send Away The Tigers”. They sound unusually upbeat with tracks like “I Think I Found I” and The Wire is on top form with his lyrics in tracks like “A Billion Balconies Facing the Sun” and “Don’t Be Evil” – the latter seemingly taking a swipe at Google and internet blogging culture. They’ve said this is their last chance at “mass communication” and I have mixed feelings about this, some of their best songs were written when they were trying make popular music but wonder what they could achieve without that constraint. Favourite track? It’s difficult because they are all so good, but it would have to be the title track ‘Postcards from a Young Man’ or ‘Don’t Be Evil’.</p>
+<h3>James – The Morning After</h3>
+<p>When James got back together in 2007, many could be forgiven for thinking they might release a new ‘best of’ complication and do a tour (they did) to make some money and then go back to hibernation. Thankfully they stuck around, and we now have their third album since the reformation. A sequel to ‘The Night Before” the silky guitars from Larry and Soul’s energetic violin make this album melt away in your brain. My favourite song, “Tell Her I Said So”.</p>
+<h3>The Duke Spirit – Neptune</h3>
+<p><img src="/wp-content/uploads/lostinlogic/2011/01/my-favourite-music-of-2010-4.jpg" alt=""></p>
+<p>Technically released in 2008, however I came across it in 2010 which is why I am including it here. It’s been a long time since I’ve discovered a new band that write such interesting music with lyrics to match. This album spans multiple genres, from the poppy “My Sunken Treasure” to the all out rock energy of the title track “Neptune’s Call” to the blues of “This Ship Was Built To Last” every song on this album sounds fresh and the lyrics will make you laugh, or send a shiver down your spine. Looking forward to their next album out in 2011. My favourite track would have to be “Neptune’s Call”.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2011/01/16/audible-finally-release-iphone-app-in-the-uk/">Audible finally release iPhone app in the UK</a></h2>
+  <p class="meta">
+    <time datetime="2011-01-16T12:50:12.000+00:00">16 Jan 2011</time>
+  </p>
+
+  <p>Audible UK have released an <a href="http://itunes.apple.com/gb/app/audible/id379693831?mt=8" title="Link to iTunes store download link">app for the iPhone.</a> The best feature over the built in software is that it doesn’t rotate when you hold it sideways (I am certain this “feature” of the the iPhone exists solely for in-store demos, I find it very frustrating and wish it could be turned off).</p>
+<p>Other features include the ability to download books over the Internet (but strangely, not 3G which would have been more useful), add bookmarks with notes, customise the length of time the rewind button goes back, a button-less interface for when in the car, and a sleep timer. Overall the user experience is much more suited to audiobooks than the default iPhone interface and I highly recommend it.</p>
+<p>For those if you you haven’t discovered the joy of audiobooks, they are a great way to read while driving, doing household chores or just when your eyes feel too tired to read (I get that a lot since my job involves using a computer all day). If you like books then give them a try.</p>
+<p>Now if only there was some kind of Kindle like device that would play audiobooks, but keep your place in sync between the audiobook and the eBook.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2011/01/15/when-you-buy-software-how-long-should-it-reasonably-continue-to-work-for/">When you buy software, how long should it reasonably continue to work for?</a></h2>
+  <p class="meta">
+    <time datetime="2011-01-15T21:58:39.000+00:00">15 Jan 2011</time>
+  </p>
+
+  <p>Electronic Arts have decided to <a href="http://news.cnet.com/8301-13506_3-20027365-17.html">discontinue some of their earlier Xbox 360 games</a>, meaning players will no longer be able to play online. With the 360 <a href="http://technologizer.com/2011/01/14/2010-game-sales-microsoft/">still selling exceptionally well</a>, the fact that games publishers are deprecating some of its older games must be worrying news for console owners. To think I can still play Team Fortress Classic, purchased in March 2000 to this day on my Windows 7 laptop - this amazing feat however is because the servers are not run by one company. <a href="http://www.overclockersclub.com/news/25732/">Lesson learnt?</a></p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2011/01/03/halo-reach/">Halo Reach</a></h2>
+  <p class="meta">
+    <time datetime="2011-01-03T21:46:00.000+00:00">3 Jan 2011</time>
+  </p>
+
+  <p>OK so I am a little late to the party with this review, I like to wait until the price of an Xbox game comes down in price before shelling out for it.</p>
+<p>I’ve been playing Halo Reach a lot over the Christmas period and I am really enjoying it. I was a huge fan of the original Halo, the story and simplicity (there were only 6 or 7 weapons) and nonstop action. Yes some of the levels were repetitive (I remember one level, where you had to get to the top of a building fighting The Flood, and each floor was essentially the same, meaning you did the same over and over level 5 or 6 times!) but others like the wide-open second level where you drove around the planet Halo were ground-braking for an FPS. Halo 2 was more of the same, now with dual-wielding and some more weapons, and multiplayer. What I didn’t like was playing as someone other than the Masterchief , I lost interest during these parts. Halo 3 was for me, more Halo 2 with prettier graphics and better online play. The story didn’t really grab my attention, possibly due to the parts I’d blanked out while playing Halo 2 and me not knowing what on earth was going on except there were enemies to shoot. ODST was a return to form for me, a totally new set of characters in a rich, dark, film-noir (Blade Runner-esque) atmosphere and good backstory that compelled me to keep playing.</p>
+<h3>The good</h3>
+<p>Halo Reach takes the good parts of ODST’s story and gameplay, but adds some new features such as jetpacks and the sprint ability. What makes a big difference between it and say, Halo 3 is the story seems to grab my attention and gives me a reason so shoot all those</p>
+<p>Covenant. The levels are also very varied and don’t get boring. The multiplayer is rock-solid too, unlike Halo 3, I don’t seem to end up getting shot from out of nowhere every 10 seconds – it seems more well balanced.</p>
+<h3>The bad</h3>
+<p>Not all is good however. Only 2 months after its release, Bungie are expecting loyal fans to pay more for some extra maps in order to enjoy the full online experience. I am all for additional content that can be purchased, but it seems that these days games developers hold back content specifically and then sell you it a few months later. I wouldn’t mind if we were 1 or 2 years down the line but to release it so soon just makes me think that nowadays when you buy a game, you actually get 90% of it and can expect to pay another ~£7 in points to get the full experience in 2 or 3 months time. I have also seen the new maps being bundled with the game in shops for the same price as the original, further penalising the loyal fans who go out and buy this stuff when it comes out.</p>
+<h3>Conclusion</h3>
+<p>The game is great, and will provide hours of fun. There is plenty of replay value, not just with the online play, but also the solo campaign which can be played on multiple difficulties and with friends. I am slightly annoyed about the additional maps being released so soon (they should have come with the game), but I wouldn’t that spoil what is the best Halo game to date and one of the best shooters of the 360.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2010/12/26/no-i-dont-want-to-update/">No, I don’t want to update!</a></h2>
+  <p class="meta">
+    <time datetime="2010-12-26T23:47:00.000+00:00">26 Dec 2010</time>
+  </p>
+
+  <h3>Automatic updates aren’t always a good thing.</h3>
+<p>Software updates. We all all love them don’t we? Unlike any other industry I can think of, users of software expect to get updates on a regular basis. When <a href="http://en.wikipedia.org/wiki/Windows_Update#History">Microsoft included Windows Update with Windows 98</a> it hailed a new era of self-updating software. But what happens when you are forced to update software? Microsoft has always been pretty conservative when it comes to forcing users to install updates, prompting, prompting again, and providing administrators with means of delaying updates (much to the dismay of web developers, as many institutions are still using IE6, which is 9 years old) while Google on the other hand takes the opposite approach with its web browser, Chrome that updates itself so quietly you’d never notice. This is fine with me, as Google have continued to add features and make the browser better and faster.</p>
+<p>So what happens when (<a href="http://en.wikipedia.org/wiki/Software_bloat">as seems to happen with all software</a>) the browser starts to get a bit bloated and therefore needs a beefier machine to run on? Will I be so pleased when my browser suddenly takes longer to start up? Of course two things redeem Google here, firstly I would be free to downgrade and turn off automatic updates, and secondly they give it away for free, so it’s not as if would have lost anything, except perhaps the time investment spent learning and configuring the browser (which rules by the way, I used it on all my PCs and can’t <a href="http://www.google.com/chrome">recommend it highly enough</a>)</p>
+<h4>I want my money back</h4>
+<p>When you pay for a piece of software, the publisher changes it considerably to its detriment, and then forces the update upon you then I have a problem. This was the case with <a href="http://en.wikipedia.org/wiki/Team_Fortress_2">Team Fortress 2</a>. What started out as a fun, well balanced, class-based classic game of Red vs. Blue has slowly morphed into a terrible, badly balanced game of class-based luck that has more in common with Monopoly than its excellent predecessor Team Fortress Classic. Class upgrades and in game purchases are not what I originally bought into and it’s certainly not how the game was sold to me when I paid for it almost 3 years ago. Yet here I am 3 years later unable to play the game I originally purchased because that game no longer exists. Instead I have a considerably different game where they expect you to pay extra to get the best weapons. Can you imagine if your TV manufacture insisted you upgrade to a 3D TV and then burdened you with paying extra for silly 3D glasses you’d have to wear for the rest of your TV viewing years? Maybe there is an analogy here with the switch-off of analogue TV or when motorists were forced to stop using lead based petrol – but these were in the interests of the public good, and the decisions were no doubt made after lots of discussion by elected members of government.</p>
+<p>I am struggling to think of any instances of when this sort of forced update would be acceptable. Security patches are a different matter, because they rarely take away features.and so I fully support them. Of course when the updates are actually good, then I don’t mind (<a href="http://en.wikipedia.org/wiki/Team_Fortress_Classic#Development">TFC for example gained teleporters midway through its life</a>) – but one person’s great new feature could just as easily ruin the game for someone else. There is no easy solution, I’m sure Value would argue it’s impossible to support each version ever released and still have people playing against each other. Had they released a whole new game called Team Fortress 3, then people would accused them of cashing in like they did when Left 4 Dead 2 was released.</p>
+<p>So no easy answers, but as cloud computing becomes more commonplace in business I don’t see this problem going away.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
   <h2 class="post-title"><a href="/2010/12/23/the-painted-man-by-peter-v-brett/">The Painted Man by Peter V Brett</a></h2>
   <p class="meta">
     <time datetime="2010-12-23T11:50:00.000+00:00">23 Dec 2010</time>
@@ -106,132 +216,6 @@ Coded and designed by Marc Wickens. Powered by 11ty.
 <p>Shows are listed along the left side of the screen, with individual episodes on the right.</p>
 <h3>Download Manager</h3>
 <p><strong><a href="http://www.imarc.co.uk/podcast_tool/Podcast_Tool_Installer.exe">Download Podcast Tool</a> (freeware)</strong></p>
-
-</article>
-<hr>
-
-<article class="post-full">
-  <h2 class="post-title"><a href="/2010/03/11/from-the-archive-iomega-nas-media-server-review/">Iomega NAS Media Server Review</a></h2>
-  <p class="meta">
-    <time datetime="2010-03-11T17:39:00.000+00:00">11 Mar 2010</time>
-  </p>
-
-  <p><img src="/wp-content/uploads/2024/04/iomega-nas.png?w=244" alt=""></p>
-<p>I have a lot of media on my various computers: music, photos, videos, and the like, but I’ve never found a satisfactory way of storing them all. My solution was to put them on my main laptop, which has a large hard disk, and then share the folders to my other laptop and Xbox 360. This is fine, except I tend to reformat my laptop quite often, and I don’t keep it on all the time at a desk. Instead, it’s packed away in its bag when not in use, making playing some music from my Xbox a bit of a hassle. So I decided a NAS box was what I needed. My only consideration really was price; I really don’t care about speed since most of the time I’ll be using 802.11g to access the files, and so the Iomega 1TB drive is what I picked. It cost £120 from PC World, which I thought was good value. I’d read a few reviews, but since those reviews, Iomega has released a new firmware (which came preinstalled on mine), and so a lot of the drawbacks have been addressed.</p>
-<p>I have to say, I am very impressed. The drive is fully accessible via SMB, meaning the software that comes with the drive is not essential (I only needed to install it once to find out what IP address my DHCP server had assigned it). The drive is actually a very small computer (probably running Linux, though I can’t be sure), and so it offers extra functionality. So-called “Live Folders” allow you to create a folder that’s contents get uploaded to Facebook, YouTube, or resized, for example. The NAS box can also act as a BitTorrent client, but unfortunately, it can’t be set to download a large file over FTP/HTTP. The device is also an iTunes server as well as a DLNA server (this is an open standard that the Xbox 360 uses to stream music and video over a LAN). If only TV shows purchased from iTunes didn’t have DRM, I’d buy a few, since being able to download a series of 24 straight to this device and watch it on my Xbox would be amazing. Still, having all your media always available via Media Centre/Xbox/iTunes is great.</p>
-<p>The downsides to this device are that the hard disk appears to be FAT32 (according to another review I read) – this means it’s not journaled and in the event of a power cut, the drive/data could be corrupted. There is only one hard disk, and 1TB of data is a LOT of data to be held at the whim of someone spilling something on it or a cat knocking it over, so I will still be keeping the stuff I value most in two places. Anyone wanting a proper backup solution rather than a media server solution would be wise to get something that has RAID. It’s also quite noisy and doesn’t spin down the hard disk when it’s not in use.</p>
-<p>Overall, I am pleased with this purchase and would recommend this media server to others looking for a good value solution.</p>
-<h2>Update</h2>
-<p>I found the following information in the manual that states the drive actually uses the XFS file system, which was one of the first journaled file systems. Hooray!</p>
-<blockquote>
-<p>The Home Media Drive shares files using the SMB (Server Message Block) protocol and stores its files on XFS (built-in), FAT32 (external), and NTFS (external) hard drives.</p>
-</blockquote>
-<p>I didn’t mention this before, but you can also plug in a USB drive and share it, or you can plug in a USB printer and then share that instead. Shame there’s no SSH access, however. :)</p>
-
-</article>
-<hr>
-
-<article class="post-full">
-  <h2 class="post-title"><a href="/2010/02/17/application-bandwagon/">The application bandwagon?</a></h2>
-  <p class="meta">
-    <time datetime="2010-02-17T22:30:47.000+00:00">17 Feb 2010</time>
-  </p>
-
-  <p>A couple of years ago I remember reading in the technology press about how desktop software was dead, and that the web was the future. Skip forward to today and I still hear the same thing, only with the word ‘web’ replaced with ‘cloud’ – cloud being a buzzword, simply meaning some server, somewhere.</p>
-<p>I liked that promise, in a world where Microsoft Outlook takes about 10 times longer than the combination of Google Chrome and Gmail to load, web based software certainly seems to me to be the future. So I was surprised today when I discovered that the BBC is launching some new pieces of client software for mobile phones. These days, all the major web sites have their own ‘app’ – The Guardian, RadioTimes, WordPress, even the White House to name just a few examples – yet nearly all of those apps could work just fine in the web browser. Does this mean the web application is dead? I pondered this, and came to the conclusion that no, web apps aren’t dead. The fact that The Guardian and The Whitehouse haven’t released an application for Windows or MacOSX tells me that this is just a mobile thing, and that installable applications are perhaps easier to use than web sites, with their caching, gestures and smooth animations. The BBC’s applications will feature high-quality flash, something Apple don’t allow inside the iPhone’s web browser so that’s probably their reasoning. Installable applications (on the iPhone in particular) create a desktop presence, you can bet that people who’ve installed The Guardian’s app visit The Guardian more often that those who have a bookmark buried away somewhere, or type the address manually, so there is added benefit to the content provider. Of course, as the Windows Quick Launch area taught us, too much branding on the desktop can get annoying, so maybe it is a fad after all, and we’ll all be using web based mobile apps in 2 years time?</p>
-
-</article>
-<hr>
-
-<article class="post-full">
-  <h2 class="post-title"><a href="/2009/07/25/podcasts-8-of-the-best/">Podcasts: 8 of the best</a></h2>
-  <p class="meta">
-    <time datetime="2009-07-25T22:20:00.000+00:00">25 Jul 2009</time>
-  </p>
-
-  <p>Podcasts are a great way to keep up with the latest goings on in whatever subjects interest you. For me this means mainly tech news. I even wrote an application to help me organise all them all! I thought I’d list a few of the podcasts I listen to regularly.</p>
-<p><a href="http://twit.tv/twit">This Week In Tech</a>
-Or TWiT, as it’s known is a general technology news ‘netcast’.
-The flagship podcast of the TWiT Network, it consists of regular guests discussing the latest tech stories. Being American, it is heavily focused on US consumer issues, but that doesn’t matter since what happens in the US inevitably follows here in the UK, and they do sometimes have British guests. I find a lot of the people are too easily drawn into the latest crazes such as Twitter and Facebook but thankfully regular contributor John C Dvorak is there to bring them down to earth! Overall a top show, highly recommended.</p>
-<p><a href="http://boagworld.com/">Boagworld</a>
-A slightly odd name, until you realise it’s named after the show’s creator, Paul Boag. This podcast focuses on web design, and it aimed at those who work as designers, and to a lesser extent developers. It is light hearted, the guys don’t take themselves too seriously, so while you’re learning new facts and keeping up with what’s going on in the world of web design, you’re also enjoying it. Worth subscribing to if you have aspirations to become a designer, or are a web designer, or if like me, you’re a developer who has to do some designing. Top podcast indeed.</p>
-<p><a href="http://twit.tv/sn">Security Now!</a>
-This podcast, from TWiT, is all about the latest news in the world of computer security. The show alternates each week between a listener Q&amp;A session and a chosen topic that the show’s creator, Steve Gibson will talk about. This could be how SSL works, how a particular worm works or sometimes a non-security related topic. All episodes include the latest security news, which is essential if you’re an IT administrator, or care about the security if your own home network. Sometimes the topics can be very complex, then other weeks bizarrely simple – the show has a huge range but never fails to hold my interest. Anchorman Leo Laporte does a good job of representing the average listener, and asking Steve the questions we’re all thinking. Highly recommended.</p>
-<p><a href="http://www.pcpro.co.uk/podcast">PC Pro</a>
-A discussion of the latest tech news with a refreshing UK focus. The folks are very knowledgeable and raise some good points. They don’t seem to be as obsessed with the latest crazes like Twitter and FaceBook as other podcasts, which is so refreshing. Recommended for anyone who is at all interested in the computer industry.</p>
-<p><a href="http://twit.tv/ww">Windows Weekly
-</a>Another TWiT podcast – if you’re interested in Windows, Xbox or Zune then a must-listen. Paul Thurrott has contacts within Microsoft that often mean you will find out things before anyone else. I sometimes wish it could cover more technical stuff for us developers, but we’re not really the show’s primary audience (there’s Channel 9 for that). Overall highly recommended if you have an interest in Microsoft technologies.</p>
-<p><a href="http://revision3.com/diggnation/">Diggnation</a>
-I occasionally listen to this one. It’s a roundup of the top stories submitted on Digg. Alex Albrecht is a very funny guy, and so too is Kevin Rose (the founder of <a href="http://Digg.com">Digg.com</a>) A great laugh and good way to keep up with the less serious goings on in the world, also available in video, in fact it’s best viewed in video although personally I’m not so keen on video podcasts since I can’t do anything else at the same time (although watching Diggnation especially is a great Sunday morning remedy to a hangover). Overall I highly recommend.</p>
-<p><a href="http://www.geeknewscentral.com/category/podcast/">
-Geek News Central</a>
-I’ve been listening to this podcast on and off for over a year now. It’s a show about technology news, but it’s not one bit dry and boring as one might first expect, this is thanks to the great host Todd Cochrane who has such a great passion for what he’s doing. With two shows a week, keeping up with this podcast requires dedication – and when you first listen you might wonder why Todd spends the first 15 minutes just having a general chit-chat about what’s going on in his world – but as you listen each week you realise that is part of the charm, and what differentiates this tech podcast from the myriad of others out there. This is the cream of the podcasting world, highly recommended!</p>
-<p><a href="http://www.bbc.co.uk/podcasts/series/kermode/">Mark Kermode’s Film Reviews</a>
-This podcast is a repeat of Mark Kermode’s regular Friday afternoon section on BBC Radio Five Live. Kermode, along with host Simon May do an excellent job of providing information and reviews on the new releases each week. If Mark recommends a film, it’s a good sign that it’s worth seeing. Nice way to start the weekend.</p>
-
-</article>
-<hr>
-
-<article class="post-full">
-  <h2 class="post-title"><a href="/2009/07/08/goodbye-nokia-n95-hello-iphone/">Goodbye Nokia N95, Hello iPhone</a></h2>
-  <p class="meta">
-    <time datetime="2009-07-08T20:14:00.000+00:00">8 Jul 2009</time>
-  </p>
-
-  <p>For the past two years, I’ve been using the Nokia N95. At the time of its release, it was revolutionary. Even today, it holds its own when compared to the majority of phones on the market. From a top-quality camera with flash and autofocus, a GPS receiver and built-in sat-nav, DVD-quality video recording, to the more gimmicky two-way slider, the N95 really is the bee’s knees.</p>
-<p>However, it was time for an upgrade. I seriously contemplated sticking with T-Mobile and the N95, perhaps switching to a cheaper tariff. But the N95’s biggest flaw let me down: build quality. My first N95 had a loose keypad, and the volume-up button broke. After about 20 months, the volume-up button broke on my second handset as well. A quick Google search reveals it’s a common fault. Whereas Nokias were once virtually indestructible (think 3310), the N95 was a fragile ornament. Other aspects of the N95 began to bug me too. The upper keypad is too cramped, making it easy to accidentally exit an application when trying to press the ‘C’ key. Application start-up times are also slow; nothing feels seamless. I decided I needed a new phone.</p>
-<p>I was torn between the iPhone and the N97. After the disappointing build quality of the N95, I swore never to return to Nokia, which is a big deal for me. I’ve owned the 3330, 3510i, 6630, 6100, and 6230i – and of course the N95 – since 2001. I tried out the N97, and it looks amazing. The camera is top-notch, and it feels a lot more solid than the N95. However, the touchscreen is very poor. Like the 5800, it’s resistive, which means it works on pressure, making it a real chore to use. The UI isn’t designed for touch but rather adapted for it, and poorly in my opinion. Still, the slide-out keyboard and integrated flash in the browser were tempting enough to keep me interested. Yet, I decided to stick to my guns and not risk another N95 disappointment. I opted for the iPhone.</p>
-<p>I’ve had many iPods before. I hate iTunes – it’s a prime example of bloatware. I’ve been using iTunes since 2001 when it was version 1 and came with Mac OS 9, so I have a lot of experience with it. From about version 6 onwards, it became painfully slow. On Windows, it has an annoying bug where it steals focus every few minutes, which can be fixed by adjusting Windows Live Messenger not to display your song information. I’m sure Apple makes iTunes run as slowly as possible on Windows to make Microsoft look bad. Why on earth does QuickTime, a mediocre media player that no one ever runs (except as a plug-in), need a notification icon? What exactly is it notifying me of? Anyway, we all know iTunes sucks, but for syncing music and downloading podcasts, it does the job adequately.</p>
-<p>The iPhone, like the N97, looks great. However, unlike the N97, it’s not immediately obvious where the SIM card goes, so be sure to read the manual or, as I did, Google it. The screen is capacitive, meaning it works by conducting electricity from your finger. It’s much smoother and more enjoyable to use. The browser and email are excellent, but I do miss a few features of my N95.</p>
-<p>Firstly, the calendar. An iPhone will only let you set a reminder for two days before an event. This is no good for something like a car service or a big birthday, where you might want a reminder a week or so in advance. It seems like a pointless limitation or oversight to me.</p>
-<p>Secondly, Bluetooth. The iPhone might as well not have Bluetooth, as you can’t send photos or contacts using it. I understand Apple restricting music, but why limit photos, contacts, and calendar entries? These are basics, Apple, and you’ve got them wrong.</p>
-<p>Additionally, you can’t download podcasts over 10MB or use the iPhone as a modem – the N95 could do both. The N95 was a phone, not a marketing tool for O2.</p>
-<p>Thirdly, 3G reception seems poor compared to other phones on the same network in the same room.</p>
-<p>The camera is bad. Even the newer 3GS, which I have, is subpar and lacks a flash.</p>
-<p>I don’t want to sound entirely negative – the iPhone is a worthy upgrade from the N95. Email is much quicker and supports HTML (though Apple limits you to sending five photos as attachments), and it also syncs emails and calendars with Exchange. The N95 would take about 30 seconds to ‘think about’ my emails after receiving them, which was just plain annoying. Direct uploads to YouTube, along with some great games and applications, put the iPhone ahead of Nokia. Facebook, Twitter, even Windows Live Messenger via push (although the developer notes that the application is under review by Apple, likely because it might affect network revenues) all work seamlessly. The interface is a pleasure to use.</p>
-<p>Overall, I’m glad I upgraded – though I do miss a few key features!</p>
-
-</article>
-<hr>
-
-<article class="post-full">
-  <h2 class="post-title"><a href="/2009/06/26/podcast-tool-updated/">Podcast Tool: Updated</a></h2>
-  <p class="meta">
-    <time datetime="2009-06-26T22:30:59.000+00:00">26 Jun 2009</time>
-  </p>
-
-  <p>A quick note to let you know that I’ve updated <a href="http://www.lostinlogic.com/PodcastApp/publish.htm">Podcast Tool</a> (someone please suggest a more imaginative name!)</p>
-<ol>
-<li>The new version fixes some bugs, and also provides some convenient options. There is now a gray RSS icon when a podcast hasn’t been downloaded, and a blue one when it has, allowing you to see from the list quickly what you’ve already got.</li>
-<li>When you update podcasts the status bar now tells you how many were added, and when.  I found myself wondering if there were any new shows or not. I plan to expand this is and have a separate view for ‘recently added’ shows.</li>
-<li>The options dialog now has two extra options. The first is to automatically check for new shows when the program runs, the second is to automatically download new shows after checking.</li>
-</ol>
-<p>Again, feedback and suggestions are welcome, so please send me an email if you use the application.</p>
-
-</article>
-<hr>
-
-<article class="post-full">
-  <h2 class="post-title"><a href="/2009/06/08/bing-and-the-work-is-done/">Bing! And the work is done</a></h2>
-  <p class="meta">
-    <time datetime="2009-06-08T22:53:08.000+00:00">8 Jun 2009</time>
-  </p>
-
-  <p>Microsoft’s new search engine isn’t half bad. I’ve noticed it ranks Wikipedia,Windows Live and FaceBook profiles more prominatly than Google. There is no automatic spell-checker, or search suggestions like Google has, which is dissapointing.  I’ve also not noticed the ability to search <a href="http://www.google.com/help/features.html#keyword">synonyms</a> like Google can. The lack of a decent News agregstor is also a let down. However on search results alone, Bing is just as good, and certainly more visually attractive as Google.</p>
-<p>Where Google really comes in handy is tring to find an answer to an error message or programming query. I’ll be giving Bing a test over the next few weeks.</p>
-
-</article>
-<hr>
-
-<article class="post-full">
-  <h2 class="post-title"><a href="/2009/05/10/announcing-podcast-tool/">Announcing Podcast Tool</a></h2>
-  <p class="meta">
-    <time datetime="2009-05-10T21:28:45.000+00:00">10 May 2009</time>
-  </p>
-
-  <p>I download a lot of podcasts. I use iTunes to manage them on my “junk PC” (the one I install the rubbish, but necessary software like Real Player and iTunes, for syncing iPods etc).</p>
-<p>However on my laptop I don’t want to be installing iTunes, and a quick search on Google left me thinking there weren’t many lightweight solutions out there for just subscribing to podcasts. Sure a general RSS reader would keep me up to date, but it wouldn’t download the files. I decided to write my own bit of software, which I’ve aptly named “Podcast Tool”. It basically lets you subscribe to, and download podcasts, remembering which podcasts you’ve listened to. I’m putting it up here for anyone to test and give feedback.</p>
-<p>If you too download a lot of podcasts, then <a href="http://www.lostinlogic.com/PodcastApp/publish.htm">please give it a test</a>.</p>
 
 </article>
 <hr>

@@ -67,6 +67,129 @@ Coded and designed by Marc Wickens. Powered by 11ty.
 
 
 <article class="post-full">
+  <h2 class="post-title"><a href="/2016/04/19/the-ipad-isnt-a-pc-replacement-for-everyone-yet/">The iPad isn’t a PC replacement for everyone, yet</a></h2>
+  <p class="meta">
+    <time datetime="2016-04-19T20:24:13.000+00:00">19 Apr 2016</time>
+  </p>
+
+  <p>When Apple announced the new iPad last week, Phil Schiller made a point of highlighting it as a replacement for the 600 million PCs that are over 5 years old.</p>
+<p>While I like that Apple is pushing the iPad a PC replacement – for many people it is (including myself, mostly); I do think that people still using a 5 year old PC are likely to be in the ‘technologically conservative’ camp and will therefore run up against limitations if they tried to use an iPad as a replacement.</p>
+<p>For example:</p>
+<ul>
+<li>They may still have an older generation of iPod or MP3 player that needs to sync with a PC.</li>
+<li>They may still buy CDs, and want to rip them so they can play them on such an MP3 player.</li>
+<li>They may want to print things, and seeing as they have a 5-year old PC, they probably don’t have a wireless printer.</li>
+<li>They might own a lot of legacy media such as video tapes and vinyl records. They may want to use a USB conversion device to modernise this media, which won’t be supported on iOS.</li>
+<li>iPads still need iTunes in the event of an unsuccessful update, although rare, having to drive to an Apple Store or relative’s house to restore an iPad would be very inconvenient.</li>
+</ul>
+<p>Not to mention that the cheapest iPad Pro with a keyboard cover is an extraordinary £628.00!</p>
+<p>Yes, it has many, many benefits over a PC – low maintenance (the only real maintenance iOS devices require are OS updates and managing the puny amounts of storage they have) – and best of all there’s no antivirus software or other crapware preloaded.</p>
+<p>So nice a nice idea, but in reality anyone who hasn’t updated their PC in 5 years probably isn’t going to blow £628.00 on a device that isn’t a dead cert to cover all scenarios. Also I’d expect a £628.00 laptop to have more than 32G of storage.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2016/03/26/how-to-make-facebook-use-less-battery-on-ios/">How to make Facebook use less battery on iOS</a></h2>
+  <p class="meta">
+    <time datetime="2016-03-26T20:21:04.000+00:00">26 Mar 2016</time>
+  </p>
+
+  <p>I’m not a heavy Facebook user, I’ll check it a couple of times a day, perhaps a bit more if I’m on holiday and using it to check into places. For this reason I have the ‘Background App Refresh’ option turned off in iOS settings (under Settings &gt; General). Despite this, when I looked at what was using up all of my battery, I was surprised to find that the biggest offender was not only Facebook, but it was background activity as well!</p>
+<p>I suspected that the app was receiving lots of ‘silent notifications’ which can cause the app to wake up and start fetching data in the background, regardless of the ‘Background App Refresh’ setting. To counter this, I decided to uninstall Facebook, wait 24 hours and then reinstall it. Upon launching it for the first time after reinstalling, it asked if I wanted to receive notifications. This time I chose “Don’t Allow”. This means the Facebook app won’t get access to a unique token enabling it to send those silent notifications which I guessed were causing all of this background activity.</p>
+<p>Sure enough Facebook is now reportedly using less battery, and none of it is background usage. Waiting 24 hours between deleting the app and reinsalling it is important because otherwise iOS will simply remember your previous notification settings, and not ask you if you’d like to allow them again.</p>
+<p>This is based purely on my anecdotal usage, I’d love to know the actual machinism that causes this improvement</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2016/02/28/how-i-fixed-an-unusable-bt-infinity-connection/">How I fixed an unusable BT Infinity Connection</a></h2>
+  <p class="meta">
+    <time datetime="2016-02-28T19:02:50.000+00:00">28 Feb 2016</time>
+  </p>
+
+  <p>I’d been having problems with BT Infinity for a few months. Every so often web pages would just hang, or streaming video would freeze. Oddly it would often coincide with a new certain devices connecting to the network. Frustratingly, my connecting to Wi-Fi with my work laptop (Dell Latitude, Windows 10) would cause the Internet to stop working for a good half an hour.</p>
+<p>I phoned BT and found their helpline very unhelpful. When asked to unplug the router overnight, I asked why this was needed and was told ‘it’s technical’. Throughout the process I felt as though I was just being read a script and not being listened to.</p>
+<p>Anyway, I had managed to get my work laptop connected and had hooked into my company’s VPN when all the devices in the house stopped working again. My phone, the Apple TV, Kindles – all except for my work laptop. How odd. When I disconnected from the VPN, it too started to not work.</p>
+<p>This made me think to try using <a href="https://developers.google.com/speed/public-dns/">Google’ DNS</a> instead of BT’s. To my surprise, the Internet started behaving like a 70Mb/sec Internet connection should for the first time in months. My next step was to log into the painfully slow BT HomeHub router to try and change its DNS settings at the network level, rather than for each and every device. It turns out BT have restricted that, because normal people can’t be trusted to change their DNS servers, it seems.</p>
+<p>After doing some digging, I discovered that the Apple Airport Express base station I’d been using to extend the range of the wireless network could be used as a NAT bridge and in place of the BT Homehub. I found this helpful post on the <a href="https://community.bt.com/t5/BT-Infinity-Speed-Connection/Airport-Extreme/m-p/504189/highlight/true#M43691">BT Forums</a> which I will recap here incase BT decide to shut down or move their forums.</p>
+<p>In short, you plug in the Ethernet cable from the white BT Openreach box into the WAN port on the Airport. Your username can be anything @btbroadband.com (I’m sure BT don’t rely on this for actual authentication, that’s tied to your line) and your password is simply a space.</p>
+<p>You can then use Google’s DNS servers in place of BTs. One extra thing I had to do was set IPv6 to be ‘local link only’ under ‘Internet Options’.</p>
+<p><img src="/wp-content/uploads/lostinlogic/2016/02/how-i-fixed-an-unusable-bt-infinity-connection-1.png" alt="ss1"></p>
+<p><img src="/wp-content/uploads/lostinlogic/2016/02/how-i-fixed-an-unusable-bt-infinity-connection-2.png" alt="ss2"></p>
+<p>This setup allowed me to retire my BT HomeHub for good, and the Internet connection has been flawless ever since. My Kindle can even connect, which is saying something.</p>
+<p>Oddly, the default IP range for the Airport’s DHCP server is Class A, which means your devices won’t have the usual ‘192.168.1.X’ scheme, but this can be changed if needed. You can change this under the Network &gt; Network options tab, though there really is no need other than it being a more common practice.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2016/02/07/ipad-demise/">On the demise of the iPad</a></h2>
+  <p class="meta">
+    <time datetime="2016-02-07T19:37:45.000+00:00">7 Feb 2016</time>
+  </p>
+
+  <p>So it seems iPad sales have fallen for yet <em>another</em> quarter. As someone whose iPad is their favourite computer; on the one hand this surprises me – why wouldn’t everyone and anyone want one of these fabulously <em>useful and fun</em> gadgets? But on the other hand I can absolutely see why many people wouldn’t have a space for this relatively expensive, yet limited device in their lives.
+The problem is that a tablet does some things really well: browsing the web, watching videos, taking notes, editing photos. It also does some things very poorly: you can’t import music purchased from someone other than Apple into your music library (iTunes Match) for example and the apps are in general baby versions of their desktop counterparts. Need to rotate, annotate and save a PDF? Create a PivotChart? Have two Word documents open at the same time? You’re out of luck.</p>
+<h4>Most people don’t create</h4>
+<p>The iPad’s big differentiator is that unlike an iPhone, <em>it can actually be used to create content</em> (By content I don’t mean social network updates!). Witness the suite of applications Apple provide for free or next to nothing; GarageBand, iMovie, Pages, Keynote and excellent apps like Pixelmator, which is the only image editing application I’ve ever been able to comprehend (I even managed to ‘photoshop’ someone who was in from one photo and place them into another, while making it look convincing). The problem is, most people don’t create content very often. Outside of work and school (where people obviously do), most people’s computing needs boil down to what is the quickest and most comfortable way to consume content. The iPhone’s success in business was dominated by it’s consumer success (the so called ‘consumerisation of IT’) but the iPad hasn’t followed this because for most people, the phone is simply ‘good enough’ to check Facebook, lookup that recipe or watch Netflix.</p>
+<h4>The phone is the best compromise, for now</h4>
+<p>Most people have learnt this over the last four years of iPad usage. The iPad isn’t better than a phone at the ‘phone’ things people do (Facebook, messaging, email) and it’s not better than a laptop at the ‘create’ things people do (with all the edge cases these entail). If you’re going to put down £400 or more on a new computer, why would you buy an iPad when you know it’s not going to replace your aging laptop and you’ll still need to replace that thing when it dies too. So most people buy new laptop instead, and that would seem like a smart decision to me.</p>
+<p>Phone sales remain strong and this is because the phone is currently the best compromise for mobile computing. A small screen with lots of sensors and are useful while you’re out and about – camera, GPS, compasses etc. The iPad is a more enjoyable and productive device to use than a phone because of it’s larger screen size, but that also means it can’t replace a phone because nobody wants to carry a large bag on them at all times. It’s not an ‘always with you’ device. The phone is therefore the best compromise between having a nice big screen, and having something that is always on your person. Will this always be the case however? Once smartwatches are able to connect directly to cellular networks and don’t need to be tethered to a phone, will they be able to take on the role of ‘always with you’, for messaging, directions, checking headlines etc? If this happens then what do we need the phone for? It’s no longer necessary to have this compromise of a smaller screen. In this case, would people decide that a watch and an tablet (or laptop, if the iPad or its competitors haven’t improved its software yet) will take on the roll of web browsing, Netflix and Facebook, fulfilling the rest of their computing needs? I could quite see myself using just a watch and a tablet, if both devices progress in the right directions over the next few years.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2016/02/06/a-technologists-take-on-the-a329m-changes/">A technologist’s take on the A329M changes</a></h2>
+  <p class="meta">
+    <time datetime="2016-02-06T11:54:16.000+00:00">6 Feb 2016</time>
+  </p>
+
+  <p>Recent <a href="http://www.getreading.co.uk/news/reading-berkshire-news/motorists-anger-signage-a329m-who-10249505">changes to the A329M</a> have been completed, to much disapproval from local residents, including myself. At peak times, what was a 15 minute journey from Winnersh to neighbouring Bracknell can take over twice as long as it once did.</p>
+<h3>What has changed?</h3>
+<p>The A329M was until recently a two lane ‘duel carriageway’ that ran all the way from Reading to Bracknell. The A329M was originally intended to directly link the M4 to the M3, but these plans were <a href="https://en.wikipedia.org/wiki/A329(M)_motorway#History">scaled back</a> in the 1970’s, no doubt due to costs (and you can bet local residents probably weren’t too happy about another new road being built through their town either). What’s changed recently is that just after the Winnersh junction, the left-hand lane has been turned into dedicated slip road to enter the M4, with the first exit taking you onto the M4 towards London, and the latter taking you onto the M4 towards South Wales. No longer is the A329M a duel carriageway for its entire stretch.</p>
+<p>This has caused two problems:</p>
+<ol>
+<li>Traffic jams for those who want to stay on the A329M and head towards Bracknell.</li>
+<li>Increased ‘last minute’ lane changes by drivers who are unfamiliar with the new layout, or decide to change lanes at the last possible moment, one assumes to avoid sitting in the traffic jam (see problem #1). Many feel this is dangerous.</li>
+</ol>
+<p>But why was this change made in the first place? The reason is that trying to join the A329M Bracknell-bound from the M4 could frequently take a ludicrous amount of time, often over 20 minutes to travel a what can’t be much more than a quarter of a mile along the M4 &gt; A329M slip road. I know this because in a previous life, I used to take this journey daily. I also know many other people who travel from Reading to Bracknell via the M4 who shared this experience. One day a friend suggested that instead of leaving the M4 and keeping right to go towards Bracknell and sitting in the traffic jam, I should instead take the left lane back towards Reading, traverse the A329M back up a junction, exit at Winnersh and get back on in the Bracknell direction. To my surprise, this was actually about 50% faster than sitting in the queue to get on to the Bracknell-bound A329M directly from the M4. I would often do this and take note of a distinct HGV or van, so as I cruised by on the A329M I could look over at the traffic jam on the slip road and see how far the queue had progressed. The HGV would usually only have made it halfway through the queue.</p>
+<p>So it is clear to me that there was a problem to be solved. The Highways Agency were not having a jolly when they decided to make this change, they had to do something – if it was quicker to take a ~2 mile detour to Winnersh and back than take the slip road, something was clearly very wrong.</p>
+<p>So rather than simply moaning at the Highways Agency, I wondered what could actually be done to solve the problem? How does one even measure that a problem like this is solved? As the quote goes “<em>You can please some of the people all of the time, you can please all of the people some of the time, but you can’t please all of the people all of the time”.</em> Until we all go to work in automated, computer-controlled flying drones, there is always going to be <em>some</em> congestion as everyone decides they want to get to work for exactly the same time as everybody else each day.</p>
+<p>Please bare in mind I approach this as someone who is interested in problem solving, but with no expert knowledge in large construction projects (I build software for a living, not roads) – but I thought it would be a fun thought experiment if nothing else.</p>
+<h3>How to solve it?</h3>
+<p>Our first problem – the traffic jam. This would seem to be caused by the fact that the volume of traffic (that’s us, traffic is just another word for people, remember) is too great for the road. How could this be solved, while not reverting the M4 &gt; A329M junction back to it’s untenable situation?</p>
+<p>The problem is that people actually get into the right-hand lane <em>too early</em>. I understand why they do this; to stay safe, it’s polite, and because the road signs encourage drivers to do so. However, from a pure ‘volume of traffic’ point of view, if we could encourage people to use the both lanes right up until the last minute, and to merge in an organised and safe fashion, <a href="http://arstechnica.com/cars/2014/07/the-beauty-of-zipper-merging-or-why-you-should-drive-ruder/">studies show</a> this would reduce queues because it makes use of the full capacity of the road.</p>
+<p>This brings us to our second problem – aren’t those last minute lane changers dangerous? Obviously if you’re reversing up a slip road then you’ve left it a little <em>too late</em>, that <em>is</em> dangerous. Surely there’s nothing wrong in theory with changing lanes at the last moment, as long as it’s a considered manoeuvre? In order to encourage this, I would suggest that instead of going to the M4, the left-hand lane ends up merging into the right-hand. This gives drivers in both lanes the responsibility to merge. At peak times a speed limit would need to be lowered to 40MPH (enforced by average speed cameras) to aid safe merging, and also to help drivers in the right lane refrain from powering straight into the slower moving traffic that’s entering from the M4 further down, braking hard and causing tailbacks as the breaking forms a wave that spreads along the rest of the road. They may be unpopular, but variable speed limits have used to good effect on M25.</p>
+<h3>In Summary</h3>
+<ul>
+<li>The left-hand lane would have two distinct exits (instead of trailing off to the M4).</li>
+<li>The land-hand and would merge into the right-hand lane.</li>
+<li>During peak times a variable speed limit of 40MPH would be enforced.</li>
+</ul>
+<p>I’m sure that much greater minds at The Highways Agency have considered this (and I say that respectfully). There is sure to be a reason why this wouldn’t work. I’d love to know. I can’t imagine how difficult it must be to try and keep all of us road users happy. I hope the problem is addressed, but for now my real-world solution has been to set off on my journey 30 minutes earlier and avoid the rush.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2015/12/07/the-future-of-commerce-is-so-close/">The future of commerce is so close</a></h2>
+  <p class="meta">
+    <time datetime="2015-12-07T21:40:38.000+00:00">7 Dec 2015</time>
+  </p>
+
+  <p>A couple of months ago Apple Pay was finally enabled for my bank account and credit card, which meant I was finally able to pay for things by either placing my phone on the card reader, or by bashing my watch against it instead.</p>
+<p>I look forward to a day when I can leave the house with nothing in my pockets – my watch will have a cellular radio and be capable of keeping me in contact with the people that matter, so too will it allow me to unlock my car/house, in addition to letting me pay for things. While the first two in that list might be a few years away (decades at the rate I upgrade cars), my watch can actually make payments today, how cool is that?</p>
+<p>The reality is somewhat less cool. The problem is the payment limit. Since Apple Pay uses the existing ‘Contactless’ payment systems, it’s also hampered by the same £20 limit. While this limit makes sense with a contactless debit card (there is zero authentication), both the Apple Watch and iPhone are secure; the iPhone asks for your fingerprint, and the watch asks for a PIN when you first put it on, as long as it says in contact with your wrist it is authorised for Apple Pay.</p>
+<p>This authentication is also a hindrance – why would I fiddle about trying to get my phone to detect my fingerprint (while everyone in the queue is staring at me) or roll three layers of sleeve up to try and get my watch to be recognised when I can whip out my wallet and tap my debit card? The key point is that I still have to have my wallet on me in case the shop in question doesn’t support contactless, or the amount comes to over £20. Don’t get me wrong, Apple Pay is much better than entering a PIN, it’s just not as fast as tapping your card.</p>
+<p>So what needs to happen? I’d like to see the limit raise for Apple Pay purchases to something more reasonable, most cash machines allow you to take out £300 in a day, so why not the same for an arguably more secure system such as Apple Pay, while keeping existing contactless limits where they are of course</p>
+
+</article>
+<hr>
+
+<article class="post-full">
   <h2 class="post-title"><a href="/2015/11/14/better-software-not-a-bigger-screen-is-what-the-ipad-needs/">Better software, not a bigger screen, is what the iPad needs</a></h2>
   <p class="meta">
     <time datetime="2015-11-14T12:21:50.000+00:00">14 Nov 2015</time>
@@ -129,136 +252,6 @@ Coded and designed by Marc Wickens. Powered by 11ty.
 <p>This one is only slightly better than Power Save mode. You’ll still be able to track your activity, receive stand notifications or notifications for appointments already synced to your watch – obviously you wont get any alerts that come from your phone (such as messages). If you’re away camping for the weekend, maybe that’s OK?</p>
 <h3>Stay near your phone</h3>
 <p>I’ve noticed the battery life is a lot worse when I spend a lot of time away from my desk at work, but leave my phone at my desk. This makes sense – when the phone is within Bluetooth range, the watch will use this connection for things like alerts. When you move away from your phone, it instead has to connect to Wi-Fi directly. Wi-Fi is much less power efficient than Bluetooth.</p>
-
-</article>
-<hr>
-
-<article class="post-full">
-  <h2 class="post-title"><a href="/2015/07/08/apple-watch-review/">Apple Watch – First Thoughts</a></h2>
-  <p class="meta">
-    <time datetime="2015-07-08T21:05:22.000+00:00">8 Jul 2015</time>
-  </p>
-
-  <p>I know that it seems everyone wants to blog about their experience with an Apple Watch, so why would I need to too? Well, I’m not a professional journalist (as if you can’t tell) – just an everyday person with an interest in technology, so perhaps I’ll offer a different perspective.</p>
-<p>So after 3 weeks, what does a ‘normal’ technology enthusiast think? Well… I went for the 38mm black ‘Sport’ Model as I figured fitness would be my main usage scenario.</p>
-<p><strong>Wearing a watch</strong></p>
-<p>I’ve always loved watches. Not for the bling factor – for me something being expensive doesn’t equate to it being stylish or useful. Ever since my Granddad introduced me to a Casio watch at the age of 8 I’ve loved a good gadget watch, and so the Apple Watch was right up my street. I actually have a Casio which I wear at weekends. It’s a radio controlled analogue/digital hybrid. I don’t wear it to work during the week since I’m usually at a computer all day long, it doesn’t really add much utility. So wearing a watch isn’t a habit I’ve had to get back in to.</p>
-<p><img src="/wp-content/uploads/lostinlogic/2015/07/apple-watch-first-thoughts-1.jpg" alt="With the classic buckle strap"></p>
-<p><strong>Needing the phone</strong></p>
-<p>So a major factor in anyone’s purchasing decision is going to be ‘do you own an iPhone 5 or newer’ – if you don’t you can’t make much use out of an Apple Watch. My two and a half year old iPhone 5 still does the job (and until Apple increase the base storage from 16GB, I won’t be upgrading), so I was fine.</p>
-<p>The iPhone is needed for a number of things – most apps require the phone to either be in Bluetooth range or the watch to be on the same WiFi network as the phone. This is fine for me as my office has WiFi throughout the building, so I can easily leave my phone in a draw and walk anywhere in the office (even outside) and receive notifications – pretty cool. Some apps don’t even need your phone, they only need a WiFi connection. Messages is one of those apps – I left my phone in my car at the gym, but was able to send and receive iMessages from the watch no problem. Siri also works like this. Maps didn’t work, although it was able to determine my location (from the WiFi base station, I assume), just not show me the map.</p>
-<p>Overall the ‘need’ to be tethered to an iPhone is overstated in my opinion, though one thing to note is that the watch will only connect to a WiFi network your phone has previously connected to. So you can’t just head to a coffeeshop with only your watch and expect to get online.</p>
-<p><strong>Apps</strong></p>
-<p>Most of the built in apps seem well thought through, though with some annoying limitations. I can reply to text messages, but not emails. Both the BBC News and Guardian apps only show me a paragraph before requesting I take my phone out. I’m sure people can make that choice for themselves, so why not show the whole article?</p>
-<p><strong>Battery</strong></p>
-<p>If you use it like a watch, the battery will easily last you all day. If you use the Workout app or play with apps a lot, you’re going to struggle to get through the day. My Casio is solar powered, so I’m used to feeling the warm rays beat down on my watch and thinking about all that goodness it’s doing charging the battery, however that’s sadly not the case with the Apple Watch. If anything the heat will kill the battery’s longevity. I do hope Apple add solar charging in future iterations.</p>
-<p><strong>Workout</strong></p>
-<p>It seems to be pretty accurate (once trained by running outside with your phone’s GPS). I tested it on a treadmill and it was a few percentage points out. I have a tendency to rest on the side of the treadmill for 10 seconds while I switch tracks, it knows I’ve stopped running unlike a treadmill. The ability to leave you phone at home when you go for a run is great, you can play music from the watch via Bluetooth headphones. Unfortunately changing a track while running is not easy (it made me pine for my iPod classic). You have to exit the ‘Workout app’ by pressing home, tap the Clock icon and then swipe up to get to glaces, then swipe across to the ‘Now Playing’ glance. You could also open the music app from the home screen, but it’s way too complex and an odd oversight from Apple.</p>
-<p>The daily activity goals are good, however the recommendations are a bit basic. For example I had a daily active calorie burn goal of 400 – On 5 out of 7 days in a week I exceeded it, however it took my average calories over the entire week and suggested a new daily goal of 220 (I had a very lazy weekend). It seemed more logical that it would know that a lot of people will have different behavioural patterns on weekends and suggested something a bit more realistic.</p>
-<p><img src="/wp-content/uploads/lostinlogic/2015/07/apple-watch-first-thoughts-2.jpg" alt="Run"></p>
-<p><strong>Style/Cost</strong></p>
-<p>I went for the cheapest option, the black Sport model (I went 38mm not for price but because I have skinny wrists). I looks pretty nice, even with the leather buckle. I probably wouldn’t wear it to a  formal occasion such as a wedding, but for business, or social it’s absolutely fine.</p>
-<p><img src="/wp-content/uploads/lostinlogic/2015/07/apple-watch-first-thoughts-3.jpg" alt="Calendar"></p>
-<p><strong>Notifications</strong></p>
-<p>The best thing about notification is I never have to check my phone any more, since I know I will have gotten a tap on the wrist if anything of note has happened. I had to make sure all but the most critical apps were turned off however, I don’t really want to be interrupted because someone followed me on Twitter.</p>
-<p><strong>Text Input</strong></p>
-<p>The only way to input text is via voice-dictation. This is fine if your a technology journalist who works from home, or an exec who has their own office – but for the average person who works amount other people (this applies to social occasions too), it’s not polite to start dictating messages to your girlfriend in front of other people. I value my privacy, and so unless I’m alone I generally don’t enter text into the watch. What this device really needs is a way to enter text, <a href="http://research.microsoft.com/en-us/um/redmond/projects/analogkeyboard/">Microsoft have the right idea</a>, and I’m disappointed Apple haven’t even included this in watchOS version 2. (I guess it did take the iPhone OS 3 iterations to get copy and paste).</p>
-<p><strong>The Watch</strong></p>
-<p>One of the coolest things about the watch is the customisable watch faces. You can add widgets that show the weather, sunset time, battery life, next appointment and more. In this sense, the watch really has utility that makes it worth wearing. I can look down on my wrist and see my next appointment or the current weather conditions.</p>
-<p><img src="/wp-content/uploads/lostinlogic/2015/07/apple-watch-first-thoughts-4.jpg" alt="Watch Face"></p>
-<p>This is the one I use when I’m not at work – it shows me sunset time (how much time I have left to go out for a walk or run before it gets dark), the battery level,  the day of the week and my activity for the day.</p>
-<p><img src="/wp-content/uploads/lostinlogic/2015/07/apple-watch-first-thoughts-5.jpg" alt="Watch Face"></p>
-<p>When I’m at work I like to use this face, which gives me the timezone of our other office, in addition to putting the date front and centre.</p>
-<p>Overall, I’m impressed and don’t regret the purchase. Plus, future versions of the device can only get better .👍🏻</p>
-
-</article>
-<hr>
-
-<article class="post-full">
-  <h2 class="post-title"><a href="/2015/06/07/google-photos/">Google Photos</a></h2>
-  <p class="meta">
-    <time datetime="2015-06-07T07:51:27.000+00:00">7 Jun 2015</time>
-  </p>
-
-  <p>Google announced a new service recently called ‘Google Photos’, and I was instantly intrigued. I don’t use many Google services apart from search, but keeping memories safe is top of my priorities when it comes to online services.</p>
-<p>I currently use OneDrive (and before that, Dropbox) to backup photos and was thinking of using Apple’s iCloud Photo Library in addition to this. I like the idea of having every photo I’ve ever taken (in recent memory at least) available from the photo picker in iOS, and on my Mac. However from what I’ve heard in reviews, doing this slows down iOS devices (I have an iPhone 5, which not being the latest device from Apple means it’s inevitably slowed down anyway) and I also want more control over what gets stored on my device. Apple may make nice looking products, but when it comes to storage they are stingy as hell, and my phone is forever warning me that I’m running low on space. I tried iCloud Photos for a few months and found it didn’t save space on my phone as promised, I still ended up with the majority of space on my phone used by the photos I’d taken. It’s also not cheap – you get 5GB ‘free’ from Apple – no matter how many devices you own. So me, with an iPhone, 2 iPads (home and work), as well as a Mac get the same as someone with just an iPod Touch. Out of this 5GB comes any backups you make (which is the majority in my experience), any emails you receive to your iCloud email account, and of course any photos you upload to iCloud Photos. Buying more space is expensive considering you’ve already paid a premium for the hardware in the first place.</p>
-<p>So a combination of being expensive and not that good made me decide to stick with OneDrive (despite the fact it can be buggy, it’s at least cross platform and a good price, you get 1TB of space <em>and</em> Microsoft Office for less than £10 a month). Then Google announced Google Photos….</p>
-<p><img src="/wp-content/uploads/lostinlogic/2015/06/google-photos-1.png" alt="Screen Shot 2015-06-07 at 08.24.25"></p>
-<p>With any Google product there are two things you need to consider: How long will it last before they shut it down, and what are they doing with my data?</p>
-<p>I hope this product lasts, and doesn’t go the way of Google Buzz, Reader, Notebook, iGoogle or Latitude (and <a href="http://www.forbes.com/sites/stevedenning/2015/04/23/has-google-really-died/">Google+</a> ?). With Google, you never know. That’s a big risk when you’re trusting it with your lifelong memories. Luckily it’s free (if you are happy for all images to be down-sampled to a maximum of 16 megapixels – my camera is nowhere near that resolution, so I am) so I would urge anyone using it to also use a service like Dropbox or OneDrive who have a better reputation when it comes to shuttering services.</p>
-<p>What are they doing with the data? I’ve no doubt the GPS coordinates tagged inside every photo will be extremely useful to Google for targeting me with adverts. It’s basically my location history. I’m fine with this really.</p>
-<p>The app itself is very well written. If you have 3000+ photos to upload like me, then you’ll want to download the helper application that will sit in the background and upload instead of using the browser interface. The web interface scrolls very smoothly and makes it easy to go back a decade without trying to load everything in-between. Unlike the OneDrive web interface, it correclty uses the EXIF data in images to pull out the date, rather than the file’s timestamp. In OneDrive it looks like I took all my photos in March 2015, because that’s when I copied them accross from Dropbox. Google Photos isn’t so stupid, thankfully. Like Apple’s iCloud Photos, you can make edits from within the Google Photos interface. Apple’s approach cleverly stores what you changed in a photo, as opposed to the end result. This means you can adjust the brightness on one your phone, but undo it and add a filter on your laptop without any loss in quality (it doesn’t create a losssy JPEG each time). I’m not sure if Google is doing something simular, but it wouldn’t supprise me.</p>
-<p>So all in all, I am impressed – I’m just worried it will be switched off in 4 years when Google get bored of it.</p>
-
-</article>
-<hr>
-
-<article class="post-full">
-  <h2 class="post-title"><a href="/2015/05/03/can-an-ipad-replace-a-laptop-seriously/">Can an iPad Replace a Laptop?</a></h2>
-  <p class="meta">
-    <time datetime="2015-05-03T20:07:15.000+00:00">3 May 2015</time>
-  </p>
-
-  <p>Ever since I was <a href="https://archive.lostinlogic.wickens.org.uk/content/2011/08/06/i-did-it-i-bought-an-ipad/index.html">convinced</a> to buy an <a href="http://www.theguardian.com/technology/blog/2010/may/28/ipad-regent-street-buyers-survey">iPad</a> 4 years ago, I’ve been a massive fan and predicted they would eventually replace laptops for most consumers. Just as <a href="http://allthingsd.com/20130109/steve-jobs-was-right-tablets-are-cars-pcs-are-trucks/">not everyone needs a truck</a>, not everyone needs a laptop right? It turns out however, that <a href="http://www.forbes.com/sites/dougolenick/2015/04/30/apple-ipad-shipments-down-23-as-tablet-market-continues-to-lose-steam/">iPad sales are falling</a>. This is more likely a combination of people having much larger phones, iPads being reliable and not needing replacing, lack of innovation (today’s fifth generation iPad does the same as a second generation, only faster), and the fact that the vast majority of consumers don’t need anything more powerful than a phone. It saddens me that despite the Internet being a place where anyone can publish anything at very low cost (or for free in many cases), most people use it to consume TV and post frivolous Facebook updates that don’t require much more than a mobile phone - but that’s another topic altogether. At the other end of the scale you have business and professional users, who tend to use laptops because they offer much more power. Processing power isn’t as far off as you might think, the power difference is now in the software. Take for example a simple task I needed to achieve last week - downloading an MP3 from a web site (legit I might add! It was to accompany a course I was taking) and add it to my iTunes Match Library so it would be available on all of my devices. This is easy to do on a Mac or Windows laptop, but impossible on an iPad. That’s ridiculous. The other software issue that holds back these devices is the transient nature of applications. At any time your application might get terminated due to lack of memory. This rarely results in any loss of work, as developers usually code with this in min (until iOS 4, this happened overtime you left an app). Not many developers both to restore the state of an application (as they are suppose to), and even when they do having to wait for it to load again is painful. So the answer is no, an iPad can’t replace a laptop at the moment. I would like to see Apple push forward with this vision. Why not have a simplified version of Xcode for the iPad? It could be a great way to introduce people to programming (and could feature the Playground function introduced last year). The built in applications should be updated to support ‘Open In’ so I can open that MP3 file in the Music app, for example. For many users, nothing will beat a dual screen setup with a mouse and keyboard - but I can’t help thinking that 90% of my non-work computing needs could be done on an iPad if the software were better.</p>
-<h3>Update: 31/5/2015</h3>
-<p>I’ve been using an external keyboard with my iPad a lot recently, so hardware wise it’s more on par with a laptop. Here’s what I miss most from a full blown Windows/Mac laptop:</p>
-<ul>
-<li>The ability to have more than one document open within a single app. Some apps such as Mail support having mutipe drafts open at once, but all the apps I use most frequently such as Microsft Word, Pages and Excel can only open one document at a time. It takes about 30 seconds to close a document and to load another, which just slows me down.</li>
-<li>Lack of keyboard shortcuts - such as being able to press ‘Enter’ to send a message, or CTRL + Enter to send an email. Also being able to switch between documents / apps using the keyboard would help too.</li>
-<li>Applications getting unloaded from memory. Or rather lazy developers not bothering to reload the state of an app when it gets reloaded. Again, like with the document switching - it gets in the way when you return to a presentation and find the app has gone back to the open screen.</li>
-</ul>
-
-</article>
-<hr>
-
-<article class="post-full">
-  <h2 class="post-title"><a href="/2015/03/28/take-that-photo/">Take That Photo</a></h2>
-  <p class="meta">
-    <time datetime="2015-03-28T15:11:00.000+00:00">28 Mar 2015</time>
-  </p>
-
-  <p><img src="/wp-content/uploads/2015/03/pexels-thibault-trillet-44912-167628.jpg?w=1024" alt=""></p>
-<p>These days, we all carry cameras in our pockets. We can capture and record any event with very little effort and at a moment’s notice. Not surprisingly, a backlash has occurred. (From experience, anything that’s easy and rewarding enough for mass adoption is eventually frowned upon by early adopters.)</p>
-<p>People are now criticised for filming events instead of ‘being in the moment’. Kate Bush even banned cameras from her much-hyped comeback shows. Amongst all groups of friends, there’s always the inevitable member who photographs and videos the goings-on (that’s usually me), and while they might seem annoying now, in 20 years’ time, when you want to look back, you’ll be glad for their amateur documentaries.</p>
-<p>Having recently discovered some videos of my family that were taken in the early '90s (when I was five!), I am firmly of the opinion that it’s our duty to make sure future generations have the opportunity to see such material. Seeing your parents and grandparents as young people really changed my view of them, strangely putting my own life into perspective. While I’m sure future generations won’t care to see a Kate Bush concert that will undoubtedly end up being available to buy anyway, seeing their mum, dad, or uncle dancing, smiling, and enjoying the event would be fascinating.</p>
-<p>So, lose your cool and get that camera out. Take that photo. You’ll be glad you did.</p>
-<p>(Though I’m still not sure about iPads at gigs.)</p>
-
-</article>
-<hr>
-
-<article class="post-full">
-  <h2 class="post-title"><a href="/2015/03/15/apple-watch/">Apple Watch</a></h2>
-  <p class="meta">
-    <time datetime="2015-03-15T11:20:22.000+00:00">15 Mar 2015</time>
-  </p>
-
-  <p>So the details are finally in, and I have to admit – I’m slightly disappointed. I was hoping Apple would unveil some major new functionality at last week’s event, but it was just filling the gaps between what we already knew.</p>
-<p>In essence, the watch has 3 main functions: a fitness tracker, notification viewer and of course telling the time. You could also add a 4th function: fashion accessory.</p>
-<p>The fitness tracker part of it excites me most, as I have used the Nike Fuelband previously and found it was good at telling me how inactive I was, convincing me to workout more often. After 6 or 7 months, I didn’t need to wear it anymore as I kind of knew when I was active and when I wasn’t. I guess if I was marathon training I might need more detail, but surely and GPS enabled Garmin watch would be more suited in this case? So for me I’m partially excited about this aspect of the watch, but it doesn’t seem groundbreaking to me.</p>
-<p>The notification viewing aspect of the watch doesn’t excite me at all. Mainly because it requires I have my phone in the same building. Not being a high-flying executive who needs to view every email within seconds, the thought of having notifications on my wrist makes me shudder. If the watch had cellular networking and meant I could leave the house without a phone, then I would be interested. In fact, one day I see the iPhone being obsolete and the watch being the main connectivity device. When they need a bigger screen, people will tether their iPad to their watches.</p>
-<p>Telling the time is of course a very useful function. At work (where lets face it, I spend a good chunk of my time) I have a computer in front of me with the time omnipresent, and typing with a watch on can be uncomfortable. So I only need this functionality at weekends or when I go out after work. My Casio serves its purpose here – do i really need an Apple Watch for this?</p>
-<p>Then there’s the fashion element. Apple has, since the iPod been a fashion brand – though a slightly geeky  fashion brand. I have a feeling Smart Watches will end up like calculator watches in the 1980’s and early 1990’s – looking dated and ‘of their time’. Then there’s the ridiculously priced ‘Apple Watch Edition’ made out of solid gold. I get that some watches cost tens of thousands of pounds. However, isn’t part of what justifies the price of a Rolex that fact that they have been engineering watches for over a hundred years, and have a reputation for exceptional quality? If Volvo released a Rolls Royce-priced car, it wouldn’t make it comparable to a Rolls Royce. Making something expensive doesn’t make it fashionable. I personally go out of my way not to wear overtly branded clothing (to my dismay, the craze of wearing ‘Super Dry’ plastered over your front like you’re selling children’s nappies door-to-door hasn’t subsided yet, at least in the UK), and so I wouldn’t want a watch that was too ‘showy’.</p>
-<p>Of course I haven’t mentioned the apps yet. This is where I think the watch could excel. it could be like the iPad, which I was doubtful about upon its release, but now I think it is the world’s greatest personal computer. Will I buy an Apple Watch? No. I’ll wait and see what the second generation has to offer. My hope is it will have a way of using the device purely over WiFi (I accept cellular is  a long way off for battery reasons) so I could realistically go out for the evening, and as long as the place I am going has WiFi, I can still keep in touch.</p>
-
-</article>
-<hr>
-
-<article class="post-full">
-  <h2 class="post-title"><a href="/2015/02/28/halo-master-chief-collection-opportunity-missed/">Halo Master Chief Collection: Opportunity Missed</a></h2>
-  <p class="meta">
-    <time datetime="2015-02-28T14:36:38.000+00:00">28 Feb 2015</time>
-  </p>
-
-  <p>I’ve been playing the multiplayer for ‘Halo Master Chief Collection’ recently. It’s all of the original Halo games bundled as one, with Halo 2 remastered for the Xbox One. The other games have been upscaled, and the original Halo game brings with it the Xbox 360 visual update it received in 2011.</p>
-<p>I was excited when I first heard that the online versions of all the games were going to be included, with every map that’s ever been added (I’m not one for buying DLC, so a lot of these were new to me).</p>
-<p>Unfortunately the multiplayer side of things is one big opportunity missed. Rather than take the latest, most refined gameplay elements from Halo 4 and let you play in any map, the game actually loads the version of the game that the map originally came with. I know that might sound obvious, but I was looking forward to playing Halo 4 online, but in some of the revamped Halo 2 maps, or original Halo maps.</p>
-<p>I’m sure there’s technical reasons why it wouldn’t be easy to do this, but the experience would have been far greater. At the moment if you join a playlist such as ‘Big Team Battle’, you could end up one of 41 maps, which could run in one of 4 different game engines. Your weapons look different, extra abilities aren’t available, even the height of your jump is slightly different. Why should a user care about different game engines? How are they supposed to learn the game when it’s different everytime, for no other than technical reason?</p>
-<p><img src="/wp-content/uploads/lostinlogic/2015/02/halo-master-chief-collection-opportunity-missed-1.jpg" alt="article_post_width_Halo_4_Ragnarok_8"></p>
-<p><em>Want to play your favourite map ‘Ragnarok’? Roll the dice, you have a 1 in 41 chance.</em></p>
-<p>That brings me to my other main complaint, which is that the playlists are too huge and it’s not easy to select which maps you want to play. Team Fortress Classic managed this back in 1999 by showing a list of games, their current map, and the number of players. Take ‘Big Team Battle’ again. This playlist has over 40 maps in it that could randomly get selected. How is anyone suppose to master a map (really get to know the environment, and all of it’s hidden features) when they’re getting one of 41 random chooses in each game?</p>
-<p>I’m sure there’s a reason for this, the developers want to make sure a wide selection of maps get played perhaps? Maybe they want to reduce the complexity of the user interface? Whatever it may be, I think being able to choose a map is crucial. Players tend to gravitate towards their favourite maps (take <a href="https://wiki.teamfortress.com/wiki/2fort_(Classic)">2fort</a> and <a href="https://wiki.teamfortress.com/wiki/Rock_2_(Classic)">rock2</a> in Team Fortress Classic), surely this is vital feedback for what works? Yes, you can create your own custom games of course, but these only seen to be open to Xbox Live party members.</p>
-<p>So in my view, this game is a massive opportunity missed. Buy this game for it’s single player modes, not for the multiplayer.</p>
 
 </article>
 <hr>

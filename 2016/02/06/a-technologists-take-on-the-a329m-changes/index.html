@@ -1,0 +1,118 @@
+<!-- 
+
+
+ _ __  __
+(_|  \/  | __ _ _ __ ___
+| | |\/| |/ _` | '__/ __|
+| | |  | | (_| | | | (__
+|_|_|  |_|\__,_|_|  \___|
+
+
+Coded and designed by Marc Wickens. Powered by 11ty.
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="theme-default">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"/>
+    <title>
+      A technologist’s take on the A329M changes
+        ·
+        iMarc
+      
+    </title>
+    <meta name="description" content="Recent changes to the A329M have been completed, to much disapproval from local residents, including myself. At peak times, what was a 15 minute journey from Winnersh to neighbouring Bracknell can take over twice as"/>
+
+    <link rel="stylesheet" href="/static/css/site.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&family=Fira+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+
+    <link rel="icon" type="image/png" href="/imarc-icon.png">
+    <link rel="apple-touch-icon" href="/imarc-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/imarc-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/imarc-icon.png">
+    <link rel="alternate" type="application/rss+xml" href="/feed/index.xml" title="iMarc RSS">
+    <link rel="canonical" href="https://www.imarc.co.uk/2016/02/06/a-technologists-take-on-the-a329m-changes/">
+
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="inner">
+        <a class="site-title" href="/">iMarc</a>
+        <p class="tagline">thoughts on tech • by Marc Wickens</p>
+
+        <nav class="site-nav">
+          <a href="/">Home</a>
+          <a href="/archive/">Archive</a>
+          <a href="/projects">Projects</a>
+          <a href="http://marc.wickens.org.uk">About</a>
+
+          <!-- <a href="https://mandiandmarc.wickens.uk/">Wedding</a> -->
+
+          <form class="site-search" action="/search/" method="get">
+            <label for="search-input" class="visually-hidden">Search</label>
+            <input id="search-input" name="q" type="search" placeholder="Search…"/>
+          </form>
+
+        </nav>
+      </div>
+    </header>
+
+    <main class="content inner">
+      <article>
+  <h1>A technologist’s take on the A329M changes</h1>
+  <p class="meta">6 Feb 2016</p>
+  <p>Recent <a href="http://www.getreading.co.uk/news/reading-berkshire-news/motorists-anger-signage-a329m-who-10249505">changes to the A329M</a> have been completed, to much disapproval from local residents, including myself. At peak times, what was a 15 minute journey from Winnersh to neighbouring Bracknell can take over twice as long as it once did.</p>
+<h3>What has changed?</h3>
+<p>The A329M was until recently a two lane ‘duel carriageway’ that ran all the way from Reading to Bracknell. The A329M was originally intended to directly link the M4 to the M3, but these plans were <a href="https://en.wikipedia.org/wiki/A329(M)_motorway#History">scaled back</a> in the 1970’s, no doubt due to costs (and you can bet local residents probably weren’t too happy about another new road being built through their town either). What’s changed recently is that just after the Winnersh junction, the left-hand lane has been turned into dedicated slip road to enter the M4, with the first exit taking you onto the M4 towards London, and the latter taking you onto the M4 towards South Wales. No longer is the A329M a duel carriageway for its entire stretch.</p>
+<p>This has caused two problems:</p>
+<ol>
+<li>Traffic jams for those who want to stay on the A329M and head towards Bracknell.</li>
+<li>Increased ‘last minute’ lane changes by drivers who are unfamiliar with the new layout, or decide to change lanes at the last possible moment, one assumes to avoid sitting in the traffic jam (see problem #1). Many feel this is dangerous.</li>
+</ol>
+<p>But why was this change made in the first place? The reason is that trying to join the A329M Bracknell-bound from the M4 could frequently take a ludicrous amount of time, often over 20 minutes to travel a what can’t be much more than a quarter of a mile along the M4 &gt; A329M slip road. I know this because in a previous life, I used to take this journey daily. I also know many other people who travel from Reading to Bracknell via the M4 who shared this experience. One day a friend suggested that instead of leaving the M4 and keeping right to go towards Bracknell and sitting in the traffic jam, I should instead take the left lane back towards Reading, traverse the A329M back up a junction, exit at Winnersh and get back on in the Bracknell direction. To my surprise, this was actually about 50% faster than sitting in the queue to get on to the Bracknell-bound A329M directly from the M4. I would often do this and take note of a distinct HGV or van, so as I cruised by on the A329M I could look over at the traffic jam on the slip road and see how far the queue had progressed. The HGV would usually only have made it halfway through the queue.</p>
+<p>So it is clear to me that there was a problem to be solved. The Highways Agency were not having a jolly when they decided to make this change, they had to do something – if it was quicker to take a ~2 mile detour to Winnersh and back than take the slip road, something was clearly very wrong.</p>
+<p>So rather than simply moaning at the Highways Agency, I wondered what could actually be done to solve the problem? How does one even measure that a problem like this is solved? As the quote goes “<em>You can please some of the people all of the time, you can please all of the people some of the time, but you can’t please all of the people all of the time”.</em> Until we all go to work in automated, computer-controlled flying drones, there is always going to be <em>some</em> congestion as everyone decides they want to get to work for exactly the same time as everybody else each day.</p>
+<p>Please bare in mind I approach this as someone who is interested in problem solving, but with no expert knowledge in large construction projects (I build software for a living, not roads) – but I thought it would be a fun thought experiment if nothing else.</p>
+<h3>How to solve it?</h3>
+<p>Our first problem – the traffic jam. This would seem to be caused by the fact that the volume of traffic (that’s us, traffic is just another word for people, remember) is too great for the road. How could this be solved, while not reverting the M4 &gt; A329M junction back to it’s untenable situation?</p>
+<p>The problem is that people actually get into the right-hand lane <em>too early</em>. I understand why they do this; to stay safe, it’s polite, and because the road signs encourage drivers to do so. However, from a pure ‘volume of traffic’ point of view, if we could encourage people to use the both lanes right up until the last minute, and to merge in an organised and safe fashion, <a href="http://arstechnica.com/cars/2014/07/the-beauty-of-zipper-merging-or-why-you-should-drive-ruder/">studies show</a> this would reduce queues because it makes use of the full capacity of the road.</p>
+<p>This brings us to our second problem – aren’t those last minute lane changers dangerous? Obviously if you’re reversing up a slip road then you’ve left it a little <em>too late</em>, that <em>is</em> dangerous. Surely there’s nothing wrong in theory with changing lanes at the last moment, as long as it’s a considered manoeuvre? In order to encourage this, I would suggest that instead of going to the M4, the left-hand lane ends up merging into the right-hand. This gives drivers in both lanes the responsibility to merge. At peak times a speed limit would need to be lowered to 40MPH (enforced by average speed cameras) to aid safe merging, and also to help drivers in the right lane refrain from powering straight into the slower moving traffic that’s entering from the M4 further down, braking hard and causing tailbacks as the breaking forms a wave that spreads along the rest of the road. They may be unpopular, but variable speed limits have used to good effect on M25.</p>
+<h3>In Summary</h3>
+<ul>
+<li>The left-hand lane would have two distinct exits (instead of trailing off to the M4).</li>
+<li>The land-hand and would merge into the right-hand lane.</li>
+<li>During peak times a variable speed limit of 40MPH would be enforced.</li>
+</ul>
+<p>I’m sure that much greater minds at The Highways Agency have considered this (and I say that respectfully). There is sure to be a reason why this wouldn’t work. I’d love to know. I can’t imagine how difficult it must be to try and keep all of us road users happy. I hope the problem is addressed, but for now my real-world solution has been to set off on my journey 30 minutes earlier and avoid the rush.</p>
+
+  
+  <p>Tags:
+    
+      <a href="/tag/a329m/">a329m</a>
+    
+  </p>
+  
+</article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="inner">
+        <p>&copy; 2000 –
+          2026
+          Marc Wickens.
+        </p>
+      </div>
+    </footer>
+
+    <script src="/static/js/compare.js" defer="defer"></script>
+    <script data-goatcounter="https://imarc.goatcounter.com/count" async="async" src="//gc.zgo.at/count.js"></script>
+
+  </body>
+</html>

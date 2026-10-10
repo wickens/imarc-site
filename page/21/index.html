@@ -67,6 +67,108 @@ Coded and designed by Marc Wickens. Powered by 11ty.
 
 
 <article class="post-full">
+  <h2 class="post-title"><a href="/2011/11/05/using-dropbox-to-synchronise-existing-folders/">Using Dropbox to synchronise existing folders</a></h2>
+  <p class="meta">
+    <time datetime="2011-11-05T13:57:48.000+00:00">5 Nov 2011</time>
+  </p>
+
+  <p>Dropbox is a great service at a decent price, it’s limited however by the fact that it only synchronises files stored inside your ‘Dropbox’ folder. To get around this limitation on Windows 7 here’s what you need to do (as with anything like this, always backup everything to an external drive first, usual disclaimers apply, follow these instructions at your own risk).</p>
+<ol>
+<li>Inside your Dropbox folder, create folders with the same name as the ones you already have on your hard disk, in my case “Music”, “Documents” and “Pictures”.</li>
+<li><em>Move</em> all your data from the existing folders into your Dropbox folder (they should start uploading to Dropbox) – Yes I said move, so make sure you backed.</li>
+<li>Delete the original folders (which will now be empty as you moved everything into your Dropbox)</li>
+<li>For each folder, create a <a href="http://www.windows7home.net/how-to-create-symbolic-link-in-windows-7/">symbolic link</a> from your original location to the new one inside your Dropbox by running <strong>mklink</strong> from an administrative command prompt.
+Example:
+<strong>mklink /D “C:UsersMarcDocuments”  “C:UsersMarcDropboxDocuments”</strong></li>
+<li>That’s it! When you setup a new PC, you will have to start from step 4 and all your documents, pictures and music will just appear.</li>
+</ol>
+<p><em>It will also work the other way round, creating a link from inside the Dropbox folder to your existing documents folder, however Dropbox only recognises changes when it gets restarted which defeats the point if you’re using it as a backup service and want to make use of it’s ‘Previous Versions’ feature.</em></p>
+<p>Hope this might be of use to someone, and I hope Dropbox make doing this easier like Windows Live Mesh. Happy syncing!</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2011/11/02/samsung-copying-apple/">Samsung copying Apple?</a></h2>
+  <p class="meta">
+    <time datetime="2011-11-02T00:36:31.000+00:00">2 Nov 2011</time>
+  </p>
+
+  <p>There’s been a lot reported in the news lately about Apple and Samsung battling it out in court to stop each other from selling various products.</p>
+<p>I broke my Acer laptop at the weekend <em>(well, I put it in the boot of my car inside a laptop bag, and afterwards the screen stopped working, and I am a good driver I promise!)</em> so I decided I needed a new laptop since the laptop was so cheap anyway the cost of a new screen plus the likelihood of it happening again just doesn’t justify a repair –and a PC is for me at the heart of all things digital that I do. I didn’t want to spend stupid money on a laptop (I would love a MacBook Air, but at £1000 for one with a decent spec, I’ll pass) so I found a Samsung with an i5 and 4GB of RAM for a decent price.</p>
+<p>Clearly while Samsung may have taken inspiration from some of Apple’s design (or may not have depending on who’s argument you’re listening to) they certainly haven’t noticed that Apple are not just about shiny products but about the overall user experience. Unboxing and switching on an iPad for the first time is enjoyable, like getting in a brand new car for the first time – doing this for my Samsung laptop was all but enjoyable.The first screen I was greeted with was some partitioning software! Do Samsung really think the average user cares how their partitions are setup? Even I don’t and I’m a self confessed geek.</p>
+<p>After finally getting to the desktop, (about 20 minutes later) the next thing I see is a warning from Kaplinsky Security telling me I need to pay up for some security software. Do theses companies not get it? The game’s changed and you can’t treat consumers like this any more. Microsoft have said Windows 8 will have built in antimalware, lets hope they also take control of the setup experience too.</p>
+<p>Then I had to spend another hour or so removing crapware. An Apple-esque dock that sat above the Windows 7 taskbar, a Bing Bar, and media players I will never use.</p>
+<p>Finally, for some reason the power management was set so that the laptop would use hybrid sleep, this is where instead of shutting down you put the system to sleep, and simultaneously the system hibernates, so if power is lost no data is lost. This is designed for desktops and should never be enabled for laptops, lots of disk activity when you are chucking your laptop in your bag is not a good idea, not to mention the battery drain of always being in standby.</p>
+<p>So not a great experience, and nothing like getting a new Apple product. Can’t say I would be eager to try any other of their products after this – what are your experiences?</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2011/10/08/steve-jobs/">Steve Jobs</a></h2>
+  <p class="meta">
+    <time datetime="2011-10-08T14:06:22.000+00:00">8 Oct 2011</time>
+  </p>
+
+  <p>A lot has been said about the passing of Steve Jobs. The reason I am sad about his death is that Apple (under his leadership) was the first company to make technology products mainstream and fashionable. Gadget lovers like me had long been on the side-lines with their PDAs and gigantic smartphones but Steve Jobs changed all that – the iPod and iPhone made it normal to want to carry more than 15 songs around with you on the train, or to sit in a coffee shop browsing the web on your phone. The iPad is at long last a device which can be switched on instantly like an appliance, but can do almost anything you would desire to do on a full-sized laptop.</p>
+<p>From the first Apple product I owned (the G3 slot loading iMac, released in 2001), to the  second (the first iPod – yes people laughed at me for wearing white headphones, and I still think the physical click-wheel device was the best of the classic iPods) to the iPad I purchased recently, they’ve all been accompanied by an enchanting Steve Jobs announcement. It will feel odd not seeing that again, and is something I will definitely miss.</p>
+<p><em>RIP Steve</em>.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2011/10/02/six-months-on-my-kindle-thoughts/">Six months on, my Kindle thoughts</a></h2>
+  <p class="meta">
+    <time datetime="2011-10-02T10:28:05.000+00:00">2 Oct 2011</time>
+  </p>
+
+  <p>It’s been around six months since I stopped reading paperback books and moved to the Kindle. My reasoning for doing so was not so much environmental concerns (I’m sure an electronic reading device isn’t exactly green to produce and keep charged) but convenience and, hopefully, a better reading experience. It means having all your books with you, being able to synchronise your place with other devices (phone, tablet) for those occasions when you forget your Kindle but want to continue your book, and being able to adjust the text size.</p>
+<h2>Wi-Fi-only would have been enough</h2>
+<p>I opted for the more expensive 3G option, thinking I might take advantage of the free 3G to browse the web or buy books when I was out and about. I have rarely needed or wanted to do this. When I’m at home I can use the Wi-Fi; the same goes at work. When I’m on holiday, there’s usually no shortage of Wi-Fi available (in Lisbon even the tour bus had free Wi-Fi!). In those situations where there is no Wi-Fi, frankly I can wait a few hours before purchasing the next book. Oh, and the web browser isn’t particularly useful—not when you have a smartphone in your pocket, at least.</p>
+<h2>A better reading experience</h2>
+<p>In all honesty, I can say that the Kindle is a more enjoyable reading experience than a normal book. Yes, it lacks that woody aroma, and you never get to see the cover artwork in its full-colour glory, but as someone once said, you shouldn’t judge a book by its cover anyway. Being able to make the text bigger and control the line spacing really helps. Some books that were 900 pages long with an 8 pt text size would have put me off in the past, but with a Kindle you don’t really notice how “fat” a book is; all you see is that percentage indicator gradually creeping up. The built-in dictionary makes it so easy to look up words that I actually learn a lot by looking up words I didn’t know instead of simply inferring what the meaning might be.</p>
+<h2>It’s still a gadget</h2>
+<p>Of course, there’s no getting away from the fact that these things cost a lot of money, and the books themselves aren’t really that much cheaper than their paper counterparts (thanks somewhat to UK VAT laws, which mean digital books are subject to VAT, but traditional paper books are not). Taking an expensive gadget everywhere isn’t always an option, and you’ll probably want to buy a case for it. Oh, and please don’t do what I did and put the Kindle in the same bag as a bottle of sunscreen (yes, the case was a good investment!). That said, I think the benefits outweigh the negatives, and my Kindle has survived trips to the beach. I’d definitely recommend a Kindle.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2011/08/06/i-bought-an-ipad/">I Bought an iPad</a></h2>
+  <p class="meta">
+    <time datetime="2011-08-06T19:36:00.000+00:00">6 Aug 2011</time>
+  </p>
+
+  <p>I have been tempted by the iPad for a while now, it seemed to offer the power of a laptop without the inconvenience of a laptop. A long battery, yet always connected and always on. I knew full well about the downsides and I didn’t expect to be typing large documents on it, but for browsing the web, checking email and chatting on instant messenger it seemed perfect. So was it?</p>
+<h2>Not prefect, but very good</h2>
+<p>The iPad 2, despite considerably lower specs than my laptop on paper feels snappy and rarely do I have to wait for anything to happen. Unlike a laptop, there is no fan – so I feel comfortable leaving it on my bed, or on the carpet knowing I’m not to come back and find it with fans whirling while it melts. The device seems durable, whereas the iPod has a an easy-to-scratch surface, the iPad won’t get scratched under normal use.</p>
+<h2>Lack of apps</h2>
+<p>One thing I have found is the lack of iPad specific apps. It’s still quite a new platform, so I can forgive app developers slightly – but the big hitters such as Spotify and Audible still make you use the iPhone versions of the app, which only work in portrait mode and look pixelated. The keyboard layout is also different for iPhone apps, which is rather confusing. While I can type pretty fast on the iPad, the lack of any blogging software as good as Windows Live Writer means I still prefer to fire up my laptop to write anything substantial. An iPad version of Google Chrome would be nice, or at least a way to sync your Google Chrome bookmarks easily (it can be done now, but involves using a 3rd party service and isn’t worth the hassle in my opinion).</p>
+<h2>Quality not quantity</h2>
+<p>Having said all that, the apps that come with the iPad are of a very high quality. The Mail, Calendar and Contacts app are very impressive. I was surprised Apple didn’t include an alarm clock and weather app, seeing as there is one available for the iPhone but it’s not a big deal as 3rd party apps have filled the gap.</p>
+<p>For casually browsing the web or responding to emails, iPad wins. Booking a holiday? Then I’ll want 30 tabs open at once, and the iPad isn’t good at context switching. Overall I am impressed, it really does fill the void between a smartphone and a laptop. Tablets won’t replace laptops in my opinion, but they will take on many of their roles relegating laptops to the more comprehensive tasks.</p>
+<p>Highly recommended.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2011/08/05/why-the-javascript-obsession/">Why the JavaScript obsession?</a></h2>
+  <p class="meta">
+    <time datetime="2011-08-05T19:49:18.000+00:00">5 Aug 2011</time>
+  </p>
+
+  <p>If you’ve read anything on the web about technology recently you’ll know that many technology pundits and enthusiasts are claiming that HTML 5 and JavaScript are the future of computing. Even Microsoft is jumping on the bandwagon with Windows 8. But is it? Yes it has the benefits of being open, easy to learn and cross platform – but is it the best tool for developers? I’m not so sure, and I think JavaScript is the weak link. There is no compiler to warn you you’re doing stupid things, no way to enforce variables to be declared final or even to be of a particular data type. The extremely loose nature is a benefit when trying to learn it, but when you’re working on a project with thousand’s of lines of code it can get tricky. Want to rename a variable? I’ve yet to see an IDE that can refactor JavaScript the way Eclipse or Visual Studio can with Java and C# respectively.</p>
+<p>Maybe I am showing my ignorance here, but it seems to me that JavaScript might be great for small scale projects, but would I choose it for a large enterprise system over Java or C#? Is it popular simply because it happens to be the only scripting language almost guaranteed to be available on any device, rather than because it lets developers write elegant, maintainable and scalable code?</p>
+<p>[Appcelerator](<a href="http://www.appcelerator">http://www.appcelerator</a> .com/) is a tool I’ve been using recently to develop an iPhone app. It’s actually quite good, if not a little buggy here and there – but their central premise is that you can reuse your web skills and code JavaScript instead of Objective C. However, all you borrow from the web is the syntax of JavaScript, since there’s no DOM, no JQuery and instead a bunch of custom components. It’s a nice tool, and will surly get better over time, but I do sometimes wonder why they chose JavaScript as opposed to Java as their supported language.</p>
+<p>This reminds me of when “RAD” was big in the mid-nineties, Visual Basic was the future (remember, in VB there was the variant data type that could be anything). A few years later Java was the future, with its strict enforcement of OO practises. Now it’s swung the other way with JavaScript and Ruby be touted as the way forward. What will be next I wonder?</p>
+
+</article>
+<hr>
+
+<article class="post-full">
   <h2 class="post-title"><a href="/2011/05/14/goodbye-iphone-hello-htc-desire-s/">Goodbye iPhone, Hello HTC Desire S</a></h2>
   <p class="meta">
     <time datetime="2011-08-03T19:46:01.000+00:00">3 Aug 2011</time>
@@ -149,96 +251,6 @@ Coded and designed by Marc Wickens. Powered by 11ty.
 <h3>Missing iOS?</h3>
 <p>For all it’s UX faults, I prefer Android. You want Wifi Music Sync? <a href="http://www.winamp.com/android">There’s an app for that</a>. Free SatNav? <a href="http://www.google.com/mobile/navigation/">There’s an app for that</a>. Tethering over Wifi? <a href="http://www.engadget.com/2010/05/13/android-2-2-froyo-to-include-usb-tethering-wifi-hotspot-funct/">There’s an app for that</a>. Want to download the latest albums? Guess what, <a href="https://market.android.com/details?id=com.amazon.mp3" title="Amazon MP3">you can do that too</a>. In fact, there’s an app for almost anything there is on the iPhone, and the Android version is nearly always less restricted and cheaper. The exception here is games, but I’ve still found a number quality gems, just less of the big names. So I can’t say I miss iOS much, except for the eye-candy. Maybe iOS 5 will sway me next time.</p>
 <p>A highly recommended phone.</p>
-
-</article>
-<hr>
-
-<article class="post-full">
-  <h2 class="post-title"><a href="/2011/04/29/remember-when-software-came-in-a-box/">Remember when software came in a box?</a></h2>
-  <p class="meta">
-    <time datetime="2011-04-29T18:44:36.000+00:00">29 Apr 2011</time>
-  </p>
-
-  <p>Console games still do of course, but how long for?</p>
-
-</article>
-<hr>
-
-<article class="post-full">
-  <h2 class="post-title"><a href="/2011/03/26/phonegap-the-javascript-files-are-different/">PhoneGap: The JavaScript files are different!</a></h2>
-  <p class="meta">
-    <time datetime="2011-03-26T17:01:01.000+00:00">26 Mar 2011</time>
-  </p>
-
-  <p>I have recently been developing with <strong><a href="http://www.phonegap.com/">PhoneGap</a></strong>, the cross platform development kit for mobile devices (essentially a browser window that lets you run HTML 5 web sites as an App)</p>
-<p>I started off developing for iPhone and Android, using the packages provided by their download to get up and running. Great stuff. You write an app using HTML 5, JavaScript and CSS3 and then deploy to each device. The PhoneGap package contains a directory for each platform, with a number of files – the important one being <strong>phonegap.0.9.4.js</strong>.</p>
-<p>So I developed the app on my Windows PC, copying the files across to my trusty Mac to deploy to iPhone. There are some subtle differences in the way Safari and Chrome render, so it was important to test across both devices. I kept coming across intermittent problems on the iPhone however, with the <em>deviceready</em> event not firing. What was going on?</p>
-<h3>phonegap.0.9.4.js</h3>
-<p>Due to the negligible amount of documentation available on PhoneGap’s site (Hey – I am used to having MSDN at my disposal!) I found myself digging through the sourcecode to work out how on earth I could do things. I noticed a lot of Android specific code, but no iPhone code. How odd. I then checked in my BlackBerry project folder and noticed the file was much bigger.</p>
-<p>Yes, folks – the various <em>phonegap.0.9.4.js</em> files – despite having the same filename are totally different for each OS implementation. Not once in the many hours spent reading PhoneGap’s web site did I see anything that told me that. Turned out my iPhone problems were because I was deploying an Android version of PhoneGap to the iPhone. Having the same filename is confusing and they seem destined to get used in place of one and other. I suspect many others will have tried to deploy the wrong file to the wrong device.</p>
-<p>I would really like to see the folks at PhoneGap have a more sensible naming convention. e.g.  phonegap_android.0.9.4.js? It would be apparent straight away the it was specific to that OS, and avoid what amounts to <a href="http://en.wikipedia.org/wiki/DLL_hell">DLL hell</a> issues for mobile apps.</p>
-<p>Of course a file is a file, and I can rename it to whatever I like (and probably will) – but it’s nice not to have to (<a href="https://github.com/jquery/jquery-mobile/issues/593">who renames jQuery?</a>) and would certainly make learning the platform easier.</p>
-
-</article>
-<hr>
-
-<article class="post-full">
-  <h2 class="post-title"><a href="/2011/01/16/audible-finally-release-iphone-app-in-the-uk/">Audible finally release iPhone app in the UK</a></h2>
-  <p class="meta">
-    <time datetime="2011-01-16T12:50:12.000+00:00">16 Jan 2011</time>
-  </p>
-
-  <p>Audible UK have released an <a href="http://itunes.apple.com/gb/app/audible/id379693831?mt=8" title="Link to iTunes store download link">app for the iPhone.</a> The best feature over the built in software is that it doesn’t rotate when you hold it sideways (I am certain this “feature” of the the iPhone exists solely for in-store demos, I find it very frustrating and wish it could be turned off).</p>
-<p>Other features include the ability to download books over the Internet (but strangely, not 3G which would have been more useful), add bookmarks with notes, customise the length of time the rewind button goes back, a button-less interface for when in the car, and a sleep timer. Overall the user experience is much more suited to audiobooks than the default iPhone interface and I highly recommend it.</p>
-<p>For those if you you haven’t discovered the joy of audiobooks, they are a great way to read while driving, doing household chores or just when your eyes feel too tired to read (I get that a lot since my job involves using a computer all day). If you like books then give them a try.</p>
-<p>Now if only there was some kind of Kindle like device that would play audiobooks, but keep your place in sync between the audiobook and the eBook.</p>
-
-</article>
-<hr>
-
-<article class="post-full">
-  <h2 class="post-title"><a href="/2011/01/15/when-you-buy-software-how-long-should-it-reasonably-continue-to-work-for/">When you buy software, how long should it reasonably continue to work for?</a></h2>
-  <p class="meta">
-    <time datetime="2011-01-15T21:58:39.000+00:00">15 Jan 2011</time>
-  </p>
-
-  <p>Electronic Arts have decided to <a href="http://news.cnet.com/8301-13506_3-20027365-17.html">discontinue some of their earlier Xbox 360 games</a>, meaning players will no longer be able to play online. With the 360 <a href="http://technologizer.com/2011/01/14/2010-game-sales-microsoft/">still selling exceptionally well</a>, the fact that games publishers are deprecating some of its older games must be worrying news for console owners. To think I can still play Team Fortress Classic, purchased in March 2000 to this day on my Windows 7 laptop - this amazing feat however is because the servers are not run by one company. <a href="http://www.overclockersclub.com/news/25732/">Lesson learnt?</a></p>
-
-</article>
-<hr>
-
-<article class="post-full">
-  <h2 class="post-title"><a href="/2011/01/03/halo-reach/">Halo Reach</a></h2>
-  <p class="meta">
-    <time datetime="2011-01-03T21:46:00.000+00:00">3 Jan 2011</time>
-  </p>
-
-  <p>OK so I am a little late to the party with this review, I like to wait until the price of an Xbox game comes down in price before shelling out for it.</p>
-<p>I’ve been playing Halo Reach a lot over the Christmas period and I am really enjoying it. I was a huge fan of the original Halo, the story and simplicity (there were only 6 or 7 weapons) and nonstop action. Yes some of the levels were repetitive (I remember one level, where you had to get to the top of a building fighting The Flood, and each floor was essentially the same, meaning you did the same over and over level 5 or 6 times!) but others like the wide-open second level where you drove around the planet Halo were ground-braking for an FPS. Halo 2 was more of the same, now with dual-wielding and some more weapons, and multiplayer. What I didn’t like was playing as someone other than the Masterchief , I lost interest during these parts. Halo 3 was for me, more Halo 2 with prettier graphics and better online play. The story didn’t really grab my attention, possibly due to the parts I’d blanked out while playing Halo 2 and me not knowing what on earth was going on except there were enemies to shoot. ODST was a return to form for me, a totally new set of characters in a rich, dark, film-noir (Blade Runner-esque) atmosphere and good backstory that compelled me to keep playing.</p>
-<h3>The good</h3>
-<p>Halo Reach takes the good parts of ODST’s story and gameplay, but adds some new features such as jetpacks and the sprint ability. What makes a big difference between it and say, Halo 3 is the story seems to grab my attention and gives me a reason so shoot all those</p>
-<p>Covenant. The levels are also very varied and don’t get boring. The multiplayer is rock-solid too, unlike Halo 3, I don’t seem to end up getting shot from out of nowhere every 10 seconds – it seems more well balanced.</p>
-<h3>The bad</h3>
-<p>Not all is good however. Only 2 months after its release, Bungie are expecting loyal fans to pay more for some extra maps in order to enjoy the full online experience. I am all for additional content that can be purchased, but it seems that these days games developers hold back content specifically and then sell you it a few months later. I wouldn’t mind if we were 1 or 2 years down the line but to release it so soon just makes me think that nowadays when you buy a game, you actually get 90% of it and can expect to pay another ~£7 in points to get the full experience in 2 or 3 months time. I have also seen the new maps being bundled with the game in shops for the same price as the original, further penalising the loyal fans who go out and buy this stuff when it comes out.</p>
-<h3>Conclusion</h3>
-<p>The game is great, and will provide hours of fun. There is plenty of replay value, not just with the online play, but also the solo campaign which can be played on multiple difficulties and with friends. I am slightly annoyed about the additional maps being released so soon (they should have come with the game), but I wouldn’t that spoil what is the best Halo game to date and one of the best shooters of the 360.</p>
-
-</article>
-<hr>
-
-<article class="post-full">
-  <h2 class="post-title"><a href="/2010/12/26/no-i-dont-want-to-update/">No, I don’t want to update!</a></h2>
-  <p class="meta">
-    <time datetime="2010-12-26T23:47:00.000+00:00">26 Dec 2010</time>
-  </p>
-
-  <h3>Automatic updates aren’t always a good thing.</h3>
-<p>Software updates. We all all love them don’t we? Unlike any other industry I can think of, users of software expect to get updates on a regular basis. When <a href="http://en.wikipedia.org/wiki/Windows_Update#History">Microsoft included Windows Update with Windows 98</a> it hailed a new era of self-updating software. But what happens when you are forced to update software? Microsoft has always been pretty conservative when it comes to forcing users to install updates, prompting, prompting again, and providing administrators with means of delaying updates (much to the dismay of web developers, as many institutions are still using IE6, which is 9 years old) while Google on the other hand takes the opposite approach with its web browser, Chrome that updates itself so quietly you’d never notice. This is fine with me, as Google have continued to add features and make the browser better and faster.</p>
-<p>So what happens when (<a href="http://en.wikipedia.org/wiki/Software_bloat">as seems to happen with all software</a>) the browser starts to get a bit bloated and therefore needs a beefier machine to run on? Will I be so pleased when my browser suddenly takes longer to start up? Of course two things redeem Google here, firstly I would be free to downgrade and turn off automatic updates, and secondly they give it away for free, so it’s not as if would have lost anything, except perhaps the time investment spent learning and configuring the browser (which rules by the way, I used it on all my PCs and can’t <a href="http://www.google.com/chrome">recommend it highly enough</a>)</p>
-<h4>I want my money back</h4>
-<p>When you pay for a piece of software, the publisher changes it considerably to its detriment, and then forces the update upon you then I have a problem. This was the case with <a href="http://en.wikipedia.org/wiki/Team_Fortress_2">Team Fortress 2</a>. What started out as a fun, well balanced, class-based classic game of Red vs. Blue has slowly morphed into a terrible, badly balanced game of class-based luck that has more in common with Monopoly than its excellent predecessor Team Fortress Classic. Class upgrades and in game purchases are not what I originally bought into and it’s certainly not how the game was sold to me when I paid for it almost 3 years ago. Yet here I am 3 years later unable to play the game I originally purchased because that game no longer exists. Instead I have a considerably different game where they expect you to pay extra to get the best weapons. Can you imagine if your TV manufacture insisted you upgrade to a 3D TV and then burdened you with paying extra for silly 3D glasses you’d have to wear for the rest of your TV viewing years? Maybe there is an analogy here with the switch-off of analogue TV or when motorists were forced to stop using lead based petrol – but these were in the interests of the public good, and the decisions were no doubt made after lots of discussion by elected members of government.</p>
-<p>I am struggling to think of any instances of when this sort of forced update would be acceptable. Security patches are a different matter, because they rarely take away features.and so I fully support them. Of course when the updates are actually good, then I don’t mind (<a href="http://en.wikipedia.org/wiki/Team_Fortress_Classic#Development">TFC for example gained teleporters midway through its life</a>) – but one person’s great new feature could just as easily ruin the game for someone else. There is no easy solution, I’m sure Value would argue it’s impossible to support each version ever released and still have people playing against each other. Had they released a whole new game called Team Fortress 3, then people would accused them of cashing in like they did when Left 4 Dead 2 was released.</p>
-<p>So no easy answers, but as cloud computing becomes more commonplace in business I don’t see this problem going away.</p>
 
 </article>
 <hr>

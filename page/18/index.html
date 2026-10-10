@@ -67,6 +67,157 @@ Coded and designed by Marc Wickens. Powered by 11ty.
 
 
 <article class="post-full">
+  <h2 class="post-title"><a href="/2014/06/02/wwdc-2014-opening-keynote-thoughts/">WWDC 2014 Opening Keynote Thoughts</a></h2>
+  <p class="meta">
+    <time datetime="2014-06-02T20:34:32.000+00:00">2 Jun 2014</time>
+  </p>
+
+  <p>Overall a packed keynote with lots to say, here are my highlights.</p>
+<ul>
+<li>iCloud Drive is looking to take on Dropbox and SkyDrive, with Windows clients too.</li>
+<li>CloudKit looks to be something similar to Microsoft’s Windows Azure Mobile Services, but free. Will it support non-iOS clients, though?</li>
+<li>HealthKit and HomeKit look interesting, as long as they don’t go the same way as Game Center.</li>
+<li>Finally, we have unified communications between all your devices. Receive SMS on your PC, make phone calls from an iPad. Great stuff.</li>
+<li>With widgets in the sidebar and lots of translucency, I couldn’t help but think of Windows Vista when I saw Mac OS X 10.10. I joke of course, though I will miss the 3D dock.</li>
+<li>The new Spotlight service looks like it will be extremely useful, and could reduce iOS/Mac OS users’ reliance on Google.</li>
+<li>The new photos in the cloud service should really help me with my measly 16GB device. Can’t wait for the Mac version to be released.</li>
+<li>Objective-C replaced! I was not expecting that. Great to see a more modern language being introduced.</li>
+</ul>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2014/05/17/the-nifty-minidrive/">The Nifty MiniDrive</a></h2>
+  <p class="meta">
+    <time datetime="2014-05-17T12:49:02.000+00:00">17 May 2014</time>
+  </p>
+
+  <p>As anyone who owns a MacBook air will know, these amazing laptops fall down in one key area – storage capacity. Of course you’re free to plug in an external hard drive to get extra space, which with USB 3 will be super snappy. External hard drives are a bit clucky however, especially when you want a laptop to be portable and easy to use say, <em>on you lap</em>.</p>
+<p>Luckily, the 13 inch MacBook Air models have an SD card slot, so it is possible to add in an SD card and gain additional storage that’s easily portable. The problem with most SD cards is they extrude from the side of the laptop – meaning anyone who leaves a card in all the time is likely to damage or loose it.</p>
+<h5>Enter the Nifty MiniDrive</h5>
+<p><img src="/wp-content/uploads/lostinlogic/2014/05/the-nifty-minidrive-1.jpg" alt="Photo 17-05-2014 12 08 25" title="Photo 17-05-2014 12 08 25"></p>
+<p><em>The Nifty MiniDrive looks great when inserted into my 2013 MacBook Air</em></p>
+<p>The nifty MiniDrive promises to solve this problem by offering a microSD adapter that fits into the SD card slot. Unlike a normal SD card, it sits flush with the edge of the MacBook. What a brilliant idea. For £76.87 was able to increase the storage on my MacBook by 50% by ordering the Nifty adapter along with a 64GB microSD card – a bargain right? It depends…</p>
+<h5>Really slow</h5>
+<p>When I tried to move my 20GB iPhoto library on to the drive, iPhoto crawled to a halt and was unusable. I’m pretty tech savvy and so I of course took this on as a challenge and spent quite a lot of time trying to solve this; by rebuilding photo thumbnails, repairing permissions, making sure the drive was formatted HFS+, and even rebuilding my library from scratch. In the end I came to the conclusion that the microSD card supplied was simply not up to the job.</p>
+<h5>Battery Life</h5>
+<p>One of the best features of the MacBook Air is the ability to leave it in sleep mode for days on end without the battery draining much. I noticed after I’d started using the MiniDrive that my battery seemed to go down a lot while it was in sleep mode. After some digging, I discovered that Mac OS X will put the laptop into a “deep sleep” mode (similar to Hibernate on Windows) after a few hours in normal sleep to save on battery life. The problem I found is that <a href="http://support.apple.com/kb/HT4392?viewlocale=en_US&amp;locale=en_US">Mac OS X will never do this if an SD card is inserted</a>. That means standby time is significantly reduced when the Nifty MiniDrive left in, and the while point of the Nifty MiniDrive is that <em>you leave it in</em>. I must stress <em>this is <strong>not</strong> the fault of the Nifty MiniDrive</em> (any SD card will cause this to occur) but I was surprised to see it wasn’t mentioned on their FAQ page, as it could be a problem for some people.</p>
+<p>So what’s it good for?</p>
+<h5>iTunes and Steam</h5>
+<p>I found it was quick enough to store my iTunes library on, and Steam had no trouble storing and loading games on it. Team Fortress 2 ran absolutely fine from the Nifty MiniDrive. For anyone with a MacBook bursting at the seams with games and music, the MiniDrive is probably worth getting. You could also theoretically move your Dropbox or OneDrive folders onto the drive.</p>
+<h5>Backups</h5>
+<p>Another often quoted use of the Nifty MiniDrive is as a Time Machine backup drive. This can work well in theory if you want to make use of Time Machine’s versioning features, but as a total backup solution, having your backup inside your laptop at all times means if your laptop gets lost or stolen then so does your backup, so for me this was a non-starter.</p>
+<h4>Worth buying?</h4>
+<p>So would I recommend the Nifty Minidrive? My answer is yes if you’re aware of it’s limitations. For people who routinely shutdown their Macs instead of using sleep, they shouldn’t notice any big changes in battery life. If you need to store large, rarely used files then you shouldn’t notice the performance issues either. Hopefully the next version of OS X will iron out the battery life issues, and faster microSD cards will be released in the future, making it a good investment.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2014/05/04/is-it-time-to-stop-assuming-users-have-flash-installed/">Is it time to stop assuming users have Flash installed?</a></h2>
+  <p class="meta">
+    <time datetime="2014-05-04T20:06:34.000+00:00">4 May 2014</time>
+  </p>
+
+  <p>Remember when the iPad first came out in 2010, and the first thing everybody said was it was doomed because it didn’t have Flash? Well, it turns out most web site owners were able to accommodate this requirement, and these days even Android tablets and phones lack the once ubiquitous browser plugin. Yet, if you’ve ever browsed the web on an iOS device or an Android device (the chances are you have) you’ll know that in the vast majority of cases, everything has continued to work as normal. Staples of the Internet from BBC News to YouTube keep on working - when it comes to video at least (if you want to run Farmville sans plugin then you’re out of luck).</p>
+<p>So when setting up my MacBook with a clean installation of OS X 10.9, I decided to see if it was possible to live without Flash. My guess was it would be, and why not? One less thing installed on your system means a reduced attack surface for malware, fewer processes running and hence better longer life, and in my experience, fewer browser hangs. I was wrong however - instead of using “feature detection” (as good web developers should) to determine whether the browser supports the Flash alternative to video, “HTML5 Video”- it seems the vast majority of sites employ user agent sniffing and will only show you the non-Flash version if you’re on a known mobile device. I kept on being asked to install Flash, even though my iPad works just fine without it. User agent sniffing is the reason why sites designed for IE6 will ask you to “upgrade” if you visit in IE11 -I can forgive any web developer working back when IE6 came out in 2001 for following what was then a standard industry practice, but User Agent Sniffing is now generally <a href="http://ejohn.org/blog/future-proofing-javascript-libraries/">considered outdated</a>, so why are so many sites still doing it when it comes to playing video?</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2014/01/11/xbox-one-initial-thoughts2/">Xbox One: Initial Thoughts</a></h2>
+  <p class="meta">
+    <time datetime="2014-01-11T22:31:54.000+00:00">11 Jan 2014</time>
+  </p>
+
+  <p>I was lucky enough to be bought an Xbox One for Christmas, so I thought I’d post some of my initial thoughts.</p>
+<h2>The games look amazing</h2>
+<p>I have one game (Forza 5) and at £50 a pop I will likely only have one game for many months to come. That said, together with the new controller that has vibration motors in each trigger (lets you feel feedback from the brakes), speeding around Circuit de la Sarthe has never felt so real. Whether it’s being blinded temporarily by the sun, or seeing a glimpse of the driver in the windscreen, it just feels so real.</p>
+<h2>The Interface is Confusing</h2>
+<p>While I wanted to love ‘Metro’ on the PC, after trying it for just over a month on my main development machine, I had to revert to using Start8 – it didn’t work out for me (loved it on the Surface RT, however) – so how does it stack up on the Xbox One? My view is that it could work, but the current execution isn’t great. On the main screen the positions of apps move about too often, so it’s impossible to remember where anything is. After a while I realised the tiles on the main screen amounted to a ‘recently used list’ the with exception of the left and right columns, which are fixed. There’s no visual differentiation, barley any visual hierarchy (the currently running app is the largest, everything else just looks like it was thrown in) and so it all gets rather confusing. To get to Settings for example, you have to go to ‘My Games &amp; Apps’.</p>
+<h2>Apps for the sake of Apps</h2>
+<p>No device these days would be complete without an ‘App Store’ – however the Xbox One has taken this to extremes. For example, if you’re in a game and you get an achievement, in order to see the full details of that achievement you need to leave the current game and open another app (complete with an <a href="http://cyrilmottier.com/2012/05/03/splash-screens-are-evil-dont-use-them/">awful “splash screen”</a> which makes the effect of leaving one app and going to another feel even slower), if the Xbox 360 could do this, surly the Xbox One should be able to? Another example of this was when browsing the video store, in order to view ‘TV Deals’ I had to install the Xbox Video app. It seems a bit ridiculous that this isn’t just built in.</p>
+<h2>Kinect is impressive if still work in progress</h2>
+<p>Having Kinect recognise you and automatically log you in is very clever. The speech recognition however is limited. Unlike Siri on an iPhone you need to keep to a precise syntax, and it’s not very forgiving. Say to Siri “Hello my friend, could please turn on the Bluetooth thingamajig” and it will turn on the Bluetooth radio. Ask your Xbox to “switch off” rather than “turn off” and it does nothing. I really hope this gets improved. That said it is still very useful, especially the “record that” function that lets you record the last 30 seconds of gameplay and share it online. I can’t imagine using the Xbox One without the Kinect plugged in, it just feels like work in progress still. I don’t have any Kinect games, so I can’t comment on how good it is for games, which I guess is its main purpose after all.</p>
+<h2>Everything is fast and fluid, it multitasks like a dream</h2>
+<p>The Xbox 360 despite being able to render Skyrim at a decent frame-rate was seemingly unable to load a simple system menu without a few seconds delay. Game updates would block the entire interface and it just felt very sluggish, The Xbox One however always feels snappy. Even mid game I was able to press the ‘home button’ and get straight back to the Start Screen, compete with a smooth transition and sound effect. Subsequently opening an app such as Skype or Internet Explorer was very quick. I was also able to install a demo from the store and keep playing. I hope it doesn’t slow down over time, but this fluidity will do a lot to tempt me to use the Xbox One rather than the Apple TV or Virgin TiVo box to access Netflix or rent movies etc</p>
+<h2>The best is yet to come</h2>
+<p>I hope (and predict) Microsoft will keep updating the Xbox One as they did with the 360. I’ve only used it for a couple of days so far and you can only fairly judge a a games console after many months of usage. Overall I’m very pleased with it, and look forward to more exciting releases.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2013/09/12/my-history-in-phones/">My History in Phones</a></h2>
+  <p class="meta">
+    <time datetime="2013-09-12T19:45:10.000+00:00">12 Sep 2013</time>
+  </p>
+
+  <p>I was talking with some folks over lunch about past phone’s I’ve owned. I’ve raided my memory and decided to put up ‘my history in phones’. What do you think?</p>
+<h2><strong>2000: Ericsson A1018s</strong></h2>
+<p><img src="/wp-content/uploads/lostinlogic/2013/09/my-history-in-phones-1.jpg" alt="clip_image002"></p>
+<p>All I remember about this was it came free when you saved up enough Coca-Cola ring-pulls. Thankfully a friend of the family drank a lot of Coke. Back when this came out, all a phone could do was literally make calls and send texts. Unusual for its time, this model could store SMS in its own internal memory as well as on the SIM.</p>
+<h2>2001: Motorola T191</h2>
+<p><img src="/wp-content/uploads/lostinlogic/2013/09/my-history-in-phones-2.jpg" alt="clip_image004" title="clip_image004"></p>
+<p>Wanting something a bit more stylish, I blew one my early paycheques on this baby. It made calls, and could send and receive SMS. It had a cool little ‘Bick’ came too. The vibrate motor was pretty substantial.</p>
+<h2>2002: Nokia 3330</h2>
+<p><img src="/wp-content/uploads/lostinlogic/2013/09/my-history-in-phones-3.jpg" alt="clip_image006" title="clip_image006"></p>
+<p>Realising everyone else in my family (and the world) seemed to have a Nokia, I went for the 3330, they must be good – right? The 3330 was to the 3310 what was the iPhone 5S to the iPhone 5 – more memory and WAP in this case. More memory meant more space for custom icons, WAP meant getting football scores from the BBC on your lunch break.</p>
+<h2>2003: Nokia 3510i</h2>
+<p><img src="/wp-content/uploads/lostinlogic/2013/09/my-history-in-phones-4.png" alt="clip_image008" title="clip_image008"></p>
+<p>Nokia had the best interface and the best battery life, so I stuck with them for my first colour phone. No camera, the colour screen was only for <em>receiving</em> MMS messages as I sure was going to be sending any without a camera. It used to lightup like a nightclub when it rang, great phone and served me well for many years after as a ‘backup phone’ for taking to festivals and places where it’s likely to get ruined.</p>
+<h2>2004: Nokia 6110i</h2>
+<p><img src="/wp-content/uploads/lostinlogic/2013/09/my-history-in-phones-5.jpg" alt="clip_image010" title="clip_image010"></p>
+<p>While it might be cool to have the biggest phone possible these days, back in 2004 having the <em>smallest</em> was what it was all about. Not much of a change from the 3510i except mobile browsing was improved, and it let me share internet out to my <a href="http://h20000.www2.hp.com/bizsupport/TechSupport/SupportTaskIndex.jsp?lang=en&amp;cc=us&amp;taskId=125&amp;prodSeriesId=322908&amp;prodTypeId=215348&amp;supportTaskId=22828">PDA</a> via <a href="http://en.wikipedia.org/wiki/Infrared_Data_Association">infra-red</a>.</p>
+<h2>2004: Nokia 6630</h2>
+<p><img src="/wp-content/uploads/lostinlogic/2013/09/my-history-in-phones-6.jpg" alt="clip_image012" title="clip_image012"></p>
+<p>My first <em>smartphone</em>. It was also my first 3G phone and was capable of making video calls, although it had no camera on the front. Instead it came with a desk stand that would allow you to point the rear camera at yourself. The on-board software was pretty amazing for its time – email, browsing, MP3 Support, even a little app that would put photos and video together into one long video and with background music (iMovie does this to this day). Two phones in one year? I think I took out some form of insurance that allowed me to return my phone and get a new one anytime I liked (at the expense of getting a new phone number, unfortunately)</p>
+<h2>2005: Nokia 6020</h2>
+<p><img src="/wp-content/uploads/lostinlogic/2013/09/my-history-in-phones-7.jpg" alt="clip_image014" title="clip_image014"></p>
+<p>While I had enjoyed my first foray into smartphones, I the 6630 was underpowered and something as simple as opening the Contacts app would take about 10 seconds. So I decided to switch back to a ‘classic’ Nokia. By now Series 40 phones had quite a few smart features themselves: background email checking, mobile web browsing, ‘Push to Talk’ to name a few.</p>
+<h2>2005: MDA Vario (AKA HTC Wizard)</h2>
+<p><img src="/wp-content/uploads/lostinlogic/2013/09/my-history-in-phones-8.jpg" alt="clip_image016" title="clip_image016"></p>
+<p>The geek in my needed a smartphone, this one ran Windows Mobile 5. It was very cool, it had a full keyboard and meant you could do really advanced things for the time such as connect to a WiFI network (!), crop photos, run an RDP session to your PC and edit Office documents. Unfortunately unlike a Nokia, the alarm could not be relied upon to wake you up in the morning – it would regularly fail to go off or crash. I remember spending a lot of time hunting for jobs when I had this phone, and having a decent email client really came into its own. The stylus used to keep falling out, eventually I lost it I think.</p>
+<h2>2007: Nokia N95</h2>
+<p><img src="/wp-content/uploads/lostinlogic/2013/09/my-history-in-phones-9.jpg" alt="clip_image018" title="clip_image018"></p>
+<p>This was the phone to beat all phones: WiFi, GPS, HD Video and 5MP Carl Zeiss camera with an optical zoom (not just digital zoom as most phones to this day still have). The podcasts app was great, so was email and browsing the web (it would show desktop sites and allow you to zoom). It did get slow after a few years of use however, and the volume up button broke twice for me (after 1 replacement). This made me decide not to go with Nokia again.</p>
+<h2>2001: iPhone 3GS</h2>
+<p><img src="/wp-content/uploads/lostinlogic/2013/09/my-history-in-phones-10.jpg" alt="clip_image020" title="clip_image020"></p>
+<p>Probably my favourite phone looking back, because it did change the way I used my phone. I already owned a first generation iPod Touch, and so I was completely sold on iOS. The App Store, easy video editing, games – everything was a joy to use. For the first time I would use my phone instead of a laptop for casual web browsing. Not to mention it was also an iPod. Brilliant, although iOS 4 did slow it down somewhat, it was at its prime when running iOS 3.</p>
+<h2>2011: HTC Desire S</h2>
+<p><img src="/wp-content/uploads/lostinlogic/2013/09/my-history-in-phones-11.jpg" alt="clip_image022" title="clip_image022"></p>
+<p>I thought it’d give Android a try – everything was just slower, uglier and less reliable than the iPhone.</p>
+<h2>2012: iPhone 5</h2>
+<p><img src="/wp-content/uploads/lostinlogic/2013/09/my-history-in-phones-12.png" alt="clip_image024" title="clip_image024"></p>
+<p>After about 18 months using the HTC, I just had to jump ship and go back to iPhone. It’s easy to use, the battery lasts forever and it has more apps that I could download in an entire lifetime. I’m undecided on iOS 7, although I’ve yet to use it day-to-day. Looking forward to installing it, although I will probably wait a month or so for the bugs to be ironed out.</p>
+<h2>Where Next?</h2>
+<p>Whatever happens my current phone will have to last me least another 18 months, whether I get the iPhone 6 or switch to Windows Phone 8 depends… all I know is that I’m unlikely to switch back to Android – although I would consider a Nokia again, having played with some of their newer (much more sturdy) phones.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
+  <h2 class="post-title"><a href="/2013/06/09/samsung-easy-settings-on-windows-8/">Samsung Easy Settings on Windows 8</a></h2>
+  <p class="meta">
+    <time datetime="2013-06-09T16:34:50.000+00:00">9 Jun 2013</time>
+  </p>
+
+  <h2>Incompatible</h2>
+<p>I bought my Samsung laptop well over a year ago, and it came running Windows 7. Despite having the most awful keyboard I have ever used, I’ve stuck with it because the Core i5 is pretty decent, and it’s got plenty of storage for all my music and I’m not going to shell out for a new laptop until this one gives up the ghost.</p>
+<p>One of the interesting features that Samsung included was a piece of software called ‘Easy Settings’ which allowed me to configure the battery to never charge above 80%, supposedly lengthening the life of the battery. I turned this on (since my laptop is plugged in 99% of the time) and forgot all about it. A few months later I installed Windows 8 and found that Easy Settings no longer worked. When I tried to install it I got this message:</p>
+<p><a href="/wp-content/uploads/2021/01/82fc1-image.png"><img src="/wp-content/uploads/2021/01/e725b-image_thumb.png" alt="image" title="image"></a></p>
+<p>Loosing 20% of your battery capacity might be fine around the house, but sometimes I do like to take my laptop out and so I really wanted to be able to configure this. Even forcing Windows to install meant the app would run but wouldn’t display correctly function at all, I guess Microsoft blocked it for a reason.</p>
+<h2>Install Version 2.1</h2>
+<p>It turns out <a href="http://downloadcenter.samsung.com/content/SW/201305/20130521090434453/SWUpdate_2.1.15.1.ZIP">Samsung do offer a version of this tool for Windows 8</a>, they just don’t make it easy to find. Version 2.1 works perfectly fine on NP300E5A model. Before I could change any power management settings, I had to update my laptop’s firmware however. The link to the download was hidden away on this <a href="http://www.samsung.com/us/support/win8upgrade/">Windows 8 update page</a>, so check your model is listed before performing any firmware updates!</p>
+<p><a href="/wp-content/uploads/2021/01/f48f1-image1.png"><img src="/wp-content/uploads/2021/01/6ac4f-image_thumb1.png" alt="image" title="image"></a></p>
+<p>One nice addition if the ability to turn your laptop into a wireless Access Point (yes, Macs have had this feature for years I know, and it’s very useful).</p>
+
+</article>
+<hr>
+
+<article class="post-full">
   <h2 class="post-title"><a href="/2013/05/11/kindle-paperwhite-review/">Kindle Paperwhite Review</a></h2>
   <p class="meta">
     <time datetime="2013-05-11T11:47:35.000+00:00">11 May 2013</time>
@@ -112,94 +263,6 @@ Coded and designed by Marc Wickens. Powered by 11ty.
   </p>
 
   <p>Windows 8, by trying to be like iOS and Android and providing a simplified “one app at a time” interface (or more precisely 1.3 apps at a time) means that Windows is no longer good at what Windows was always good at. I already have a tablet, and I reach for my Windows laptop when I need to do something my iPad can’t. That inevitably means I head straight to the desktop. This is why Windows has failed to reinvigorate the PC market, Windows no longer offers a great desktop experience or a mature tablet experience. I’m sure it will get better, and really hope we see Office for Metro sometime soon.</p>
-
-</article>
-<hr>
-
-<article class="post-full">
-  <h2 class="post-title"><a href="/2013/04/09/ios-disappearing-calendar-notifications-mystery-solved/">iOS Disappearing Calendar Notifications – Mystery Solved</a></h2>
-  <p class="meta">
-    <time datetime="2013-04-09T22:20:14.000+00:00">9 Apr 2013</time>
-  </p>
-
-  <p>Ever turned in your iPhone to see a calendar notices suddenly disappear from the lock screen? I’ve been seeing this a lot lately, and it’s really bugged me – especially when my phone is on silent (as it is most of the day), so I can check it at chosen intervals rather than be disturbed (developer thing, no doubt) .</p>
-<p>Well it turns out iOS will remove a notification after the event has finished. Kind of makes sense, although it does mean if you totally miss an appointment, you’d be none the wiser unless you pay very careful attention and see it before the notification quickly disappears.</p>
-<p>Odd quirk, but probably not a bug – just a design choice (I would say it makes sense to remove them from the notification centre, perhaps not the lock screen) and Apple should probably hide it <em>before</em> the screen turns in to avoid the confusion of seeing something for a split second.</p>
-
-</article>
-<hr>
-
-<article class="post-full">
-  <h2 class="post-title"><a href="/2013/03/23/apple-podcasts-update-now-works/">Apple Podcasts Update – Now Works!</a></h2>
-  <p class="meta">
-    <time datetime="2013-03-23T16:03:10.000+00:00">23 Mar 2013</time>
-  </p>
-
-  <p>Apple have finally updated their Podcasts App, and the good news is that it now works brilliantly. Before it used to crash, downloads would fail to start, and synchronisation between devices wouldn’t always work. The animated cassette player has also been removed, while I quite liked the animating, the app is much more intuitive without it (more akin to the original iPod App in iOS) and that’s got to be a good thing. The best feature of this app is by far the synchronisation of positions between devices. It mean you can listen to a show on your iPad at home in the kitchen, and when you go to the gym later on it has remembered where you got to.</p>
-<p>The one thing the app is missing is the ability to download podcasts automatically without opening the app. iOS really could do with an API that allows apps to schedule in long, power-hungry tasks to be performed when the device is plugged in and idle.</p>
-<p>Search ‘<a href="https://itunes.apple.com/us/app/podcasts/id525463029?mt=8">Podcasts</a>’ in the store.</p>
-
-</article>
-<hr>
-
-<article class="post-full">
-  <h2 class="post-title"><a href="/2013/03/02/o2-aims-to-make-your-sms-allowance-relevant-again-with-new-app/">o2 Aims to Make Your SMS Allowance Relevant Again With New App</a></h2>
-  <p class="meta">
-    <time datetime="2013-03-02T20:48:28.000+00:00">2 Mar 2013</time>
-  </p>
-
-  <p><a href="http://www.o2.co.uk/tugo/">Tu Go</a> is a a great idea. It can turn your iPod, iPad, laptop, or Android Tablet into a phone. Call people as if you’re calling from your mobile, and have up to 5 devices ring when you receive a call, send and receive SMS messages and see a list of voicemails.</p>
-<p>Unlike Skype, there’s no ‘free’ calls if you call someone else using the app, all calls are charged as if you made them on your phone, as are messages.</p>
-<p>To me this is less of a challenge to Skype, but might have more of an impact on people using iMessage, BBM or Google Talk for messaging across their devices. Now instead of being locked into your device operating system vendor’s ecosystem (iOS, Android, Blackberry), you can be locked into your network operators (albeit far more interoperable) system instead. This is a nice idea, since SMS messages sent from this app can still be receive by someone with an old phone. I do like iMessage, the typing indicator is particularly useful for knowing whether to keep you phone out because you can see the other person is about to respond but I am seriously considering switching to this since my contract gives me unlimited SMS anyway.</p>
-<p>It remains to be seen how this app will affect battery life. On iOS at least, VOIP apps get launched on system boot and can poll their sever a minimum of every10 minutes. On Android anything goes with regards to background activity. Of course users without a cellular network connection (most iPads sold) will only be able to receive calls when they’re in a WiFi area. If it had a big impact, I probably wouldn’t use it.</p>
-<p>What this does blur the line between what a phone is, and what a tablet is. How long before we just buy a device with a 3G/4G connection, and download our favourite VOIP app for making calls with? With a Bluetooth headset, could the iPad mini be your next phone?</p>
-
-</article>
-<hr>
-
-<article class="post-full">
-  <h2 class="post-title"><a href="/2013/03/02/google-glasses-something-microsoft-would-have-done-ten-years-ago/">Google Glasses: Something Microsoft Would Have Done (Ten Years Ago)</a></h2>
-  <p class="meta">
-    <time datetime="2013-03-02T13:06:56.000+00:00">2 Mar 2013</time>
-  </p>
-
-  <p>Google Glasses reminds me of something Microsoft would have released in the early to mid 00’s. The idea has merit, but it strikes me as not being thought through properly. Think Windows XP Tablet PC Edition, or the Origami.</p>
-<p>Yes it’s a cool idea to be able to see a computer screen on a pair of glasses, as well as take video from your personal perspective – but will people really want to a) wear glasses all the time (for this to make sense, you need to wear it every waking hour of the day) b) interact with other people who may or may not be busy using their glasses while you talk to them c) interact with people who may or may not be videoing you while you’re talking to them.</p>
-<p>Just as people didn’t want to prod a Desktop PC interface with a stylus, I can’t see these glasses being accepted by the masses in their current form. I think the idea does have merit, and would love to see something less intrusive that somehow manages to overcome these social barriers.</p>
-<p>Google <a href="http://www.google.com/glass/start/how-it-feels/">adverts for the glasses</a> are an example of your typical <em>“geek trying to make themself look overly extroverted to make up for being a geek”</em> syndrome. How many people go skydiving that often? How many people if they did would wear such an expensive pair of glasses? Most normal people (like me) whose daily routine doesn’t involve jumping out of a plane, walking down a catwalk or juggling with fire will struggle to find a use for such a device.</p>
-<p>Still, kudos to Google for putting them out there, just as with the Tablet PC in 2002, someone else might just make it work by 2023. Also I admit I haven’t tried them, so I might yet be converted. Better start saving…</p>
-
-</article>
-<hr>
-
-<article class="post-full">
-  <h2 class="post-title"><a href="/2013/02/10/size-doesnt-matter-its-what-you-do-with-it-that-counts/">Size doesn’t matter, it’s what you do with it that counts</a></h2>
-  <p class="meta">
-    <time datetime="2013-02-10T17:41:47.000+00:00">10 Feb 2013</time>
-  </p>
-
-  <p><img src="/wp-content/uploads/lostinlogic/2013/02/size-doesn-t-matter-it-s-what-you-do-with-it-that-counts-1.jpg" alt=""></p>
-<p>Apple seems to be getting a lot of bad press recently because of their refusal to release a larger iPhone. That and the fact that iOS is apparently getting ‘stale’ because hasn’t changed much since its release in 2007.</p>
-<p>I completely disagree with this criticisms – and here’s why: Firstly, when it comes to a phone, I don’t believe bigger is better. What matters to me is the portability of the device, coupled with software which is of a high standard and turns this ‘black mirror’ into something useful. If anything, quality and resolution of the screen matters far more than the dimensions.</p>
-<p>When people start talking up screen sizes, it reminds me of the TV market, where people routinely buy the biggest screen they can get for their money, even if it means the screen will disproportionately intrude into their living room. There hasn’t been much innovation in TVs in the past 6 years, we’ve seen half-hearded attempts at ‘app’ ecosystems, but ultimately people just want to sit passively and watch stuff, not mess about with apps. Since the iPhone was released in 2007, introducing multitouch, inertia scrolling and a touch screen that didn’t need a stylus, we haven’t seen any other big changes in paradigm. The iPhone 4 got a super high resolution screen that made reading text all the more pleasurable. Apart from that, in terms of hardware at least, we’ve gotten thinner, lighter and faster and that’s all.</p>
-<p>With phones, the quality of the apps and ease of use is what makes the difference – not the size of the thing. Price also plays a part – a big part. Having used Android for the past 18 months (HTC Desire S, and a Nexus 7) I can’t help but be drawn back to iOS, purely because th software is so much better.</p>
-
-</article>
-<hr>
-
-<article class="post-full">
-  <h2 class="post-title"><a href="/2012/12/16/goodbye-htc-desire-s-hello-iphone/">Goodbye HTC Desire S, Hello iPhone</a></h2>
-  <p class="meta">
-    <time datetime="2012-12-16T21:01:07.000+00:00">16 Dec 2012</time>
-  </p>
-
-  <p>Did you read that right? Yes I <a href="http://www.imarc.co.uk/marcwickens/2011/05/goodbye-iphone-hello-htc-desire-s/">posted to this blog in 2010</a> when I replaced my old iPhone 3GS with HTC’s Desire S. and 2 years before that when I replaced my <a href="http://www.imarc.co.uk/marcwickens/2009/07/goodbye-nokia-n95-hello-iphone/">Nokia N95 with the iPhone</a>.</p>
-<p>At the time of getting my Android phone I wasn’t too happy about the state of the iOS ecosystem. Apple was banning apps left right and enter, and the iPhone 4 didn’t excite me much. I took the plunge and switched to Android, and was immediately pleased with what I got. Over time however I came to regret that decision. What I took for granted in iOS was missing from Android – <em><strong>quality</strong></em>.</p>
-<p>Quality is a difficult concept to describe. We all know it when we see it, but it isn’t always obvious to see when you’re looking for it. In the case of my HTC Desire S, quality means the small details in the user interface that you would never notice until you have to do without – take for example making a phone call to someone who isn’t available, I’d go to my recent contacts list (3rd in the list), tap their name, and wait while it rings. After 20 seconds it would hit voicemail. This was an urgent call, so I wanted to call back straight away. I hit ‘Hangup’ and went back to the recent call list, thinking to tap the name – still 3rd in the list. Just as I tap it however, it moved from 3rd in the list to 1st, and I end up calling someone else instead. The phone was just slow. It may have been dual-core compared to my single-core iPhone 3GS, but that comparison is like sitting a motorbike and a lorry next to each other with the same engine, and expecting them to hit 60 at the same time.</p>
-<p>Then there was the lack of updates – it took a year for me to get Android 4.0 and when I  finally did it was through a HTC developers site (and made the phone even slower).</p>
-<p>The on-board software was buggy and confusing. There seemed to be 2 of everything. A HTC Twitter app, the official Twitter app. A HTC mail client, and GMail, HTC Facebook and well, you get it. On the other hand with iOS you get minimalistic software that actually does useful stuff.</p>
-<p>It wasn’t all bad of course, as by original blog post stated. You do get a lot more freedom, but I found myself not caring since Apple seems to be far more reasonable these days when it comes to App Store Approval (and I actually quite like the fact that Apps can’t take over system functions so easily).</p>
-<p>So, I am glad to be back</p>
 
 </article>
 <hr>
