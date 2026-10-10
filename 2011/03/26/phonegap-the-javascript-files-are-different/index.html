@@ -1,0 +1,109 @@
+<!-- 
+
+
+ _ __  __
+(_|  \/  | __ _ _ __ ___
+| | |\/| |/ _` | '__/ __|
+| | |  | | (_| | | | (__
+|_|_|  |_|\__,_|_|  \___|
+
+
+Coded and designed by Marc Wickens. Powered by 11ty.
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="theme-default">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"/>
+    <title>
+      PhoneGap: The JavaScript files are different!
+        ·
+        iMarc
+      
+    </title>
+    <meta name="description" content="I have recently been developing with PhoneGap, the cross platform development kit for mobile devices (essentially a browser window that lets you run HTML 5 web sites as an App)"/>
+
+    <link rel="stylesheet" href="/static/css/site.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&family=Fira+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+
+    <link rel="icon" type="image/png" href="/imarc-icon.png">
+    <link rel="apple-touch-icon" href="/imarc-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/imarc-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/imarc-icon.png">
+    <link rel="alternate" type="application/rss+xml" href="/feed/index.xml" title="iMarc RSS">
+    <link rel="canonical" href="https://www.imarc.co.uk/2011/03/26/phonegap-the-javascript-files-are-different/">
+
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="inner">
+        <a class="site-title" href="/">iMarc</a>
+        <p class="tagline">thoughts on tech • by Marc Wickens</p>
+
+        <nav class="site-nav">
+          <a href="/">Home</a>
+          <a href="/archive/">Archive</a>
+          <a href="/projects">Projects</a>
+          <a href="http://marc.wickens.org.uk">About</a>
+
+          <!-- <a href="https://mandiandmarc.wickens.uk/">Wedding</a> -->
+
+          <form class="site-search" action="/search/" method="get">
+            <label for="search-input" class="visually-hidden">Search</label>
+            <input id="search-input" name="q" type="search" placeholder="Search…"/>
+          </form>
+
+        </nav>
+      </div>
+    </header>
+
+    <main class="content inner">
+      <article>
+  <h1>PhoneGap: The JavaScript files are different!</h1>
+  <p class="meta">26 Mar 2011</p>
+  <p>I have recently been developing with <strong><a href="http://www.phonegap.com/">PhoneGap</a></strong>, the cross platform development kit for mobile devices (essentially a browser window that lets you run HTML 5 web sites as an App)</p>
+<p>I started off developing for iPhone and Android, using the packages provided by their download to get up and running. Great stuff. You write an app using HTML 5, JavaScript and CSS3 and then deploy to each device. The PhoneGap package contains a directory for each platform, with a number of files – the important one being <strong>phonegap.0.9.4.js</strong>.</p>
+<p>So I developed the app on my Windows PC, copying the files across to my trusty Mac to deploy to iPhone. There are some subtle differences in the way Safari and Chrome render, so it was important to test across both devices. I kept coming across intermittent problems on the iPhone however, with the <em>deviceready</em> event not firing. What was going on?</p>
+<h3>phonegap.0.9.4.js</h3>
+<p>Due to the negligible amount of documentation available on PhoneGap’s site (Hey – I am used to having MSDN at my disposal!) I found myself digging through the sourcecode to work out how on earth I could do things. I noticed a lot of Android specific code, but no iPhone code. How odd. I then checked in my BlackBerry project folder and noticed the file was much bigger.</p>
+<p>Yes, folks – the various <em>phonegap.0.9.4.js</em> files – despite having the same filename are totally different for each OS implementation. Not once in the many hours spent reading PhoneGap’s web site did I see anything that told me that. Turned out my iPhone problems were because I was deploying an Android version of PhoneGap to the iPhone. Having the same filename is confusing and they seem destined to get used in place of one and other. I suspect many others will have tried to deploy the wrong file to the wrong device.</p>
+<p>I would really like to see the folks at PhoneGap have a more sensible naming convention. e.g.  phonegap_android.0.9.4.js? It would be apparent straight away the it was specific to that OS, and avoid what amounts to <a href="http://en.wikipedia.org/wiki/DLL_hell">DLL hell</a> issues for mobile apps.</p>
+<p>Of course a file is a file, and I can rename it to whatever I like (and probably will) – but it’s nice not to have to (<a href="https://github.com/jquery/jquery-mobile/issues/593">who renames jQuery?</a>) and would certainly make learning the platform easier.</p>
+
+  
+  <p>Tags:
+    
+      <a href="/tag/android/">android</a>, 
+    
+      <a href="/tag/blackberry/">blackberry</a>, 
+    
+      <a href="/tag/iphone/">iphone</a>, 
+    
+      <a href="/tag/mobile/">mobile</a>
+    
+  </p>
+  
+</article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="inner">
+        <p>&copy; 2000 –
+          2026
+          Marc Wickens.
+        </p>
+      </div>
+    </footer>
+
+    <script src="/static/js/compare.js" defer="defer"></script>
+    <script data-goatcounter="https://imarc.goatcounter.com/count" async="async" src="//gc.zgo.at/count.js"></script>
+
+  </body>
+</html>

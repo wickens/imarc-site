@@ -1,0 +1,115 @@
+<!-- 
+
+
+ _ __  __
+(_|  \/  | __ _ _ __ ___
+| | |\/| |/ _` | '__/ __|
+| | |  | | (_| | | | (__
+|_|_|  |_|\__,_|_|  \___|
+
+
+Coded and designed by Marc Wickens. Powered by 11ty.
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="theme-default">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"/>
+    <title>
+      Get Android photos into iCloud Photostream via Dropbox
+        ·
+        iMarc
+      
+    </title>
+    <meta name="description" content="If like me you have an Android phone but also have an iPad, then you might find that getting photos you take on the phone onto the iPad a chore. Having photos on the iPad means you can take advantage of the beautiful"/>
+
+    <link rel="stylesheet" href="/static/css/site.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&family=Fira+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+
+    <link rel="icon" type="image/png" href="/imarc-icon.png">
+    <link rel="apple-touch-icon" href="/imarc-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/imarc-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/imarc-icon.png">
+    <link rel="alternate" type="application/rss+xml" href="/feed/index.xml" title="iMarc RSS">
+    <link rel="canonical" href="https://www.imarc.co.uk/2012/11/05/get-android-photos-into-icloud-photostream/">
+
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="inner">
+        <a class="site-title" href="/">iMarc</a>
+        <p class="tagline">thoughts on tech • by Marc Wickens</p>
+
+        <nav class="site-nav">
+          <a href="/">Home</a>
+          <a href="/archive/">Archive</a>
+          <a href="/projects">Projects</a>
+          <a href="http://marc.wickens.org.uk">About</a>
+
+          <!-- <a href="https://mandiandmarc.wickens.uk/">Wedding</a> -->
+
+          <form class="site-search" action="/search/" method="get">
+            <label for="search-input" class="visually-hidden">Search</label>
+            <input id="search-input" name="q" type="search" placeholder="Search…"/>
+          </form>
+
+        </nav>
+      </div>
+    </header>
+
+    <main class="content inner">
+      <article>
+  <h1>Get Android photos into iCloud Photostream via Dropbox</h1>
+  <p class="meta">5 Nov 2012</p>
+  <p>If like me you have an Android phone but also have an iPad, then you might find that getting photos you take on the phone onto the iPad a chore. Having photos on the iPad means you can take advantage of the beautiful screen and powerful software like iPhoto for which there simply is no alternative for on Android.</p>
+<p>Yes you can use the built in <a href="https://www.dropbox.com/">Dropbox</a> app, but it’s very clunky and doesn’t let you sort by date. With this solution, photos you take on your Android phone will appear in your iCloud photo stream, which is a far more elegant solution.</p>
+<p><strong>What we will do here is essentially make your Dropbox Camera Uploads folder the same folder as your iCloud PhotoStream uploads folder.</strong></p>
+<p><em>Note: I got this working by using my Windows 8 PC with Dropbox installed – it should work fine for Windows 7, and instructions will be different for Mac OS X but it should still be possible. Follow this guide at your own risk!</em></p>
+<h4>Step 1: Install Dropbox on your phone</h4>
+<p>If you haven’t done so already, <a href="https://www.dropbox.com/">install Dropbox</a> on your Android device and make sure automatic camera uploads is switched on. This will create a new folder in your Dropbox called ‘Camera Uploads’</p>
+<h4>Step 2: Install iCloud Control panel on your PC</h4>
+<p>I already had iTunes installed, so this was a case of running Apple software update and selecting ‘iCloud Control Panel’</p>
+<h4>Step 3: Remove the iCloud Uploads folder</h4>
+<p>Open the iCloud control panel and find the location of your photo stream on disk:</p>
+<p>Kill the any iCloud.exe and ApplePhotoStream.exe processes from the task manager, and then browse to your photostream folder and delete the ‘Uploads’ folder.</p>
+<h4>Step 4: Recreate uploads folder</h4>
+<p>Now the magic happens, open an <a href="https://www.google.co.uk/search?q=administrative+command+prompt&amp;rlz=1C1CHFX_enGB507GB507&amp;aq=f&amp;oq=administrative+command+prompt&amp;sugexp=chrome,mod=0&amp;sourceid=chrome&amp;ie=UTF-8">administrative command prompt</a> and create a <em><a href="http://en.wikipedia.org/wiki/NTFS_junction_point">junction</a></em> that will recreate the Uploads folder, only showing the contents of your Dropbox’s ‘Camera Uploads’ folder.</p>
+<p>Example:</p>
+<p><strong>mklink /J “C:UsersMarcDesktopPhotoStreamUploads”  “C:UsersMarcDropboxCamera Uploads”</strong></p>
+<p>The first path is where I want the uploads folder to go, and second is where my camera uploads folder in Drobox is. Remember: you haven’t made to copies, if you delete from one, it gets deleted from the other.</p>
+<h5>Step 5: That’s it…!</h5>
+<p>Now any photo you take will be uploaded to your PC, from your PC it will be sent to iCloud. and from iCloud it will find its way onto your iOS devices.</p>
+
+  
+  <p>Tags:
+    
+      <a href="/tag/cloud computing/">cloud computing</a>, 
+    
+      <a href="/tag/dropbox/">dropbox</a>
+    
+  </p>
+  
+</article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="inner">
+        <p>&copy; 2000 –
+          2026
+          Marc Wickens.
+        </p>
+      </div>
+    </footer>
+
+    <script src="/static/js/compare.js" defer="defer"></script>
+    <script data-goatcounter="https://imarc.goatcounter.com/count" async="async" src="//gc.zgo.at/count.js"></script>
+
+  </body>
+</html>

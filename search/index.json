@@ -1040,10 +1040,66 @@
   },
 
   {
+    "title":   "Renting music",
+    "url":     "/2019/01/26/renting-music/",
+    "date":    "2019-01-26T08:41:13.000+00:00",
+    "excerpt": "I’ve been an Apple Music subscriber now for two years now. For some reason, Spotify never sold me on the premise of renting music instead of buying it to own. Back in 2012 when I briefly subscribed to it, my internal",
+    "tags":    []
+  },
+
+  {
+    "title":   "An Echo from the void",
+    "url":     "/2018/04/22/an-echo-from-the-void/",
+    "date":    "2018-04-22T11:50:49.000+00:00",
+    "excerpt": "I bought an Amazon Echo back in January, unusually late for someone who is usually an early adopter of the latest gadgets. I had visions of all the endlessly useful conversations I would have with Alexa. I would always",
+    "tags":    []
+  },
+
+  {
     "title":   "We need better standards",
     "url":     "/2018/02/04/we-need-better-standards/",
     "date":    "2018-02-04T21:29:14.000+00:00",
     "excerpt": "What would the world be like without standards? We take for granted that all of our electrical appliances fit into the same plug sockets, not giving it a second thought. We assume that that tires purchased from any manufacturer will fit our cars, given the correct wheel size and width. Who would even doubt that a lightbulb will screw into its socket no matter where it was bought from or who fitted the light socket. Even the fact that an email can be sent using an Apple iPhone, from a Yahoo email service only to be received by a computer on the other side of the world running compatible email software is pretty amazing when you think about it. In fact, anyone can create their own email service by just registering their own domain and having a computer that is always switched on with an Internet connection. Whether it be the width of railway tracks or the audio encoding on a CD, interoperable standards were key to our way of life in much of the 20th and 21st century. TCP/IP and HTTP famously made the World Wide Web possible, while other Internet standards such as IRC, NNTP and FTP gave us realtime chat, debates and discussions and two-way files-transfers.",
+    "tags":    []
+  },
+
+  {
+    "title":   "Ticketmaster – a user hostile experience",
+    "url":     "/2017/11/23/ticketmaster-a-user-hostile-experience/",
+    "date":    "2017-11-23T08:59:02.000+00:00",
+    "excerpt": "Terrible UX experience with Ticketmaster today.",
+    "tags":    ["UX"]
+  },
+
+  {
+    "title":   "watchOS 4 – A mixed update",
+    "url":     "/2017/11/12/watchos-4-a-mixed-update/",
+    "date":    "2017-11-12T20:03:59.000+00:00",
+    "excerpt": "There are many great new features in watchOS 4, that on balance it is worth the upgrade. Positives include being able to adjust music more easily during a workout, the excellent new Siri watch face which it almost like",
+    "tags":    []
+  },
+
+  {
+    "title":   "Does Apple really slow your phone down? Perhaps",
+    "url":     "/2017/10/12/does-apple-slow-your-phone-down/",
+    "date":    "2017-10-12T21:21:37.000+00:00",
+    "excerpt": "Lots of headlines like this in the press this week:",
+    "tags":    []
+  },
+
+  {
+    "title":   "You don’t need a new Apple Watch, but the ecosystem does",
+    "url":     "/2017/09/27/you-dont-need-a-new-apple-watch-but-the-ecosystem-does/",
+    "date":    "2017-09-27T19:43:13.000+00:00",
+    "excerpt": "I’m not sold on the need for a cellular Apple Watch. While it’s a cool gadget and would be a nice luxury, I really wouldn’t recommend anyone buy it unless they are in the habit of upgrading their watch yearly. (Yes if",
+    "tags":    []
+  },
+
+  {
+    "title":   "Some thoughts on the new Apple Watch Series 3",
+    "url":     "/2017/09/14/apple-watch-series-3/",
+    "date":    "2017-09-14T20:25:07.000+00:00",
+    "excerpt": "My favourite gadget Finally, it’s here – a smartwatch that has it’s own cellular connection and so doesn’t require you have your phone with for it key functionality to work – while also not looking like an ASBO tag .…",
     "tags":    []
   },
 
@@ -1056,11 +1112,139 @@
   },
 
   {
+    "title":   "Running Gadgets",
+    "url":     "/2017/04/01/running-gadgets/",
+    "date":    "2017-04-01T20:07:39.000+00:00",
+    "excerpt": "I’ve been getting into running in a big way over the past couple of years, and completed my first Half Marathon recently, I thought why not write a post about the various gadgets I use when running.",
+    "tags":    []
+  },
+
+  {
+    "title":   "Apple Pay works over £30 in the UK",
+    "url":     "/2017/01/22/apple-pay-works-over-30-in-the-uk/",
+    "date":    "2017-01-22T19:01:07.000+00:00",
+    "excerpt": "It’s still quite a common belief that Apple Pay only works for transactions under £30. Unlike standard contactless, there is no limit on Apple Pay transitions. The caveat being that the merchant need to have the latest",
+    "tags":    []
+  },
+
+  {
+    "title":   "Apple just gave me a new smartwatch, for free",
+    "url":     "/2016/09/19/apple-just-gave-me-a-new-smartwatch-for-free/",
+    "date":    "2016-09-19T20:33:31.000+00:00",
+    "excerpt": "Well, not quite, but the latest update from Apple might as well be a new watch. The new operating system, watchOS 3 is one of the best operating system updates I’ve ever seen in the 18 years or so since I’ve been",
+    "tags":    ["iOS","watch","watchOS"]
+  },
+
+  {
+    "title":   "Improving digital media rights",
+    "url":     "/2016/08/29/improving-digital-media-rights/",
+    "date":    "2016-08-29T11:36:34.000+00:00",
+    "excerpt": "In an age when streaming services are all the rage –Netflix, Amazon Prime, Spotify et al, I still feel as though there are certain works of art that I want to own and not just rent. With music, this is a pain free",
+    "tags":    []
+  },
+
+  {
+    "title":   "7 Years of iPhone",
+    "url":     "/2016/07/06/7-years-of-iphone/",
+    "date":    "2016-07-06T20:30:13.000+00:00",
+    "excerpt": "I realised this week that it has been seven years since I got my first iPhone, a 3GS model, back in 2009. I happened to be in the same place, Newport, Isle of Wight, which made me reminisce about how much has changed in",
+    "tags":    ["iphone"]
+  },
+
+  {
+    "title":   "iPhone SE",
+    "url":     "/2016/05/22/iphone-se/",
+    "date":    "2016-05-22T15:49:30.000+00:00",
+    "excerpt": "I did it. I bought a an iPhone SE. Not just any old iPhone SE, a Rose Gold one.",
+    "tags":    ["iphone"]
+  },
+
+  {
+    "title":   "The iPad isn’t a PC replacement for everyone, yet",
+    "url":     "/2016/04/19/the-ipad-isnt-a-pc-replacement-for-everyone-yet/",
+    "date":    "2016-04-19T20:24:13.000+00:00",
+    "excerpt": "When Apple announced the new iPad last week, Phil Schiller made a point of highlighting it as a replacement for the 600 million PCs that are over 5 years old.",
+    "tags":    ["iPad"]
+  },
+
+  {
+    "title":   "How to make Facebook use less battery on iOS",
+    "url":     "/2016/03/26/how-to-make-facebook-use-less-battery-on-ios/",
+    "date":    "2016-03-26T20:21:04.000+00:00",
+    "excerpt": "I’m not a heavy Facebook user, I’ll check it a couple of times a day, perhaps a bit more if I’m on holiday and using it to check into places. For this reason I have the ‘Background App Refresh’ option turned off in iOS",
+    "tags":    []
+  },
+
+  {
+    "title":   "How I fixed an unusable BT Infinity Connection",
+    "url":     "/2016/02/28/how-i-fixed-an-unusable-bt-infinity-connection/",
+    "date":    "2016-02-28T19:02:50.000+00:00",
+    "excerpt": "I’d been having problems with BT Infinity for a few months. Every so often web pages would just hang, or streaming video would freeze. Oddly it would often coincide with a new certain devices connecting to the network.",
+    "tags":    ["tips","troubleshooting"]
+  },
+
+  {
+    "title":   "On the demise of the iPad",
+    "url":     "/2016/02/07/ipad-demise/",
+    "date":    "2016-02-07T19:37:45.000+00:00",
+    "excerpt": "So it seems iPad sales have fallen for yet another quarter. As someone whose iPad is their favourite computer; on the one hand this surprises me – why wouldn’t everyone and anyone want one of these fabulously useful and",
+    "tags":    ["iPad","iphone","watch"]
+  },
+
+  {
+    "title":   "The future of commerce is so close",
+    "url":     "/2015/12/07/the-future-of-commerce-is-so-close/",
+    "date":    "2015-12-07T21:40:38.000+00:00",
+    "excerpt": "A couple of months ago Apple Pay was finally enabled for my bank account and credit card, which meant I was finally able to pay for things by either placing my phone on the card reader, or by bashing my watch against it",
+    "tags":    []
+  },
+
+  {
     "title":   "Better software, not a bigger screen, is what the iPad needs",
     "url":     "/2015/11/14/better-software-not-a-bigger-screen-is-what-the-ipad-needs/",
     "date":    "2015-11-14T12:21:50.000+00:00",
     "excerpt": "The iPad Pro is now available, with its much larger screen. Admittedly I haven't had a chance to try one yet, and having only purchased a new iPad last year, I probably wouldn't consider such a purchase so soon anyway. But as someone who does try and do real work on an iPad, (I enjoy stepping away from my desk from time to time to focus in on something, and the iPad is perfect for this.), I am not frustrated by the iPad's lack of screen real estate (though I've no doubt more is better, it usually is) but by its limited software.",
     "tags":    []
+  },
+
+  {
+    "title":   "Making the Apple Watch more ‘glancable’",
+    "url":     "/2015/08/23/making-the-apple-watch-more-glancable/",
+    "date":    "2015-08-23T21:38:54.000+00:00",
+    "excerpt": "One of the biggest annoyances I find with the Apple Watch is that despite being billed as a ‘smart watch’, it’s often not very smart at all. Take for example complications (widgets that go on the watch-face). Currently",
+    "tags":    ["watch","watchOS"]
+  },
+
+  {
+    "title":   "The moment I realised I’m not a geek",
+    "url":     "/2015/08/15/the-moment-i-realised-im-not-a-geek/",
+    "date":    "2015-08-15T14:55:01.000+00:00",
+    "excerpt": "I was attending a local meet-up of technology enthusiasts, and one of the people presenting was an experienced game developer. He had worked for a big games company in the US for years, and was now starting his own",
+    "tags":    ["Random","xbox"]
+  },
+
+  {
+    "title":   "Apple Watch Battery Saving Tips",
+    "url":     "/2015/08/01/apple-watch-battery-saving-tips/",
+    "date":    "2015-08-01T11:24:08.000+00:00",
+    "excerpt": "If you have the smaller version of the Apple Watch, then you may find the battery just about gets you through the day. Over the past 6 weeks of using it I've been experimenting with the various settings to find the best",
+    "tags":    ["apple","iOS","iphone","tech","tips","watch"]
+  },
+
+  {
+    "title":   "Apple Watch – First Thoughts",
+    "url":     "/2015/07/08/apple-watch-review/",
+    "date":    "2015-07-08T21:05:22.000+00:00",
+    "excerpt": "I know that it seems everyone wants to blog about their experience with an Apple Watch, so why would I need to too? Well, I’m not a professional journalist (as if you can’t tell) – just an everyday person with an",
+    "tags":    ["apple","watch"]
+  },
+
+  {
+    "title":   "Google Photos",
+    "url":     "/2015/06/07/google-photos/",
+    "date":    "2015-06-07T07:51:27.000+00:00",
+    "excerpt": "Google announced a new service recently called 'Google Photos', and I was instantly intrigued. I don't use many Google services apart from search, but keeping memories safe is top of my priorities when it comes to",
+    "tags":    ["cloud","google"]
   },
 
   {
@@ -1080,6 +1264,22 @@
   },
 
   {
+    "title":   "Apple Watch",
+    "url":     "/2015/03/15/apple-watch/",
+    "date":    "2015-03-15T11:20:22.000+00:00",
+    "excerpt": "So the details are finally in, and I have to admit – I’m slightly disappointed. I was hoping Apple would unveil some major new functionality at last week’s event, but it was just filling the gaps between what we already",
+    "tags":    ["apple"]
+  },
+
+  {
+    "title":   "Halo Master Chief Collection: Opportunity Missed",
+    "url":     "/2015/02/28/halo-master-chief-collection-opportunity-missed/",
+    "date":    "2015-02-28T14:36:38.000+00:00",
+    "excerpt": "I’ve been playing the multiplayer for ‘Halo Master Chief Collection’ recently. It’s all of the original Halo games bundled as one, with Halo 2 remastered for the Xbox One. The other games have been upscaled, and the",
+    "tags":    ["halo","xbox"]
+  },
+
+  {
     "title":   "Review: Outlook for iPad",
     "url":     "/2015/02/23/outlook-for-ipad/",
     "date":    "2015-02-23T23:28:05.000+00:00",
@@ -1088,11 +1288,43 @@
   },
 
   {
+    "title":   "Apple Upgrade Regret",
+    "url":     "/2014/11/29/apple-upgrade-regret/",
+    "date":    "2014-11-29T11:10:49.000+00:00",
+    "excerpt": "As someone who owns an iPhone, Mac, iPad and an Apple TV, I can safely say I’m deeply embedded into the Apple ecosystem. I got my first Mac, a white iMac n 2001 at the dawn of the OS X revolution and loved it. I had",
+    "tags":    ["iPad","iphone","ipod","mac"]
+  },
+
+  {
     "title":   "Print vs Digital Magazines",
     "url":     "/2014/11/09/print-vs-digital-magazines/",
     "date":    "2014-11-09T19:34:01.000+00:00",
     "excerpt": "I've been a subscriber to various magazines over the years. Since 2006 and to this day I've had a subscription to New Scientist (that's just over 400 magazines delivered to my door alone), previously .Net Magazine and PC Pro.",
     "tags":    []
+  },
+
+  {
+    "title":   "iPhone OS 3",
+    "url":     "/2014/07/13/iphone-os-3/",
+    "date":    "2014-07-13T20:45:54.000+00:00",
+    "excerpt": "While self confessed geeks and technology enthusiasts like myself may get 2 or 3 years out of a device (if that, I know many people who switch phone multiple times a year), normal people expect to get a bit more out of",
+    "tags":    ["iOS","nostalgia"]
+  },
+
+  {
+    "title":   "WWDC 2014 Opening Keynote Thoughts",
+    "url":     "/2014/06/02/wwdc-2014-opening-keynote-thoughts/",
+    "date":    "2014-06-02T20:34:32.000+00:00",
+    "excerpt": "Overall a packed keynote with lots to say, here are my highlights.",
+    "tags":    []
+  },
+
+  {
+    "title":   "The Nifty MiniDrive",
+    "url":     "/2014/05/17/the-nifty-minidrive/",
+    "date":    "2014-05-17T12:49:02.000+00:00",
+    "excerpt": "As anyone who owns a MacBook air will know, these amazing laptops fall down in one key area – storage capacity. Of course you’re free to plug in an external hard drive to get extra space, which with USB 3 will be super",
+    "tags":    ["nifty"]
   },
 
   {
@@ -1108,6 +1340,14 @@
     "url":     "/2014/01/11/xbox-one-initial-thoughts2/",
     "date":    "2014-01-11T22:31:54.000+00:00",
     "excerpt": "I was lucky enough to be bought an Xbox One for Christmas, so I thought I’d post some of my initial thoughts. The games look amazing I have one game (Forza 5) and at £50 a pop I will likely only have one game for many…",
+    "tags":    []
+  },
+
+  {
+    "title":   "My History in Phones",
+    "url":     "/2013/09/12/my-history-in-phones/",
+    "date":    "2013-09-12T19:45:10.000+00:00",
+    "excerpt": "I was talking with some folks over lunch about past phone’s I’ve owned. I’ve raided my memory and decided to put up ‘my history in phones’. What do you think?",
     "tags":    []
   },
 
@@ -1128,10 +1368,82 @@
   },
 
   {
+    "title":   "Do people really feel their books?",
+    "url":     "/2013/05/01/do-people-really-feel-their-books/",
+    "date":    "2013-05-01T21:31:01.000+00:00",
+    "excerpt": "The BBC have been running a story this afternoon about e-book sales vs printed book sales. I was surprised when a majority of the people they (unscientifically) surveyed said they preferred printed books. This was not",
+    "tags":    ["back in the day","Books","Kindle","rants"]
+  },
+
+  {
+    "title":   "App Centric Old Fashioned?",
+    "url":     "/2013/04/12/app-centric-old-fashioned/",
+    "date":    "2013-04-12T17:25:16.000+00:00",
+    "excerpt": "So the in thing these days is for tech pundits to declare that an app centric ecosystem is old fashioned, and that what people really want is a people centric ecosystem; witness Facebook Home, and Windows Phone 8 before",
+    "tags":    ["mobile","software"]
+  },
+
+  {
     "title":   "The Windows 8 Problem",
     "url":     "/2013/04/11/the-windows-8-problem/",
     "date":    "2013-04-11T19:49:16.000+00:00",
     "excerpt": "Windows 8, by trying to be like iOS and Android and providing a simplified \"one app at a time\" interface (or more precisely 1.3 apps at a time) means that Windows is no longer good at what Windows was always good at. I already have a tablet, and I reach for my Windows laptop when I need to do something my iPad can't. That inevitably means I head straight to the desktop. This is why Windows has failed to reinvigorate the PC market, Windows no longer offers a great desktop experience or a mature tablet experience. I'm sure it will get better, and really hope we see Office for Metro sometime soon.",
+    "tags":    []
+  },
+
+  {
+    "title":   "iOS Disappearing Calendar Notifications – Mystery Solved",
+    "url":     "/2013/04/09/ios-disappearing-calendar-notifications-mystery-solved/",
+    "date":    "2013-04-09T22:20:14.000+00:00",
+    "excerpt": "Ever turned in your iPhone to see a calendar notices suddenly disappear from the lock screen? I've been seeing this a lot lately, and it's really bugged me – especially when my phone is on silent (as it is most of the",
+    "tags":    ["apple","iphone","ipod","software","tech","troubleshooting"]
+  },
+
+  {
+    "title":   "Apple Podcasts Update – Now Works!",
+    "url":     "/2013/03/23/apple-podcasts-update-now-works/",
+    "date":    "2013-03-23T16:03:10.000+00:00",
+    "excerpt": "Apple have finally updated their Podcasts App, and the good news is that it now works brilliantly. Before it used to crash, downloads would fail to start, and synchronisation between devices wouldn't always work. The",
+    "tags":    []
+  },
+
+  {
+    "title":   "o2 Aims to Make Your SMS Allowance Relevant Again With New App",
+    "url":     "/2013/03/02/o2-aims-to-make-your-sms-allowance-relevant-again-with-new-app/",
+    "date":    "2013-03-02T20:48:28.000+00:00",
+    "excerpt": "Tu Go is a a great idea. It can turn your iPod, iPad, laptop, or Android Tablet into a phone. Call people as if you’re calling from your mobile, and have up to 5 devices ring when you receive a call, send and receive",
+    "tags":    ["android","iPad","iphone","ipod","tech"]
+  },
+
+  {
+    "title":   "Google Glasses: Something Microsoft Would Have Done (Ten Years Ago)",
+    "url":     "/2013/03/02/google-glasses-something-microsoft-would-have-done-ten-years-ago/",
+    "date":    "2013-03-02T13:06:56.000+00:00",
+    "excerpt": "Google Glasses reminds me of something Microsoft would have released in the early to mid 00’s. The idea has merit, but it strikes me as not being thought through properly. Think Windows XP Tablet PC Edition, or the",
+    "tags":    ["android","gadgets","google"]
+  },
+
+  {
+    "title":   "Size doesn’t matter, it’s what you do with it that counts",
+    "url":     "/2013/02/10/size-doesnt-matter-its-what-you-do-with-it-that-counts/",
+    "date":    "2013-02-10T17:41:47.000+00:00",
+    "excerpt": "Apple seems to be getting a lot of bad press recently because of their refusal to release a larger iPhone. That and the fact that iOS is apparently getting ‘stale’ because hasn’t changed much since its release in 2007.…",
+    "tags":    ["android","apple","iphone","mobile","software"]
+  },
+
+  {
+    "title":   "Goodbye HTC Desire S, Hello iPhone",
+    "url":     "/2012/12/16/goodbye-htc-desire-s-hello-iphone/",
+    "date":    "2012-12-16T21:01:07.000+00:00",
+    "excerpt": "Did you read that right? Yes I posted to this blog in 2010 when I replaced my old iPhone 3GS with HTC’s Desire S. and 2 years before that when I replaced my Nokia N95 with the iPhone.",
+    "tags":    ["android","iphone"]
+  },
+
+  {
+    "title":   "5 iPad Power User Tips",
+    "url":     "/2012/11/26/5-ipad-power-user-tips/",
+    "date":    "2012-11-26T19:39:09.000+00:00",
+    "excerpt": "Here are 5 things you may not have known about your iPad.",
     "tags":    []
   },
 
@@ -1141,6 +1453,14 @@
     "date":    "2012-11-11T21:10:49.000+00:00",
     "excerpt": "I've been using the new Microsoft Surface running Windows RT this weekend, so I thought I'd post by initial thoughts. This was one borrowed from the office.",
     "tags":    []
+  },
+
+  {
+    "title":   "Get Android photos into iCloud Photostream via Dropbox",
+    "url":     "/2012/11/05/get-android-photos-into-icloud-photostream/",
+    "date":    "2012-11-05T22:23:23.000+00:00",
+    "excerpt": "If like me you have an Android phone but also have an iPad, then you might find that getting photos you take on the phone onto the iPad a chore. Having photos on the iPad means you can take advantage of the beautiful",
+    "tags":    ["cloud computing","dropbox"]
   },
 
   {
@@ -1176,10 +1496,50 @@
   },
 
   {
+    "title":   "A Popup Is Still A Popup",
+    "url":     "/2012/07/09/a-popup-is-still-a-popup/",
+    "date":    "2012-07-09T20:08:58.000+00:00",
+    "excerpt": "Remember the good old days of popups on the web? Back in the late nineties before all of the major browsers employed popup blockers, it was common for web site owners to bombard their users with a terrible experience of",
+    "tags":    []
+  },
+
+  {
+    "title":   "My wish list for iOS 6",
+    "url":     "/2012/05/07/my-wish-list-for-ios-6/",
+    "date":    "2012-05-07T21:12:40.000+00:00",
+    "excerpt": "iOS delivered when it removed the need to synchronise with iTunes, and incorporated cloud backup right into the device. But what is still missing?",
+    "tags":    ["apple","dropbox","software","tech"]
+  },
+
+  {
     "title":   "Why We Still Need Dropbox",
     "url":     "/2012/04/29/why-we-still-need-dropbox/",
     "date":    "2012-04-29T23:28:05.000+00:00",
     "excerpt": "Last week, both Google and Microsoft launched cloud file synchronisation services. Together with Apple, three of the biggest players in tech are now competing with the likes of Dropbox and Box.net . Google’s service,…",
+    "tags":    []
+  },
+
+  {
+    "title":   "5 Must have mobile apps for Android",
+    "url":     "/2012/02/26/5-must-have-mobile-apps-for-android/",
+    "date":    "2012-02-26T22:04:06.000+00:00",
+    "excerpt": "I thought I’d share with you some of the apps I use most often on my phone (a HTC desire S). Here are a few links to some “must have” apps (non-games).",
+    "tags":    ["android","dropbox","mobile","Reviews","software"]
+  },
+
+  {
+    "title":   "How to make your Kindle work with a BT Home Hub 3",
+    "url":     "/2011/12/04/how-to-make-your-kindle-work-with-a-bt-home-hub-3/",
+    "date":    "2011-12-04T19:04:00.000+00:00",
+    "excerpt": "If you search around for WiFi connection problems relating to the Kindle, you’ll soon discover that Amazon seem to have played a bit fast and loose with the WiFi specification and problems with the Kindle are rife.",
+    "tags":    ["tech","troubleshooting"]
+  },
+
+  {
+    "title":   "Flash can’t even get this right",
+    "url":     "/2011/12/04/flash-cant-even-get-this-right/",
+    "date":    "2011-12-04T19:02:04.000+00:00",
+    "excerpt": "I have to wonder if anyone from the world of UX ever approved the update wizard that Flash Player for Windows uses. It seems to be designed to annoy users, especially since it is modal and shows above all other windows.",
     "tags":    []
   },
 
@@ -1189,6 +1549,30 @@
     "date":    "2011-11-06T21:00:00.000+00:00",
     "excerpt": "A few weeks ago, the iPod turned 10. Hard to believe I know, at the time I’d just recently been bought an iMac (of the original curvy variety) and so I was keeping a close eye on all things Mac (only my AOL dialup…",
     "tags":    []
+  },
+
+  {
+    "title":   "Using Dropbox to synchronise existing folders",
+    "url":     "/2011/11/05/using-dropbox-to-synchronise-existing-folders/",
+    "date":    "2011-11-05T13:57:48.000+00:00",
+    "excerpt": "Dropbox is a great service at a decent price, it’s limited however by the fact that it only synchronises files stored inside your ‘Dropbox’ folder. To get around this limitation on Windows 7 here’s what you need to do",
+    "tags":    ["dropbox","windows"]
+  },
+
+  {
+    "title":   "Samsung copying Apple?",
+    "url":     "/2011/11/02/samsung-copying-apple/",
+    "date":    "2011-11-02T00:36:31.000+00:00",
+    "excerpt": "There’s been a lot reported in the news lately about Apple and Samsung battling it out in court to stop each other from selling various products.",
+    "tags":    ["rants"]
+  },
+
+  {
+    "title":   "Steve Jobs",
+    "url":     "/2011/10/08/steve-jobs/",
+    "date":    "2011-10-08T14:06:22.000+00:00",
+    "excerpt": "A lot has been said about the passing of Steve Jobs. The reason I am sad about his death is that Apple (under his leadership) was the first company to make technology products mainstream and fashionable. Gadget lovers",
+    "tags":    ["apple"]
   },
 
   {
@@ -1208,6 +1592,14 @@
   },
 
   {
+    "title":   "Why the JavaScript obsession?",
+    "url":     "/2011/08/05/why-the-javascript-obsession/",
+    "date":    "2011-08-05T19:49:18.000+00:00",
+    "excerpt": "If you’ve read anything on the web about technology recently you’ll know that many technology pundits and enthusiasts are claiming that HTML 5 and JavaScript are the future of computing. Even Microsoft is jumping on the",
+    "tags":    ["code"]
+  },
+
+  {
     "title":   "Goodbye iPhone, Hello HTC Desire S",
     "url":     "/2011/05/14/goodbye-iphone-hello-htc-desire-s/",
     "date":    "2011-08-03T19:46:01.000+00:00",
@@ -1224,10 +1616,42 @@
   },
 
   {
+    "title":   "Online Services I use",
+    "url":     "/2011/07/17/online-services-i-use/",
+    "date":    "2011-07-17T20:48:15.000+00:00",
+    "excerpt": "Here are some of the few online services I consider worth paying for…",
+    "tags":    ["dropbox"]
+  },
+
+  {
+    "title":   "Desire S Review (part 2)",
+    "url":     "/2011/06/05/desire-s-review-part-2/",
+    "date":    "2011-06-05T21:06:00.000+00:00",
+    "excerpt": "Having been using the phone over a month now (nearly 2), I have a good idea of what I think of it and how it compares to the iPhone.",
+    "tags":    ["android"]
+  },
+
+  {
     "title":   "Remember when software came in a box?",
     "url":     "/2011/04/29/remember-when-software-came-in-a-box/",
     "date":    "2011-04-29T18:44:36.000+00:00",
     "excerpt": "Console games still do of course, but how long for?",
+    "tags":    []
+  },
+
+  {
+    "title":   "PhoneGap: The JavaScript files are different!",
+    "url":     "/2011/03/26/phonegap-the-javascript-files-are-different/",
+    "date":    "2011-03-26T17:01:01.000+00:00",
+    "excerpt": "I have recently been developing with PhoneGap, the cross platform development kit for mobile devices (essentially a browser window that lets you run HTML 5 web sites as an App)",
+    "tags":    ["android","blackberry","iphone","mobile"]
+  },
+
+  {
+    "title":   "Audible finally release iPhone app in the UK",
+    "url":     "/2011/01/16/audible-finally-release-iphone-app-in-the-uk/",
+    "date":    "2011-01-16T12:50:12.000+00:00",
+    "excerpt": "Audible UK have released an app for the iPhone. The best feature over the built in software is that it doesn’t rotate when you hold it sideways (I am certain this “feature” of the the iPhone exists solely for in-store",
     "tags":    []
   },
 
@@ -1240,11 +1664,43 @@
   },
 
   {
+    "title":   "Halo Reach",
+    "url":     "/2011/01/03/halo-reach/",
+    "date":    "2011-01-03T21:46:00.000+00:00",
+    "excerpt": "OK so I am a little late to the party with this review, I like to wait until the price of an Xbox game comes down in price before shelling out for it.",
+    "tags":    ["halo","xbox"]
+  },
+
+  {
+    "title":   "No, I don’t want to update!",
+    "url":     "/2010/12/26/no-i-dont-want-to-update/",
+    "date":    "2010-12-26T23:47:00.000+00:00",
+    "excerpt": "Software updates. We all all love them don’t we? Unlike any other industry I can think of, users of software expect to get updates on a regular basis. When Microsoft included Windows Update with Windows 98 it hailed a",
+    "tags":    ["cloud computing","software"]
+  },
+
+  {
     "title":   "The Painted Man by Peter V Brett",
     "url":     "/2010/12/23/the-painted-man-by-peter-v-brett/",
     "date":    "2010-12-23T11:50:00.000+00:00",
     "excerpt": "I don’t usually read fantasy books; in fact, before I read The Painted Man , I had never read a fantasy book. Not that I am one for boxing things into genres – I am far more likely to pick up a book based on the merit…",
     "tags":    []
+  },
+
+  {
+    "title":   "Trouble with Talk Talk",
+    "url":     "/2010/09/25/trouble-with-talk-talk/",
+    "date":    "2010-09-25T11:05:44.000+00:00",
+    "excerpt": "3 months after moving into our new place, we finally have a decent broadband connection.",
+    "tags":    ["rants"]
+  },
+
+  {
+    "title":   "Podcast Tool 1.2",
+    "url":     "/2010/03/13/podcast-tool-1-2/",
+    "date":    "2010-03-13T20:05:19.000+00:00",
+    "excerpt": "I have updated Podcast Tool – a lightweight program for managing podcast subscriptions. The major new feature is it now includes playback functionality. I have also made many optimisations, so working with shows that",
+    "tags":    ["software"]
   },
 
   {
@@ -1256,10 +1712,42 @@
   },
 
   {
+    "title":   "The application bandwagon?",
+    "url":     "/2010/02/17/application-bandwagon/",
+    "date":    "2010-02-17T22:30:47.000+00:00",
+    "excerpt": "A couple of years ago I remember reading in the technology press about how desktop software was dead, and that the web was the future. Skip forward to today and I still hear the same thing, only with the word ‘web’",
+    "tags":    ["cloud computing","software"]
+  },
+
+  {
+    "title":   "Podcasts: 8 of the best",
+    "url":     "/2009/07/25/podcasts-8-of-the-best/",
+    "date":    "2009-07-25T22:20:00.000+00:00",
+    "excerpt": "Podcasts are a great way to keep up with the latest goings on in whatever subjects interest you. For me this means mainly tech news. I even wrote an application to help me organise all them all! I thought I’d list a few",
+    "tags":    ["Reviews"]
+  },
+
+  {
     "title":   "Goodbye Nokia N95, Hello iPhone",
     "url":     "/2009/07/08/goodbye-nokia-n95-hello-iphone/",
     "date":    "2009-07-08T20:14:00.000+00:00",
     "excerpt": "For the past two years, I’ve been using the Nokia N95. At the time of its release, it was revolutionary. Even today, it holds its own when compared to the majority of phones on the market. From a top-quality camera…",
+    "tags":    []
+  },
+
+  {
+    "title":   "Podcast Tool: Updated",
+    "url":     "/2009/06/26/podcast-tool-updated/",
+    "date":    "2009-06-26T22:30:59.000+00:00",
+    "excerpt": "A quick note to let you know that I’ve updated Podcast Tool (someone please suggest a more imaginative name!)",
+    "tags":    []
+  },
+
+  {
+    "title":   "Bing! And the work is done",
+    "url":     "/2009/06/08/bing-and-the-work-is-done/",
+    "date":    "2009-06-08T22:53:08.000+00:00",
+    "excerpt": "Microsoft’s new search engine isn’t half bad. I’ve noticed it ranks Wikipedia,Windows Live and FaceBook profiles more prominatly than Google. There is no automatic spell-checker, or search suggestions like Google has,",
     "tags":    []
   },
 
