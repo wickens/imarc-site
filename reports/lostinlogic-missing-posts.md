@@ -2,7 +2,7 @@
 
 Compared the [Lost in Logic archive](https://www.lostinlogic.com/archives/index.html) with the Markdown posts in `src/posts/` before the October 2026 import.
 
-**Status:** 61 of the 134 posts below have since been imported. See the [imported tech post list](lostinlogic-tech-port-candidates.md) for those titles. This remains a record of the original comparison.
+**Status:** 68 of the 134 posts below have since been imported. See the [tech import list](lostinlogic-tech-port-candidates.md) and [non-tech import list](lostinlogic-nontech-import.md) for those titles. This remains a record of the original comparison.
 
 The old archive lists **166** posts. **32** have a matching post here (including renamed posts); **134** are absent from `src/posts/`.
 
