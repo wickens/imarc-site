@@ -1,17 +1,17 @@
 [
   {
-    "title":   "Goodbye Apple Basingstoke",
-    "url":     "/2026/11/15/goodbye-apple-basingstoke/",
-    "date":    "2026-11-15T12:00:00.000+00:00",
-    "excerpt": "My local Apple Store in Basingstoke is closing next week. On the one hand, it’s not entirely unexpected. I’ve often noticed it’s quite empty on weekdays (though weekends and the run-up to Christmas are always very…",
-    "tags":    []
-  },
-
-  {
     "title":   "Microsoft \"Not quite\" 365",
     "url":     "/2026/11/15/microsoft-not-quite-365/",
     "date":    "2026-11-15T09:43:00.000+00:00",
     "excerpt": "It’s hard not to feel sorry for the folks responsible for the 27-plus-hour outage of Microsoft 365. It would have been a tough few days, and I’m sure the post-mortem won’t be pretty. Having had to use Microsoft’s cloud…",
+    "tags":    []
+  },
+
+  {
+    "title":   "Goodbye Apple Basingstoke",
+    "url":     "/2026/11/15/goodbye-apple-basingstoke/",
+    "date":    "2026-11-15T06:00:00.000+00:00",
+    "excerpt": "My local Apple Store in Basingstoke is closing next week. On the one hand, it’s not entirely unexpected. I’ve often noticed it’s quite empty on weekdays (though weekends and the run-up to Christmas are always very…",
     "tags":    []
   },
 
