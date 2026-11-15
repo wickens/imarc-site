@@ -67,6 +67,19 @@ Coded and designed by Marc Wickens. Powered by 11ty.
 
 
 <article class="post-full">
+  <h2 class="post-title"><a href="/2013/04/12/app-centric-old-fashioned/">App Centric Old Fashioned?</a></h2>
+  <p class="meta">
+    <time datetime="2013-04-12T17:25:16.000+00:00">12 Apr 2013</time>
+  </p>
+
+  <p>So the in thing these days is for tech pundits to declare that an <em>app</em> centric ecosystem is old fashioned, and that what people really want is a <em>people</em> centric ecosystem; witness Facebook Home, and Windows Phone 8 before it.</p>
+<p>That’s all well and good, but do app developers want their brand to be muffled into another system? I think most developers like having their icon on the home screen, like being able to design their app as they see fit, and wouldn’t be happy if the operating system simply surfaced their content as part of a people centric approach.</p>
+<p>Ecosystems are nothing without the support of developers and big brand apps. Everyone wants their cut of the ‘mind share’ pie.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
   <h2 class="post-title"><a href="/2013/04/11/the-windows-8-problem/">The Windows 8 Problem</a></h2>
   <p class="meta">
     <time datetime="2013-04-11T19:49:16.000+00:00">11 Apr 2013</time>
@@ -200,34 +213,6 @@ Coded and designed by Marc Wickens. Powered by 11ty.
 <p>If you forget the desktop, and forget office then you have a promising device for consuming media. Sometimes it feels a bit laggy, like when rotating the screen or launching apps, but only occasionally - most of the time it feels pretty snappy. Whether not people who have invested in content on Android and iOS will want to put that aside and buy content from Microsoft is anther question. In theory if you buy a film on the Surface, you should be able to watch it on your Xbox 360. Browsing the web is frustrating because there seems to be no way to set Google as your search provider - this really would be a deal breaker for me, because Bing just isn’t as good, and not having decent search at your fingertips is like forgetting to wear a watch, you really miss it when it’s gone. Favourites are also difficult to find (you have to focus the address bar, and then swipe to the right, they cannot be grouped into folders). I prefer the iPad here, but this is an early version of IE for Metro despite the version being 10, I’m sure this will improve with time.</p>
 <p>So is the device for? It’s not gong to replace a PC for power-users, and the lack of Outlook/Desktop software will probably off business users. That leaves casual home users (would-be iPad buyers) - though I wonder whether the lack of a 7 inch version might sway those users towards the cheaper iPad Mini or the Kindle Fire. One group who this is made for however is students. This device is perfect for taking to lectures, typing up coursework and doing research on.</p>
 <p>Overall I’m impressed, though I think I’ll stick with. My iPad for now (despite that fact it feels really old now) and wait and see what Surface version 2 looks like.</p>
-
-</article>
-<hr>
-
-<article class="post-full">
-  <h2 class="post-title"><a href="/2012/11/05/get-android-photos-into-icloud-photostream/">Get Android photos into iCloud Photostream via Dropbox</a></h2>
-  <p class="meta">
-    <time datetime="2012-11-05T22:23:23.000+00:00">5 Nov 2012</time>
-  </p>
-
-  <p>If like me you have an Android phone but also have an iPad, then you might find that getting photos you take on the phone onto the iPad a chore. Having photos on the iPad means you can take advantage of the beautiful screen and powerful software like iPhoto for which there simply is no alternative for on Android.</p>
-<p>Yes you can use the built in <a href="https://www.dropbox.com/">Dropbox</a> app, but it’s very clunky and doesn’t let you sort by date. With this solution, photos you take on your Android phone will appear in your iCloud photo stream, which is a far more elegant solution.</p>
-<p><strong>What we will do here is essentially make your Dropbox Camera Uploads folder the same folder as your iCloud PhotoStream uploads folder.</strong></p>
-<p><em>Note: I got this working by using my Windows 8 PC with Dropbox installed – it should work fine for Windows 7, and instructions will be different for Mac OS X but it should still be possible. Follow this guide at your own risk!</em></p>
-<h4>Step 1: Install Dropbox on your phone</h4>
-<p>If you haven’t done so already, <a href="https://www.dropbox.com/">install Dropbox</a> on your Android device and make sure automatic camera uploads is switched on. This will create a new folder in your Dropbox called ‘Camera Uploads’</p>
-<h4>Step 2: Install iCloud Control panel on your PC</h4>
-<p>I already had iTunes installed, so this was a case of running Apple software update and selecting ‘iCloud Control Panel’</p>
-<h4>Step 3: Remove the iCloud Uploads folder</h4>
-<p>Open the iCloud control panel and find the location of your photo stream on disk:</p>
-<p>Kill the any iCloud.exe and ApplePhotoStream.exe processes from the task manager, and then browse to your photostream folder and delete the ‘Uploads’ folder.</p>
-<h4>Step 4: Recreate uploads folder</h4>
-<p>Now the magic happens, open an <a href="https://www.google.co.uk/search?q=administrative+command+prompt&amp;rlz=1C1CHFX_enGB507GB507&amp;aq=f&amp;oq=administrative+command+prompt&amp;sugexp=chrome,mod=0&amp;sourceid=chrome&amp;ie=UTF-8">administrative command prompt</a> and create a <em><a href="http://en.wikipedia.org/wiki/NTFS_junction_point">junction</a></em> that will recreate the Uploads folder, only showing the contents of your Dropbox’s ‘Camera Uploads’ folder.</p>
-<p>Example:</p>
-<p><strong>mklink /J “C:UsersMarcDesktopPhotoStreamUploads”  “C:UsersMarcDropboxCamera Uploads”</strong></p>
-<p>The first path is where I want the uploads folder to go, and second is where my camera uploads folder in Drobox is. Remember: you haven’t made to copies, if you delete from one, it gets deleted from the other.</p>
-<h5>Step 5: That’s it…!</h5>
-<p>Now any photo you take will be uploaded to your PC, from your PC it will be sent to iCloud. and from iCloud it will find its way onto your iOS devices.</p>
 
 </article>
 <hr>

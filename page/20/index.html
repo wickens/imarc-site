@@ -67,6 +67,34 @@ Coded and designed by Marc Wickens. Powered by 11ty.
 
 
 <article class="post-full">
+  <h2 class="post-title"><a href="/2012/11/05/get-android-photos-into-icloud-photostream/">Get Android photos into iCloud Photostream via Dropbox</a></h2>
+  <p class="meta">
+    <time datetime="2012-11-05T22:23:23.000+00:00">5 Nov 2012</time>
+  </p>
+
+  <p>If like me you have an Android phone but also have an iPad, then you might find that getting photos you take on the phone onto the iPad a chore. Having photos on the iPad means you can take advantage of the beautiful screen and powerful software like iPhoto for which there simply is no alternative for on Android.</p>
+<p>Yes you can use the built in <a href="https://www.dropbox.com/">Dropbox</a> app, but it’s very clunky and doesn’t let you sort by date. With this solution, photos you take on your Android phone will appear in your iCloud photo stream, which is a far more elegant solution.</p>
+<p><strong>What we will do here is essentially make your Dropbox Camera Uploads folder the same folder as your iCloud PhotoStream uploads folder.</strong></p>
+<p><em>Note: I got this working by using my Windows 8 PC with Dropbox installed – it should work fine for Windows 7, and instructions will be different for Mac OS X but it should still be possible. Follow this guide at your own risk!</em></p>
+<h4>Step 1: Install Dropbox on your phone</h4>
+<p>If you haven’t done so already, <a href="https://www.dropbox.com/">install Dropbox</a> on your Android device and make sure automatic camera uploads is switched on. This will create a new folder in your Dropbox called ‘Camera Uploads’</p>
+<h4>Step 2: Install iCloud Control panel on your PC</h4>
+<p>I already had iTunes installed, so this was a case of running Apple software update and selecting ‘iCloud Control Panel’</p>
+<h4>Step 3: Remove the iCloud Uploads folder</h4>
+<p>Open the iCloud control panel and find the location of your photo stream on disk:</p>
+<p>Kill the any iCloud.exe and ApplePhotoStream.exe processes from the task manager, and then browse to your photostream folder and delete the ‘Uploads’ folder.</p>
+<h4>Step 4: Recreate uploads folder</h4>
+<p>Now the magic happens, open an <a href="https://www.google.co.uk/search?q=administrative+command+prompt&amp;rlz=1C1CHFX_enGB507GB507&amp;aq=f&amp;oq=administrative+command+prompt&amp;sugexp=chrome,mod=0&amp;sourceid=chrome&amp;ie=UTF-8">administrative command prompt</a> and create a <em><a href="http://en.wikipedia.org/wiki/NTFS_junction_point">junction</a></em> that will recreate the Uploads folder, only showing the contents of your Dropbox’s ‘Camera Uploads’ folder.</p>
+<p>Example:</p>
+<p><strong>mklink /J “C:UsersMarcDesktopPhotoStreamUploads”  “C:UsersMarcDropboxCamera Uploads”</strong></p>
+<p>The first path is where I want the uploads folder to go, and second is where my camera uploads folder in Drobox is. Remember: you haven’t made to copies, if you delete from one, it gets deleted from the other.</p>
+<h5>Step 5: That’s it…!</h5>
+<p>Now any photo you take will be uploaded to your PC, from your PC it will be sent to iCloud. and from iCloud it will find its way onto your iOS devices.</p>
+
+</article>
+<hr>
+
+<article class="post-full">
   <h2 class="post-title"><a href="/2012/09/22/apple-smart-cover-for-ipad/">Review: Apple Smart Cover for iPad</a></h2>
   <p class="meta">
     <time datetime="2012-09-22T10:28:05.000+00:00">22 Sep 2012</time>
@@ -207,20 +235,6 @@ Yes, I get that these things aren’t cheap, but they’re also not as fragile a
 <p>It was no surprise to me then that when I switched to BT ADSL that both my Kindle 3 and my Dad’s Kindle 4 wouldn’t connect to the Home Hub 3 router. I counted 11 other devices in the house which connected without any trouble; laptops, iPods, Xboxes and phones of different makes – so I knew the problem was with the Kindle. After not getting much help from Amazon (for what its worth, their support staff answer the phone quickly, and were pleasant to deal with) I decided I would just need to go through a trial and error process myself. This was time consuming, because the problem only seemed to manifest itself once the Kindle had put the WiFi radio to sleep, so after making a change to the router’s configuration and reconnecting the Kindle, it would always work, and only after 30 minutes or so when the Kindle failed to connect would I know if there was still a problem.</p>
 <p>Anyway, the solution for me was to disable mixed WPA and WPA2 encryption, and set the router to use only WPA2. Contrary to other Internet sites, changing the wireless channel or turning off ‘N’ mode made no difference to me. This fixed worked on my Kindle 3 3G and the new Kindle 4 WiFi. All my other devices still connect fine (event a first generation iPod Touch) so not having the original WPA specification in use doesn’t seem to have any drawbacks.</p>
 <p>I hope this is of use to someone – let me know in the comments if you’ve had the same problem.</p>
-
-</article>
-<hr>
-
-<article class="post-full">
-  <h2 class="post-title"><a href="/2011/12/04/flash-cant-even-get-this-right/">Flash can’t even get this right</a></h2>
-  <p class="meta">
-    <time datetime="2011-12-04T19:02:04.000+00:00">4 Dec 2011</time>
-  </p>
-
-  <p>I have to wonder if anyone from the world of UX ever approved the update wizard that Flash Player for Windows uses. It seems to be designed to annoy users, especially since it is modal and shows above all other windows.</p>
-<p>On the first screen, checking the checkbox will stop you from progressing and installing the update (contrary to almost every other wizard I’ve seen) yet on the second screen the checkbox needs to be checked in order to continue. What were they thinking?</p>
-<p>Most people will not read the associated text (they certainly wont lead the license agreement), and will check the box assuming they need to for the update to install. As Raymond Chen wrote (one of my favourite tech blogs) “<a href="http://blogs.msdn.com/b/oldnewthing/archive/2007/03/14/1878777.aspx">Don’t require your users to have a degree in philosophy</a>”</p>
-<p>Is this bad UX or am I just wrong? I’d be interested in hearing comments.</p>
 
 </article>
 <hr>
