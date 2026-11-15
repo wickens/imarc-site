@@ -67,6 +67,28 @@ Coded and designed by Marc Wickens. Powered by 11ty.
 
 
 <article class="post-full">
+  <h2 class="post-title"><a href="/2024/12/19/apples-notification-summaries-why-starting-small-still-matters-in-ai/">Apple’s Notification Summaries: Why Starting Small Still Matters in AI</a></h2>
+  <p class="meta">
+    <time datetime="2024-12-19T21:42:07.000+00:00">19 Dec 2024</time>
+  </p>
+
+  <p><img src="/wp-content/uploads/2024/12/e453dc00-bdeb-11ef-a2ca-e99d0c9a24e3.jpg.png?w=1024" alt="A iOS notification summary from BBC News that reads Luigi Mangione shoots himself; Syrian mother hopes Assad pays the price; South Korea police raid Yoon Suk Yeol's office.&quot;"></p>
+<p><em>Image source: <a href="https://www.bbc.co.uk/news/articles/cx2v778x85yo">BBC News</a></em></p>
+<p><a href="https://www.bbc.co.uk/news/articles/cx2v778x85yo">Graham Fraser reporting for BBC News</a> about Apple’s new notification summarisation feature:</p>
+<blockquote>
+<p>A major journalism body has urged Apple to scrap its new generative AI feature after it created a misleading headline about a high-profile killing in the United States.<br>
+The BBC made a complaint to the US tech giant after Apple Intelligence, which uses artificial intelligence (AI) to summarise and group together notifications, falsely created a headline about murder suspect Luigi Mangione.</p>
+<p>The AI-powered summary falsely made it appear that BBC News had published an article claiming Mangione, the man accused of the murder of healthcare insurance CEO Brian Thompson in New York, had shot himself. He has not.</p>
+</blockquote>
+<p>I’ve worked on implementing AI into software products for the past seven years, and the first rule is always to start with a narrow domain, carefully assess how effective it is, and, if your approach is working, gradually expand your domain coverage. When it comes to notification summaries, I can’t help but wonder why Apple didn’t adopt this approach. Instead, they’ve delivered something that feels more like a hasty student project than the polished innovation we’ve come to expect.</p>
+<p>Specifically, I would have started by limiting the product to summarising notifications where summaries are genuinely most useful. Of course, not being a product manager at Apple, I haven’t done the research, but let’s assume messaging apps would top the list. A “TL;DR” summary for lengthy WhatsApp group chats, for instance, could be genuinely valuable. On the other hand, attempting to summarise product promotions or delivery notifications from Amazon, breaking news, or even the alerts I get when my wife logs a feed on our baby-tracking app feels far less useful. Most of the complaints I’ve seen online seem to involve apps like BBC News, Amazon, or other non-communication apps. Apple would be better off avoiding attempts to summarise these types of notifications and instead focusing on apps where summarisation truly adds value: messaging apps such as WhatsApp or Slack.</p>
+<p>That’s not to say the current implementation is flawless when it comes to messaging apps either. In an example shared by <em>WSJ</em> technology journalist Joanna Stern, <a href="https://www.threads.net/@joannastern/post/DCezF5pRbjM">the iPhone mistakenly assumed her wife was referring to a non-existent husband</a>. The issue likely arose because Stern has her wife saved as “Wife” in her address book. The smaller language model onboard the iPhone, relying on statistical assumptions, concluded that someone called “Wife” must be referring to a husband when mentioning another unnamed person. It’s exactly the sort of edge case<a href="#835b0802-a0c7-4b2f-8d5a-37d7a5a1be2d">1</a> that could have been caught more easily during testing if the first version had maintained a laser-like focus on summarising messaging app content.</p>
+<p>By starting small and focusing on where summarisation adds the most value, Apple could have delivered a more refined and impactful feature, avoiding many of the issues we’ve seen reported .</p>
+
+</article>
+<hr>
+
+<article class="post-full">
   <h2 class="post-title"><a href="/2025/10/29/the-best-uk-train-times-service-for-commuters-no-app-needed/">A Great Website for UK Train Commuters</a></h2>
   <p class="meta">
     <time datetime="2024-10-29T08:59:00.000+00:00">29 Oct 2024</time>
@@ -197,17 +219,6 @@ TheTrainLine is arguably focused on planning journeys, and the National Rail app
   </p>
 
   <p>Wordpress <a href="https://wordpress.com/blog/2023/10/11/activitypub/">have enabled support for ActivtyPub</a>. So you can now follow this blog on platforms such as Mastodon by searching for <strong><em><a href="mailto:imarc.co.uk@imarc.co.uk">imarc.co.uk@imarc.co.uk</a></em></strong> - let me know if it works by replying to this post.</p>
-
-</article>
-<hr>
-
-<article class="post-full">
-  <h2 class="post-title"><a href="/2023/10/09/microsoft-to-discontinue-visual-studio-for-mac/">Microsoft to Discontinue Visual Studio for Mac</a></h2>
-  <p class="meta">
-    <time datetime="2023-10-09T17:02:20.000+00:00">9 Oct 2023</time>
-  </p>
-
-  <p>In a disappointing move, Microsoft have <a href="https://devblogs.microsoft.com/visualstudio/visual-studio-for-mac-retirement-announcement/">discontinued Visual Studio for the Mac</a>. This comes not long after they <a href="https://visualstudiomagazine.com/articles/2022/05/25/vs-2022-for-mac-ga.aspx">rewrote</a> the user interface to be faster and more fluid using native frameworks. Given the depressing state of Windows these days, the lack of a full-featured IDE does not bode well for the long-term future of .NET and other related technologies. For many years, Windows has seemed stuck in limbo. Adding pointless features like Dark Mode, but still with nowhere near the number of productivity features Mac users take for granted. I had considered VS for Mac somewhat if a lifeboat for .NET developers wanting jump ship from Microsoft’s <a href="https://www.theguardian.com/technology/blog/2011/feb/09/nokia-burning-platform-memo-elop">burning platform</a>.</p>
 
 </article>
 <hr>
