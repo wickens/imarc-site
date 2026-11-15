@@ -1,6 +1,6 @@
 ---
 title: "Goodbye Apple Basingstoke"
-date: "2026-11-15T12:00:00Z"
+date: "2026-11-15T06:00:00Z"
 slug: "goodbye-apple-basingstoke"
 layout: "post.njk"
 excerpt: ""
